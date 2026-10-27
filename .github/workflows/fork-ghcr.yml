@@ -1,0 +1,162 @@
+name: Fork: build image to GHCR
+
+# Fork-only pipeline (luqin2007/OmniRoute).
+#
+# Upstream's docker-publish.yml pushes to Docker Hub with upstream secrets and
+# builds both architectures on every release branch push. This workflow is the
+# fork's own lane: it builds THIS fork's source and publishes a single-arch
+# image to GitHub Container Registry, so the deployment host never has to run
+# the 6-12 GB webpack build — it only runs `docker compose pull`.
+#
+# How to use:
+#   1. Push the branch carrying your changes.
+#   2. Actions -> "Fork: build image to GHCR" -> Run workflow -> pick that ref.
+#      (Or push to a branch named `build/**` to trigger it automatically.)
+#   3. On the host:  docker compose pull && docker compose up -d
+#
+# Builds the same Dockerfile target upstream publishes (`runner-base`, the
+# Node/Next.js runtime image), with the same 12288 MB heap official CI uses.
+# A cold run takes ~30-60 min; later runs reuse the GHA layer cache and the
+# npm/standalone layers, so only changed source layers rebuild.
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: "Image tag to publish (default: dev-<short sha>)"
+        required: false
+        type: string
+      promote_latest:
+        description: "Also move :latest in this fork's namespace"
+        required: false
+        type: boolean
+        default: false
+      target:
+        description: "Dockerfile target"
+        required: false
+        type: choice
+        default: runner-base
+        options:
+          - runner-base
+          - runner-web
+  push:
+    branches:
+      - "build/**"
+
+permissions:
+  contents: read
+  packages: write
+
+# Never let two image builds race for the same ref's cache.
+concurrency:
+  group: fork-ghcr-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and push to GHCR
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      TARGET: ${{ inputs.target || 'runner-base' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # Hosted ubuntu-24.04 ships ~14 GB free; the builder stage needs
+      # node_modules (~4 GB) plus the standalone output (~1.4 GB) on top of the
+      # base images. Dropping the preinstalled toolchains upstream CI does not
+      # use buys back ~25 GB (same trick as the upstream Docker runner).
+      - name: Free disk space
+        run: |
+          set -euo pipefail
+          sudo rm -rf \
+            /usr/share/dotnet \
+            /usr/local/lib/android \
+            /opt/ghc \
+            /opt/hostedtoolcache/CodeQL \
+            /usr/local/share/boost
+          df -h /
+
+      - name: Resolve image name and tag
+        id: meta
+        env:
+          INPUT_TAG: ${{ inputs.image_tag }}
+        run: |
+          set -euo pipefail
+          # GHCR requires a lowercase path; the fork owner is already lowercase
+          # but ${VAR,,} keeps this correct if the repo is ever transferred.
+          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          tag="${INPUT_TAG:-}"
+          if [ -z "$tag" ]; then
+            tag="dev-$(git rev-parse --short HEAD)"
+          fi
+          echo "image=$image" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "Publishing ${image}:${tag} from ${GITHUB_SHA} (target ${TARGET})"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v4.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        id: build
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          target: ${{ env.TARGET }}
+          platforms: linux/amd64
+          push: true
+          # Same knobs as upstream docker-publish.yml: webpack (not Turbopack)
+          # and a 12 GB V8 heap, which is what this app's build needs to finish
+          # without the isolated-build OOM seen in #11976.
+          build-args: |
+            OMNIROUTE_USE_TURBOPACK=0
+            OMNIROUTE_BUILD_MEMORY_MB=12288
+          tags: ${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+          # Keep the pushed artifact a plain image (no attestation manifest) so
+          # `docker compose pull` on the host stays boring.
+          provenance: false
+          sbom: false
+          cache-from: type=gha,scope=fork-amd64
+          cache-to: type=gha,scope=fork-amd64,mode=max,ignore-error=true
+        env:
+          DOCKER_BUILDKIT_INLINE_CACHE: 1
+
+      - name: Move :latest (optional)
+        if: ${{ inputs.promote_latest }}
+        run: |
+          set -euo pipefail
+          docker buildx imagetools create \
+            -t "${{ steps.meta.outputs.image }}:latest" \
+            "${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}"
+
+      - name: Summary
+        run: |
+          set -euo pipefail
+          {
+            echo "### Fork image published"
+            echo
+            echo "- image: \`${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}\`"
+            echo "- digest: \`${{ steps.build.outputs.digest }}\`"
+            echo "- target: \`${TARGET}\` (linux/amd64)"
+            echo
+            echo "Deploy on the host:"
+            echo
+            echo '```bash'
+            echo "cd /mnt/sda2/docker-data/dockge/stacks/omniroute"
+            echo "# point the stack at ${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}"
+            echo "docker compose pull && docker compose up -d"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
