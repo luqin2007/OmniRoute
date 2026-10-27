@@ -1,4 +1,4 @@
-name: Fork: build image to GHCR
+name: "Fork: build image to GHCR"
 
 # Fork-only pipeline (luqin2007/OmniRoute).
 #
