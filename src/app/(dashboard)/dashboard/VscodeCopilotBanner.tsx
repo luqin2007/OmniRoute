@@ -31,15 +31,15 @@ function subscribe(callback: () => void) {
 
 // SSR has no localStorage, so the server always renders the banner visible;
 // useSyncExternalStore reconciles that against the real client-side value
-// right after hydration, mirroring KimiSponsorBanner's pattern.
+// right after hydration, mirroring the dashboard's other banners.
 function getServerSnapshot() {
   return true;
 }
 
 /**
  * Dismissable banner announcing the OmniCopilot VS Code extension on the
- * dashboard home page — same size/shape as KimiSponsorBanner, no version gate
- * (durable feature announcement, not a time-boxed sponsor deal).
+ * dashboard home page. No version gate — it is a durable feature
+ * announcement, not a time-boxed promotion.
  */
 export default function VscodeCopilotBanner() {
   const t = useTranslations("vscodeCopilotBanner");
