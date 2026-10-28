@@ -191,7 +191,7 @@ Claude और Claude Code-संगत रूट, Opus और Sonnet मॉड�
 
 #### Kimi K2 ($9/माह की निश्चित कीमत)
 
-1. सदस्यता लें: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. सदस्यता लें: [Moonshot AI](https://platform.kimi.ai)
 2. API कुंजी प्राप्त करें → डैशबोर्ड → API कुंजी जोड़ें
 
 **उपयोग:** `kimi/kimi-k2.5` — **विशेष सुझाव:** 10M टोकन के लिए निश्चित $9/माह = $0.90/1M की प्रभावी लागत!

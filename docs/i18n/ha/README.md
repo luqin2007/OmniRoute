@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Godiya ga <b>Kimi (Moonshot AI)</b>, Abokinmu na Buɗaɗɗen Tushe na farko, don tallafawa wannan aikin! Kimi shine dakin gwaje-gwaje na AI a bayan iyalai na samfurin K2 da K3 masu buɗaɗɗen nauyi — <b>Kimi K3</b> yana ba da taga mahallin 1M-token, hangen nesa na asali da matakin gaba na coding a farashi mai rahusa fiye da samfuran rufaffiyar, kuma yana aiki kai tsaye tare da Claude Code, Codex da kowane kayan aikin coding da OmniRoute ke bayarwa.
       <br/><br/>
-      <b>Abin da tallafin Kimi ke samarwa:</b> Kiredit na API na Kimi yana samar da bututun sakin OmniRoute mai inganci na AI — matakin <i>ingancin haɗawa wanda Kimi K3 ke samarwa</i> wanda ke duba kowane buƙatar ja kafin a tura shi — tare da haɓaka fasali na yau da kullun. Tallafin Kimi na farko yana aiki akan duka hanyoyin: kai tsaye <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) da <a href="https://www.kimi.ai/code?aff=omniroute">shirin coding na Kimi Code</a> (OAuth da maɓallin API). OmniRoute kuma shine aikin buɗaɗɗen tushe na Brazil na farko a cikin shirin tallafi na Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Samu maɓallin API na Kimi tare da ƙarin kiredit 15% →</b></a>
+      <b>Abin da tallafin Kimi ke samarwa:</b> Kiredit na API na Kimi yana samar da bututun sakin OmniRoute mai inganci na AI — matakin <i>ingancin haɗawa wanda Kimi K3 ke samarwa</i> wanda ke duba kowane buƙatar ja kafin a tura shi — tare da haɓaka fasali na yau da kullun. Tallafin Kimi na farko yana aiki akan duka hanyoyin: kai tsaye <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) da <a href="https://www.kimi.ai/code">shirin coding na Kimi Code</a> (OAuth da maɓallin API). OmniRoute kuma shine aikin buɗaɗɗen tushe na Brazil na farko a cikin shirin tallafi na Kimi. <a href="https://platform.kimi.ai"><b>Samu maɓallin API na Kimi tare da ƙarin kiredit 15% →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — rajistar abokin tarayya · <b>$100 kiredit kyauta</b> akan rajista (sabar kyauta, sa ran jinkiri mafi girma — mafi kyau don gwaji, ba don samarwa ba). Tallafi na farko a OmniRoute tun <b>v3.8.50</b>: Cikakkun Taɗi, tsarin waya mai dacewa da Anthropic da hanyar da ta dace da OpenAI. Samfuran da ake da su sun haɗa da <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> da ƙari. <b><a href="https://agentrouter.org/register?aff=70LM">Ɗauki $100 ɗinku →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — rajistar abokin tarayya · <b>$100 kiredit kyauta</b> akan rajista (sabar kyauta, sa ran jinkiri mafi girma — mafi kyau don gwaji, ba don samarwa ba). Tallafi na farko a OmniRoute tun <b>v3.8.50</b>: Cikakkun Taɗi, tsarin waya mai dacewa da Anthropic da hanyar da ta dace da OpenAI. Samfuran da ake da su sun haɗa da <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> da ƙari. <b><a href="https://agentrouter.org/register">Ɗauki $100 ɗinku →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Hanyar haɗi ta abokin tarayya — OmniRoute ba shi da tallafi ko haɗin gwiwa tare da wannan mai bayarwa.</i></sub>
     </td>

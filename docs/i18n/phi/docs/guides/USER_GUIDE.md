@@ -191,7 +191,7 @@ Mga Model:
 
 #### Kimi K2 (nakapirming $9/buwan)
 
-1. Mag-subscribe: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Mag-subscribe: [Moonshot AI](https://platform.kimi.ai)
 2. Kunin ang API key → Dashboard → Add API Key
 
 **Gamitin:** `kimi/kimi-k2.5` — **Tip para sa Pro:** Ang nakapirming $9/buwan para sa 10M token ay katumbas ng epektibong halagang $0.90/1M!

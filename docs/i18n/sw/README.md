@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Akili ya Mipaka Huria · Vigezo 2.8T · Muktadha wa Tokeni 1M"/>
   </a>
 </p>

@@ -191,7 +191,7 @@ Modèles :
 
 #### Kimi K2 (Forfait fixe de 9 $/mois)
 
-1. Abonnez-vous : [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abonnez-vous : [Moonshot AI](https://platform.kimi.ai)
 2. Obtenez une clé API → Tableau de bord → Ajouter une clé API
 
 **Utilisation :** `kimi/kimi-k2.5` — **Conseil de pro :** un forfait fixe de 9 $/mois pour 10M de jetons, soit un coût effectif de 0,90 $/1M !

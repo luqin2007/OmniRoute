@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parametere · 1M-token kontekst"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Takk til <b>Kimi (Moonshot AI)</b>, vår grunnleggende åpen kildekode-venn, for å støtte dette prosjektet! Kimi er AI-laboratoriet bak de åpen-vektede K2- og K3-modellfamiliene – <b>Kimi K3</b> leverer et 1M-token kontekstvindu, innebygd syn og grense-nivå koding til en brøkdel av prisen for lukkede modeller, og fungerer ut av boksen med Claude Code, Codex og alle kodingsverktøy OmniRoute tilbyr.
       <br/><br/>
-      <b>Hva Kimis støtte driver:</b> Kimis API-kreditter driver OmniRoutes AI-validerte utgivelses-pipeline – <i>sammenslåingsvalideringen drevet av Kimi K3</i>-stadiet som gjennomgår hver pull-forespørsel før den sendes – pluss daglig funksjonsutvikling. Førsteklasses Kimi-støtte leveres på begge måter: den direkte <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) og <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code kodingplanen</a> (OAuth og API-nøkkel). OmniRoute er også det første brasilianske åpen kildekode-prosjektet i Kimis støtteprogram. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Få en Kimi API-nøkkel med 15 % ekstra kreditter →</b></a>
+      <b>Hva Kimis støtte driver:</b> Kimis API-kreditter driver OmniRoutes AI-validerte utgivelses-pipeline – <i>sammenslåingsvalideringen drevet av Kimi K3</i>-stadiet som gjennomgår hver pull-forespørsel før den sendes – pluss daglig funksjonsutvikling. Førsteklasses Kimi-støtte leveres på begge måter: den direkte <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) og <a href="https://www.kimi.ai/code">Kimi Code kodingplanen</a> (OAuth og API-nøkkel). OmniRoute er også det første brasilianske åpen kildekode-prosjektet i Kimis støtteprogram. <a href="https://platform.kimi.ai"><b>Få en Kimi API-nøkkel med 15 % ekstra kreditter →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — affiliate-registrering · <b>$100 gratis kreditter</b> ved registrering (gratis server, forvent høyere latens – best for testing, ikke produksjon). Førsteklasses støtte i OmniRoute siden <b>v3.8.50</b>: Chat Completions, det Anthropic-kompatible trådformatet og den OpenAI-kompatible stien. Tilgjengelige modeller inkluderer <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> og mer. <b><a href="https://agentrouter.org/register?aff=70LM">Hent dine $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — affiliate-registrering · <b>$100 gratis kreditter</b> ved registrering (gratis server, forvent høyere latens – best for testing, ikke produksjon). Førsteklasses støtte i OmniRoute siden <b>v3.8.50</b>: Chat Completions, det Anthropic-kompatible trådformatet og den OpenAI-kompatible stien. Tilgjengelige modeller inkluderer <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> og mer. <b><a href="https://agentrouter.org/register">Hent dine $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Affiliate-lenke — OmniRoute har ingen sponsing eller partnerskap med denne leverandøren.</i></sub>
     </td>

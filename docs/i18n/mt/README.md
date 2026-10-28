@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parametri · 1M-token kuntest"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Grazzi lil <b>Kimi (Moonshot AI)</b>, il-Ħabib Fundatur tagħna tal-Open Source, talli appoġġja dan il-proġett! Kimi huwa l-laboratorju tal-AI wara l-familji ta' mudelli K2 u K3 b'piż miftuħ — <b>Kimi K3</b> joffri tieqa ta' kuntest ta' 1M-token, viżjoni nattiva u kodifikazzjoni ta' livell avvanzat bi frazzjoni tal-prezzijiet tal-mudelli magħluqa, u jaħdem direttament ma' Claude Code, Codex u kull għodda ta' kodifikazzjoni li OmniRoute jservi.
       <br/><br/>
-      <b>X'jappoġġja l-appoġġ ta' Kimi:</b> Il-krediti tal-API ta' Kimi jappoġġjaw il-pipeline ta' rilaxx validat mill-AI ta' OmniRoute — l-istadju ta' <i>validazzjoni tal-għaqda mħaddma minn Kimi K3</i> li jirrevedi kull talba ta' pull qabel ma tiġi rilaxxata — flimkien mal-iżvilupp ta' karatteristiċi ta' kuljum. L-appoġġ ta' Kimi ta' l-ewwel klassi jintbagħat fuq iż-żewġ binarji: l-<a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">API diretta ta' Kimi</a> (<code>kimi-k3</code>) u l-<a href="https://www.kimi.ai/code?aff=omniroute">pjan ta' kodifikazzjoni ta' Kimi Code</a> (OAuth u ċavetta API). OmniRoute huwa wkoll l-ewwel proġett open-source Brażiljan fil-programm ta' appoġġ ta' Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Ikseb ċavetta API ta' Kimi bi 15% krediti żejda →</b></a>
+      <b>X'jappoġġja l-appoġġ ta' Kimi:</b> Il-krediti tal-API ta' Kimi jappoġġjaw il-pipeline ta' rilaxx validat mill-AI ta' OmniRoute — l-istadju ta' <i>validazzjoni tal-għaqda mħaddma minn Kimi K3</i> li jirrevedi kull talba ta' pull qabel ma tiġi rilaxxata — flimkien mal-iżvilupp ta' karatteristiċi ta' kuljum. L-appoġġ ta' Kimi ta' l-ewwel klassi jintbagħat fuq iż-żewġ binarji: l-<a href="https://platform.kimi.ai">API diretta ta' Kimi</a> (<code>kimi-k3</code>) u l-<a href="https://www.kimi.ai/code">pjan ta' kodifikazzjoni ta' Kimi Code</a> (OAuth u ċavetta API). OmniRoute huwa wkoll l-ewwel proġett open-source Brażiljan fil-programm ta' appoġġ ta' Kimi. <a href="https://platform.kimi.ai"><b>Ikseb ċavetta API ta' Kimi bi 15% krediti żejda →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — reġistrazzjoni affiljata · <b>$100 krediti b'xejn</b> mar-reġistrazzjoni (server b'xejn, stenna latenza ogħla — l-aħjar għall-ittestjar, mhux għall-produzzjoni). Appoġġ ta' l-ewwel klassi f'OmniRoute minn <b>v3.8.50</b>: Chat Completions, il-format tal-wajer kompatibbli ma' Anthropic u l-path kompatibbli ma' OpenAI. Mudelli disponibbli jinkludu <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> u aktar. <b><a href="https://agentrouter.org/register?aff=70LM">Aqbad il-$100 tiegħek →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — reġistrazzjoni affiljata · <b>$100 krediti b'xejn</b> mar-reġistrazzjoni (server b'xejn, stenna latenza ogħla — l-aħjar għall-ittestjar, mhux għall-produzzjoni). Appoġġ ta' l-ewwel klassi f'OmniRoute minn <b>v3.8.50</b>: Chat Completions, il-format tal-wajer kompatibbli ma' Anthropic u l-path kompatibbli ma' OpenAI. Mudelli disponibbli jinkludu <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> u aktar. <b><a href="https://agentrouter.org/register">Aqbad il-$100 tiegħek →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Link affiljata — OmniRoute m'għandu l-ebda sponsorizzazzjoni jew sħubija ma' dan il-fornitur.</i></sub>
     </td>

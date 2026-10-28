@@ -191,7 +191,7 @@ Modeller:
 
 #### Kimi K2 ($9/måned fast pris)
 
-1. Abonnér: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abonnér: [Moonshot AI](https://platform.kimi.ai)
 2. Hent en API-nøgle → Kontrolpanel → Tilføj API-nøgle
 
 **Brug:** `kimi/kimi-k2.5` — **Pro-tip:** Fast pris på $9/måned for 10M tokens = en effektiv pris på $0.90/1M!

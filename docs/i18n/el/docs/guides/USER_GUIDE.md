@@ -191,7 +191,7 @@ Combo: "openclaw-free"
 
 #### Kimi K2 ($9/μήνα σταθερά)
 
-1. Εγγραφείτε σε συνδρομή: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Εγγραφείτε σε συνδρομή: [Moonshot AI](https://platform.kimi.ai)
 2. Αποκτήστε κλειδί API → Πίνακας ελέγχου → Προσθήκη κλειδιού API
 
 **Χρήση:** `kimi/kimi-k2.5` — **Επαγγελματική συμβουλή:** Σταθερό κόστος $9/μήνα για 10M tokens = πραγματικό κόστος $0.90/1M!

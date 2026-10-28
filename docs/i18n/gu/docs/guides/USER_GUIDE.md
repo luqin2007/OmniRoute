@@ -191,7 +191,7 @@ Claude અને Claude Code-સુસંગત રૂટ્સ Opus અને S
 
 #### Kimi K2 (દર મહિને નિશ્ચિત $9)
 
-1. સબ્સ્ક્રાઇબ કરો: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. સબ્સ્ક્રાઇબ કરો: [Moonshot AI](https://platform.kimi.ai)
 2. API key મેળવો → ડૅશબોર્ડ → API Key ઉમેરો
 
 **ઉપયોગ:** `kimi/kimi-k2.5` — **પ્રો ટિપ:** 10M ટોકન્સ માટે દર મહિને નિશ્ચિત $9 = $0.90/1M નો અસરકારક ખર્ચ!

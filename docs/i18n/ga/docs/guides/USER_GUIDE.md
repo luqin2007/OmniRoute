@@ -189,7 +189,7 @@ Samhlacha:
 
 #### Kimi K2 ($9/mí ar ráta seasta)
 
-1. Liostáil: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Liostáil: [Moonshot AI](https://platform.kimi.ai)
 2. Faigh eochair API → Deais → Cuir Eochair API Leis
 
 **Úsáid:** `kimi/kimi-k2.5` — **Leid Ghairmiúil:** $9/mí seasta ar 10M comhartha = costas éifeachtach $0.90/1M!

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Atvērtā robežas inteliģence · 2.8T parametri · 1M žetonu konteksts"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Pateicoties <b>Kimi (Moonshot AI)</b>, mūsu dibinātājam atvērtā koda draugam, par šī projekta atbalstu! Kimi ir AI laboratorija, kas izstrādājusi atvērtā svara K2 un K3 modeļu saimes — <b>Kimi K3</b> nodrošina 1M žetonu konteksta logu, vietējo redzi un robežlīmeņa kodēšanu par daļu no slēgto modeļu cenām, un darbojas uzreiz ar Claude Code, Codex un katru kodēšanas rīku, ko OmniRoute apkalpo.
       <br/><br/>
-      <b>Ko Kimi atbalsts nodrošina:</b> Kimi API kredīti nodrošina OmniRoute AI validēto izlaišanas cauruļvadu — posmu <i>sapludināšanas validācija, ko nodrošina Kimi K3</i>, kas pārskata katru pieprasījumu pirms tā izlaišanas — kā arī ikdienas funkciju izstrādi. Pirmklasīgs Kimi atbalsts tiek piegādāts abos veidos: tiešais <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) un <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code kodēšanas plāns</a> (OAuth un API atslēga). OmniRoute ir arī pirmais Brazīlijas atvērtā koda projekts Kimi atbalsta programmā. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Iegūstiet Kimi API atslēgu ar 15% papildu kredītiem →</b></a>
+      <b>Ko Kimi atbalsts nodrošina:</b> Kimi API kredīti nodrošina OmniRoute AI validēto izlaišanas cauruļvadu — posmu <i>sapludināšanas validācija, ko nodrošina Kimi K3</i>, kas pārskata katru pieprasījumu pirms tā izlaišanas — kā arī ikdienas funkciju izstrādi. Pirmklasīgs Kimi atbalsts tiek piegādāts abos veidos: tiešais <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) un <a href="https://www.kimi.ai/code">Kimi Code kodēšanas plāns</a> (OAuth un API atslēga). OmniRoute ir arī pirmais Brazīlijas atvērtā koda projekts Kimi atbalsta programmā. <a href="https://platform.kimi.ai"><b>Iegūstiet Kimi API atslēgu ar 15% papildu kredītiem →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — filiāles reģistrācija · <b>$100 bezmaksas kredīti</b> reģistrējoties (bezmaksas serveris, sagaidāma lielāka latentums — vislabāk testēšanai, nevis ražošanai). Pirmklasīgs atbalsts OmniRoute kopš <b>v3.8.50</b>: Tērzēšanas pabeigšana (Chat Completions), Anthropic-saderīgs vadu formāts un OpenAI-saderīgs ceļš. Pieejamie modeļi ietver <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> un citus. <b><a href="https://agentrouter.org/register?aff=70LM">Paņemiet savus $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — filiāles reģistrācija · <b>$100 bezmaksas kredīti</b> reģistrējoties (bezmaksas serveris, sagaidāma lielāka latentums — vislabāk testēšanai, nevis ražošanai). Pirmklasīgs atbalsts OmniRoute kopš <b>v3.8.50</b>: Tērzēšanas pabeigšana (Chat Completions), Anthropic-saderīgs vadu formāts un OpenAI-saderīgs ceļš. Pieejamie modeļi ietver <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> un citus. <b><a href="https://agentrouter.org/register">Paņemiet savus $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Filiāles saite — OmniRoute nav sponsorēšanas vai partnerības ar šo pakalpojumu sniedzēju.</i></sub>
     </td>

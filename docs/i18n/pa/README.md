@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — ਓਪਨ ਫਰੰਟੀਅਰ ਇੰਟੈਲੀਜੈਂਸ · 2.8T ਪੈਰਾਮੀਟਰ · 1M-ਟੋਕਨ ਸੰਦਰਭ"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="ਕਿਮੀ (ਮੂਨਸ਼ੌਟ ਏਆਈ)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ਇਸ ਪ੍ਰੋਜੈਕਟ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ ਸਾਡੇ ਸੰਸਥਾਪਕ ਓਪਨ ਸੋਰਸ ਦੋਸਤ, <b>ਕਿਮੀ (ਮੂਨਸ਼ੌਟ ਏਆਈ)</b> ਦਾ ਧੰਨਵਾਦ! ਕਿਮੀ ਓਪਨ-ਵੇਟ K2 ਅਤੇ K3 ਮਾਡਲ ਪਰਿਵਾਰਾਂ ਦੇ ਪਿੱਛੇ AI ਲੈਬ ਹੈ — <b>ਕਿਮੀ K3</b> 1M-ਟੋਕਨ ਸੰਦਰਭ ਵਿੰਡੋ, ਨੇਟਿਵ ਵਿਜ਼ਨ ਅਤੇ ਬੰਦ-ਮਾਡਲ ਕੀਮਤਾਂ ਦੇ ਇੱਕ ਹਿੱਸੇ 'ਤੇ ਫਰੰਟੀਅਰ-ਪੱਧਰ ਦੀ ਕੋਡਿੰਗ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਅਤੇ ਕਲਾਉਡ ਕੋਡ, ਕੋਡੈਕਸ ਅਤੇ ਹਰ ਕੋਡਿੰਗ ਟੂਲ ਨਾਲ ਬਾਕਸ ਤੋਂ ਬਾਹਰ ਕੰਮ ਕਰਦਾ ਹੈ ਜੋ ਓਮਨੀਰੂਟ ਸੇਵਾ ਕਰਦਾ ਹੈ।
       <br/><br/>
-      <b>ਕਿਮੀ ਦਾ ਸਮਰਥਨ ਕੀ ਸ਼ਕਤੀ ਦਿੰਦਾ ਹੈ:</b> ਕਿਮੀ ਦੇ API ਕ੍ਰੈਡਿਟ ਓਮਨੀਰੂਟ ਦੀ AI-ਪ੍ਰਮਾਣਿਤ ਰੀਲੀਜ਼ ਪਾਈਪਲਾਈਨ ਨੂੰ ਸ਼ਕਤੀ ਦਿੰਦੇ ਹਨ — <i>ਕਿਮੀ K3 ਦੁਆਰਾ ਸੰਚਾਲਿਤ ਮਰਜ ਪ੍ਰਮਾਣਿਕਤਾ</i> ਪੜਾਅ ਜੋ ਹਰ ਪੁੱਲ ਬੇਨਤੀ ਦੀ ਸਮੀਖਿਆ ਕਰਦਾ ਹੈ ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਇਹ ਭੇਜੀ ਜਾਵੇ — ਨਾਲ ਹੀ ਰੋਜ਼ਾਨਾ ਫੀਚਰ ਵਿਕਾਸ। ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਕਿਮੀ ਸਹਾਇਤਾ ਦੋਵਾਂ ਰੇਲਾਂ 'ਤੇ ਭੇਜੀ ਜਾਂਦੀ ਹੈ: ਸਿੱਧਾ <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">ਕਿਮੀ API</a> (<code>kimi-k3</code>) ਅਤੇ <a href="https://www.kimi.ai/code?aff=omniroute">ਕਿਮੀ ਕੋਡ ਕੋਡਿੰਗ ਯੋਜਨਾ</a> (OAuth ਅਤੇ API ਕੁੰਜੀ)। ਓਮਨੀਰੂਟ ਕਿਮੀ ਦੇ ਸਹਾਇਤਾ ਪ੍ਰੋਗਰਾਮ ਵਿੱਚ ਪਹਿਲਾ ਬ੍ਰਾਜ਼ੀਲੀਅਨ ਓਪਨ-ਸੋਰਸ ਪ੍ਰੋਜੈਕਟ ਵੀ ਹੈ। <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% ਵਾਧੂ ਕ੍ਰੈਡਿਟ ਦੇ ਨਾਲ ਇੱਕ ਕਿਮੀ API ਕੁੰਜੀ ਪ੍ਰਾਪਤ ਕਰੋ →</b></a>
+      <b>ਕਿਮੀ ਦਾ ਸਮਰਥਨ ਕੀ ਸ਼ਕਤੀ ਦਿੰਦਾ ਹੈ:</b> ਕਿਮੀ ਦੇ API ਕ੍ਰੈਡਿਟ ਓਮਨੀਰੂਟ ਦੀ AI-ਪ੍ਰਮਾਣਿਤ ਰੀਲੀਜ਼ ਪਾਈਪਲਾਈਨ ਨੂੰ ਸ਼ਕਤੀ ਦਿੰਦੇ ਹਨ — <i>ਕਿਮੀ K3 ਦੁਆਰਾ ਸੰਚਾਲਿਤ ਮਰਜ ਪ੍ਰਮਾਣਿਕਤਾ</i> ਪੜਾਅ ਜੋ ਹਰ ਪੁੱਲ ਬੇਨਤੀ ਦੀ ਸਮੀਖਿਆ ਕਰਦਾ ਹੈ ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਇਹ ਭੇਜੀ ਜਾਵੇ — ਨਾਲ ਹੀ ਰੋਜ਼ਾਨਾ ਫੀਚਰ ਵਿਕਾਸ। ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਕਿਮੀ ਸਹਾਇਤਾ ਦੋਵਾਂ ਰੇਲਾਂ 'ਤੇ ਭੇਜੀ ਜਾਂਦੀ ਹੈ: ਸਿੱਧਾ <a href="https://platform.kimi.ai">ਕਿਮੀ API</a> (<code>kimi-k3</code>) ਅਤੇ <a href="https://www.kimi.ai/code">ਕਿਮੀ ਕੋਡ ਕੋਡਿੰਗ ਯੋਜਨਾ</a> (OAuth ਅਤੇ API ਕੁੰਜੀ)। ਓਮਨੀਰੂਟ ਕਿਮੀ ਦੇ ਸਹਾਇਤਾ ਪ੍ਰੋਗਰਾਮ ਵਿੱਚ ਪਹਿਲਾ ਬ੍ਰਾਜ਼ੀਲੀਅਨ ਓਪਨ-ਸੋਰਸ ਪ੍ਰੋਜੈਕਟ ਵੀ ਹੈ। <a href="https://platform.kimi.ai"><b>15% ਵਾਧੂ ਕ੍ਰੈਡਿਟ ਦੇ ਨਾਲ ਇੱਕ ਕਿਮੀ API ਕੁੰਜੀ ਪ੍ਰਾਪਤ ਕਰੋ →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="ਏਜੰਟਰਾਊਟਰ"/>
       </a>
       <br/><sub><b>ਏਜੰਟਰਾਊਟਰ</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">ਏਜੰਟਰਾਊਟਰ</a></b> — ਐਫੀਲੀਏਟ ਸਾਈਨਅਪ · ਸਾਈਨਅਪ 'ਤੇ <b>$100 ਮੁਫਤ ਕ੍ਰੈਡਿਟ</b> (ਮੁਫਤ ਸਰਵਰ, ਉੱਚ ਲੇਟੈਂਸੀ ਦੀ ਉਮੀਦ ਕਰੋ — ਟੈਸਟਿੰਗ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ, ਉਤਪਾਦਨ ਲਈ ਨਹੀਂ)। <b>v3.8.50</b> ਤੋਂ ਓਮਨੀਰੂਟ ਵਿੱਚ ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਸਹਾਇਤਾ: ਚੈਟ ਸੰਪੂਰਨਤਾਵਾਂ, ਐਂਥ੍ਰੋਪਿਕ-ਅਨੁਕੂਲ ਵਾਇਰ ਫਾਰਮੈਟ ਅਤੇ OpenAI-ਅਨੁਕੂਲ ਪਾਥ। ਉਪਲਬਧ ਮਾਡਲਾਂ ਵਿੱਚ <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ਅਤੇ ਹੋਰ ਸ਼ਾਮਲ ਹਨ। <b><a href="https://agentrouter.org/register?aff=70LM">ਆਪਣੇ $100 ਪ੍ਰਾਪਤ ਕਰੋ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">ਏਜੰਟਰਾਊਟਰ</a></b> — ਐਫੀਲੀਏਟ ਸਾਈਨਅਪ · ਸਾਈਨਅਪ 'ਤੇ <b>$100 ਮੁਫਤ ਕ੍ਰੈਡਿਟ</b> (ਮੁਫਤ ਸਰਵਰ, ਉੱਚ ਲੇਟੈਂਸੀ ਦੀ ਉਮੀਦ ਕਰੋ — ਟੈਸਟਿੰਗ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ, ਉਤਪਾਦਨ ਲਈ ਨਹੀਂ)। <b>v3.8.50</b> ਤੋਂ ਓਮਨੀਰੂਟ ਵਿੱਚ ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਸਹਾਇਤਾ: ਚੈਟ ਸੰਪੂਰਨਤਾਵਾਂ, ਐਂਥ੍ਰੋਪਿਕ-ਅਨੁਕੂਲ ਵਾਇਰ ਫਾਰਮੈਟ ਅਤੇ OpenAI-ਅਨੁਕੂਲ ਪਾਥ। ਉਪਲਬਧ ਮਾਡਲਾਂ ਵਿੱਚ <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ਅਤੇ ਹੋਰ ਸ਼ਾਮਲ ਹਨ। <b><a href="https://agentrouter.org/register">ਆਪਣੇ $100 ਪ੍ਰਾਪਤ ਕਰੋ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>ਐਫੀਲੀਏਟ ਲਿੰਕ — ਓਮਨੀਰੂਟ ਦਾ ਇਸ ਪ੍ਰਦਾਤਾ ਨਾਲ ਕੋਈ ਸਪਾਂਸਰਸ਼ਿਪ ਜਾਂ ਭਾਈਵਾਲੀ ਨਹੀਂ ਹੈ।</i></sub>
     </td>

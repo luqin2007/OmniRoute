@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       תודה ל-<b>Kimi (Moonshot AI)</b>, חברת הקוד הפתוח המייסדת שלנו, על תמיכתה בפרויקט זה! Kimi היא מעבדת הבינה המלאכותית שמאחורי משפחות המודלים K2 ו-K3 בעלי המשקל הפתוח – <b>Kimi K3</b> מספקת חלון הקשר של מיליון אסימונים, ראייה מובנית וקידוד ברמה מתקדמת בשבריר ממחירי המודלים הסגורים, ועובדת מחוץ לקופסה עם Claude Code, Codex וכל כלי קידוד ש-OmniRoute משרתת.
       <br/><br/>
-      <b>מה תמיכת Kimi מאפשרת:</b> זיכויי ה-API של Kimi מפעילים את צינור השחרור המאושר על ידי AI של OmniRoute – שלב ה-<i>אימות מיזוג המופעל על ידי Kimi K3</i> הסוקר כל בקשת משיכה לפני שהיא נשלחת – בתוספת פיתוח תכונות יומיומי. תמיכה מהשורה הראשונה של Kimi נשלחת בשני מסלולים: ה-<a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> הישיר (<code>kimi-k3</code>) ו-<a href="https://www.kimi.ai/code?aff=omniroute">תוכנית הקידוד Kimi Code</a> (OAuth ומפתח API). OmniRoute הוא גם פרויקט הקוד הפתוח הברזילאי הראשון בתוכנית התמיכה של Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>קבל מפתח Kimi API עם 15% זיכויים נוספים ←</b></a>
+      <b>מה תמיכת Kimi מאפשרת:</b> זיכויי ה-API של Kimi מפעילים את צינור השחרור המאושר על ידי AI של OmniRoute – שלב ה-<i>אימות מיזוג המופעל על ידי Kimi K3</i> הסוקר כל בקשת משיכה לפני שהיא נשלחת – בתוספת פיתוח תכונות יומיומי. תמיכה מהשורה הראשונה של Kimi נשלחת בשני מסלולים: ה-<a href="https://platform.kimi.ai">Kimi API</a> הישיר (<code>kimi-k3</code>) ו-<a href="https://www.kimi.ai/code">תוכנית הקידוד Kimi Code</a> (OAuth ומפתח API). OmniRoute הוא גם פרויקט הקוד הפתוח הברזילאי הראשון בתוכנית התמיכה של Kimi. <a href="https://platform.kimi.ai"><b>קבל מפתח Kimi API עם 15% זיכויים נוספים ←</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — הרשמת שותפים · <b>$100 זיכויים חינם</b> בהרשמה (שרת חינם, צפה לחביון גבוה יותר – הטוב ביותר לבדיקות, לא לייצור). תמיכה מהשורה הראשונה ב-OmniRoute מאז <b>v3.8.50</b>: השלמות צ'אט, פורמט ה-wire התואם Anthropic והנתיב התואם OpenAI. מודלים זמינים כוללים <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ועוד. <b><a href="https://agentrouter.org/register?aff=70LM">קח את ה-$100 שלך ←</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — הרשמת שותפים · <b>$100 זיכויים חינם</b> בהרשמה (שרת חינם, צפה לחביון גבוה יותר – הטוב ביותר לבדיקות, לא לייצור). תמיכה מהשורה הראשונה ב-OmniRoute מאז <b>v3.8.50</b>: השלמות צ'אט, פורמט ה-wire התואם Anthropic והנתיב התואם OpenAI. מודלים זמינים כוללים <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ועוד. <b><a href="https://agentrouter.org/register">קח את ה-$100 שלך ←</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>קישור שותפים – ל-OmniRoute אין חסות או שותפות עם ספק זה.</i></sub>
     </td>

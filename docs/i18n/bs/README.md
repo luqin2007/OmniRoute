@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Vrhunska otvorena inteligencija · 2,8 biliona parametara · kontekst od 1M tokena"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Hvala kompaniji <b>Kimi (Moonshot AI)</b>, našem osnivačkom prijatelju otvorenog koda, na podršci ovom projektu! Kimi je AI laboratorija koja stoji iza porodica modela s otvorenim težinama K2 i K3 — <b>Kimi K3</b> pruža kontekstni prozor od 1M tokena, nativnu podršku za vid i programiranje na najvišem nivou po djeliću cijene zatvorenih modela te odmah radi s alatima Claude Code, Codex i svim alatima za programiranje koje OmniRoute podržava.
       <br/><br/>
-      <b>Šta omogućava podrška kompanije Kimi:</b> Kimi API krediti pokreću OmniRouteov proces izdanja potvrđen pomoću AI-ja — fazu <i>provjere spajanja koju pokreće Kimi K3</i>, a koja pregleda svaki zahtjev za povlačenje prije objave — kao i svakodnevni razvoj funkcionalnosti. Prvorazredna podrška za Kimi dostupna je putem oba kanala: direktnog <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API-ja</a> (<code>kimi-k3</code>) i <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code plana za programiranje</a> (OAuth i API ključ). OmniRoute je također prvi brazilski projekat otvorenog koda u programu podrške kompanije Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Nabavite Kimi API ključ uz 15% dodatnih kredita →</b></a>
+      <b>Šta omogućava podrška kompanije Kimi:</b> Kimi API krediti pokreću OmniRouteov proces izdanja potvrđen pomoću AI-ja — fazu <i>provjere spajanja koju pokreće Kimi K3</i>, a koja pregleda svaki zahtjev za povlačenje prije objave — kao i svakodnevni razvoj funkcionalnosti. Prvorazredna podrška za Kimi dostupna je putem oba kanala: direktnog <a href="https://platform.kimi.ai">Kimi API-ja</a> (<code>kimi-k3</code>) i <a href="https://www.kimi.ai/code">Kimi Code plana za programiranje</a> (OAuth i API ključ). OmniRoute je također prvi brazilski projekat otvorenog koda u programu podrške kompanije Kimi. <a href="https://platform.kimi.ai"><b>Nabavite Kimi API ključ uz 15% dodatnih kredita →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — partnerska registracija · <b>$100 besplatnih kredita</b> nakon registracije (besplatan server, očekujte veće kašnjenje — najbolje za testiranje, ne za produkciju). Prvorazredna podrška u OmniRouteu od verzije <b>v3.8.50</b>: Chat Completions, format komunikacije kompatibilan s Anthropicem i putanja kompatibilna s OpenAI-jem. Dostupni modeli uključuju <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> i druge. <b><a href="https://agentrouter.org/register?aff=70LM">Preuzmite svojih $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — partnerska registracija · <b>$100 besplatnih kredita</b> nakon registracije (besplatan server, očekujte veće kašnjenje — najbolje za testiranje, ne za produkciju). Prvorazredna podrška u OmniRouteu od verzije <b>v3.8.50</b>: Chat Completions, format komunikacije kompatibilan s Anthropicem i putanja kompatibilna s OpenAI-jem. Dostupni modeli uključuju <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> i druge. <b><a href="https://agentrouter.org/register">Preuzmite svojih $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Partnerski link — OmniRoute nema sponzorski ni partnerski odnos s ovim pružaocem usluga.</i></sub>
     </td>

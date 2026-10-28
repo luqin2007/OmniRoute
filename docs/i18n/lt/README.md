@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — pažangiausias atvirasis intelektas · 2,8 trln. parametrų · 1 mln. žetonų kontekstas"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Dėkojame <b>Kimi (Moonshot AI)</b>, mūsų steigiamajam atvirojo kodo draugui, už šio projekto rėmimą! „Kimi“ yra DI laboratorija, sukūrusi atvirų svorių K2 ir K3 modelių šeimas. <b>Kimi K3</b> siūlo 1 mln. žetonų konteksto langą, įtaisytąjį vaizdų apdorojimą ir pažangiausio lygio programavimą už gerokai mažesnę kainą nei uždarieji modeliai, be to, iškart veikia su „Claude Code“, „Codex“ ir visais programavimo įrankiais, kuriuos aptarnauja „OmniRoute“.
       <br/><br/>
-      <b>Ką užtikrina „Kimi“ parama:</b> „Kimi“ API kreditai užtikrina „OmniRoute“ DI patvirtinamą leidimų procesą — <i>suliejimo patvirtinimo, kurį vykdo Kimi K3</i>, etapą, peržiūrintį kiekvieną įtraukimo užklausą prieš jos išleidimą, — taip pat kasdienį funkcijų kūrimą. Visavertis „Kimi“ palaikymas teikiamas abiem būdais: per tiesioginę <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) ir <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code programavimo planą</a> (OAuth ir API raktas). „OmniRoute“ taip pat yra pirmasis Brazilijos atvirojo kodo projektas „Kimi“ paramos programoje. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Gaukite „Kimi“ API raktą su 15 % papildomų kreditų →</b></a>
+      <b>Ką užtikrina „Kimi“ parama:</b> „Kimi“ API kreditai užtikrina „OmniRoute“ DI patvirtinamą leidimų procesą — <i>suliejimo patvirtinimo, kurį vykdo Kimi K3</i>, etapą, peržiūrintį kiekvieną įtraukimo užklausą prieš jos išleidimą, — taip pat kasdienį funkcijų kūrimą. Visavertis „Kimi“ palaikymas teikiamas abiem būdais: per tiesioginę <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) ir <a href="https://www.kimi.ai/code">Kimi Code programavimo planą</a> (OAuth ir API raktas). „OmniRoute“ taip pat yra pirmasis Brazilijos atvirojo kodo projektas „Kimi“ paramos programoje. <a href="https://platform.kimi.ai"><b>Gaukite „Kimi“ API raktą su 15 % papildomų kreditų →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — partnerių registracija · užsiregistravę gaukite <b>$100 nemokamų kreditų</b> (nemokamas serveris, todėl tikėtina didesnė delsa — geriausiai tinka testavimui, o ne gamybinei aplinkai). Visavertis palaikymas „OmniRoute“ nuo <b>v3.8.50</b>: Chat Completions, su Anthropic suderinamas duomenų perdavimo formatas ir su OpenAI suderinamas kelias. Galimi modeliai: <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ir kiti. <b><a href="https://agentrouter.org/register?aff=70LM">Pasiimkite savo $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — partnerių registracija · užsiregistravę gaukite <b>$100 nemokamų kreditų</b> (nemokamas serveris, todėl tikėtina didesnė delsa — geriausiai tinka testavimui, o ne gamybinei aplinkai). Visavertis palaikymas „OmniRoute“ nuo <b>v3.8.50</b>: Chat Completions, su Anthropic suderinamas duomenų perdavimo formatas ir su OpenAI suderinamas kelias. Galimi modeliai: <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ir kiti. <b><a href="https://agentrouter.org/register">Pasiimkite savo $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Partnerio nuoroda — „OmniRoute“ nesieja rėmimo ar partnerystės santykiai su šiuo teikėju.</i></sub>
     </td>

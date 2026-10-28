@@ -194,7 +194,7 @@ Claude, Claude Code-ന് അനുയോജ്യമായ റൂട്ടു�
 
 #### Kimi K2 (പ്രതിമാസം $9 എന്ന സ്ഥിരനിരക്ക്)
 
-1. സബ്സ്ക്രൈബ് ചെയ്യുക: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. സബ്സ്ക്രൈബ് ചെയ്യുക: [Moonshot AI](https://platform.kimi.ai)
 2. API key നേടുക → ഡാഷ്ബോർഡ് → API Key ചേർക്കുക
 
 **ഉപയോഗിക്കുക:** `kimi/kimi-k2.5` — **പ്രോ ടിപ്പ്:** 10M ടോക്കണുകൾക്ക് പ്രതിമാസം സ്ഥിരമായി $9 = ഫലപ്രദമായ ചെലവ് $0.90/1M!

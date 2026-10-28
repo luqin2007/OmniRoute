@@ -191,7 +191,7 @@ Claude ಮತ್ತು Claude Code-ಹೊಂದಾಣಿಕೆಯ ಮಾರ್�
 
 #### Kimi K2 (ತಿಂಗಳಿಗೆ ನಿಗದಿತ $9)
 
-1. ಚಂದಾದಾರರಾಗಿ: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. ಚಂದಾದಾರರಾಗಿ: [Moonshot AI](https://platform.kimi.ai)
 2. API ಕೀ ಪಡೆಯಿರಿ → ಡ್ಯಾಶ್ಬೋರ್ಡ್ → API ಕೀ ಸೇರಿಸಿ
 
 **ಬಳಕೆ:** `kimi/kimi-k2.5` — **ತಜ್ಞರ ಸಲಹೆ:** 10M ಟೋಕನ್ಗಳಿಗೆ ತಿಂಗಳಿಗೆ ನಿಗದಿತ $9 = $0.90/1M ಪರಿಣಾಮಕಾರಿ ವೆಚ್ಚ!

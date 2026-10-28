@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — オープンフロンティアインテリジェンス · 2.8Tパラメータ · 1Mトークンコンテキスト"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       このプロジェクトを支援してくださる、創設オープンソースフレンドである<b>Kimi (Moonshot AI)</b>に感謝いたします！Kimiは、オープンウェイトのK2およびK3モデルファミリーを開発するAIラボです。<b>Kimi K3</b>は、1Mトークンのコンテキストウィンドウ、ネイティブビジョン、フロンティアレベルのコーディングを、クローズドモデルのわずかな価格で提供し、Claude Code、Codex、およびOmniRouteが提供するすべてのコーディングツールとすぐに連携します。
       <br/><br/>
-      <b>Kimiのサポートがもたらすもの:</b> KimiのAPIクレジットは、OmniRouteのAI検証済みリリースパイプライン（すべてのプルリクエストが出荷される前にレビューされる<i>Kimi K3によるマージ検証</i>ステージ）と、日々の機能開発を支えています。ファーストクラスのKimiサポートは、直接の<a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a>（<code>kimi-k3</code>）と<a href="https://www.kimi.ai/code?aff=omniroute">Kimi Codeコーディングプラン</a>（OAuthおよびAPIキー）の両方で提供されます。OmniRouteは、Kimiのサポートプログラムにおける最初のブラジル製オープンソースプロジェクトでもあります。<a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15%追加クレジット付きのKimi APIキーを入手 →</b></a>
+      <b>Kimiのサポートがもたらすもの:</b> KimiのAPIクレジットは、OmniRouteのAI検証済みリリースパイプライン（すべてのプルリクエストが出荷される前にレビューされる<i>Kimi K3によるマージ検証</i>ステージ）と、日々の機能開発を支えています。ファーストクラスのKimiサポートは、直接の<a href="https://platform.kimi.ai">Kimi API</a>（<code>kimi-k3</code>）と<a href="https://www.kimi.ai/code">Kimi Codeコーディングプラン</a>（OAuthおよびAPIキー）の両方で提供されます。OmniRouteは、Kimiのサポートプログラムにおける最初のブラジル製オープンソースプロジェクトでもあります。<a href="https://platform.kimi.ai"><b>15%追加クレジット付きのKimi APIキーを入手 →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — アフィリエイト登録 · 登録時に<b>$100の無料クレジット</b>（無料サーバー、レイテンシが高くなる可能性があります — 本番環境ではなくテストに最適）。OmniRouteでは<b>v3.8.50</b>以降、チャット補完、Anthropic互換のワイヤーフォーマット、OpenAI互換パスでファーストクラスのサポートを提供。利用可能なモデルには<code>claude-opus-4-8</code>、<code>claude-opus-5</code>、<code>gpt-5.6-sol</code>などがあります。<b><a href="https://agentrouter.org/register?aff=70LM">$100を獲得 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — アフィリエイト登録 · 登録時に<b>$100の無料クレジット</b>（無料サーバー、レイテンシが高くなる可能性があります — 本番環境ではなくテストに最適）。OmniRouteでは<b>v3.8.50</b>以降、チャット補完、Anthropic互換のワイヤーフォーマット、OpenAI互換パスでファーストクラスのサポートを提供。利用可能なモデルには<code>claude-opus-4-8</code>、<code>claude-opus-5</code>、<code>gpt-5.6-sol</code>などがあります。<b><a href="https://agentrouter.org/register">$100を獲得 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>アフィリエイトリンク — OmniRouteはこのプロバイダーとのスポンサーシップやパートナーシップはありません。</i></sub>
     </td>

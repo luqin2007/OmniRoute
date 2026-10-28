@@ -191,7 +191,7 @@ Samfura:
 
 #### Kimi K2 ($9/wata ƙayyadadden farashi)
 
-1. Yi rajistar biyan kuɗi: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Yi rajistar biyan kuɗi: [Moonshot AI](https://platform.kimi.ai)
 2. Sami maɓallin API → Dashboard → Ƙara Maɓallin API
 
 **Amfani:** `kimi/kimi-k2.5` — **Shawarar Ƙwararru:** Ƙayyadadden $9/wata don tokens miliyan 10 = ingantaccen farashin $0.90/1M!

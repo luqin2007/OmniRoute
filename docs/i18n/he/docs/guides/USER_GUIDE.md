@@ -191,7 +191,7 @@
 
 #### Kimi K2 (מחיר קבוע של $9 לחודש)
 
-1. הירשמו למנוי: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. הירשמו למנוי: [Moonshot AI](https://platform.kimi.ai)
 2. קבלו מפתח API → לוח הבקרה → הוספת מפתח API
 
 **שימוש:** `kimi/kimi-k2.5` — **טיפ מקצועי:** מחיר קבוע של $9 לחודש עבור 10 מיליון אסימונים = עלות אפקטיבית של $0.90/1M!

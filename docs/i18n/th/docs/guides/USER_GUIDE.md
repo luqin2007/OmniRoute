@@ -191,7 +191,7 @@
 
 #### Kimi K2 (เหมาจ่าย $9/เดือน)
 
-1. สมัครสมาชิก: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. สมัครสมาชิก: [Moonshot AI](https://platform.kimi.ai)
 2. รับ API Key → แดชบอร์ด → เพิ่ม API Key
 
 **การใช้งาน:** `kimi/kimi-k2.5` — **เคล็ดลับ:** ราคาเหมาจ่าย $9/เดือนสำหรับ 10M โทเค็น = ต้นทุนจริง $0.90/1M!

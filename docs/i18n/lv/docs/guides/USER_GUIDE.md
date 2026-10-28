@@ -191,7 +191,7 @@ Modeļi:
 
 #### Kimi K2 (fiksēta maksa $9 mēnesī)
 
-1. Abonējiet: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abonējiet: [Moonshot AI](https://platform.kimi.ai)
 2. Iegūstiet API atslēgu → Informācijas panelis → Pievienot API atslēgu
 
 **Lietošana:** `kimi/kimi-k2.5` — **Profesionāļa padoms:** Fiksēta maksa $9 mēnesī par 10M pilnvaru = faktiskās izmaksas $0.90/1M!

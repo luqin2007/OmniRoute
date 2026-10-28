@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="కిమి K3 — ఓపెన్ ఫ్రాంటియర్ ఇంటెలిజెన్స్ · 2.8T పారామీటర్లు · 1M-టోకెన్ సందర్భం"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="కిమి (మూన్షాట్ AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ఈ ప్రాజెక్ట్కు మద్దతు ఇచ్చిన మా స్థాపక ఓపెన్ సోర్స్ స్నేహితుడు <b>కిమి (మూన్షాట్ AI)</b>కి ధన్యవాదాలు! కిమి అనేది ఓపెన్-వెయిట్ K2 మరియు K3 మోడల్ కుటుంబాల వెనుక ఉన్న AI ల్యాబ్ — <b>కిమి K3</b> 1M-టోకెన్ సందర్భ విండో, స్థానిక దృష్టి మరియు క్లోజ్డ్-మోడల్ ధరలలో కొంత భాగంలో ఫ్రాంటియర్-స్థాయి కోడింగ్ను అందిస్తుంది మరియు క్లాడ్ కోడ్, కోడెక్ మరియు ఓమ్నిరూట్ అందించే ప్రతి కోడింగ్ టూల్తో బాక్స్ వెలుపల పనిచేస్తుంది.
       <br/><br/>
-      <b>కిమి మద్దతు ఏమిటి:</b> కిమి యొక్క API క్రెడిట్లు ఓమ్నిరూట్ యొక్క AI-ధృవీకరించబడిన విడుదల పైప్లైన్కు శక్తినిస్తాయి — ప్రతి పుల్ రిక్వెస్ట్ను షిప్ చేయడానికి ముందు సమీక్షించే <i>కిమి K3 ద్వారా విలీన ధృవీకరణ</i> దశ — ప్లస్ రోజువారీ ఫీచర్ అభివృద్ధి. ఫస్ట్-క్లాస్ కిమి మద్దతు రెండు రైళ్లలో షిప్లు: డైరెక్ట్ <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">కిమి API</a> (<code>kimi-k3</code>) మరియు <a href="https://www.kimi.ai/code?aff=omniroute">కిమి కోడ్ కోడింగ్ ప్లాన్</a> (OAuth మరియు API కీ). కిమి మద్దతు కార్యక్రమంలో ఓమ్నిరూట్ మొదటి బ్రెజిలియన్ ఓపెన్-సోర్స్ ప్రాజెక్ట్ కూడా. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% అదనపు క్రెడిట్లతో కిమి API కీని పొందండి →</b></a>
+      <b>కిమి మద్దతు ఏమిటి:</b> కిమి యొక్క API క్రెడిట్లు ఓమ్నిరూట్ యొక్క AI-ధృవీకరించబడిన విడుదల పైప్లైన్కు శక్తినిస్తాయి — ప్రతి పుల్ రిక్వెస్ట్ను షిప్ చేయడానికి ముందు సమీక్షించే <i>కిమి K3 ద్వారా విలీన ధృవీకరణ</i> దశ — ప్లస్ రోజువారీ ఫీచర్ అభివృద్ధి. ఫస్ట్-క్లాస్ కిమి మద్దతు రెండు రైళ్లలో షిప్లు: డైరెక్ట్ <a href="https://platform.kimi.ai">కిమి API</a> (<code>kimi-k3</code>) మరియు <a href="https://www.kimi.ai/code">కిమి కోడ్ కోడింగ్ ప్లాన్</a> (OAuth మరియు API కీ). కిమి మద్దతు కార్యక్రమంలో ఓమ్నిరూట్ మొదటి బ్రెజిలియన్ ఓపెన్-సోర్స్ ప్రాజెక్ట్ కూడా. <a href="https://platform.kimi.ai"><b>15% అదనపు క్రెడిట్లతో కిమి API కీని పొందండి →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="ఏజెంట్ రూటర్"/>
       </a>
       <br/><sub><b>ఏజెంట్ రూటర్</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">ఏజెంట్ రూటర్</a></b> — అనుబంధ సైన్అప్ · సైన్అప్లో <b>$100 ఉచిత క్రెడిట్లు</b> (ఉచిత సర్వర్, అధిక లేటెన్సీని ఆశించండి — పరీక్ష కోసం ఉత్తమం, ఉత్పత్తికి కాదు). <b>v3.8.50</b> నుండి ఓమ్నిరూట్లో ఫస్ట్-క్లాస్ మద్దతు: చాట్ కంప్లీషన్స్, ఆంత్రోపిక్-అనుకూల వైర్ ఫార్మాట్ మరియు OpenAI-అనుకూల మార్గం. అందుబాటులో ఉన్న మోడల్లలో <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> మరియు మరిన్ని ఉన్నాయి. <b><a href="https://agentrouter.org/register?aff=70LM">$100 పొందండి →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">ఏజెంట్ రూటర్</a></b> — అనుబంధ సైన్అప్ · సైన్అప్లో <b>$100 ఉచిత క్రెడిట్లు</b> (ఉచిత సర్వర్, అధిక లేటెన్సీని ఆశించండి — పరీక్ష కోసం ఉత్తమం, ఉత్పత్తికి కాదు). <b>v3.8.50</b> నుండి ఓమ్నిరూట్లో ఫస్ట్-క్లాస్ మద్దతు: చాట్ కంప్లీషన్స్, ఆంత్రోపిక్-అనుకూల వైర్ ఫార్మాట్ మరియు OpenAI-అనుకూల మార్గం. అందుబాటులో ఉన్న మోడల్లలో <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> మరియు మరిన్ని ఉన్నాయి. <b><a href="https://agentrouter.org/register">$100 పొందండి →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>అనుబంధ లింక్ — ఓమ్నిరూట్కు ఈ ప్రొవైడర్తో ఎటువంటి స్పాన్సర్షిప్ లేదా భాగస్వామ్యం లేదు.</i></sub>
     </td>

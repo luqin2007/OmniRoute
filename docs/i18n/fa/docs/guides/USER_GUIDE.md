@@ -193,7 +193,7 @@
 
 #### Kimi K2 (ماهانه ثابت $9)
 
-1. مشترک شوید: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. مشترک شوید: [Moonshot AI](https://platform.kimi.ai)
 2. کلید API را دریافت کنید ← داشبورد ← افزودن کلید API
 
 **استفاده:** `kimi/kimi-k2.5` — **نکته حرفهای:** ماهانه $9 ثابت برای ۱۰ میلیون توکن، یعنی هزینه مؤثر $0.90/1M!

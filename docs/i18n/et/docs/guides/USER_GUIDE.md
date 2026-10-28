@@ -193,7 +193,7 @@ Mudelid:
 
 #### Kimi K2 (fikseeritud $9 kuus)
 
-1. Tellige: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Tellige: [Moonshot AI](https://platform.kimi.ai)
 2. Hankige API-võti → Dashboard → Add API Key
 
 **Kasutamine:** `kimi/kimi-k2.5` — **Profinõuanne:** Fikseeritud $9 kuus 10M tokeni eest = tegelik kulu $0.90/1M!

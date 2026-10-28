@@ -193,7 +193,7 @@ Modeliai:
 
 #### Kimi K2 (fiksuotas $9/mėn. mokestis)
 
-1. Užsiprenumeruokite: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Užsiprenumeruokite: [Moonshot AI](https://platform.kimi.ai)
 2. Gaukite API raktą → Valdymo skydas → Pridėti API raktą
 
 **Naudojimas:** `kimi/kimi-k2.5` — **Profesionalo patarimas:** fiksuotas $9/mėn. mokestis už 10M žetonų = faktinė $0.90/1M kaina!

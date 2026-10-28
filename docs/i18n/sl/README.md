@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — odprta pionirska inteligenca · 2,8 bilijona parametrov · kontekst z 1 milijonom žetonov"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Hvala podjetju <b>Kimi (Moonshot AI)</b>, našemu ustanovnemu odprtokodnemu prijatelju, za podporo temu projektu! Kimi je laboratorij za umetno inteligenco, ki stoji za družinama modelov z odprtimi utežmi K2 in K3 — <b>Kimi K3</b> zagotavlja kontekstno okno z 1 milijonom žetonov, izvorno podporo za vid in programiranje na pionirski ravni za delček cene zaprtih modelov, poleg tega pa brez dodatnih nastavitev deluje s Claude Code, Codex in vsakim programerskim orodjem, ki ga podpira OmniRoute.
       <br/><br/>
-      <b>Kaj omogoča podpora podjetja Kimi:</b> Dobroimetje za Kimi API poganja z umetno inteligenco podprt postopek preverjanja izdaj projekta OmniRoute — fazo <i>preverjanja združitev, ki jo poganja Kimi K3</i>, v kateri je vsak zahtevek za vključitev sprememb pregledan pred izdajo — ter vsakodnevni razvoj funkcionalnosti. Prvorazredna podpora za Kimi je na voljo po obeh poteh: neposredno prek <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) in prek <a href="https://www.kimi.ai/code?aff=omniroute">programerskega paketa Kimi Code</a> (OAuth in ključ API). OmniRoute je tudi prvi brazilski odprtokodni projekt v podpornem programu podjetja Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Pridobite ključ za Kimi API s 15 % dodatnega dobroimetja →</b></a>
+      <b>Kaj omogoča podpora podjetja Kimi:</b> Dobroimetje za Kimi API poganja z umetno inteligenco podprt postopek preverjanja izdaj projekta OmniRoute — fazo <i>preverjanja združitev, ki jo poganja Kimi K3</i>, v kateri je vsak zahtevek za vključitev sprememb pregledan pred izdajo — ter vsakodnevni razvoj funkcionalnosti. Prvorazredna podpora za Kimi je na voljo po obeh poteh: neposredno prek <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) in prek <a href="https://www.kimi.ai/code">programerskega paketa Kimi Code</a> (OAuth in ključ API). OmniRoute je tudi prvi brazilski odprtokodni projekt v podpornem programu podjetja Kimi. <a href="https://platform.kimi.ai"><b>Pridobite ključ za Kimi API s 15 % dodatnega dobroimetja →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — registracija prek partnerske povezave · <b>100 $ brezplačnega dobroimetja</b> ob registraciji (brezplačen strežnik, zato pričakujte večjo zakasnitev — najbolje za preizkušanje, ne za produkcijo). Prvorazredna podpora v projektu OmniRoute od različice <b>v3.8.50</b>: Chat Completions, prenosni format, združljiv z Anthropic, in pot, združljiva z OpenAI. Razpoložljivi modeli vključujejo <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> in druge. <b><a href="https://agentrouter.org/register?aff=70LM">Prevzemite svojih 100 $ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — registracija prek partnerske povezave · <b>100 $ brezplačnega dobroimetja</b> ob registraciji (brezplačen strežnik, zato pričakujte večjo zakasnitev — najbolje za preizkušanje, ne za produkcijo). Prvorazredna podpora v projektu OmniRoute od različice <b>v3.8.50</b>: Chat Completions, prenosni format, združljiv z Anthropic, in pot, združljiva z OpenAI. Razpoložljivi modeli vključujejo <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> in druge. <b><a href="https://agentrouter.org/register">Prevzemite svojih 100 $ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Partnerska povezava — OmniRoute nima sponzorskega ali partnerskega odnosa s tem ponudnikom.</i></sub>
     </td>

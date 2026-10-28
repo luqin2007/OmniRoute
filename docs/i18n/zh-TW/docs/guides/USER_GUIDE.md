@@ -191,7 +191,7 @@ Claude 與 Claude Code 相容路由會保留 Opus 和 Sonnet 模型的 `max` 思
 
 #### Kimi K2（每月固定 $9）
 
-1. 訂閱：[Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. 訂閱：[Moonshot AI](https://platform.kimi.ai)
 2. 取得 API 金鑰 → 控制台 → 新增 API 金鑰
 
 **使用方式：**`kimi/kimi-k2.5` — **專業提示：**每月固定 $9 可使用 10M 個權杖，實際成本為 $0.90/1M！

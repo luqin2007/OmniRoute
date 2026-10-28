@@ -193,7 +193,7 @@ Dashboard → Providers → GitHubን ያገናኙ
 
 #### Kimi K2 (ቋሚ $9/ወር)
 
-1. ይመዝገቡ፦ [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. ይመዝገቡ፦ [Moonshot AI](https://platform.kimi.ai)
 2. API key ያግኙ → Dashboard → Add API Key
 
 **አጠቃቀም:** `kimi/kimi-k2.5` — **የባለሙያ ምክር:** ለ10M ቶከኖች ቋሚ $9/ወር = በተግባር $0.90/1M ወጪ!

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Nyílt Határ Intelligencia · 2.8T paraméter · 1M-token kontextus"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Köszönjük a <b>Kimi (Moonshot AI)</b>-nak, alapító nyílt forráskódú barátunknak, hogy támogatja ezt a projektet! A Kimi az AI labor a nyílt súlyú K2 és K3 modellcsaládok mögött — a <b>Kimi K3</b> 1M-token kontextusablakot, natív látást és határszintű kódolást biztosít a zárt modellek árának töredékéért, és azonnal működik a Claude Code, Codex és minden kódoló eszközzel, amit az OmniRoute kiszolgál.
       <br/><br/>
-      <b>Mire használja a Kimi támogatását:</b> A Kimi API kreditek az OmniRoute AI-val validált kiadási folyamatát táplálják — a <i>Kimi K3 által működtetett egyesítési validálás</i> fázist, amely minden pull requestet áttekint, mielőtt kiadják — plusz a napi funkciófejlesztést. Az első osztályú Kimi támogatás mindkét sínen elérhető: a közvetlen <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) és a <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code kódolási terv</a> (OAuth és API kulcs). Az OmniRoute az első brazil nyílt forráskódú projekt a Kimi támogatási programjában. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Szerezzen Kimi API kulcsot 15% extra kredittel →</b></a>
+      <b>Mire használja a Kimi támogatását:</b> A Kimi API kreditek az OmniRoute AI-val validált kiadási folyamatát táplálják — a <i>Kimi K3 által működtetett egyesítési validálás</i> fázist, amely minden pull requestet áttekint, mielőtt kiadják — plusz a napi funkciófejlesztést. Az első osztályú Kimi támogatás mindkét sínen elérhető: a közvetlen <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) és a <a href="https://www.kimi.ai/code">Kimi Code kódolási terv</a> (OAuth és API kulcs). Az OmniRoute az első brazil nyílt forráskódú projekt a Kimi támogatási programjában. <a href="https://platform.kimi.ai"><b>Szerezzen Kimi API kulcsot 15% extra kredittel →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — partneri regisztráció · <b>100 dollár ingyenes kredit</b> regisztrációkor (ingyenes szerver, magasabb késleltetésre számíthat – tesztelésre a legjobb, nem éles környezetbe). Első osztályú támogatás az OmniRoute-ban <b>v3.8.50</b> óta: Chat Completions, az Anthropic-kompatibilis vezetékes formátum és az OpenAI-kompatibilis útvonal. Elérhető modellek: <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> és még sok más. <b><a href="https://agentrouter.org/register?aff=70LM">Szerezze meg a 100 dollárját →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — partneri regisztráció · <b>100 dollár ingyenes kredit</b> regisztrációkor (ingyenes szerver, magasabb késleltetésre számíthat – tesztelésre a legjobb, nem éles környezetbe). Első osztályú támogatás az OmniRoute-ban <b>v3.8.50</b> óta: Chat Completions, az Anthropic-kompatibilis vezetékes formátum és az OpenAI-kompatibilis útvonal. Elérhető modellek: <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> és még sok más. <b><a href="https://agentrouter.org/register">Szerezze meg a 100 dollárját →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Partneri link – Az OmniRoute-nak nincs szponzorálási vagy partnerségi kapcsolata ezzel a szolgáltatóval.</i></sub>
     </td>

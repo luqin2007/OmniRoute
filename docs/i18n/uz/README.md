@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Ochiq chegara intellekti · 2.8T parametrlar · 1M-token kontekst"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Ushbu loyihani qoʻllab-quvvatlagani uchun bizning taʼsischi Ochiq manbali doʻstimiz <b>Kimi (Moonshot AI)</b>ga rahmat! Kimi ochiq ogʻirlikdagi K2 va K3 model oilalari ortidagi AI laboratoriyasidir — <b>Kimi K3</b> 1M-token kontekst oynasini, mahalliy koʻrish va chegara darajasidagi kodlashni yopiq modellar narxining bir qismida taqdim etadi va Claude Code, Codex va OmniRoute xizmat koʻrsatadigan har bir kodlash vositasi bilan qutidan tashqarida ishlaydi.
       <br/><br/>
-      <b>Kimi qoʻllab-quvvatlashi nimani quvvatlaydi:</b> Kimi API kreditlari OmniRoute-ning AI tomonidan tasdiqlangan chiqarish quvurini quvvatlaydi — har bir tortish soʻrovini joʻnatishdan oldin koʻrib chiqadigan <i>Kimi K3 tomonidan quvvatlanadigan birlashishni tasdiqlash</i> bosqichi — shuningdek, kundalik xususiyatlarni ishlab chiqish. Birinchi darajali Kimi qoʻllab-quvvatlashi ikkala yoʻnalishda ham mavjud: toʻgʻridan-toʻgʻri <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) va <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code kodlash rejasi</a> (OAuth va API kaliti). OmniRoute, shuningdek, Kimi qoʻllab-quvvatlash dasturidagi birinchi Braziliya ochiq manbali loyihasidir. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% qoʻshimcha kreditlar bilan Kimi API kalitini oling →</b></a>
+      <b>Kimi qoʻllab-quvvatlashi nimani quvvatlaydi:</b> Kimi API kreditlari OmniRoute-ning AI tomonidan tasdiqlangan chiqarish quvurini quvvatlaydi — har bir tortish soʻrovini joʻnatishdan oldin koʻrib chiqadigan <i>Kimi K3 tomonidan quvvatlanadigan birlashishni tasdiqlash</i> bosqichi — shuningdek, kundalik xususiyatlarni ishlab chiqish. Birinchi darajali Kimi qoʻllab-quvvatlashi ikkala yoʻnalishda ham mavjud: toʻgʻridan-toʻgʻri <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) va <a href="https://www.kimi.ai/code">Kimi Code kodlash rejasi</a> (OAuth va API kaliti). OmniRoute, shuningdek, Kimi qoʻllab-quvvatlash dasturidagi birinchi Braziliya ochiq manbali loyihasidir. <a href="https://platform.kimi.ai"><b>15% qoʻshimcha kreditlar bilan Kimi API kalitini oling →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — hamkorlik roʻyxatdan oʻtish · roʻyxatdan oʻtishda <b>$100 bepul kreditlar</b> (bepul server, yuqori kechikishni kuting — sinov uchun eng yaxshi, ishlab chiqarish uchun emas). OmniRoute-da <b>v3.8.50</b> dan beri birinchi darajali qoʻllab-quvvatlash: Chat Completions, Anthropic-mos keluvchi sim format va OpenAI-mos keluvchi yoʻl. Mavjud modellar orasida <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> va boshqalar mavjud. <b><a href="https://agentrouter.org/register?aff=70LM">Sizning $100 ni oling →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — hamkorlik roʻyxatdan oʻtish · roʻyxatdan oʻtishda <b>$100 bepul kreditlar</b> (bepul server, yuqori kechikishni kuting — sinov uchun eng yaxshi, ishlab chiqarish uchun emas). OmniRoute-da <b>v3.8.50</b> dan beri birinchi darajali qoʻllab-quvvatlash: Chat Completions, Anthropic-mos keluvchi sim format va OpenAI-mos keluvchi yoʻl. Mavjud modellar orasida <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> va boshqalar mavjud. <b><a href="https://agentrouter.org/register">Sizning $100 ni oling →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Hamkorlik havolasi — OmniRoute ushbu provayder bilan homiylik yoki hamkorlik qilmaydi.</i></sub>
     </td>

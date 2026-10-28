@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Imọye Aala Ṣiṣi · 2.8T awọn paramita · 1M-token ipo"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       O ṣeun si <b>Kimi (Moonshot AI)</b>, Ọrẹ Orisun Ṣiṣi oludasile wa, fun atilẹyin iṣẹ akanṣe yii! Kimi jẹ yàrá AI lẹhin awọn idile awoṣe K2 ati K3 ti o ni iwuwo ṣiṣi — <b>Kimi K3</b> n pese window ipo 1M-token, iran abinibi ati koodu ipele aala ni ida kan ti awọn idiyele awoṣe pipade, ati pe o ṣiṣẹ ni ita apoti pẹlu Claude Code, Codex ati gbogbo ohun elo koodu ti OmniRoute n pese.
       <br/><br/>
-      <b>Kini atilẹyin Kimi n fun agbara:</b> Awọn kirediti API Kimi n fun agbara opo gigun ti ifasilẹ ti OmniRoute ti AI-fọwọsi — ipele <i>ijẹrisi iṣọkan ti o ni agbara nipasẹ Kimi K3</i> ti o ṣe atunyẹwo gbogbo ibeere ifamọra ṣaaju ki o to firanṣẹ — pẹlu idagbasoke ẹya ojoojumọ. Atilẹyin Kimi kilasi akọkọ n firanṣẹ lori awọn oju-irin mejeeji: taara <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) ati <a href="https://www.kimi.ai/code?aff=omniroute">eto koodu Kimi Code</a> (OAuth ati bọtini API). OmniRoute tun jẹ iṣẹ akanṣe orisun ṣiṣi akọkọ ti Brazil ninu eto atilẹyin Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Gba bọtini API Kimi pẹlu 15% awọn kirediti afikun →</b></a>
+      <b>Kini atilẹyin Kimi n fun agbara:</b> Awọn kirediti API Kimi n fun agbara opo gigun ti ifasilẹ ti OmniRoute ti AI-fọwọsi — ipele <i>ijẹrisi iṣọkan ti o ni agbara nipasẹ Kimi K3</i> ti o ṣe atunyẹwo gbogbo ibeere ifamọra ṣaaju ki o to firanṣẹ — pẹlu idagbasoke ẹya ojoojumọ. Atilẹyin Kimi kilasi akọkọ n firanṣẹ lori awọn oju-irin mejeeji: taara <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) ati <a href="https://www.kimi.ai/code">eto koodu Kimi Code</a> (OAuth ati bọtini API). OmniRoute tun jẹ iṣẹ akanṣe orisun ṣiṣi akọkọ ti Brazil ninu eto atilẹyin Kimi. <a href="https://platform.kimi.ai"><b>Gba bọtini API Kimi pẹlu 15% awọn kirediti afikun →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — iforukọsilẹ alafaramo · <b>$100 awọn kirediti ọfẹ</b> lori iforukọsilẹ (olupin ọfẹ, nireti idaduro ti o ga julọ — o dara julọ fun idanwo, kii ṣe iṣelọpọ). Atilẹyin kilasi akọkọ ni OmniRoute lati <b>v3.8.50</b>: Awọn ipari iwiregbe, ọna kika okun ti o ni ibamu pẹlu Anthropic ati ọna ti o ni ibamu pẹlu OpenAI. Awọn awoṣe ti o wa pẹlu <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ati diẹ sii. <b><a href="https://agentrouter.org/register?aff=70LM">Gba $100 rẹ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — iforukọsilẹ alafaramo · <b>$100 awọn kirediti ọfẹ</b> lori iforukọsilẹ (olupin ọfẹ, nireti idaduro ti o ga julọ — o dara julọ fun idanwo, kii ṣe iṣelọpọ). Atilẹyin kilasi akọkọ ni OmniRoute lati <b>v3.8.50</b>: Awọn ipari iwiregbe, ọna kika okun ti o ni ibamu pẹlu Anthropic ati ọna ti o ni ibamu pẹlu OpenAI. Awọn awoṣe ti o wa pẹlu <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ati diẹ sii. <b><a href="https://agentrouter.org/register">Gba $100 rẹ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Ọna asopọ alafaramo — OmniRoute ko ni onigbọwọ tabi ajọṣepọ pẹlu olupese yii.</i></sub>
     </td>

@@ -191,7 +191,7 @@ Modellər:
 
 #### Kimi K2 (aylıq sabit $9)
 
-1. Abunə olun: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abunə olun: [Moonshot AI](https://platform.kimi.ai)
 2. API açarı əldə edin → İdarəetmə paneli → API açarı əlavə et
 
 **İstifadə:** `kimi/kimi-k2.5` — **Peşəkar məsləhət:** 10M token üçün aylıq sabit $9 = effektiv xərc $0.90/1M!

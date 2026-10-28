@@ -193,7 +193,7 @@ Models:
 
 #### Kimi K2 ($9/மாதம் நிலையான கட்டணம்)
 
-1. சந்தா செலுத்துக: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. சந்தா செலுத்துக: [Moonshot AI](https://platform.kimi.ai)
 2. API key-ஐப் பெறவும் → கட்டுப்பாட்டுப் பலகம் → API Key-ஐச் சேர்
 
 **பயன்பாடு:** `kimi/kimi-k2.5` — **சிறப்புக் குறிப்பு:** 10M tokens-க்கு நிலையான $9/மாதம் = நடைமுறைச் செலவு $0.90/1M!

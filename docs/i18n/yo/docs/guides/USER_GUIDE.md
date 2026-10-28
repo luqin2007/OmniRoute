@@ -191,7 +191,7 @@ Pátákó ìṣàkóso → Àwọn Olùpèsè → So GitHub pọ̀
 
 #### Kimi K2 ($9/oṣù láìyípadà)
 
-1. Di alabapin: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Di alabapin: [Moonshot AI](https://platform.kimi.ai)
 2. Gba kọ́kọ́rọ́ API → Pátákó ìṣàkóso → Ṣàfikún Kọ́kọ́rọ́ API
 
 **Lò ó:** `kimi/kimi-k2.5` — **Ìmọ̀ràn Amọ̀ṣẹ́:** $9/oṣù láìyípadà fún token mílíọ̀nù 10 = iye owó gidi $0.90/1M!

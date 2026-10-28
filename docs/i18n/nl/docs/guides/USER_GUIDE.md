@@ -191,7 +191,7 @@ Modellen:
 
 #### Kimi K2 ($9/maand, vast tarief)
 
-1. Neem een abonnement: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Neem een abonnement: [Moonshot AI](https://platform.kimi.ai)
 2. Verkrijg een API-sleutel → Dashboard → Add API Key
 
 **Gebruik:** `kimi/kimi-k2.5` — **Pro-tip:** Een vaste prijs van $9/maand voor 10M tokens = effectief $0.90/1M!

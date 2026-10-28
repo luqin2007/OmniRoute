@@ -191,7 +191,7 @@ Claude ਅਤੇ Claude Code-ਅਨੁਕੂਲ ਰੂਟ, Opus ਅਤੇ Sonnet
 
 #### Kimi K2 ($9/ਮਹੀਨਾ ਨਿਰਧਾਰਤ)
 
-1. ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ: [Moonshot AI](https://platform.kimi.ai)
 2. API key ਪ੍ਰਾਪਤ ਕਰੋ → ਡੈਸ਼ਬੋਰਡ → API Key ਜੋੜੋ
 
 **ਵਰਤੋਂ:** `kimi/kimi-k2.5` — **ਮਾਹਰ ਸੁਝਾਅ:** 10M ਟੋਕਨਾਂ ਲਈ ਨਿਰਧਾਰਤ $9/ਮਹੀਨਾ = $0.90/1M ਦੀ ਪ੍ਰਭਾਵੀ ਲਾਗਤ!

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — avatud tipptasemel tehisintellekt · 2,8T parameetrit · 1M-tokeni kontekst"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Täname <b>Kimit (Moonshot AI)</b>, meie asutajast avatud lähtekoodiga sõpra, selle projekti toetamise eest! Kimi on avatud kaaludega K2 ja K3 mudeliperekondade taga olev tehisintellektilabor — <b>Kimi K3</b> pakub 1M-tokeni kontekstiakent, loomulikku pilditöötlust ja tipptasemel programmeerimisvõimekust murdosa eest suletud mudelite hinnast ning töötab kohe Claude Code'i, Codexi ja kõigi OmniRoute'i toetatavate programmeerimistööriistadega.
       <br/><br/>
-      <b>Mida Kimi toetus võimaldab:</b> Kimi API-krediidid käitavad OmniRoute'i tehisintellektiga valideeritud väljalaskekonveierit — etappi <i>ühendamise valideerimine Kimi K3 abil</i>, mis kontrollib iga tõmbetaotlust enne selle avaldamist — ning toetavad igapäevast funktsioonide arendust. Kimi esmaklassiline tugi on saadaval mõlema kanali kaudu: otse <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) ja <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code'i programmeerimispaketi</a> kaudu (OAuth ja API-võti). OmniRoute on ka esimene Brasiilia avatud lähtekoodiga projekt Kimi toetusprogrammis. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Hankige Kimi API-võti koos 15% lisakrediidiga →</b></a>
+      <b>Mida Kimi toetus võimaldab:</b> Kimi API-krediidid käitavad OmniRoute'i tehisintellektiga valideeritud väljalaskekonveierit — etappi <i>ühendamise valideerimine Kimi K3 abil</i>, mis kontrollib iga tõmbetaotlust enne selle avaldamist — ning toetavad igapäevast funktsioonide arendust. Kimi esmaklassiline tugi on saadaval mõlema kanali kaudu: otse <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) ja <a href="https://www.kimi.ai/code">Kimi Code'i programmeerimispaketi</a> kaudu (OAuth ja API-võti). OmniRoute on ka esimene Brasiilia avatud lähtekoodiga projekt Kimi toetusprogrammis. <a href="https://platform.kimi.ai"><b>Hankige Kimi API-võti koos 15% lisakrediidiga →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — partneri kaudu registreerumine · <b>registreerumisel $100 tasuta krediiti</b> (tasuta server, arvestage suurema latentsusega — sobib kõige paremini testimiseks, mitte tootmiskeskkonda). Esmaklassiline tugi OmniRoute'is alates versioonist <b>v3.8.50</b>: vestluse lõpuleviimised, Anthropicuga ühilduv andmevahetusvorming ja OpenAI-ga ühilduv tee. Saadaolevate mudelite hulka kuuluvad <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ja teised. <b><a href="https://agentrouter.org/register?aff=70LM">Võtke oma $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — partneri kaudu registreerumine · <b>registreerumisel $100 tasuta krediiti</b> (tasuta server, arvestage suurema latentsusega — sobib kõige paremini testimiseks, mitte tootmiskeskkonda). Esmaklassiline tugi OmniRoute'is alates versioonist <b>v3.8.50</b>: vestluse lõpuleviimised, Anthropicuga ühilduv andmevahetusvorming ja OpenAI-ga ühilduv tee. Saadaolevate mudelite hulka kuuluvad <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ja teised. <b><a href="https://agentrouter.org/register">Võtke oma $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Partnerlink — OmniRoute'il ei ole selle teenusepakkujaga sponsorlus- ega partnerlussuhet.</i></sub>
     </td>

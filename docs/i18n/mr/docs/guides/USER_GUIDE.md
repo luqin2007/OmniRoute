@@ -191,7 +191,7 @@ Claude आणि Claude Code-सुसंगत रूट्स Opus आणि S
 
 #### Kimi K2 (दरमहा निश्चित $9)
 
-1. सदस्यता घ्या: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. सदस्यता घ्या: [Moonshot AI](https://platform.kimi.ai)
 2. API की मिळवा → डॅशबोर्ड → API की जोडा
 
 **वापर:** `kimi/kimi-k2.5` — **उपयुक्त सूचना:** 10M टोकन्ससाठी दरमहा निश्चित $9 = प्रभावी खर्च $0.90/1M!

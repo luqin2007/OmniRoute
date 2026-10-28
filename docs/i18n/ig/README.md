@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Ekele dịrị <b>Kimi (Moonshot AI)</b>, Enyi Anyị Na-emeghe Isi Iyi na-amalite, maka ịkwado ọrụ a! Kimi bụ ụlọ nyocha AI n'azụ ezinụlọ ihe nlereanya K2 na K3 nwere ibu arọ mepere emepe — <b>Kimi K3</b> na-enye windo gburugburu 1M-token, ọhụụ ala na koodu ọkwa ókèala na ọnụ ahịa dị ala karịa ihe nlereanya mechiri emechi, ma na-arụ ọrụ ozugbo na Claude Code, Codex na ngwaọrụ koodu ọ bụla OmniRoute na-enye.
       <br/><br/>
-      <b>Ihe nkwado Kimi na-enye ike:</b> Ebe nchekwa API nke Kimi na-enye ike usoro mwepụta OmniRoute AI-validated — ọkwa <i>nkwenye njikọta nke Kimi K3 kwadoro</i> nke na-enyocha arịrịọ ịdọrọ ọ bụla tupu ebuga ya — tinyere mmepe njirimara kwa ụbọchị. Nkwado Kimi nke mbụ na-ebugharị n'ụzọ abụọ: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) na <a href="https://www.kimi.ai/code?aff=omniroute">atụmatụ koodu Kimi Code</a> (OAuth na igodo API). OmniRoute bụkwa ọrụ isi iyi mepere emepe nke Brazil mbụ na mmemme nkwado Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Nweta igodo API Kimi nwere 15% mgbakwunye kredit →</b></a>
+      <b>Ihe nkwado Kimi na-enye ike:</b> Ebe nchekwa API nke Kimi na-enye ike usoro mwepụta OmniRoute AI-validated — ọkwa <i>nkwenye njikọta nke Kimi K3 kwadoro</i> nke na-enyocha arịrịọ ịdọrọ ọ bụla tupu ebuga ya — tinyere mmepe njirimara kwa ụbọchị. Nkwado Kimi nke mbụ na-ebugharị n'ụzọ abụọ: <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) na <a href="https://www.kimi.ai/code">atụmatụ koodu Kimi Code</a> (OAuth na igodo API). OmniRoute bụkwa ọrụ isi iyi mepere emepe nke Brazil mbụ na mmemme nkwado Kimi. <a href="https://platform.kimi.ai"><b>Nweta igodo API Kimi nwere 15% mgbakwunye kredit →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — ndebanye aha mmekọ · <b>$100 kredit n'efu</b> na ndebanye aha (ihe nkesa n'efu, tụọ anya oge nkwụsị dị elu — kacha mma maka nnwale, ọ bụghị mmepụta). Nkwado nke mbụ na OmniRoute kemgbe <b>v3.8.50</b>: Nkwụsị Nkata, usoro waya dakọtara na Anthropic na ụzọ dakọtara na OpenAI. Ihe nlereanya dị gụnyere <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> na ndị ọzọ. <b><a href="https://agentrouter.org/register?aff=70LM">Nweta $100 gị →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — ndebanye aha mmekọ · <b>$100 kredit n'efu</b> na ndebanye aha (ihe nkesa n'efu, tụọ anya oge nkwụsị dị elu — kacha mma maka nnwale, ọ bụghị mmepụta). Nkwado nke mbụ na OmniRoute kemgbe <b>v3.8.50</b>: Nkwụsị Nkata, usoro waya dakọtara na Anthropic na ụzọ dakọtara na OpenAI. Ihe nlereanya dị gụnyere <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> na ndị ọzọ. <b><a href="https://agentrouter.org/register">Nweta $100 gị →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Njikọ mmekọ — OmniRoute enweghị nkwado ma ọ bụ mmekọrịta ya na onye na-enye ọrụ a.</i></sub>
     </td>

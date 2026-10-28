@@ -191,7 +191,7 @@ Route ដែលឆបគ្នាជាមួយ Claude និង Claude Code �
 
 #### Kimi K2 ($9/ខែ តម្លៃថេរ)
 
-1. ជាវ៖ [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. ជាវ៖ [Moonshot AI](https://platform.kimi.ai)
 2. ទទួលយក API key → ផ្ទាំងគ្រប់គ្រង → បន្ថែម API Key
 
 **ការប្រើប្រាស់:** `kimi/kimi-k2.5` — **គន្លឹះជំនាញ:** តម្លៃថេរ $9/ខែ សម្រាប់ 10M tokens = ថ្លៃដើមជាក់ស្ដែង $0.90/1M!

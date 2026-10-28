@@ -193,7 +193,7 @@ Modellek:
 
 #### Kimi K2 (Fix $9/hónap)
 
-1. Fizessen elő: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Fizessen elő: [Moonshot AI](https://platform.kimi.ai)
 2. Szerezze be az API-kulcsot → Irányítópult → API-kulcs hozzáadása
 
 **Használat:** `kimi/kimi-k2.5` — **Profi tipp:** Fix $9/hónap 10M tokenért = ténylegesen $0.90/1M költség!

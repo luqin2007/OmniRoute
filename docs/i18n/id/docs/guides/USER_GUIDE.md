@@ -191,7 +191,7 @@ Model:
 
 #### Kimi K2 (Tarif tetap $9/bulan)
 
-1. Berlangganan: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Berlangganan: [Moonshot AI](https://platform.kimi.ai)
 2. Dapatkan kunci API → Dasbor → Tambahkan Kunci API
 
 **Gunakan:** `kimi/kimi-k2.5` — **Kiat Pro:** Tarif tetap $9/bulan untuk 10 juta token = biaya efektif $0.90/1M!

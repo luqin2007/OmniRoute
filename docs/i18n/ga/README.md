@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Intleacht ar Thús Cadhnaíochta Oscailte · 2.8T paraiméadar · comhthéacs 1M comhartha"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Gabhaimid buíochas le <b>Kimi (Moonshot AI)</b>, ár gCara Bunaidh Foinse Oscailte, as tacú leis an tionscadal seo! Is é Kimi an tsaotharlann IS atá taobh thiar de theaghlaigh samhlacha oscailte-ualaigh K2 agus K3 — soláthraíonn <b>Kimi K3</b> fuinneog chomhthéacs 1M comhartha, fís dhúchasach agus códú ar thús cadhnaíochta ar chodán de phraghsanna samhlacha dúnta, agus oibríonn sé láithreach le Claude Code, Codex agus gach uirlis chódaithe a bhfreastalaíonn OmniRoute uirthi.
       <br/><br/>
-      <b>An méid a chumasaíonn tacaíocht Kimi:</b> Cumasaíonn creidmheasanna API Kimi píblíne eisiúna OmniRoute atá bailíochtaithe ag IS — an chéim <i>bailíochtú cumaisc faoi thiomáint Kimi K3</i> a dhéanann athbhreithniú ar gach iarratas tarraingthe sula seoltar é — chomh maith le forbairt gnéithe ó lá go lá. Seoltar tacaíocht den chéad scoth do Kimi ar an dá bhealach: an <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> díreach (<code>kimi-k3</code>) agus an <a href="https://www.kimi.ai/code?aff=omniroute">plean códaithe Kimi Code</a> (OAuth agus eochair API). Is é OmniRoute an chéad tionscadal foinse oscailte Brasaíleach i gclár tacaíochta Kimi freisin. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Faigh eochair Kimi API le 15% de chreidmheasanna breise →</b></a>
+      <b>An méid a chumasaíonn tacaíocht Kimi:</b> Cumasaíonn creidmheasanna API Kimi píblíne eisiúna OmniRoute atá bailíochtaithe ag IS — an chéim <i>bailíochtú cumaisc faoi thiomáint Kimi K3</i> a dhéanann athbhreithniú ar gach iarratas tarraingthe sula seoltar é — chomh maith le forbairt gnéithe ó lá go lá. Seoltar tacaíocht den chéad scoth do Kimi ar an dá bhealach: an <a href="https://platform.kimi.ai">Kimi API</a> díreach (<code>kimi-k3</code>) agus an <a href="https://www.kimi.ai/code">plean códaithe Kimi Code</a> (OAuth agus eochair API). Is é OmniRoute an chéad tionscadal foinse oscailte Brasaíleach i gclár tacaíochta Kimi freisin. <a href="https://platform.kimi.ai"><b>Faigh eochair Kimi API le 15% de chreidmheasanna breise →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — clárú cleamhnaithe · <b>$100 de chreidmheasanna saor in aisce</b> nuair a chláraíonn tú (freastalaí saor in aisce, bí ag súil le foighne níos airde — is fearr é le haghaidh tástála, ní táirgthe). Tacaíocht den chéad scoth in OmniRoute ó <b>v3.8.50</b>: Comhlánuithe Comhrá, an fhormáid sreinge atá comhoiriúnach le Anthropic agus an chonair atá comhoiriúnach le OpenAI. I measc na samhlacha atá ar fáil tá <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> agus tuilleadh. <b><a href="https://agentrouter.org/register?aff=70LM">Faigh do $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — clárú cleamhnaithe · <b>$100 de chreidmheasanna saor in aisce</b> nuair a chláraíonn tú (freastalaí saor in aisce, bí ag súil le foighne níos airde — is fearr é le haghaidh tástála, ní táirgthe). Tacaíocht den chéad scoth in OmniRoute ó <b>v3.8.50</b>: Comhlánuithe Comhrá, an fhormáid sreinge atá comhoiriúnach le Anthropic agus an chonair atá comhoiriúnach le OpenAI. I measc na samhlacha atá ar fáil tá <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> agus tuilleadh. <b><a href="https://agentrouter.org/register">Faigh do $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Nasc cleamhnaithe — níl aon urraíocht ná comhpháirtíocht ag OmniRoute leis an soláthraí seo.</i></sub>
     </td>

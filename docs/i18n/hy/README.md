@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Շնորհակալություն <b>Kimi (Moonshot AI)</b>-ին՝ մեր հիմնադիր բաց կոդով ընկերոջը, այս նախագծին աջակցելու համար: Kimi-ն AI լաբորատորիան է, որը ստեղծել է բաց քաշով K2 և K3 մոդելների ընտանիքները. <b>Kimi K3</b>-ն ապահովում է 1M-թոքեն համատեքստային պատուհան, բնիկ տեսողություն և առաջնակարգ կոդավորում փակ մոդելների գների մի մասով, և աշխատում է Claude Code-ի, Codex-ի և OmniRoute-ի կողմից սպասարկվող յուրաքանչյուր կոդավորման գործիքի հետ:
       <br/><br/>
-      <b>Ինչ է ապահովում Kimi-ի աջակցությունը.</b> Kimi-ի API վարկերը սնուցում են OmniRoute-ի AI-ով վավերացված թողարկման խողովակաշարը՝ <i>Kimi K3-ով սնուցվող միաձուլման վավերացման</i> փուլը, որը վերանայում է յուրաքանչյուր քաշման հարցում մինչև դրա առաքումը, գումարած ամենօրյա ֆունկցիոնալության մշակումը: Առաջին կարգի Kimi աջակցությունն ապահովվում է երկու ուղղություններով՝ ուղղակի <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) և <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code կոդավորման պլան</a> (OAuth և API բանալի): OmniRoute-ն նաև առաջին բրազիլական բաց կոդով նախագիծն է Kimi-ի աջակցության ծրագրում: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Ստացեք Kimi API բանալի 15% լրացուցիչ վարկերով →</b></a>
+      <b>Ինչ է ապահովում Kimi-ի աջակցությունը.</b> Kimi-ի API վարկերը սնուցում են OmniRoute-ի AI-ով վավերացված թողարկման խողովակաշարը՝ <i>Kimi K3-ով սնուցվող միաձուլման վավերացման</i> փուլը, որը վերանայում է յուրաքանչյուր քաշման հարցում մինչև դրա առաքումը, գումարած ամենօրյա ֆունկցիոնալության մշակումը: Առաջին կարգի Kimi աջակցությունն ապահովվում է երկու ուղղություններով՝ ուղղակի <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) և <a href="https://www.kimi.ai/code">Kimi Code կոդավորման պլան</a> (OAuth և API բանալի): OmniRoute-ն նաև առաջին բրազիլական բաց կոդով նախագիծն է Kimi-ի աջակցության ծրագրում: <a href="https://platform.kimi.ai"><b>Ստացեք Kimi API բանալի 15% լրացուցիչ վարկերով →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — աֆիլիատի գրանցում · <b>$100 անվճար վարկեր</b> գրանցվելիս (անվճար սերվեր, ակնկալեք ավելի բարձր ուշացում՝ լավագույնը թեստավորման համար, ոչ արտադրության): Առաջին կարգի աջակցություն OmniRoute-ում <b>v3.8.50</b>-ից սկսած. Զրույցի ավարտներ, Anthropic-ի հետ համատեղելի մետաղալարային ձևաչափ և OpenAI-ի հետ համատեղելի ուղի: Հասանելի մոդելները ներառում են <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> և այլն: <b><a href="https://agentrouter.org/register?aff=70LM">Ստացեք ձեր $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — աֆիլիատի գրանցում · <b>$100 անվճար վարկեր</b> գրանցվելիս (անվճար սերվեր, ակնկալեք ավելի բարձր ուշացում՝ լավագույնը թեստավորման համար, ոչ արտադրության): Առաջին կարգի աջակցություն OmniRoute-ում <b>v3.8.50</b>-ից սկսած. Զրույցի ավարտներ, Anthropic-ի հետ համատեղելի մետաղալարային ձևաչափ և OpenAI-ի հետ համատեղելի ուղի: Հասանելի մոդելները ներառում են <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> և այլն: <b><a href="https://agentrouter.org/register">Ստացեք ձեր $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Աֆիլիատի հղում — OmniRoute-ը չունի հովանավորություն կամ գործընկերություն այս մատակարարի հետ:</i></sub>
     </td>

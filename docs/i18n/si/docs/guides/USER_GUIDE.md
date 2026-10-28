@@ -193,7 +193,7 @@ Models:
 
 #### Kimi K2 (මසකට ස්ථාවර $9)
 
-1. දායක වන්න: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. දායක වන්න: [Moonshot AI](https://platform.kimi.ai)
 2. API key එක ලබාගන්න → Dashboard → Add API Key
 
 **භාවිතය:** `kimi/kimi-k2.5` — **වෘත්තීය ඉඟිය:** tokens 10M සඳහා මසකට ස්ථාවර $9 = 1Mකට ඵලදායී පිරිවැය $0.90!

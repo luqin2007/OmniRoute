@@ -191,7 +191,7 @@ Model:
 
 #### Kimi K2 ($9/bulan kadar tetap)
 
-1. Langgan: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Langgan: [Moonshot AI](https://platform.kimi.ai)
 2. Dapatkan kunci API → Papan Pemuka → Tambah Kunci API
 
 **Gunakan:** `kimi/kimi-k2.5` — **Petua Pro:** Kadar tetap $9/bulan untuk 10 juta token = kos efektif $0.90/1M!

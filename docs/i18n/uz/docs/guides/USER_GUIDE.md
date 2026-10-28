@@ -191,7 +191,7 @@ Modellar:
 
 #### Kimi K2 (Oyiga qatʼiy $9)
 
-1. Obuna boʻling: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Obuna boʻling: [Moonshot AI](https://platform.kimi.ai)
 2. API kalitini oling → Boshqaruv paneli → API kalitini qoʻshish
 
 **Foydalanish:** `kimi/kimi-k2.5` — **Professional maslahat:** 10M token uchun oyiga qatʼiy $9 = amaldagi xarajat $0.90/1M!

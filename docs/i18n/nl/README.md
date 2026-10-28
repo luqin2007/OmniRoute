@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligentie · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Dank aan <b>Kimi (Moonshot AI)</b>, onze oprichtende Open Source Vriend, voor het ondersteunen van dit project! Kimi is het AI-lab achter de open-weight K2 en K3 modelfamilies — <b>Kimi K3</b> levert een 1M-token contextvenster, native visie en grensverleggende codering tegen een fractie van de prijzen van gesloten modellen, en werkt direct met Claude Code, Codex en elke coderingstool die OmniRoute ondersteunt.
       <br/><br/>
-      <b>Wat Kimi's ondersteuning mogelijk maakt:</b> Kimi's API-credits voeden OmniRoute's AI-gevalideerde release-pijplijn — de <i>samenvoegvalidatie aangedreven door Kimi K3</i>-fase die elke pull request beoordeelt voordat deze wordt verzonden — plus dagelijkse functieontwikkeling. Eersteklas Kimi-ondersteuning wordt op beide manieren geleverd: de directe <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) en het <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code coderingsplan</a> (OAuth en API-sleutel). OmniRoute is ook het eerste Braziliaanse open-source project in Kimi's ondersteuningsprogramma. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Ontvang een Kimi API-sleutel met 15% extra credits →</b></a>
+      <b>Wat Kimi's ondersteuning mogelijk maakt:</b> Kimi's API-credits voeden OmniRoute's AI-gevalideerde release-pijplijn — de <i>samenvoegvalidatie aangedreven door Kimi K3</i>-fase die elke pull request beoordeelt voordat deze wordt verzonden — plus dagelijkse functieontwikkeling. Eersteklas Kimi-ondersteuning wordt op beide manieren geleverd: de directe <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) en het <a href="https://www.kimi.ai/code">Kimi Code coderingsplan</a> (OAuth en API-sleutel). OmniRoute is ook het eerste Braziliaanse open-source project in Kimi's ondersteuningsprogramma. <a href="https://platform.kimi.ai"><b>Ontvang een Kimi API-sleutel met 15% extra credits →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — affiliate aanmelding · <b>$100 gratis credits</b> bij aanmelding (gratis server, verwacht hogere latentie — het beste voor testen, niet voor productie). Eersteklas ondersteuning in OmniRoute sinds <b>v3.8.50</b>: Chat Completions, het Anthropic-compatibele wire format en het OpenAI-compatibele pad. Beschikbare modellen zijn onder andere <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> en meer. <b><a href="https://agentrouter.org/register?aff=70LM">Pak je $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — affiliate aanmelding · <b>$100 gratis credits</b> bij aanmelding (gratis server, verwacht hogere latentie — het beste voor testen, niet voor productie). Eersteklas ondersteuning in OmniRoute sinds <b>v3.8.50</b>: Chat Completions, het Anthropic-compatibele wire format en het OpenAI-compatibele pad. Beschikbare modellen zijn onder andere <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> en meer. <b><a href="https://agentrouter.org/register">Pak je $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Affiliate link — OmniRoute heeft geen sponsoring of partnerschap met deze provider.</i></sub>
     </td>

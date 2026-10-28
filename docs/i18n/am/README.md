@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — የክፍት ድንበር ብልህነት · 2.8T መለኪያዎች · የ1M-token አውድ"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ይህን ፕሮጀክት ስለደገፈ <b>Kimi (Moonshot AI)</b>፣ መስራች የክፍት ምንጭ ወዳጃችንን እናመሰግናለን! Kimi ክፍት-ክብደት ያላቸውን K2 እና K3 የሞዴል ቤተሰቦች የፈጠረው የAI ላብራቶሪ ነው — <b>Kimi K3</b> የ1M-token አውድ መስኮት፣ ቤተኛ የምስል ችሎታ እና የድንበር-ደረጃ ኮድ ማድረግን ከዝግ-ሞዴሎች ዋጋ በጣም ባነሰ ያቀርባል፤ እንዲሁም ከClaude Code፣ Codex እና OmniRoute ከሚያገለግላቸው ሁሉም የኮድ መሳሪያዎች ጋር ያለምንም ተጨማሪ ውቅር ይሰራል።
       <br/><br/>
-      <b>የKimi ድጋፍ የሚያንቀሳቅሰው፦</b> የKimi API ክሬዲቶች የOmniRouteን በAI የተረጋገጠ የልቀት ሂደት — እያንዳንዱን pull request ከመለቀቁ በፊት የሚገመግመውን <i>በKimi K3 የሚንቀሳቀስ የውህደት ማረጋገጫ</i> ደረጃ — እንዲሁም የዕለት ተዕለት የባህሪ ልማትን ያንቀሳቅሳሉ። ከፍተኛ ደረጃ ያለው የKimi ድጋፍ በሁለቱም መንገዶች ይቀርባል፦ ቀጥተኛው <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) እና <a href="https://www.kimi.ai/code?aff=omniroute">የKimi Code ኮድ ማድረጊያ ዕቅድ</a> (OAuth እና API key)። OmniRoute በKimi የድጋፍ ፕሮግራም ውስጥ የመጀመሪያው የብራዚል ክፍት-ምንጭ ፕሮጀክትም ነው። <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% ተጨማሪ ክሬዲት ያለው Kimi API key ያግኙ →</b></a>
+      <b>የKimi ድጋፍ የሚያንቀሳቅሰው፦</b> የKimi API ክሬዲቶች የOmniRouteን በAI የተረጋገጠ የልቀት ሂደት — እያንዳንዱን pull request ከመለቀቁ በፊት የሚገመግመውን <i>በKimi K3 የሚንቀሳቀስ የውህደት ማረጋገጫ</i> ደረጃ — እንዲሁም የዕለት ተዕለት የባህሪ ልማትን ያንቀሳቅሳሉ። ከፍተኛ ደረጃ ያለው የKimi ድጋፍ በሁለቱም መንገዶች ይቀርባል፦ ቀጥተኛው <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) እና <a href="https://www.kimi.ai/code">የKimi Code ኮድ ማድረጊያ ዕቅድ</a> (OAuth እና API key)። OmniRoute በKimi የድጋፍ ፕሮግራም ውስጥ የመጀመሪያው የብራዚል ክፍት-ምንጭ ፕሮጀክትም ነው። <a href="https://platform.kimi.ai"><b>15% ተጨማሪ ክሬዲት ያለው Kimi API key ያግኙ →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — የአጋር ምዝገባ · ሲመዘገቡ <b>$100 ነፃ ክሬዲት</b> (ነፃ server፣ ከፍተኛ latency ሊኖር ይችላል — ለሙከራ የተሻለ እንጂ ለproduction አይደለም)። ከ<b>v3.8.50</b> ጀምሮ በOmniRoute ውስጥ የከፍተኛ ደረጃ ድጋፍ፦ Chat Completions፣ ከAnthropic ጋር ተኳሃኝ የሆነው wire format እና ከOpenAI ጋር ተኳሃኝ የሆነው path። የሚገኙ ሞዴሎች <code>claude-opus-4-8</code>፣ <code>claude-opus-5</code>፣ <code>gpt-5.6-sol</code> እና ሌሎችንም ያካትታሉ። <b><a href="https://agentrouter.org/register?aff=70LM">$100ዎን ያግኙ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — የአጋር ምዝገባ · ሲመዘገቡ <b>$100 ነፃ ክሬዲት</b> (ነፃ server፣ ከፍተኛ latency ሊኖር ይችላል — ለሙከራ የተሻለ እንጂ ለproduction አይደለም)። ከ<b>v3.8.50</b> ጀምሮ በOmniRoute ውስጥ የከፍተኛ ደረጃ ድጋፍ፦ Chat Completions፣ ከAnthropic ጋር ተኳሃኝ የሆነው wire format እና ከOpenAI ጋር ተኳሃኝ የሆነው path። የሚገኙ ሞዴሎች <code>claude-opus-4-8</code>፣ <code>claude-opus-5</code>፣ <code>gpt-5.6-sol</code> እና ሌሎችንም ያካትታሉ። <b><a href="https://agentrouter.org/register">$100ዎን ያግኙ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>የአጋር አገናኝ — OmniRoute ከዚህ አቅራቢ ጋር ምንም የስፖንሰርነት ወይም የአጋርነት ግንኙነት የለውም።</i></sub>
     </td>

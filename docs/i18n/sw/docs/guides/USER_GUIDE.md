@@ -191,7 +191,7 @@ Miundo:
 
 #### Kimi K2 ($9/mwezi kwa kiwango kisichobadilika)
 
-1. Jisajili: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Jisajili: [Moonshot AI](https://platform.kimi.ai)
 2. Pata ufunguo wa API → Dashibodi → Ongeza Ufunguo wa API
 
 **Matumizi:** `kimi/kimi-k2.5` — **Kidokezo cha Kitaalamu:** Kiwango kisichobadilika cha $9/mwezi kwa tokeni 10M = gharama halisi ya $0.90/1M!

@@ -193,7 +193,7 @@ Dashboard → Providers → Connect GitHub
 
 #### Kimi K2 (ମାସିକ ନିର୍ଦ୍ଧାରିତ $9)
 
-1. ସବ୍ସ୍କ୍ରାଇବ୍ କରନ୍ତୁ: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. ସବ୍ସ୍କ୍ରାଇବ୍ କରନ୍ତୁ: [Moonshot AI](https://platform.kimi.ai)
 2. API key ପ୍ରାପ୍ତ କରନ୍ତୁ → Dashboard → Add API Key
 
 **ବ୍ୟବହାର:** `kimi/kimi-k2.5` — **ପ୍ରୋ ଟିପ୍ପଣୀ:** 10M ଟୋକନ୍ ପାଇଁ ମାସିକ ନିର୍ଦ୍ଧାରିତ $9 = ପ୍ରଭାବୀ ମୂଲ୍ୟ $0.90/1M!

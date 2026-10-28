@@ -191,7 +191,7 @@ Claude మరియు Claude Code-అనుకూల రూట్లు Opus �
 
 #### Kimi K2 (నెలకు స్థిరంగా $9)
 
-1. సబ్స్క్రైబ్ చేయండి: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. సబ్స్క్రైబ్ చేయండి: [Moonshot AI](https://platform.kimi.ai)
 2. API కీని పొందండి → డ్యాష్బోర్డ్ → API కీని జోడించండి
 
 **ఉపయోగం:** `kimi/kimi-k2.5` — **ప్రో చిట్కా:** 10M టోకెన్లకు నెలకు స్థిరంగా $9 = 1Mకు $0.90 ప్రభావవంతమైన ఖర్చు!

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Dzięki **Kimi (Moonshot AI)**, naszemu założycielskiemu Przyjacielowi Open Source, za wsparcie tego projektu! Kimi to laboratorium AI stojące za rodzinami modeli K2 i K3 o otwartej wadze — **Kimi K3** oferuje okno kontekstowe 1M tokenów, natywną wizję i kodowanie na poziomie granicznym za ułamek cen modeli zamkniętych, i działa od razu po wyjęciu z pudełka z Claude Code, Codex i każdym narzędziem do kodowania, które obsługuje OmniRoute.
       <br/><br/>
-      **Co umożliwia wsparcie Kimi:** Kredyty API Kimi zasilają potok wydawniczy OmniRoute walidowany przez AI — etap *walidacji scalania zasilany przez Kimi K3*, który przegląda każdy pull request przed jego wdrożeniem — a także codzienny rozwój funkcji. Wysokiej klasy wsparcie Kimi jest dostępne na obu torach: bezpośrednim <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">API Kimi</a> (<code>kimi-k3</code>) oraz <a href="https://www.kimi.ai/code?aff=omniroute">planie kodowania Kimi Code</a> (OAuth i klucz API). OmniRoute jest również pierwszym brazylijskim projektem open-source w programie wsparcia Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Zdobądź klucz API Kimi z 15% dodatkowymi kredytami →</b></a>
+      **Co umożliwia wsparcie Kimi:** Kredyty API Kimi zasilają potok wydawniczy OmniRoute walidowany przez AI — etap *walidacji scalania zasilany przez Kimi K3*, który przegląda każdy pull request przed jego wdrożeniem — a także codzienny rozwój funkcji. Wysokiej klasy wsparcie Kimi jest dostępne na obu torach: bezpośrednim <a href="https://platform.kimi.ai">API Kimi</a> (<code>kimi-k3</code>) oraz <a href="https://www.kimi.ai/code">planie kodowania Kimi Code</a> (OAuth i klucz API). OmniRoute jest również pierwszym brazylijskim projektem open-source w programie wsparcia Kimi. <a href="https://platform.kimi.ai"><b>Zdobądź klucz API Kimi z 15% dodatkowymi kredytami →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — rejestracja afiliacyjna · **$100 darmowych kredytów** przy rejestracji (darmowy serwer, spodziewaj się wyższego opóźnienia — najlepszy do testowania, nie do produkcji). Wysokiej klasy wsparcie w OmniRoute od **v3.8.50**: Uzupełnianie czatu, format danych kompatybilny z Anthropic i ścieżka kompatybilna z OpenAI. Dostępne modele to <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> i inne. **<a href="https://agentrouter.org/register?aff=70LM">Zdobądź swoje $100 →</a>**</sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — rejestracja afiliacyjna · **$100 darmowych kredytów** przy rejestracji (darmowy serwer, spodziewaj się wyższego opóźnienia — najlepszy do testowania, nie do produkcji). Wysokiej klasy wsparcie w OmniRoute od **v3.8.50**: Uzupełnianie czatu, format danych kompatybilny z Anthropic i ścieżka kompatybilna z OpenAI. Dostępne modele to <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> i inne. **<a href="https://agentrouter.org/register">Zdobądź swoje $100 →</a>**</sub>
       <br/><br/>
       <sub>⚠️ *Link afiliacyjny — OmniRoute nie ma sponsoringu ani partnerstwa z tym dostawcą.*</sub>
     </td>

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — ღია სასაზღვრო ინტელექტი · 2.8T პარამეტრი · 1M-ტოკენის კონტექსტი"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       მადლობა <b>Kimi (Moonshot AI)</b>-ს, ჩვენს დამფუძნებელ ღია კოდის მეგობარს, ამ პროექტის მხარდაჭერისთვის! Kimi არის AI ლაბორატორია, რომელიც დგას ღია წონის K2 და K3 მოდელების ოჯახების უკან — <b>Kimi K3</b> გთავაზობთ 1M-ტოკენის კონტექსტურ ფანჯარას, მშობლიურ ხედვას და სასაზღვრო დონის კოდირებას დახურული მოდელების ფასის ნაწილზე, და მუშაობს ყუთიდან Claude Code-თან, Codex-თან და ყველა კოდირების ხელსაწყოსთან, რომელსაც OmniRoute ემსახურება.
       <br/><br/>
-      <b>რას უზრუნველყოფს Kimi-ის მხარდაჭერა:</b> Kimi-ის API კრედიტები უზრუნველყოფს OmniRoute-ის AI-ვალიდირებულ გამოშვების კონვეიერს — <i>Kimi K3-ის მიერ მხარდაჭერილი შერწყმის ვალიდაციის</i> ეტაპს, რომელიც განიხილავს ყოველ pull request-ს მის გამოშვებამდე — პლუს ყოველდღიური ფუნქციების განვითარებას. პირველი კლასის Kimi-ის მხარდაჭერა მიეწოდება ორივე გზით: პირდაპირი <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) და <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code კოდირების გეგმა</a> (OAuth და API გასაღები). OmniRoute ასევე არის პირველი ბრაზილიური ღია კოდის პროექტი Kimi-ის მხარდაჭერის პროგრამაში. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>მიიღეთ Kimi API გასაღები 15% დამატებითი კრედიტებით →</b></a>
+      <b>რას უზრუნველყოფს Kimi-ის მხარდაჭერა:</b> Kimi-ის API კრედიტები უზრუნველყოფს OmniRoute-ის AI-ვალიდირებულ გამოშვების კონვეიერს — <i>Kimi K3-ის მიერ მხარდაჭერილი შერწყმის ვალიდაციის</i> ეტაპს, რომელიც განიხილავს ყოველ pull request-ს მის გამოშვებამდე — პლუს ყოველდღიური ფუნქციების განვითარებას. პირველი კლასის Kimi-ის მხარდაჭერა მიეწოდება ორივე გზით: პირდაპირი <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) და <a href="https://www.kimi.ai/code">Kimi Code კოდირების გეგმა</a> (OAuth და API გასაღები). OmniRoute ასევე არის პირველი ბრაზილიური ღია კოდის პროექტი Kimi-ის მხარდაჭერის პროგრამაში. <a href="https://platform.kimi.ai"><b>მიიღეთ Kimi API გასაღები 15% დამატებითი კრედიტებით →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — შვილობილი რეგისტრაცია · <b>$100 უფასო კრედიტი</b> რეგისტრაციისას (უფასო სერვერი, მოსალოდნელია უფრო მაღალი შეყოვნება — საუკეთესოა ტესტირებისთვის, არა წარმოებისთვის). პირველი კლასის მხარდაჭერა OmniRoute-ში <b>v3.8.50</b>-დან: Chat Completions, Anthropic-თან თავსებადი სადენიანი ფორმატი და OpenAI-თან თავსებადი გზა. ხელმისაწვდომი მოდელები მოიცავს <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> და სხვა. <b><a href="https://agentrouter.org/register?aff=70LM">აიღეთ თქვენი $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — შვილობილი რეგისტრაცია · <b>$100 უფასო კრედიტი</b> რეგისტრაციისას (უფასო სერვერი, მოსალოდნელია უფრო მაღალი შეყოვნება — საუკეთესოა ტესტირებისთვის, არა წარმოებისთვის). პირველი კლასის მხარდაჭერა OmniRoute-ში <b>v3.8.50</b>-დან: Chat Completions, Anthropic-თან თავსებადი სადენიანი ფორმატი და OpenAI-თან თავსებადი გზა. ხელმისაწვდომი მოდელები მოიცავს <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> და სხვა. <b><a href="https://agentrouter.org/register">აიღეთ თქვენი $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>შვილობილი ბმული — OmniRoute-ს არ აქვს სპონსორობა ან პარტნიორობა ამ პროვაიდერთან.</i></sub>
     </td>

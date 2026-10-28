@@ -191,7 +191,7 @@ Modele:
 
 #### Kimi K2 (tarif fix de $9/lună)
 
-1. Abonați-vă: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abonați-vă: [Moonshot AI](https://platform.kimi.ai)
 2. Obțineți cheia API → Panou de control → Adaugă o cheie API
 
 **Utilizare:** `kimi/kimi-k2.5` — **Sfat util:** Tariful fix de $9/lună pentru 10M tokenuri înseamnă un cost efectiv de $0.90/1M!

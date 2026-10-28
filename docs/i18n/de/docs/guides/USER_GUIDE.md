@@ -191,7 +191,7 @@ Modelle:
 
 #### Kimi K2 (Pauschalpreis von 9 $/Monat)
 
-1. Abonnieren: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abonnieren: [Moonshot AI](https://platform.kimi.ai)
 2. API-Schlüssel abrufen → Dashboard → API-Schlüssel hinzufügen
 
 **Verwendung:** `kimi/kimi-k2.5` — **Profi-Tipp:** Feste 9 $/Monat für 10 Mio. Token = effektive Kosten von 0,90 $/1 Mio.!

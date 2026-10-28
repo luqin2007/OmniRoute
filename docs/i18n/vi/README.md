@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Cảm ơn <b>Kimi (Moonshot AI)</b>, Người bạn mã nguồn mở sáng lập của chúng tôi, đã ủng hộ dự án này! Kimi là phòng thí nghiệm AI đứng sau các dòng mô hình K2 và K3 có trọng lượng mở — <b>Kimi K3</b> cung cấp cửa sổ ngữ cảnh 1M-token, tầm nhìn gốc và mã hóa cấp độ tiên tiến với chi phí thấp hơn nhiều so với các mô hình đóng, và hoạt động ngay lập tức với Claude Code, Codex và mọi công cụ mã hóa mà OmniRoute phục vụ.
       <br/><br/>
-      <b>Hỗ trợ của Kimi cung cấp:</b> Các khoản tín dụng API của Kimi cung cấp năng lượng cho quy trình phát hành được AI xác thực của OmniRoute — giai đoạn <i>xác thực hợp nhất được cung cấp bởi Kimi K3</i> xem xét mọi yêu cầu kéo trước khi nó được xuất bản — cộng với việc phát triển tính năng hàng ngày. Hỗ trợ Kimi hạng nhất được vận chuyển trên cả hai đường ray: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">API Kimi</a> trực tiếp (<code>kimi-k3</code>) và <a href="https://www.kimi.ai/code?aff=omniroute">gói mã hóa Kimi Code</a> (OAuth và khóa API). OmniRoute cũng là dự án mã nguồn mở đầu tiên của Brazil trong chương trình hỗ trợ của Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Nhận khóa API Kimi với 15% tín dụng bổ sung →</b></a>
+      <b>Hỗ trợ của Kimi cung cấp:</b> Các khoản tín dụng API của Kimi cung cấp năng lượng cho quy trình phát hành được AI xác thực của OmniRoute — giai đoạn <i>xác thực hợp nhất được cung cấp bởi Kimi K3</i> xem xét mọi yêu cầu kéo trước khi nó được xuất bản — cộng với việc phát triển tính năng hàng ngày. Hỗ trợ Kimi hạng nhất được vận chuyển trên cả hai đường ray: <a href="https://platform.kimi.ai">API Kimi</a> trực tiếp (<code>kimi-k3</code>) và <a href="https://www.kimi.ai/code">gói mã hóa Kimi Code</a> (OAuth và khóa API). OmniRoute cũng là dự án mã nguồn mở đầu tiên của Brazil trong chương trình hỗ trợ của Kimi. <a href="https://platform.kimi.ai"><b>Nhận khóa API Kimi với 15% tín dụng bổ sung →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — đăng ký liên kết · <b>$100 tín dụng miễn phí</b> khi đăng ký (máy chủ miễn phí, có thể có độ trễ cao hơn — tốt nhất để thử nghiệm, không phải sản xuất). Hỗ trợ hạng nhất trong OmniRoute kể từ <b>v3.8.50</b>: Chat Completions, định dạng dây tương thích với Anthropic và đường dẫn tương thích với OpenAI. Các mô hình có sẵn bao gồm <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> và nhiều hơn nữa. <b><a href="https://agentrouter.org/register?aff=70LM">Nhận $100 của bạn →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — đăng ký liên kết · <b>$100 tín dụng miễn phí</b> khi đăng ký (máy chủ miễn phí, có thể có độ trễ cao hơn — tốt nhất để thử nghiệm, không phải sản xuất). Hỗ trợ hạng nhất trong OmniRoute kể từ <b>v3.8.50</b>: Chat Completions, định dạng dây tương thích với Anthropic và đường dẫn tương thích với OpenAI. Các mô hình có sẵn bao gồm <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> và nhiều hơn nữa. <b><a href="https://agentrouter.org/register">Nhận $100 của bạn →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Liên kết liên kết — OmniRoute không có bất kỳ sự tài trợ hoặc hợp tác nào với nhà cung cấp này.</i></sub>
     </td>

@@ -191,7 +191,7 @@ Modeller:
 
 #### Kimi K2 (fast pris på $9/månad)
 
-1. Prenumerera: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Prenumerera: [Moonshot AI](https://platform.kimi.ai)
 2. Hämta API-nyckeln → Instrumentpanel → Lägg till API-nyckel
 
 **Använd:** `kimi/kimi-k2.5` — **Proffstips:** Fast pris på $9/månad för 10M token = en effektiv kostnad på $0.90/1M!

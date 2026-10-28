@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Terima kasih kepada <b>Kimi (Moonshot AI)</b>, Rakan Sumber Terbuka pengasas kami, kerana menyokong projek ini! Kimi adalah makmal AI di sebalik keluarga model K2 dan K3 dengan berat terbuka — <b>Kimi K3</b> menawarkan tetingkap konteks 1M-token, penglihatan asli dan pengekodan peringkat sempadan pada sebahagian kecil daripada harga model tertutup, dan berfungsi dengan baik dengan Claude Code, Codex dan setiap alat pengekodan yang disediakan oleh OmniRoute.
       <br/><br/>
-      <b>Apa yang disokong oleh Kimi:</b> Kredit API Kimi menggerakkan saluran keluaran yang disahkan AI OmniRoute — peringkat <i>pengesahan gabungan yang dikuasakan oleh Kimi K3</i> yang menyemak setiap permintaan tarik sebelum ia dihantar — serta pembangunan ciri harian. Sokongan Kimi kelas pertama dihantar pada kedua-dua rel: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">API Kimi</a> langsung (<code>kimi-k3</code>) dan <a href="https://www.kimi.ai/code?aff=omniroute">pelan pengekodan Kimi Code</a> (OAuth dan kunci API). OmniRoute juga merupakan projek sumber terbuka Brazil pertama dalam program sokongan Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Dapatkan kunci API Kimi dengan 15% kredit tambahan →</b></a>
+      <b>Apa yang disokong oleh Kimi:</b> Kredit API Kimi menggerakkan saluran keluaran yang disahkan AI OmniRoute — peringkat <i>pengesahan gabungan yang dikuasakan oleh Kimi K3</i> yang menyemak setiap permintaan tarik sebelum ia dihantar — serta pembangunan ciri harian. Sokongan Kimi kelas pertama dihantar pada kedua-dua rel: <a href="https://platform.kimi.ai">API Kimi</a> langsung (<code>kimi-k3</code>) dan <a href="https://www.kimi.ai/code">pelan pengekodan Kimi Code</a> (OAuth dan kunci API). OmniRoute juga merupakan projek sumber terbuka Brazil pertama dalam program sokongan Kimi. <a href="https://platform.kimi.ai"><b>Dapatkan kunci API Kimi dengan 15% kredit tambahan →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — pendaftaran afiliasi · <b>$100 kredit percuma</b> semasa pendaftaran (pelayan percuma, jangkakan kependaman yang lebih tinggi — terbaik untuk ujian, bukan pengeluaran). Sokongan kelas pertama dalam OmniRoute sejak <b>v3.8.50</b>: Chat Completions, format wayar yang serasi dengan Anthropic dan laluan yang serasi dengan OpenAI. Model yang tersedia termasuk <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> dan banyak lagi. <b><a href="https://agentrouter.org/register?aff=70LM">Dapatkan $100 anda →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — pendaftaran afiliasi · <b>$100 kredit percuma</b> semasa pendaftaran (pelayan percuma, jangkakan kependaman yang lebih tinggi — terbaik untuk ujian, bukan pengeluaran). Sokongan kelas pertama dalam OmniRoute sejak <b>v3.8.50</b>: Chat Completions, format wayar yang serasi dengan Anthropic dan laluan yang serasi dengan OpenAI. Model yang tersedia termasuk <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> dan banyak lagi. <b><a href="https://agentrouter.org/register">Dapatkan $100 anda →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Pautan afiliasi — OmniRoute tidak mempunyai penajaan atau perkongsian dengan penyedia ini.</i></sub>
     </td>

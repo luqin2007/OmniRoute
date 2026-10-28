@@ -191,7 +191,7 @@ Mallit:
 
 #### Kimi K2 (Kiinteästi $9/kuukausi)
 
-1. Tilaa: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Tilaa: [Moonshot AI](https://platform.kimi.ai)
 2. Hanki API-avain → Hallintapaneeli → Lisää API-avain
 
 **Käyttö:** `kimi/kimi-k2.5` — **Ammattilaisen vinkki:** Kiinteä $9/kuukausi 10 miljoonasta tunnisteesta = todellinen kustannus $0.90/1M!

@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       感谢我们的创始开源朋友 <b>Kimi (月之暗面)</b> 对本项目的支持！Kimi 是开放权重 K2 和 K3 模型系列背后的 AI 实验室 — <b>Kimi K3</b> 提供 1M-token 上下文窗口、原生视觉和前沿水平的编码能力，价格仅为闭源模型的一小部分，并且与 Claude Code、Codex 以及 OmniRoute 支持的所有编码工具开箱即用。
       <br/><br/>
-      <b>Kimi 的支持所赋能的：</b> Kimi 的 API 积分支持 OmniRoute 的 AI 验证发布流程 — 即在每个拉取请求发布前进行审查的 *由 Kimi K3 提供支持的合并验证* 阶段 — 以及日常功能开发。一流的 Kimi 支持通过两种方式提供：直接的 <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) 和 <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code 编码计划</a> (OAuth 和 API 密钥)。OmniRoute 也是 Kimi 支持计划中首个巴西开源项目。<a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>获取 Kimi API 密钥，额外获得 15% 积分 →</b></a>
+      <b>Kimi 的支持所赋能的：</b> Kimi 的 API 积分支持 OmniRoute 的 AI 验证发布流程 — 即在每个拉取请求发布前进行审查的 *由 Kimi K3 提供支持的合并验证* 阶段 — 以及日常功能开发。一流的 Kimi 支持通过两种方式提供：直接的 <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) 和 <a href="https://www.kimi.ai/code">Kimi Code 编码计划</a> (OAuth 和 API 密钥)。OmniRoute 也是 Kimi 支持计划中首个巴西开源项目。<a href="https://platform.kimi.ai"><b>获取 Kimi API 密钥，额外获得 15% 积分 →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — 联盟注册 · 注册时<b>免费获得 $100 积分</b>（免费服务器，延迟可能较高 — 最适合测试，不适合生产）。自 <b>v3.8.50</b> 起在 OmniRoute 中提供一流支持：聊天补全、Anthropic 兼容的线格式和 OpenAI 兼容的路径。可用模型包括 <code>claude-opus-4-8</code>、<code>claude-opus-5</code>、<code>gpt-5.6-sol</code> 等。<b><a href="https://agentrouter.org/register?aff=70LM">立即获取您的 $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — 联盟注册 · 注册时<b>免费获得 $100 积分</b>（免费服务器，延迟可能较高 — 最适合测试，不适合生产）。自 <b>v3.8.50</b> 起在 OmniRoute 中提供一流支持：聊天补全、Anthropic 兼容的线格式和 OpenAI 兼容的路径。可用模型包括 <code>claude-opus-4-8</code>、<code>claude-opus-5</code>、<code>gpt-5.6-sol</code> 等。<b><a href="https://agentrouter.org/register">立即获取您的 $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>联盟链接 — OmniRoute 与此提供者没有赞助或合作关系。</i></sub>
     </td>

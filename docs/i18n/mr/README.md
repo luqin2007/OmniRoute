@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       आमचे संस्थापक मुक्त स्रोत मित्र, <b>Kimi (Moonshot AI)</b>, या प्रकल्पाला पाठिंबा दिल्याबद्दल धन्यवाद! Kimi ही मुक्त-वजन K2 आणि K3 मॉडेल कुटुंबांच्या मागे असलेली AI लॅब आहे — <b>Kimi K3</b> 1M-टोकन संदर्भ विंडो, मूळ दृष्टी आणि बंद-मॉडेल किमतीच्या काही अंशात सीमा-स्तरीय कोडिंग प्रदान करते आणि Claude Code, Codex आणि OmniRoute सेवा देणाऱ्या प्रत्येक कोडिंग टूलसह बॉक्सच्या बाहेर कार्य करते.
       <br/><br/>
-      <b>Kimi चा पाठिंबा काय शक्ती देतो:</b> Kimi चे API क्रेडिट्स OmniRoute च्या AI-प्रमाणित प्रकाशन पाइपलाइनला शक्ती देतात — <i>Kimi K3 द्वारे समर्थित विलीनीकरण प्रमाणीकरण</i> टप्पा जो प्रत्येक पुल विनंतीचे शिप करण्यापूर्वी पुनरावलोकन करतो — तसेच दैनंदिन वैशिष्ट्य विकास. प्रथम-श्रेणी Kimi समर्थन दोन्ही रेल्वेवर पाठवले जाते: थेट <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) आणि <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code कोडिंग योजना</a> (OAuth आणि API की). OmniRoute हा Kimi च्या समर्थन कार्यक्रमातील पहिला ब्राझिलियन मुक्त-स्रोत प्रकल्प देखील आहे. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% अतिरिक्त क्रेडिट्ससह Kimi API की मिळवा →</b></a>
+      <b>Kimi चा पाठिंबा काय शक्ती देतो:</b> Kimi चे API क्रेडिट्स OmniRoute च्या AI-प्रमाणित प्रकाशन पाइपलाइनला शक्ती देतात — <i>Kimi K3 द्वारे समर्थित विलीनीकरण प्रमाणीकरण</i> टप्पा जो प्रत्येक पुल विनंतीचे शिप करण्यापूर्वी पुनरावलोकन करतो — तसेच दैनंदिन वैशिष्ट्य विकास. प्रथम-श्रेणी Kimi समर्थन दोन्ही रेल्वेवर पाठवले जाते: थेट <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) आणि <a href="https://www.kimi.ai/code">Kimi Code कोडिंग योजना</a> (OAuth आणि API की). OmniRoute हा Kimi च्या समर्थन कार्यक्रमातील पहिला ब्राझिलियन मुक्त-स्रोत प्रकल्प देखील आहे. <a href="https://platform.kimi.ai"><b>15% अतिरिक्त क्रेडिट्ससह Kimi API की मिळवा →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — संलग्न साइनअप · साइनअपवर <b>$100 मोफत क्रेडिट्स</b> (मोफत सर्व्हर, जास्त विलंब अपेक्षित — चाचणीसाठी सर्वोत्तम, उत्पादनासाठी नाही). OmniRoute मध्ये <b>v3.8.50</b> पासून प्रथम-श्रेणी समर्थन: चॅट पूर्णता, Anthropic-सुसंगत वायर स्वरूप आणि OpenAI-सुसंगत मार्ग. उपलब्ध मॉडेल्समध्ये <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> आणि बरेच काही समाविष्ट आहे. <b><a href="https://agentrouter.org/register?aff=70LM">तुमचे $100 मिळवा →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — संलग्न साइनअप · साइनअपवर <b>$100 मोफत क्रेडिट्स</b> (मोफत सर्व्हर, जास्त विलंब अपेक्षित — चाचणीसाठी सर्वोत्तम, उत्पादनासाठी नाही). OmniRoute मध्ये <b>v3.8.50</b> पासून प्रथम-श्रेणी समर्थन: चॅट पूर्णता, Anthropic-सुसंगत वायर स्वरूप आणि OpenAI-सुसंगत मार्ग. उपलब्ध मॉडेल्समध्ये <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> आणि बरेच काही समाविष्ट आहे. <b><a href="https://agentrouter.org/register">तुमचे $100 मिळवा →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>संलग्न लिंक — OmniRoute चा या प्रदात्याशी कोणताही प्रायोजकत्व किंवा भागीदारी नाही.</i></sub>
     </td>

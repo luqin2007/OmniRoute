@@ -193,7 +193,7 @@ Modeli:
 
 #### Kimi K2 ($9/mjesec fiksno)
 
-1. Pretplatite se: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Pretplatite se: [Moonshot AI](https://platform.kimi.ai)
 2. Preuzmite API ključ → Kontrolna tabla → Dodaj API ključ
 
 **Upotreba:** `kimi/kimi-k2.5` — **Profesionalni savjet:** Fiksnih $9/mjesec za 10M tokena = efektivni trošak od $0.90/1M!

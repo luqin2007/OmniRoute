@@ -191,7 +191,7 @@ Claude および Claude Code 互換ルートでは、Opus および Sonnet モ�
 
 #### Kimi K2（月額 $9 の定額制）
 
-1. サブスクライブ: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. サブスクライブ: [Moonshot AI](https://platform.kimi.ai)
 2. API キーを取得 → ダッシュボード → API キーを追加
 
 **使用方法:** `kimi/kimi-k2.5` — **ヒント:** 1,000万トークンを月額固定 $9 で利用でき、実質コストは $0.90/1M です！

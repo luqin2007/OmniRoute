@@ -191,7 +191,7 @@ Dashboard → Providers → GitHub সংযুক্ত করুন
 
 #### Kimi K2 (নির্দিষ্ট $9/মাস)
 
-1. সাবস্ক্রাইব করুন: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. সাবস্ক্রাইব করুন: [Moonshot AI](https://platform.kimi.ai)
 2. API key নিন → Dashboard → API Key যোগ করুন
 
 **ব্যবহার করুন:** `kimi/kimi-k2.5` — **বিশেষ পরামর্শ:** ১০M টোকেনের জন্য নির্দিষ্ট $9/মাস = কার্যকর খরচ $0.90/1M!

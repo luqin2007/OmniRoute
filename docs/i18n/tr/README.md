@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Bu projeyi desteklediği için kurucu Açık Kaynak Dostumuz <b>Kimi (Moonshot AI)</b>'ye teşekkür ederiz! Kimi, açık ağırlıklı K2 ve K3 model ailelerinin arkasındaki yapay zeka laboratuvarıdır — <b>Kimi K3</b>, 1M token bağlam penceresi, yerel görüntü işleme ve sınır seviyesi kodlama yeteneklerini kapalı model fiyatlarının çok altında sunar ve Claude Code, Codex ve OmniRoute'un desteklediği her kodlama aracıyla kutudan çıktığı gibi çalışır.
       <br/><br/>
-      <b>Kimi'nin desteği neleri güçlendiriyor:</b> Kimi'nin API kredileri, OmniRoute'un yapay zeka onaylı yayın hattını — her çekme isteğini yayınlanmadan önce inceleyen *Kimi K3 destekli birleştirme doğrulama* aşamasını — ve günlük özellik geliştirmeyi destekler. Birinci sınıf Kimi desteği her iki yolla da sağlanır: doğrudan <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a>'si (<code>kimi-k3</code>) ve <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code kodlama planı</a> (OAuth ve API anahtarı). OmniRoute aynı zamanda Kimi'nin destek programındaki ilk Brezilya açık kaynak projesidir. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>%15 ek krediyle bir Kimi API anahtarı alın →</b></a>
+      <b>Kimi'nin desteği neleri güçlendiriyor:</b> Kimi'nin API kredileri, OmniRoute'un yapay zeka onaylı yayın hattını — her çekme isteğini yayınlanmadan önce inceleyen *Kimi K3 destekli birleştirme doğrulama* aşamasını — ve günlük özellik geliştirmeyi destekler. Birinci sınıf Kimi desteği her iki yolla da sağlanır: doğrudan <a href="https://platform.kimi.ai">Kimi API</a>'si (<code>kimi-k3</code>) ve <a href="https://www.kimi.ai/code">Kimi Code kodlama planı</a> (OAuth ve API anahtarı). OmniRoute aynı zamanda Kimi'nin destek programındaki ilk Brezilya açık kaynak projesidir. <a href="https://platform.kimi.ai"><b>%15 ek krediyle bir Kimi API anahtarı alın →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — satış ortağı kaydı · kayıtta <b>100$ ücretsiz kredi</b> (ücretsiz sunucu, daha yüksek gecikme süresi bekleyin — test için en iyisi, üretim için değil). OmniRoute'da <b>v3.8.50</b>'den beri birinci sınıf destek: Sohbet Tamamlamaları, Anthropic uyumlu kablo formatı ve OpenAI uyumlu yol. Mevcut modeller arasında <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ve daha fazlası bulunur. <b><a href="https://agentrouter.org/register?aff=70LM">100$'ınızı alın →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — satış ortağı kaydı · kayıtta <b>100$ ücretsiz kredi</b> (ücretsiz sunucu, daha yüksek gecikme süresi bekleyin — test için en iyisi, üretim için değil). OmniRoute'da <b>v3.8.50</b>'den beri birinci sınıf destek: Sohbet Tamamlamaları, Anthropic uyumlu kablo formatı ve OpenAI uyumlu yol. Mevcut modeller arasında <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ve daha fazlası bulunur. <b><a href="https://agentrouter.org/register">100$'ınızı alın →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Satış ortağı bağlantısı — OmniRoute'un bu sağlayıcıyla herhangi bir sponsorluğu veya ortaklığı yoktur.</i></sub>
     </td>

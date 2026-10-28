@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — ذكاء ريادي مفتوح · 2.8T من المعلمات · سياق بسعة 1M رمز"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       شكرًا لـ <b>Kimi (Moonshot AI)</b>، صديقنا المؤسس للمصادر المفتوحة، على دعم هذا المشروع! Kimi هو مختبر الذكاء الاصطناعي الذي يقف وراء عائلتي النماذج مفتوحة الأوزان K2 وK3 — ويوفر <b>Kimi K3</b> نافذة سياق بسعة 1M رمز، ورؤية أصلية، وقدرات برمجية بمستوى ريادي مقابل جزء بسيط من أسعار النماذج المغلقة، كما يعمل مباشرةً مع Claude Code وCodex وكل أداة برمجية يدعمها OmniRoute.
       <br/><br/>
-      <b>ما الذي يتيحه دعم Kimi:</b> تُشغّل أرصدة API المقدمة من Kimi مسار الإصدارات المتحقق منه بالذكاء الاصطناعي في OmniRoute — أي مرحلة <i>التحقق من الدمج بدعم Kimi K3</i> التي تراجع كل طلب سحب قبل إصداره — بالإضافة إلى تطوير الميزات اليومية. يتوفر دعم Kimi من الدرجة الأولى عبر المسارين: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> المباشر (<code>kimi-k3</code>) و<a href="https://www.kimi.ai/code?aff=omniroute">خطة البرمجة Kimi Code</a> (OAuth ومفتاح API). يُعد OmniRoute أيضًا أول مشروع برازيلي مفتوح المصدر ضمن برنامج دعم Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>احصل على مفتاح Kimi API مع أرصدة إضافية بنسبة 15% ←</b></a>
+      <b>ما الذي يتيحه دعم Kimi:</b> تُشغّل أرصدة API المقدمة من Kimi مسار الإصدارات المتحقق منه بالذكاء الاصطناعي في OmniRoute — أي مرحلة <i>التحقق من الدمج بدعم Kimi K3</i> التي تراجع كل طلب سحب قبل إصداره — بالإضافة إلى تطوير الميزات اليومية. يتوفر دعم Kimi من الدرجة الأولى عبر المسارين: <a href="https://platform.kimi.ai">Kimi API</a> المباشر (<code>kimi-k3</code>) و<a href="https://www.kimi.ai/code">خطة البرمجة Kimi Code</a> (OAuth ومفتاح API). يُعد OmniRoute أيضًا أول مشروع برازيلي مفتوح المصدر ضمن برنامج دعم Kimi. <a href="https://platform.kimi.ai"><b>احصل على مفتاح Kimi API مع أرصدة إضافية بنسبة 15% ←</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — تسجيل عبر رابط تابع · <b>أرصدة مجانية بقيمة $100</b> عند التسجيل (خادم مجاني، لذا توقّع زمن وصول أعلى — وهو الأنسب للاختبار لا لبيئات الإنتاج). دعم من الدرجة الأولى في OmniRoute منذ <b>v3.8.50</b>: إكمالات المحادثة، وتنسيق الاتصال المتوافق مع Anthropic، والمسار المتوافق مع OpenAI. تشمل النماذج المتاحة <code>claude-opus-4-8</code> و<code>claude-opus-5</code> و<code>gpt-5.6-sol</code> والمزيد. <b><a href="https://agentrouter.org/register?aff=70LM">احصل على رصيدك البالغ $100 ←</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — تسجيل عبر رابط تابع · <b>أرصدة مجانية بقيمة $100</b> عند التسجيل (خادم مجاني، لذا توقّع زمن وصول أعلى — وهو الأنسب للاختبار لا لبيئات الإنتاج). دعم من الدرجة الأولى في OmniRoute منذ <b>v3.8.50</b>: إكمالات المحادثة، وتنسيق الاتصال المتوافق مع Anthropic، والمسار المتوافق مع OpenAI. تشمل النماذج المتاحة <code>claude-opus-4-8</code> و<code>claude-opus-5</code> و<code>gpt-5.6-sol</code> والمزيد. <b><a href="https://agentrouter.org/register">احصل على رصيدك البالغ $100 ←</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>رابط تابع — لا توجد أي رعاية أو شراكة بين OmniRoute وهذا المزود.</i></sub>
     </td>

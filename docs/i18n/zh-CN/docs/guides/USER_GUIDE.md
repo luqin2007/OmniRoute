@@ -191,7 +191,7 @@ Claude 及与 Claude Code 兼容的路由会为 Opus 和 Sonnet 模型保留 `ma
 
 #### Kimi K2（固定每月 $9）
 
-1. 订阅：[Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. 订阅：[Moonshot AI](https://platform.kimi.ai)
 2. 获取 API 密钥 → 控制面板 → 添加 API 密钥
 
 **用法：** `kimi/kimi-k2.5` — **专业提示：** 每月固定 $9 即可获得 1000 万令牌，相当于每 100 万令牌 $0.90！

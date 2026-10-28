@@ -193,7 +193,7 @@ Dashboard → Providers → GitHub ကို ချိတ်ဆက်ပါ
 
 #### Kimi K2 (တစ်လလျှင် ပုံသေ $9)
 
-1. စာရင်းသွင်းရန်: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. စာရင်းသွင်းရန်: [Moonshot AI](https://platform.kimi.ai)
 2. API key ရယူပါ → Dashboard → Add API Key
 
 **အသုံးပြုရန်:** `kimi/kimi-k2.5` — **ကျွမ်းကျင်သူ အကြံပြုချက်:** 10M tokens အတွက် တစ်လလျှင် ပုံသေ $9 ဖြစ်သဖြင့် ထိရောက်သော ကုန်ကျစရိတ်မှာ $0.90/1M ဖြစ်သည်!

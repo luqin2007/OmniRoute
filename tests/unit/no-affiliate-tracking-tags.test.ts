@@ -8,6 +8,9 @@
 // (display-name/URL changes must never touch ids, aliases or runtime config).
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const providers = await import("../../src/shared/constants/providers.ts");
 
@@ -84,6 +87,56 @@ test("no Kimi provider website points at the unattributed legacy platform.moonsh
       `${provider.id}.website must not be the unattributed legacy domain`
     );
   }
+});
+
+/**
+ * Documentation keeps the same promise: the docs shipped INSIDE the app image
+ * (`docs/guides/USER_GUIDE.md`, `docs/reference/PROVIDER_REFERENCE.md` are bundled
+ * into the docs page) and the repo README must not monetize a click. Only the
+ * query parameter is expected to be absent — the link destination stays.
+ *
+ * CHANGELOG files are history and are deliberately out of scope (rewriting them
+ * would falsify the record of what upstream shipped).
+ */
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+
+function collectMarkdown(dir: string, out: string[] = []): string[] {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith("_") || entry.name === "node_modules") continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      collectMarkdown(full, out);
+    } else if (/\.mdx?$/i.test(entry.name) && !/changelog/i.test(full)) {
+      out.push(full);
+    }
+  }
+  return out;
+}
+
+test("no shipped documentation link carries an affiliate/referral tracking tag", () => {
+  const files = [
+    path.join(REPO_ROOT, "README.md"),
+    ...collectMarkdown(path.join(REPO_ROOT, "docs")),
+  ];
+  assert.ok(files.length > 100, `expected the doc set, walked ${files.length} files`);
+
+  const offenders: string[] = [];
+  for (const file of files) {
+    const body = readFileSync(file, "utf8");
+    // `ref` alone is deliberately NOT a forbidden parameter: it is overloaded
+    // across the codebase (git refs, Shields badge params, upstream API flags).
+    // Only the project-attributing form counts here.
+    const parts = [
+      ...[
+        ...body.matchAll(/[?&](aff|affiliate|aff_id|track_id|invite|invite_code)=[^"')\s]*/gi),
+      ].map((match) => match[0]),
+      ...[...body.matchAll(/[?&]ref=omniroute\b[^"')\s]*/gi)].map((match) => match[0]),
+    ];
+    for (const match of parts) {
+      offenders.push(`${path.relative(REPO_ROOT, file)}: ${match}`);
+    }
+  }
+  assert.deepEqual(offenders, [], `tracking parameters found:\n${offenders.join("\n")}`);
 });
 
 test("runtime endpoints are untouched (moonshot API base URL still api.moonshot.ai)", async () => {

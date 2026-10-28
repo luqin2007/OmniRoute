@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="ಕಿಮಿ ಕೆ3 — ಓಪನ್ ಫ್ರಾಂಟಿಯರ್ ಇಂಟೆಲಿಜೆನ್ಸ್ · 2.8T ಪ್ಯಾರಾಮೀಟರ್ಗಳು · 1M-ಟೋಕನ್ ಸಂದರ್ಭ"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="ಕಿಮಿ (ಮೂನ್ಶಾಟ್ AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ಈ ಯೋಜನೆಯನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ನಮ್ಮ ಸ್ಥಾಪಕ ಮುಕ್ತ ಮೂಲ ಸ್ನೇಹಿತರಾದ <b>ಕಿಮಿ (ಮೂನ್ಶಾಟ್ AI)</b> ಅವರಿಗೆ ಧನ್ಯವಾದಗಳು! ಕಿಮಿ ಓಪನ್-ವೈಟ್ K2 ಮತ್ತು K3 ಮಾದರಿ ಕುಟುಂಬಗಳ ಹಿಂದಿನ AI ಲ್ಯಾಬ್ ಆಗಿದೆ — <b>ಕಿಮಿ K3</b> 1M-ಟೋಕನ್ ಸಂದರ್ಭ ವಿಂಡೋ, ಸ್ಥಳೀಯ ದೃಷ್ಟಿ ಮತ್ತು ಮುಂಚೂಣಿ-ಮಟ್ಟದ ಕೋಡಿಂಗ್ ಅನ್ನು ಮುಚ್ಚಿದ-ಮಾದರಿ ಬೆಲೆಗಳ ಒಂದು ಭಾಗದಲ್ಲಿ ನೀಡುತ್ತದೆ, ಮತ್ತು ಕ್ಲೌಡ್ ಕೋಡ್, ಕೋಡೆಕ್ಸ್ ಮತ್ತು ಓಮ್ನಿರೂಟ್ ಸೇವೆ ಸಲ್ಲಿಸುವ ಪ್ರತಿ ಕೋಡಿಂಗ್ ಉಪಕರಣದೊಂದಿಗೆ ಬಾಕ್ಸ್ನಿಂದ ಹೊರಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
       <br/><br/>
-      <b>ಕಿಮಿಯ ಬೆಂಬಲವು ಯಾವುದಕ್ಕೆ ಶಕ್ತಿ ನೀಡುತ್ತದೆ:</b> ಕಿಮಿಯ API ಕ್ರೆಡಿಟ್ಗಳು ಓಮ್ನಿರೂಟ್ನ AI-ಮೌಲ್ಯೀಕರಿಸಿದ ಬಿಡುಗಡೆ ಪೈಪ್ಲೈನ್ಗೆ ಶಕ್ತಿ ನೀಡುತ್ತವೆ — ಪ್ರತಿ ಪುಲ್ ವಿನಂತಿಯನ್ನು ರವಾನಿಸುವ ಮೊದಲು ಪರಿಶೀಲಿಸುವ <i>ಕಿಮಿ K3 ನಿಂದ ನಡೆಸಲ್ಪಡುವ ವಿಲೀನ ಮೌಲ್ಯೀಕರಣ</i> ಹಂತ — ಜೊತೆಗೆ ದಿನನಿತ್ಯದ ವೈಶಿಷ್ಟ್ಯ ಅಭಿವೃದ್ಧಿ. ಪ್ರಥಮ ದರ್ಜೆ ಕಿಮಿ ಬೆಂಬಲವು ಎರಡೂ ರೈಲುಗಳಲ್ಲಿ ರವಾನೆಯಾಗುತ್ತದೆ: ನೇರ <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">ಕಿಮಿ API</a> (<code>kimi-k3</code>) ಮತ್ತು <a href="https://www.kimi.ai/code?aff=omniroute">ಕಿಮಿ ಕೋಡ್ ಕೋಡಿಂಗ್ ಯೋಜನೆ</a> (OAuth ಮತ್ತು API ಕೀ). ಓಮ್ನಿರೂಟ್ ಕಿಮಿಯ ಬೆಂಬಲ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಮೊದಲ ಬ್ರೆಜಿಲಿಯನ್ ಮುಕ್ತ-ಮೂಲ ಯೋಜನೆಯಾಗಿದೆ. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% ಹೆಚ್ಚುವರಿ ಕ್ರೆಡಿಟ್ಗಳೊಂದಿಗೆ ಕಿಮಿ API ಕೀಯನ್ನು ಪಡೆಯಿರಿ →</b></a>
+      <b>ಕಿಮಿಯ ಬೆಂಬಲವು ಯಾವುದಕ್ಕೆ ಶಕ್ತಿ ನೀಡುತ್ತದೆ:</b> ಕಿಮಿಯ API ಕ್ರೆಡಿಟ್ಗಳು ಓಮ್ನಿರೂಟ್ನ AI-ಮೌಲ್ಯೀಕರಿಸಿದ ಬಿಡುಗಡೆ ಪೈಪ್ಲೈನ್ಗೆ ಶಕ್ತಿ ನೀಡುತ್ತವೆ — ಪ್ರತಿ ಪುಲ್ ವಿನಂತಿಯನ್ನು ರವಾನಿಸುವ ಮೊದಲು ಪರಿಶೀಲಿಸುವ <i>ಕಿಮಿ K3 ನಿಂದ ನಡೆಸಲ್ಪಡುವ ವಿಲೀನ ಮೌಲ್ಯೀಕರಣ</i> ಹಂತ — ಜೊತೆಗೆ ದಿನನಿತ್ಯದ ವೈಶಿಷ್ಟ್ಯ ಅಭಿವೃದ್ಧಿ. ಪ್ರಥಮ ದರ್ಜೆ ಕಿಮಿ ಬೆಂಬಲವು ಎರಡೂ ರೈಲುಗಳಲ್ಲಿ ರವಾನೆಯಾಗುತ್ತದೆ: ನೇರ <a href="https://platform.kimi.ai">ಕಿಮಿ API</a> (<code>kimi-k3</code>) ಮತ್ತು <a href="https://www.kimi.ai/code">ಕಿಮಿ ಕೋಡ್ ಕೋಡಿಂಗ್ ಯೋಜನೆ</a> (OAuth ಮತ್ತು API ಕೀ). ಓಮ್ನಿರೂಟ್ ಕಿಮಿಯ ಬೆಂಬಲ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಮೊದಲ ಬ್ರೆಜಿಲಿಯನ್ ಮುಕ್ತ-ಮೂಲ ಯೋಜನೆಯಾಗಿದೆ. <a href="https://platform.kimi.ai"><b>15% ಹೆಚ್ಚುವರಿ ಕ್ರೆಡಿಟ್ಗಳೊಂದಿಗೆ ಕಿಮಿ API ಕೀಯನ್ನು ಪಡೆಯಿರಿ →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="ಏಜೆಂಟ್ರೂಟರ್"/>
       </a>
       <br/><sub><b>ಏಜೆಂಟ್ರೂಟರ್</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">ಏಜೆಂಟ್ರೂಟರ್</a></b> — ಅಂಗಸಂಸ್ಥೆ ಸೈನ್ಅಪ್ · ಸೈನ್ಅಪ್ನಲ್ಲಿ <b>$100 ಉಚಿತ ಕ್ರೆಡಿಟ್ಗಳು</b> (ಉಚಿತ ಸರ್ವರ್, ಹೆಚ್ಚಿನ ಲೇಟೆನ್ಸಿ ನಿರೀಕ್ಷಿಸಿ — ಪರೀಕ್ಷೆಗೆ ಉತ್ತಮ, ಉತ್ಪಾದನೆಗೆ ಅಲ್ಲ). ಓಮ್ನಿರೂಟ್ನಲ್ಲಿ <b>v3.8.50</b> ರಿಂದ ಪ್ರಥಮ ದರ್ಜೆ ಬೆಂಬಲ: ಚಾಟ್ ಕಂಪ್ಲೀಷನ್ಸ್, ಆಂಥ್ರೋಪಿಕ್-ಹೊಂದಾಣಿಕೆಯ ವೈರ್ ಫಾರ್ಮ್ಯಾಟ್ ಮತ್ತು OpenAI-ಹೊಂದಾಣಿಕೆಯ ಮಾರ್ಗ. ಲಭ್ಯವಿರುವ ಮಾದರಿಗಳಲ್ಲಿ <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ಮತ್ತು ಇನ್ನಷ್ಟು ಸೇರಿವೆ. <b><a href="https://agentrouter.org/register?aff=70LM">ನಿಮ್ಮ $100 ಪಡೆಯಿರಿ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">ಏಜೆಂಟ್ರೂಟರ್</a></b> — ಅಂಗಸಂಸ್ಥೆ ಸೈನ್ಅಪ್ · ಸೈನ್ಅಪ್ನಲ್ಲಿ <b>$100 ಉಚಿತ ಕ್ರೆಡಿಟ್ಗಳು</b> (ಉಚಿತ ಸರ್ವರ್, ಹೆಚ್ಚಿನ ಲೇಟೆನ್ಸಿ ನಿರೀಕ್ಷಿಸಿ — ಪರೀಕ್ಷೆಗೆ ಉತ್ತಮ, ಉತ್ಪಾದನೆಗೆ ಅಲ್ಲ). ಓಮ್ನಿರೂಟ್ನಲ್ಲಿ <b>v3.8.50</b> ರಿಂದ ಪ್ರಥಮ ದರ್ಜೆ ಬೆಂಬಲ: ಚಾಟ್ ಕಂಪ್ಲೀಷನ್ಸ್, ಆಂಥ್ರೋಪಿಕ್-ಹೊಂದಾಣಿಕೆಯ ವೈರ್ ಫಾರ್ಮ್ಯಾಟ್ ಮತ್ತು OpenAI-ಹೊಂದಾಣಿಕೆಯ ಮಾರ್ಗ. ಲಭ್ಯವಿರುವ ಮಾದರಿಗಳಲ್ಲಿ <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> ಮತ್ತು ಇನ್ನಷ್ಟು ಸೇರಿವೆ. <b><a href="https://agentrouter.org/register">ನಿಮ್ಮ $100 ಪಡೆಯಿರಿ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>ಅಂಗಸಂಸ್ಥೆ ಲಿಂಕ್ — ಓಮ್ನಿರೂಟ್ ಈ ಪೂರೈಕೆದಾರರೊಂದಿಗೆ ಯಾವುದೇ ಪ್ರಾಯೋಜಕತ್ವ ಅಥವಾ ಪಾಲುದಾರಿಕೆಯನ್ನು ಹೊಂದಿಲ್ಲ.</i></sub>
     </td>

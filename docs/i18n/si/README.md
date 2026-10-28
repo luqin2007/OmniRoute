@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       මෙම ව්යාපෘතියට පිටුබලය දීම සඳහා අපගේ ආරම්භක විවෘත මූලාශ්ර මිතුරා වන <b>Kimi (Moonshot AI)</b> වෙත ස්තූතියි! Kimi යනු විවෘත-බර K2 සහ K3 මාදිලි පවුල් පිටුපස ඇති AI රසායනාගාරයයි — <b>Kimi K3</b> 1M-ටෝකන් සන්දර්භ කවුළුවක්, ස්වදේශීය දර්ශනයක් සහ දේශසීමා මට්ටමේ කේතීකරණයක් සංවෘත-මාදිලි මිල ගණන් වලින් කොටසකට ලබා දෙන අතර, Claude Code, Codex සහ OmniRoute සපයන සෑම කේතීකරණ මෙවලමක් සමඟම ක්රියා කරයි.
       <br/><br/>
-      <b>Kimi ගේ සහයෝගය බලගන්වන දේ:</b> Kimi ගේ API ණය OmniRoute හි AI-සත්යාපිත නිකුත් කිරීමේ නල මාර්ගයට බලය සපයයි — නැව්ගත කිරීමට පෙර සෑම අදින්න ඉල්ලීමක්ම සමාලෝචනය කරන <i>Kimi K3 විසින් බලගන්වන ලද ඒකාබද්ධ සත්යාපන</i> අදියර — තවද දෛනික විශේෂාංග සංවර්ධනය. පළමු පන්තියේ Kimi සහයෝගය රේල් පීලි දෙකෙහිම නැව්ගත කරයි: සෘජු <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) සහ <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code කේතීකරණ සැලැස්ම</a> (OAuth සහ API යතුර). OmniRoute යනු Kimi ගේ සහයෝගය වැඩසටහනේ පළමු බ්රසීලියානු විවෘත මූලාශ්ර ව්යාපෘතිය ද වේ. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% අමතර ණය සමඟ Kimi API යතුරක් ලබා ගන්න →</b></a>
+      <b>Kimi ගේ සහයෝගය බලගන්වන දේ:</b> Kimi ගේ API ණය OmniRoute හි AI-සත්යාපිත නිකුත් කිරීමේ නල මාර්ගයට බලය සපයයි — නැව්ගත කිරීමට පෙර සෑම අදින්න ඉල්ලීමක්ම සමාලෝචනය කරන <i>Kimi K3 විසින් බලගන්වන ලද ඒකාබද්ධ සත්යාපන</i> අදියර — තවද දෛනික විශේෂාංග සංවර්ධනය. පළමු පන්තියේ Kimi සහයෝගය රේල් පීලි දෙකෙහිම නැව්ගත කරයි: සෘජු <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) සහ <a href="https://www.kimi.ai/code">Kimi Code කේතීකරණ සැලැස්ම</a> (OAuth සහ API යතුර). OmniRoute යනු Kimi ගේ සහයෝගය වැඩසටහනේ පළමු බ්රසීලියානු විවෘත මූලාශ්ර ව්යාපෘතිය ද වේ. <a href="https://platform.kimi.ai"><b>15% අමතර ණය සමඟ Kimi API යතුරක් ලබා ගන්න →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — අනුබද්ධ ලියාපදිංචිය · ලියාපදිංචියේදී <b>$100 නොමිලේ ණය</b> (නොමිලේ සේවාදායකය, ඉහළ ප්රමාදයක් අපේක්ෂා කරන්න — පරීක්ෂා කිරීම සඳහා හොඳම, නිෂ්පාදනය සඳහා නොවේ). <b>v3.8.50</b> සිට OmniRoute හි පළමු පන්තියේ සහයෝගය: Chat Completions, Anthropic-අනුකූල වයර් ආකෘතිය සහ OpenAI-අනුකූල මාර්ගය. පවතින මාදිලි අතර <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> සහ තවත් බොහෝ දේ ඇතුළත් වේ. <b><a href="https://agentrouter.org/register?aff=70LM">ඔබේ $100 ලබා ගන්න →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — අනුබද්ධ ලියාපදිංචිය · ලියාපදිංචියේදී <b>$100 නොමිලේ ණය</b> (නොමිලේ සේවාදායකය, ඉහළ ප්රමාදයක් අපේක්ෂා කරන්න — පරීක්ෂා කිරීම සඳහා හොඳම, නිෂ්පාදනය සඳහා නොවේ). <b>v3.8.50</b> සිට OmniRoute හි පළමු පන්තියේ සහයෝගය: Chat Completions, Anthropic-අනුකූල වයර් ආකෘතිය සහ OpenAI-අනුකූල මාර්ගය. පවතින මාදිලි අතර <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> සහ තවත් බොහෝ දේ ඇතුළත් වේ. <b><a href="https://agentrouter.org/register">ඔබේ $100 ලබා ගන්න →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>අනුබද්ධ සබැඳිය — OmniRoute හට මෙම සැපයුම්කරු සමඟ කිසිදු අනුග්රාහකත්වයක් හෝ හවුල්කාරිත්වයක් නොමැත.</i></sub>
     </td>

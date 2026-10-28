@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Open Frontier Intelligence · 2.8T parameters · 1M-token context"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ဤပရောဂျက်ကို ပံ့ပိုးပေးသည့် ကျွန်ုပ်တို့၏ တည်ထောင်သူ Open Source သူငယ်ချင်း <b>Kimi (Moonshot AI)</b> အား ကျေးဇူးတင်ပါသည်။ Kimi သည် open-weight K2 နှင့် K3 မော်ဒယ်မိသားစုများနောက်ကွယ်မှ AI ဓာတ်ခွဲခန်းဖြစ်သည် — <b>Kimi K3</b> သည် 1M-token context window၊ native vision နှင့် frontier-level coding တို့ကို closed-model ဈေးနှုန်း၏ အစိတ်အပိုင်းတစ်ခုဖြင့် ပေးစွမ်းပြီး Claude Code၊ Codex နှင့် OmniRoute မှ ပံ့ပိုးပေးသည့် coding tool တိုင်းနှင့် အဆင်ပြေစွာ အလုပ်လုပ်ပါသည်။
       <br/><br/>
-      <b>Kimi ၏ ပံ့ပိုးမှုက ဘာတွေလုပ်ဆောင်ပေးသလဲ-</b> Kimi ၏ API credits များသည် OmniRoute ၏ AI-validated release pipeline ကို အားဖြည့်ပေးသည် — pull request တိုင်းကို မထုတ်ပြန်မီ ပြန်လည်သုံးသပ်သည့် <i>merge validation powered by Kimi K3</i> အဆင့် — အပြင် နေ့စဉ် feature development ကိုပါ ပံ့ပိုးပေးပါသည်။ First-class Kimi support သည် လမ်းကြောင်းနှစ်ခုလုံးတွင် ပါဝင်သည်- တိုက်ရိုက် <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) နှင့် <a href="https://www.kimi.ai/code?aff=omniroute">Kimi Code coding plan</a> (OAuth နှင့် API key)။ OmniRoute သည် Kimi ၏ ပံ့ပိုးမှုအစီအစဉ်တွင် ပထမဆုံး ဘရာဇီးလ် open-source ပရောဂျက်လည်းဖြစ်သည်။ <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>15% အပို credits ဖြင့် Kimi API key ရယူပါ →</b></a>
+      <b>Kimi ၏ ပံ့ပိုးမှုက ဘာတွေလုပ်ဆောင်ပေးသလဲ-</b> Kimi ၏ API credits များသည် OmniRoute ၏ AI-validated release pipeline ကို အားဖြည့်ပေးသည် — pull request တိုင်းကို မထုတ်ပြန်မီ ပြန်လည်သုံးသပ်သည့် <i>merge validation powered by Kimi K3</i> အဆင့် — အပြင် နေ့စဉ် feature development ကိုပါ ပံ့ပိုးပေးပါသည်။ First-class Kimi support သည် လမ်းကြောင်းနှစ်ခုလုံးတွင် ပါဝင်သည်- တိုက်ရိုက် <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) နှင့် <a href="https://www.kimi.ai/code">Kimi Code coding plan</a> (OAuth နှင့် API key)။ OmniRoute သည် Kimi ၏ ပံ့ပိုးမှုအစီအစဉ်တွင် ပထမဆုံး ဘရာဇီးလ် open-source ပရောဂျက်လည်းဖြစ်သည်။ <a href="https://platform.kimi.ai"><b>15% အပို credits ဖြင့် Kimi API key ရယူပါ →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — affiliate စာရင်းသွင်းခြင်း · စာရင်းသွင်းခြင်းတွင် <b>$100 အခမဲ့ credits</b> (အခမဲ့ server၊ latency ပိုများနိုင်သည် — စမ်းသပ်ရန် အကောင်းဆုံး၊ ထုတ်လုပ်မှုအတွက် မဟုတ်ပါ)။ OmniRoute တွင် <b>v3.8.50</b> မှစ၍ First-class support- Chat Completions၊ Anthropic-compatible wire format နှင့် OpenAI-compatible path။ ရရှိနိုင်သော မော်ဒယ်များတွင် <code>claude-opus-4-8</code>၊ <code>claude-opus-5</code>၊ <code>gpt-5.6-sol</code> နှင့် အခြားအရာများ ပါဝင်သည်။ <b><a href="https://agentrouter.org/register?aff=70LM">သင့် $100 ကို ရယူပါ →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — affiliate စာရင်းသွင်းခြင်း · စာရင်းသွင်းခြင်းတွင် <b>$100 အခမဲ့ credits</b> (အခမဲ့ server၊ latency ပိုများနိုင်သည် — စမ်းသပ်ရန် အကောင်းဆုံး၊ ထုတ်လုပ်မှုအတွက် မဟုတ်ပါ)။ OmniRoute တွင် <b>v3.8.50</b> မှစ၍ First-class support- Chat Completions၊ Anthropic-compatible wire format နှင့် OpenAI-compatible path။ ရရှိနိုင်သော မော်ဒယ်များတွင် <code>claude-opus-4-8</code>၊ <code>claude-opus-5</code>၊ <code>gpt-5.6-sol</code> နှင့် အခြားအရာများ ပါဝင်သည်။ <b><a href="https://agentrouter.org/register">သင့် $100 ကို ရယူပါ →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Affiliate link — OmniRoute သည် ဤပံ့ပိုးသူနှင့် ပံ့ပိုးမှု သို့မဟုတ် ပူးပေါင်းဆောင်ရွက်မှု မရှိပါ။</i></sub>
     </td>

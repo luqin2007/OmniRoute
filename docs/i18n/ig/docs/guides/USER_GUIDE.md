@@ -191,7 +191,7 @@ Dashboard → Providers → Jikọọ GitHub
 
 #### Kimi K2 ($9/ọnwa n'enweghị mgbanwe)
 
-1. Debanye aha: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Debanye aha: [Moonshot AI](https://platform.kimi.ai)
 2. Nweta igodo API → Dashboard → Tinye Igodo API
 
 **Jiri:** `kimi/kimi-k2.5` — **Ndụmọdụ Ọkachamara:** $9/ọnwa a kapịrị ọnụ maka token 10M = ọnụahịa dị irè nke $0.90/1M!

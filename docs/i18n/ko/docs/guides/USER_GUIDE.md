@@ -191,7 +191,7 @@ Claude 및 Claude Code 호환 경로는 Opus와 Sonnet 모델의 `max` 사고 �
 
 #### Kimi K2 (월 $9 정액)
 
-1. 구독: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. 구독: [Moonshot AI](https://platform.kimi.ai)
 2. API 키 발급 → 대시보드 → API 키 추가
 
 **사용:** `kimi/kimi-k2.5` — **전문가 팁:** 10M 토큰에 월 $9 정액이므로 실질 비용은 $0.90/1M입니다!

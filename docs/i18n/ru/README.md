@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — Передовая разведка · 2.8T параметров · контекст 1M токенов"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Благодарим <b>Kimi (Moonshot AI)</b>, нашего основателя-друга Open Source, за поддержку этого проекта! Kimi — это лаборатория ИИ, стоящая за семействами моделей K2 и K3 с открытым весом — <b>Kimi K3</b> предоставляет окно контекста в 1M токенов, нативное зрение и передовое кодирование за долю цены закрытых моделей, и работает из коробки с Claude Code, Codex и каждым инструментом кодирования, который обслуживает OmniRoute.
       <br/><br/>
-      <b>Что обеспечивает поддержка Kimi:</b> Кредиты API Kimi обеспечивают работу конвейера выпуска OmniRoute, проверенного ИИ — этап *проверки слияния на базе Kimi K3*, который проверяет каждый pull request перед его отправкой — плюс ежедневную разработку функций. Первоклассная поддержка Kimi поставляется по обоим каналам: прямой <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">Kimi API</a> (<code>kimi-k3</code>) и <a href="https://www.kimi.ai/code?aff=omniroute">план кодирования Kimi Code</a> (OAuth и API key). OmniRoute также является первым бразильским проектом с открытым исходным кодом в программе поддержки Kimi. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>Получите Kimi API key с 15% дополнительными кредитами →</b></a>
+      <b>Что обеспечивает поддержка Kimi:</b> Кредиты API Kimi обеспечивают работу конвейера выпуска OmniRoute, проверенного ИИ — этап *проверки слияния на базе Kimi K3*, который проверяет каждый pull request перед его отправкой — плюс ежедневную разработку функций. Первоклассная поддержка Kimi поставляется по обоим каналам: прямой <a href="https://platform.kimi.ai">Kimi API</a> (<code>kimi-k3</code>) и <a href="https://www.kimi.ai/code">план кодирования Kimi Code</a> (OAuth и API key). OmniRoute также является первым бразильским проектом с открытым исходным кодом в программе поддержки Kimi. <a href="https://platform.kimi.ai"><b>Получите Kimi API key с 15% дополнительными кредитами →</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — партнерская регистрация · <b>$100 бесплатных кредитов</b> при регистрации (бесплатный сервер, ожидайте более высокой задержки — лучше всего для тестирования, не для продакшена). Первоклассная поддержка в OmniRoute с <b>v3.8.50</b>: Chat Completions, Anthropic-совместимый формат данных и OpenAI-совместимый путь. Доступные модели включают <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> и другие. <b><a href="https://agentrouter.org/register?aff=70LM">Заберите свои $100 →</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — партнерская регистрация · <b>$100 бесплатных кредитов</b> при регистрации (бесплатный сервер, ожидайте более высокой задержки — лучше всего для тестирования, не для продакшена). Первоклассная поддержка в OmniRoute с <b>v3.8.50</b>: Chat Completions, Anthropic-совместимый формат данных и OpenAI-совместимый путь. Доступные модели включают <code>claude-opus-4-8</code>, <code>claude-opus-5</code>, <code>gpt-5.6-sol</code> и другие. <b><a href="https://agentrouter.org/register">Заберите свои $100 →</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>Партнерская ссылка — OmniRoute не имеет спонсорства или партнерства с этим провайдером.</i></sub>
     </td>

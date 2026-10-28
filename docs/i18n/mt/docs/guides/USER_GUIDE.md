@@ -191,7 +191,7 @@ Mudelli:
 
 #### Kimi K2 ($9/xahar b’rata fissa)
 
-1. Abbona: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Abbona: [Moonshot AI](https://platform.kimi.ai)
 2. Ikseb ċavetta API → Dashboard → Żid Ċavetta API
 
 **Uża:** `kimi/kimi-k2.5` — **Parir Professjonali:** Prezz fiss ta’ $9/xahar għal 10M tokens = spiża effettiva ta’ $0.90/1M!

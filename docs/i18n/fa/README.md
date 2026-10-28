@@ -276,7 +276,7 @@ curl http://localhost:20128/v1/chat/completions \
 </div>
 
 <p align="center">
-  <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+  <a href="https://platform.kimi.ai">
     <img src="public/sponsors/kimi-k3-banner.png" width="100%" alt="Kimi K3 — هوش مرزی باز · 2.8T پارامتر · 1M-توکن زمینه"/>
   </a>
 </p>
@@ -286,7 +286,7 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">
+      <a href="https://platform.kimi.ai">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/providers/kimi-logomark-dark.svg">
           <img src="public/providers/kimi-logomark-light.svg" width="64" alt="Kimi (Moonshot AI)"/>
@@ -298,7 +298,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       با تشکر از <b>Kimi (Moonshot AI)</b>، دوست متنباز بنیانگذار ما، برای حمایت از این پروژه! Kimi آزمایشگاه هوش مصنوعی پشت خانواده مدلهای K2 و K3 با وزن باز است — <b>Kimi K3</b> یک پنجره زمینه 1M-توکن، دید بومی و کدنویسی در سطح مرزی را با کسری از قیمت مدلهای بسته ارائه میدهد و با Claude Code، Codex و هر ابزار کدنویسی که OmniRoute ارائه میدهد، خارج از جعبه کار میکند.
       <br/><br/>
-      <b>حمایت Kimi چه چیزی را تامین میکند:</b> اعتبارات API Kimi خط لوله انتشار تایید شده توسط هوش مصنوعی OmniRoute را تامین میکند — مرحله <i>تایید ادغام توسط Kimi K3</i> که هر درخواست کشش را قبل از ارسال بررسی میکند — به علاوه توسعه ویژگیهای روزمره. پشتیبانی درجه یک Kimi در هر دو مسیر ارائه میشود: <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute">API مستقیم Kimi</a> (<code>kimi-k3</code>) و <a href="https://www.kimi.ai/code?aff=omniroute">برنامه کدنویسی Kimi Code</a> (OAuth و کلید API). OmniRoute همچنین اولین پروژه متنباز برزیلی در برنامه پشتیبانی Kimi است. <a href="https://platform.kimi.ai?track_id=track-8197581fdd7d4139a0f562e4a03c3798&aff=omniroute"><b>یک کلید API Kimi با 15% اعتبار اضافی دریافت کنید ←</b></a>
+      <b>حمایت Kimi چه چیزی را تامین میکند:</b> اعتبارات API Kimi خط لوله انتشار تایید شده توسط هوش مصنوعی OmniRoute را تامین میکند — مرحله <i>تایید ادغام توسط Kimi K3</i> که هر درخواست کشش را قبل از ارسال بررسی میکند — به علاوه توسعه ویژگیهای روزمره. پشتیبانی درجه یک Kimi در هر دو مسیر ارائه میشود: <a href="https://platform.kimi.ai">API مستقیم Kimi</a> (<code>kimi-k3</code>) و <a href="https://www.kimi.ai/code">برنامه کدنویسی Kimi Code</a> (OAuth و کلید API). OmniRoute همچنین اولین پروژه متنباز برزیلی در برنامه پشتیبانی Kimi است. <a href="https://platform.kimi.ai"><b>یک کلید API Kimi با 15% اعتبار اضافی دریافت کنید ←</b></a>
     </td>
   </tr>
   <tr>
@@ -329,13 +329,13 @@ curl http://localhost:20128/v1/chat/completions \
 <table>
   <tr>
     <td align="center" width="120">
-      <a href="https://agentrouter.org/register?aff=70LM">
+      <a href="https://agentrouter.org/register">
         <img src="./public/providers/cli-generic.svg" width="32" alt="AgentRouter"/>
       </a>
       <br/><sub><b>AgentRouter</b></sub><br/><sub>agentrouter.org</sub>
     </td>
     <td>
-      <sub><b><a href="https://agentrouter.org/register?aff=70LM">AgentRouter</a></b> — ثبتنام وابسته · <b>100 دلار اعتبار رایگان</b> هنگام ثبتنام (سرور رایگان، انتظار تاخیر بالاتر — بهترین برای آزمایش، نه تولید). پشتیبانی درجه یک در OmniRoute از <b>v3.8.50</b>: تکمیل چت، فرمت سیمی سازگار با Anthropic و مسیر سازگار با OpenAI. مدلهای موجود شامل <code>claude-opus-4-8</code>، <code>claude-opus-5</code>، <code>gpt-5.6-sol</code> و موارد دیگر. <b><a href="https://agentrouter.org/register?aff=70LM">100 دلار خود را بگیرید ←</a></b></sub>
+      <sub><b><a href="https://agentrouter.org/register">AgentRouter</a></b> — ثبتنام وابسته · <b>100 دلار اعتبار رایگان</b> هنگام ثبتنام (سرور رایگان، انتظار تاخیر بالاتر — بهترین برای آزمایش، نه تولید). پشتیبانی درجه یک در OmniRoute از <b>v3.8.50</b>: تکمیل چت، فرمت سیمی سازگار با Anthropic و مسیر سازگار با OpenAI. مدلهای موجود شامل <code>claude-opus-4-8</code>، <code>claude-opus-5</code>، <code>gpt-5.6-sol</code> و موارد دیگر. <b><a href="https://agentrouter.org/register">100 دلار خود را بگیرید ←</a></b></sub>
       <br/><br/>
       <sub>⚠️ <i>لینک وابسته — OmniRoute هیچ حمایت یا مشارکتی با این ارائهدهنده ندارد.</i></sub>
     </td>

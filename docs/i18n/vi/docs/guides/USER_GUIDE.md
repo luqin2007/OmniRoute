@@ -191,7 +191,7 @@ Mô hình:
 
 #### Kimi K2 (Cố định $9/tháng)
 
-1. Đăng ký gói: [Moonshot AI](https://platform.kimi.ai?aff=omniroute)
+1. Đăng ký gói: [Moonshot AI](https://platform.kimi.ai)
 2. Lấy khóa API → Bảng điều khiển → Thêm khóa API
 
 **Sử dụng:** `kimi/kimi-k2.5` — **Mẹo chuyên nghiệp:** Mức cố định $9/tháng cho 10M token = chi phí thực tế $0.90/1M!
