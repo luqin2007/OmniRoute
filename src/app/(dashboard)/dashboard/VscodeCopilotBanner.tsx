@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 // Marketplace listing is the primary CTA; Open VSX (Cursor/Windsurf/VSCodium/etc.)
 // is called out via secondaryNote instead of a second button, to keep this banner
-// the same size as KimiSponsorBanner.
+// the same compact size as the dashboard's other announcements.
 // This used to go through our own link.omniroute.online shortener for click
 // metrics, but that domain no longer resolves after the move to omniskill.online.
 const MARKETPLACE_URL =

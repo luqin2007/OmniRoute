@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "Ayrim provayderlar bir xil modellarni bir nechta protokol orqali taqdim etadi. Muqobil variant kerak bo‘lmasa, standart qiymatni o‘zgartirmang.",
     "bulkAddFormatHintCloudflare": "Har bir satrga bittadan kalit. Format: name|accountId|apiKey (Cloudflare hisob identifikatori + API tokeni).",
     "lmarenaWebCookieHint": "arena.ai saytini oching, tizimga kiring, so‘ng Network so‘rovidan to‘liq Cookie sarlavhasini nusxalang. arena-auth-prod-v1.0 va arena-auth-prod-v1.1 ni (mavjud bo‘lsa, keyingi qismlarni ham), imkon qadar cf_clearance bilan birga kiriting. Faqat bo‘sh arena-auth-prod-v1 cookieʼsini joylashtirmang. Ixtiyoriy: agar create-evaluation hali ham 403 qaytarsa, providerSpecificData.recaptchaV3Token.",
-    "kimiOfficialSupporterBadge": "Rasmiy qoʻllab-quvvatlovchi",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) — OmniRoute’ning rasmiy ishga tushirish hamkori",
-    "cheaperInferenceSupporterBadge": "Ochiq manba doʻsti",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference OmniRoute’ni ochiq manba doʻsti sifatida qoʻllab-quvvatlaydi",
     "kimiPartnerLinkNote": "Hamkorlik havolasi — siz uchun qoʻshimcha xarajatsiz OmniRoute’ni qoʻllab-quvvatlaydi",
     "codexQuotaPools": "Codex kvota havzalari",
     "codexPoolAvailable": "Mavjud",
@@ -14177,13 +14173,6 @@
     "running": "Ishlamoqda...",
     "testFailed": "Sinov muvaffaqiyatsiz yakunlandi"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) — OmniRoute’ning ilk ochiq kodli do‘sti",
-    "description": "Yangi foydalanuvchilar birinchi hisob to‘ldirishida 15% qo‘shimcha API kreditiga ega bo‘ladi. OmniRoute’da Kimi K3’dan rasmiy Kimi API orqali foydalaning.",
-    "cta": "Kimi API kalitini olish",
-    "partnerLinkNote": "Hamkorlik havolasi",
-    "dismissAriaLabel": "Yopish"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute endi VS Code Copilot Chat ichida ishlaydi",
     "description": "Bepul OmniCopilot kengaytmasini o‘rnating — barcha OmniRoute modellari siz ishlatib kelayotgan Copilot Chat model tanlash ro‘yxatida paydo bo‘ladi.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Provayder vositalarni chaqirishni qo‘llab-quvvatlamaydi",
     "structuredOutputMismatch": "Provayder tuzilgan chiqishni qo‘llab-quvvatlamaydi",
     "contextWindowMismatch": "So‘rov provayderning kontekst oynasi hajmidan oshib ketdi"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference — OmniRoute’ning ochiq manbali do‘sti",
-    "description": "O‘nlab ilg‘or modellarni yagona OpenAI bilan mos endpoint orqali qayta sotuvchi, narx bo‘yicha tartiblangan shlyuz — har bir so‘rovni ro‘yxat narxidan hech qachon oshirmagan holda eng arzon mos provayderga yo‘naltiradi.",
-    "cta": "API kalitini olish",
-    "partnerLinkNote": "Hamkor havolasi",
-    "dismissAriaLabel": "Yopish"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models katalogida fikrlash darajasi variantlarini (masalan, -low, -medium, -high) yaratishni o‘chirib qo‘ying.",
   "connectionTest": {

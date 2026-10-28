@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "Wasu masu samarwa suna wallafa samfura iri ɗaya ta ka'idoji fiye da ɗaya. Bar na asali sai idan kana buƙatar madadin.",
     "bulkAddFormatHintCloudflare": "Maɓalli ɗaya a kowane layi. Tsari: name|accountId|apiKey (ID na asusun Cloudflare + token na API).",
     "lmarenaWebCookieHint": "Buɗe arena.ai, shiga, sannan ka kwafi cikakken taken Cookie daga buƙatar Network. Haɗa arena-auth-prod-v1.0 da arena-auth-prod-v1.1 (da sauran gutsuttsura idan suna nan), zai fi kyau tare da cf_clearance. Kada ka manna cookie na arena-auth-prod-v1 marar komai kaɗai. Na zaɓi: providerSpecificData.recaptchaV3Token idan create-evaluation har yanzu yana mayar da 403.",
-    "kimiOfficialSupporterBadge": "Mai Tallafi na Hukuma",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) abokin ƙaddamar da OmniRoute ne na hukuma",
-    "cheaperInferenceSupporterBadge": "Abokin Buɗaɗɗen Tushe",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference yana tallafa wa OmniRoute a matsayin Abokin Buɗaɗɗen Tushe",
     "kimiPartnerLinkNote": "Haɗin abokin hulɗa — yana tallafa wa OmniRoute ba tare da ƙarin kuɗi a gare ku ba",
     "codexQuotaPools": "Rukunonin kason Codex",
     "codexPoolAvailable": "Akwai",
@@ -14177,13 +14173,6 @@
     "running": "Ana gudanarwa...",
     "testFailed": "Gwaji ya gaza"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) shi ne Abokin Buɗaɗɗen Tushe da ya kafa OmniRoute",
-    "description": "Sabbin masu amfani suna samun ƙarin kiredit na API na 15% a cajin kuɗinsu na farko. Yi amfani da Kimi K3 a OmniRoute ta hanyar API na Kimi na hukuma.",
-    "cta": "Sami Maɓallin API na Kimi",
-    "partnerLinkNote": "Hanyar haɗin abokin hulɗa",
-    "dismissAriaLabel": "Rufe"
-  },
   "vscodeCopilotBanner": {
     "title": "Yanzu OmniRoute yana aiki a cikin VS Code Copilot Chat",
     "description": "Shigar da ƙarin OmniCopilot na kyauta, kuma kowane samfurin OmniRoute zai bayyana kai tsaye a cikin mai zaɓen samfuri na Copilot Chat da kake amfani da shi.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Mai bayarwa ba ya goyon bayan kiran kayan aiki",
     "structuredOutputMismatch": "Mai bayarwa ba ya goyon bayan fitarwa mai tsari",
     "contextWindowMismatch": "Buƙatar ta wuce iyakar mahallin mai bayarwa"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference abokin buɗaɗɗen tushe ne na OmniRoute",
-    "description": "Ƙofar da aka jera bisa farashi wadda ke sake sayar da dimbin samfuran zamani na gaba ta wata mahaɗa guda mai dacewa da OpenAI — tana tura kowace buƙata zuwa mai bayarwa mafi arha da ya cancanta, ba tare da ta taɓa wuce farashin jeri ba.",
-    "cta": "Samu Mabuɗin API",
-    "partnerLinkNote": "Hanyar haɗin abokin hulɗa",
-    "dismissAriaLabel": "Yi watsi"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Kashe samar da nau'ikan matakan tunani (misali -low, -medium, -high) a cikin kundin /v1/models.",
   "connectionTest": {

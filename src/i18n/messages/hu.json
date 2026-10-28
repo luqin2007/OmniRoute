@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Néhány szolgáltató ugyanazokat a modelleket több protokollon is közzéteszi. Hagyja az alapértelmezettet, hacsak nem szükséges az alternatíva.",
     "bulkAddFormatHintCloudflare": "Soronként egy kulcs. Formátum: name|accountId|apiKey (Cloudflare-fiókazonosító + API-token).",
     "lmarenaWebCookieHint": "Nyissa meg az arena.ai webhelyet, jelentkezzen be, majd másolja ki a teljes Cookie fejlécet egy hálózati kérésből. A fejléc tartalmazza az arena-auth-prod-v1.0 és arena-auth-prod-v1.1 sütiket (valamint a további részeket, ha vannak), lehetőleg a cf_clearance sütivel együtt. Ne csak az üres arena-auth-prod-v1 sütit illessze be. Opcionális: providerSpecificData.recaptchaV3Token, ha a create-evaluation továbbra is 403-as hibát ad vissza.",
-    "kimiOfficialSupporterBadge": "Alapító barát",
-    "kimiOfficialSupporterTooltip": "A Kimi (Moonshot AI) az OmniRoute alapító nyílt forráskódú barátja",
-    "cheaperInferenceSupporterBadge": "Nyílt forráskódú barát",
-    "cheaperInferenceSupporterTooltip": "A Cheaper Inference nyílt forráskódú barátként támogatja az OmniRoute-ot",
     "kimiPartnerLinkNote": "Partnerhivatkozás — az Ön számára további költség nélkül támogatja az OmniRoute-ot",
     "codexQuotaPools": "Codex-kvótakészletek",
     "codexPoolAvailable": "Elérhető",
@@ -14177,13 +14173,6 @@
     "running": "Futás...",
     "testFailed": "A teszt megbukott"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "A Kimi (Moonshot AI) az OmniRoute alapító nyílt forráskódú barátja",
-    "description": "Az új felhasználók 15% extra API-keretet kapnak az első feltöltéskor. Használd a Kimi K3-at az OmniRoute-ban a hivatalos Kimi API-n keresztül.",
-    "cta": "Kimi API-kulcs beszerzése",
-    "partnerLinkNote": "Partnerhivatkozás",
-    "dismissAriaLabel": "Elvetés"
-  },
   "vscodeCopilotBanner": {
     "title": "Az OmniRoute mostantól fut a VS Code Copilot Chatben",
     "description": "Telepítsd az ingyenes OmniCopilot bővítményt, és minden OmniRoute modell megjelenik a Copilot Chat modellválasztójában, amit már használsz.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "A szolgáltató nem támogatja az eszközhívást",
     "structuredOutputMismatch": "A szolgáltató nem támogatja a strukturált kimenetet",
     "contextWindowMismatch": "A kérés meghaladja a szolgáltató kontextusablakát"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "A Cheaper Inference az OmniRoute nyílt forráskódú barátja",
-    "description": "Költség szerint rangsoroló átjáró, amely több tucat élvonalbeli modellt értékesít tovább egyetlen, OpenAI-kompatibilis végponton keresztül — minden kérést a legolcsóbb megfelelő szolgáltatóhoz irányítva, a listaárat soha meg nem haladva.",
-    "cta": "API-kulcs beszerzése",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Bezárás"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Letiltja a gondolkodási szint szerinti változatok (pl. -low, -medium, -high) létrehozását a /v1/models katalógusban.",
   "connectionTest": {

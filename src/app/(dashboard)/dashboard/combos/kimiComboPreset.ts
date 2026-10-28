@@ -1,6 +1,5 @@
 // Kimi Coding combo preset — pure data, split out of KimiComboPresetCard.tsx
-// so it can be unit-tested with node:test (no DOM/next-intl needed), mirroring
-// kimiSponsorBanner.ts.
+// so it can be unit-tested with node:test (no DOM/next-intl needed).
 //
 // There is no generic preset/template picker in the combo builder today —
 // AUTO_COMBO_TEMPLATES (src/domain/assessment/types.ts, surfaced by

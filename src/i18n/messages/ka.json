@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "ზოგიერთი პროვაიდერი იმავე მოდელებს ერთზე მეტი პროტოკოლით აქვეყნებს. თუ ალტერნატივა არ გჭირდებათ, დატოვეთ ნაგულისხმევი მნიშვნელობა.",
     "bulkAddFormatHintCloudflare": "თითო ხაზზე თითო გასაღები. ფორმატი: name|accountId|apiKey (Cloudflare-ის ანგარიშის ID + API ტოკენი).",
     "lmarenaWebCookieHint": "გახსენით arena.ai, შედით ანგარიშში, შემდეგ კი Network-ის მოთხოვნიდან დააკოპირეთ Cookie-ის სრული სათაური. მასში მიუთითეთ arena-auth-prod-v1.0 და arena-auth-prod-v1.1 (ასევე შემდგომი ნაწილები, თუ არსებობს), სასურველია cf_clearance-თან ერთად. არ ჩასვათ მხოლოდ ცარიელი arena-auth-prod-v1 cookie. არასავალდებულო: providerSpecificData.recaptchaV3Token, თუ create-evaluation კვლავ აბრუნებს 403-ს.",
-    "kimiOfficialSupporterBadge": "ოფიციალური მხარდამჭერი",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) არის OmniRoute-ის გაშვების ოფიციალური პარტნიორი",
-    "cheaperInferenceSupporterBadge": "ღია კოდის მეგობარი",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference მხარს უჭერს OmniRoute-ს, როგორც ღია კოდის მეგობარი",
     "kimiPartnerLinkNote": "პარტნიორის ბმული — მხარს უჭერს OmniRoute-ს თქვენთვის დამატებითი ხარჯის გარეშე",
     "codexQuotaPools": "Codex-ის კვოტების პულები",
     "codexPoolAvailable": "ხელმისაწვდომია",
@@ -14177,13 +14173,6 @@
     "running": "მიმდინარეობს...",
     "testFailed": "ტესტი ვერ შესრულდა"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) არის OmniRoute-ის დამფუძნებელი მეგობარი ღია კოდის სფეროში",
-    "description": "ახალი მომხმარებლები ბალანსის პირველად შევსებისას 15%-ით მეტ API კრედიტს მიიღებენ. გამოიყენეთ Kimi K3 OmniRoute-ში ოფიციალური Kimi API-ის მეშვეობით.",
-    "cta": "მიიღეთ Kimi API გასაღები",
-    "partnerLinkNote": "პარტნიორის ბმული",
-    "dismissAriaLabel": "დახურვა"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute ახლა VS Code Copilot Chat-ში მუშაობს",
     "description": "დააინსტალირეთ უფასო OmniCopilot გაფართოება და OmniRoute-ის ყველა მოდელი პირდაპირ Copilot Chat-ის მოდელების არჩევის მენიუში გამოჩნდება, რომელსაც უკვე იყენებთ.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "პროვაიდერს ხელსაწყოების გამოძახების მხარდაჭერა არ აქვს",
     "structuredOutputMismatch": "პროვაიდერს სტრუქტურირებული გამომავალი მონაცემების მხარდაჭერა არ აქვს",
     "contextWindowMismatch": "მოთხოვნა პროვაიდერის კონტექსტური ფანჯრის ზომას აღემატება"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference არის OmniRoute-ის ღია კოდის მეგობარი",
-    "description": "ღირებულების მიხედვით რანჟირებული გეითვეი, რომელიც ათობით მოწინავე მოდელს ერთი OpenAI-თავსებადი საბოლოო წერტილის მეშვეობით ყიდის — თითოეულ მოთხოვნას ამისამართებს ყველაზე იაფ შესაბამის პროვაიდერთან, არასდროს კატალოგურ ფასზე ძვირად.",
-    "cta": "მიიღეთ API გასაღები",
-    "partnerLinkNote": "პარტნიორის ბმული",
-    "dismissAriaLabel": "დახურვა"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "გამორთეთ აზროვნების დონის ვარიანტების (მაგ. -low, -medium, -high) გენერირება /v1/models კატალოგში.",
   "connectionTest": {

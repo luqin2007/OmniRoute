@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "ผู้ให้บริการบางรายเผยแพร่โมเดลเดียวกันผ่านหลายโปรโตคอล ทิ้งค่าเริ่มต้นไว้เว้นแต่คุณต้องการทางเลือกอื่น",
     "bulkAddFormatHintCloudflare": "หนึ่งคีย์ต่อบรรทัด รูปแบบ: name|accountId|apiKey (Cloudflare account ID + API token)",
     "lmarenaWebCookieHint": "เปิด arena.ai เข้าสู่ระบบ แล้วคัดลอกส่วนหัว Cookie ทั้งหมดจากคำขอ Network รวม arena-auth-prod-v1.0 และ arena-auth-prod-v1.1 (และส่วนย่อยเพิ่มเติมหากมี) โดยควรมี cf_clearance ด้วย อย่าวางเฉพาะคุกกี้ arena-auth-prod-v1 ที่ว่างเปล่า ไม่บังคับ: providerSpecificData.recaptchaV3Token หาก create-evaluation ยังคงส่งคืน 403",
-    "kimiOfficialSupporterBadge": "เพื่อนผู้ก่อตั้ง",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) คือเพื่อนโอเพนซอร์สผู้ก่อตั้งของ OmniRoute",
-    "cheaperInferenceSupporterBadge": "เพื่อนโอเพนซอร์ส",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference สนับสนุน OmniRoute ในฐานะเพื่อนโอเพนซอร์ส",
     "kimiPartnerLinkNote": "ลิงก์พันธมิตร — สนับสนุน OmniRoute โดยไม่มีค่าใช้จ่ายเพิ่มเติมสำหรับคุณ",
     "codexQuotaPools": "พูลโควตา Codex",
     "codexPoolAvailable": "พร้อมใช้งาน",
@@ -14177,13 +14173,6 @@
     "running": "กำลังดำเนินการ...",
     "testFailed": "การทดสอบล้มเหลว"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) คือเพื่อนโอเพนซอร์สผู้ก่อตั้งของ OmniRoute",
-    "description": "ผู้ใช้ใหม่รับเครดิต API เพิ่ม 15% เมื่อเติมเงินครั้งแรก ใช้ Kimi K3 ใน OmniRoute ผ่าน Kimi API อย่างเป็นทางการ",
-    "cta": "รับคีย์ Kimi API",
-    "partnerLinkNote": "ลิงก์พันธมิตร",
-    "dismissAriaLabel": "ปิด"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute ทำงานภายใน VS Code Copilot Chat แล้ว",
     "description": "ติดตั้งส่วนขยาย OmniCopilot ฟรี แล้วทุกโมเดลของ OmniRoute จะปรากฏในตัวเลือกโมเดลของ Copilot Chat ที่คุณใช้อยู่แล้วทันที",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "ผู้ให้บริการไม่รองรับการเรียกเครื่องมือ",
     "structuredOutputMismatch": "ผู้ให้บริการไม่รองรับการส่งออกแบบมีโครงสร้าง",
     "contextWindowMismatch": "คำขอเกินขอบเขตบริบทของผู้ให้บริการ"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference เป็นเพื่อนโอเพนซอร์สของ OmniRoute",
-    "description": "เกตเวย์ที่จัดอันดับตามต้นทุน ซึ่งจำหน่ายโมเดลระดับแนวหน้าหลายสิบรายการผ่าน endpoint เดียวที่เข้ากันได้กับ OpenAI โดยกำหนดเส้นทางคำขอแต่ละรายการไปยังผู้ให้บริการที่เข้าเกณฑ์และมีราคาถูกที่สุด โดยไม่เกินราคาปลีก",
-    "cta": "รับ API Key",
-    "partnerLinkNote": "ลิงก์พาร์ทเนอร์",
-    "dismissAriaLabel": "ปิด"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "ปิดใช้งานการสร้างโมเดลรูปแบบย่อยตามระดับการคิด (เช่น -low, -medium, -high) ในแค็ตตาล็อก /v1/models",
   "connectionTest": {

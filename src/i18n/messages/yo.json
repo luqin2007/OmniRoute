@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "Àwọn provider kan ń pèsè àwọn model kan náà lórí ìlànà tó ju ẹyọ kan lọ. Fi èyí tí a ti yàn tẹ́lẹ̀ sílẹ̀ àyàfi tí o bá nílò òmíràn.",
     "bulkAddFormatHintCloudflare": "Kọ́kọ́rọ́ kan ní ìlà kọ̀ọ̀kan. Ìlànà: name|accountId|apiKey (ID àkọọ́lẹ̀ Cloudflare + token API).",
     "lmarenaWebCookieHint": "Ṣí arena.ai, wọlé, lẹ́yìn náà ṣàdàkọ gbogbo header Cookie láti inú ìbéèrè Network kan. Fi arena-auth-prod-v1.0 àti arena-auth-prod-v1.1 sínú rẹ̀ (àti àwọn apá míì tí ó bá wà), ó dára jù tí cf_clearance bá wà pẹ̀lú rẹ̀. Má ṣe lẹ̀ cookie arena-auth-prod-v1 òfo nìkan mọ́ ọn. Àṣàyàn: providerSpecificData.recaptchaV3Token tí create-evaluation bá ṣì ń dá 403 padà.",
-    "kimiOfficialSupporterBadge": "Olùtìlẹ́yìn Òfíṣialì",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) jẹ́ alájọṣepọ̀ ìfilọ́lẹ̀ OmniRoute ní ọ̀nà òfíṣialì",
-    "cheaperInferenceSupporterBadge": "Ọ̀rẹ́ Orísun Ṣíṣí",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference ń ṣe àtìlẹ́yìn fún OmniRoute gẹ́gẹ́ bí Ọ̀rẹ́ Orísun Ṣíṣí",
     "kimiPartnerLinkNote": "Ọ̀nà asopọ̀ alájọṣepọ̀ — ń ṣe àtìlẹ́yìn fún OmniRoute láìsí àfikún owó fún ọ",
     "codexQuotaPools": "Àwọn àkójọpọ̀ ìpín Codex",
     "codexPoolAvailable": "Ó wà",
@@ -14177,13 +14173,6 @@
     "running": "Ń ṣiṣẹ́...",
     "testFailed": "Ìdánwò kùnà"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) ni Ọ̀rẹ́ Orísun Ṣíṣí tó ti ń ṣe àtìlẹ́yìn fún OmniRoute láti ìpilẹ̀ṣẹ̀",
-    "description": "Àwọn aṣàmúlò tuntun máa gba àfikún kírẹ́díìtì API 15% nígbà àkọ́kọ́ tí wọ́n bá fi owó kún àkọọ́lẹ̀ wọn. Lo Kimi K3 nínú OmniRoute nípasẹ̀ Kimi API ti ilé-iṣẹ́ náà fúnra rẹ̀.",
-    "cta": "Gba Kọ́kọ́rọ́ Kimi API kan",
-    "partnerLinkNote": "Àsopọ̀ alájọṣepọ̀",
-    "dismissAriaLabel": "Pa á tì"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute ti ń ṣiṣẹ́ nínú VS Code Copilot Chat báyìí",
     "description": "Fi àfikún OmniCopilot ọ̀fẹ́ náà sori ẹrọ, gbogbo àwòṣe OmniRoute yóò sì fara hàn tààrà nínú olùyan àwòṣe Copilot Chat tí o ti ń lò.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Olùpèsè kò ṣe àtìlẹ́yìn fún pípè irinṣẹ́",
     "structuredOutputMismatch": "Olùpèsè kò ṣe àtìlẹ́yìn fún àbájáde tó ní ìṣètò",
     "contextWindowMismatch": "Ìbéèrè kọjá fèrèsé àkóónú olùpèsè"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference jẹ́ Ọ̀rẹ́ Orísun Ṣíṣí OmniRoute",
-    "description": "Ẹnu-ọ̀nà tí a ṣètò ní ìpele gẹ́gẹ́ bí iye owó, tó ń tún ọ̀pọ̀lọpọ̀ àwọn àwòṣe aṣáájú-ọ̀nà tà lẹ́yìn endpoint kan tó bá OpenAI mu — ó ń darí ìbéèrè kọ̀ọ̀kan sí olùpèsè tó yẹ tó sì din owó jù lọ, láì kọjá iye owó àtòjọ láé.",
-    "cta": "Gba Kọ́kọ́rọ́ API kan",
-    "partnerLinkNote": "Ìjápọ̀ aláṣiṣẹ́pọ̀",
-    "dismissAriaLabel": "Pa á tì"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Pa ṣíṣẹ̀dá àwọn ẹ̀yà ìpele ìrònú (fún àpẹẹrẹ -low, -medium, -high) nínú àkójọ /v1/models.",
   "connectionTest": {

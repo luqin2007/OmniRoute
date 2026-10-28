@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Ang ilang mga provider ay naglalathala ng parehong mga modelo sa higit sa isang protocol. Iwanan ang default maliban kung kailangan mo ang alternatibo.",
     "bulkAddFormatHintCloudflare": "Isang key bawat linya. Format: name|accountId|apiKey (Cloudflare account ID + API token).",
     "lmarenaWebCookieHint": "Buksan ang arena.ai, mag-sign in, pagkatapos ay kopyahin ang buong Cookie header mula sa isang Network request. Isama ang arena-auth-prod-v1.0 at arena-auth-prod-v1.1 (at iba pang mga chunk kung mayroon), mas mainam kung may cf_clearance. Huwag i-paste ang walang lamang arena-auth-prod-v1 cookie lamang. Opsyonal: providerSpecificData.recaptchaV3Token kung nagbabalik pa rin ng 403 ang create-evaluation.",
-    "kimiOfficialSupporterBadge": "Tagapagtatag na Kaibigan",
-    "kimiOfficialSupporterTooltip": "Ang Kimi (Moonshot AI) ang tagapagtatag na open source na kaibigan ng OmniRoute",
-    "cheaperInferenceSupporterBadge": "Kaibigan ng Open Source",
-    "cheaperInferenceSupporterTooltip": "Sinusuportahan ng Cheaper Inference ang OmniRoute bilang Kaibigan ng Open Source",
     "kimiPartnerLinkNote": "Link ng kasosyo — sumusuporta sa OmniRoute nang walang karagdagang gastos sa iyo",
     "codexQuotaPools": "Mga pool ng quota ng Codex",
     "codexPoolAvailable": "Magagamit",
@@ -14177,13 +14173,6 @@
     "running": "Nagtatakbo...",
     "testFailed": "Nabigo ang pagsubok"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Ang Kimi (Moonshot AI) ang founding Open Source Friend ng OmniRoute",
-    "description": "Ang mga bagong user ay makakakuha ng 15% dagdag na API credits sa unang top-up. Gamitin ang Kimi K3 sa OmniRoute sa pamamagitan ng opisyal na Kimi API.",
-    "cta": "Kumuha ng Kimi API Key",
-    "partnerLinkNote": "Link ng kasosyo",
-    "dismissAriaLabel": "I-dismiss"
-  },
   "vscodeCopilotBanner": {
     "title": "Ang OmniRoute ay gumagana na ngayon sa loob ng VS Code Copilot Chat",
     "description": "I-install ang libreng OmniCopilot extension at lalabas ang bawat OmniRoute model diretso sa Copilot Chat model picker na ginagamit mo na.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Hindi sinusuportahan ng provider ang pagtawag sa tool",
     "structuredOutputMismatch": "Hindi sinusuportahan ng provider ang nakabalangkas na output",
     "contextWindowMismatch": "Lumampas ang kahilingan sa konteksto ng tagapagbigay"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Ang Cheaper Inference ay isang Open Source Friend ng OmniRoute",
-    "description": "Isang gateway na niraranggo ayon sa gastos na muling nagbebenta ng dose-dosenang frontier model sa likod ng iisang endpoint na compatible sa OpenAI — na niruruta ang bawat kahilingan sa pinakamurang kwalipikadong provider, nang hindi kailanman lumalampas sa nakalistang presyo.",
-    "cta": "Kumuha ng API Key",
-    "partnerLinkNote": "Link ng partner",
-    "dismissAriaLabel": "Isara"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Huwag paganahin ang pagbuo ng mga variant ng antas ng pag-iisip (hal. -low, -medium, -high) sa katalogong /v1/models.",
   "connectionTest": {

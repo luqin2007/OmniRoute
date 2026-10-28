@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "いくつかのプロバイダーは、同じモデルを複数のプロトコルで公開しています。代替が必要でない限り、デフォルトのままにしてください。",
     "bulkAddFormatHintCloudflare": "1行に1つのキー。フォーマット: name|accountId|apiKey (CloudflareアカウントID + APIトークン)。",
     "lmarenaWebCookieHint": "arena.aiを開いてサインインし、ネットワークリクエストからCookieヘッダー全体をコピーします。arena-auth-prod-v1.0とarena-auth-prod-v1.1（および存在する場合はそれ以降のチャンク）を含め、できればcf_clearanceも一緒に含めてください。空のarena-auth-prod-v1クッキーのみを貼り付けないでください。オプション: create-evaluationが依然として403を返す場合はproviderSpecificData.recaptchaV3Token。",
-    "kimiOfficialSupporterBadge": "創設フレンド",
-    "kimiOfficialSupporterTooltip": "Kimi（Moonshot AI）は OmniRoute の創設オープンソースフレンドです",
-    "cheaperInferenceSupporterBadge": "オープンソースフレンド",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference は OmniRoute をオープンソースフレンドとして支援しています",
     "kimiPartnerLinkNote": "パートナーリンク — 追加費用なしで OmniRoute をサポートします",
     "codexQuotaPools": "Codex クォータプール",
     "codexPoolAvailable": "利用可能",
@@ -14177,13 +14173,6 @@
     "running": "実行中...",
     "testFailed": "テストに失敗しました"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi（Moonshot AI）はOmniRouteの創設オープンソースフレンドです",
-    "description": "新規ユーザーは初回チャージでAPIクレジットが15%増量。公式Kimi APIを通じてOmniRouteでKimi K3を使えます。",
-    "cta": "Kimi APIキーを取得",
-    "partnerLinkNote": "パートナーリンク",
-    "dismissAriaLabel": "閉じる"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRouteがVS Code Copilot Chat内で動作するようになりました",
     "description": "無料のOmniCopilot拡張機能をインストールすると、すでに使っているCopilot Chatのモデル選択画面にすべてのOmniRouteモデルが表示されます。",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "プロバイダーはツール呼び出しをサポートしていません",
     "structuredOutputMismatch": "プロバイダーは構造化出力をサポートしていません",
     "contextWindowMismatch": "リクエストがプロバイダーのコンテキストウィンドウを超えています"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper InferenceはOmniRouteのオープンソースフレンドです",
-    "description": "1つのOpenAI互換エンドポイントを通じて数十の最先端モデルを再販する、コスト順のゲートウェイです。各リクエストを条件を満たす最も安価なプロバイダーへルーティングし、定価を超えることはありません。",
-    "cta": "APIキーを取得",
-    "partnerLinkNote": "パートナーリンク",
-    "dismissAriaLabel": "閉じる"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/modelsカタログで思考レベルのバリアント（例：-low、-medium、-high）を生成しないようにします。",
   "connectionTest": {

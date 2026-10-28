@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "Ụfọdụ provider na-ewepụta otu models ndị ahụ site na ihe karịrị otu protokọl. Hapụ nke ndabara ma ọ bụrụ na ịchọghị nhọrọ ọzọ.",
     "bulkAddFormatHintCloudflare": "Otu igodo n'ahịrị ọ bụla. Ọdịdị: name|accountId|apiKey (ID akaụntụ Cloudflare + token API).",
     "lmarenaWebCookieHint": "Mepee arena.ai, banye, wee detuo header Cookie zuru ezu site na arịrịọ Network. Tinye arena-auth-prod-v1.0 na arena-auth-prod-v1.1 (yana akụkụ ndị ọzọ ma ọ bụrụ na ha dị), ọ ka mma ma cf_clearance sonyere. Etinyela naanị cookie arena-auth-prod-v1 efu. Nhọrọ: providerSpecificData.recaptchaV3Token ma ọ bụrụ na create-evaluation ka na-eweghachi 403.",
-    "kimiOfficialSupporterBadge": "Onye Nkwado A Kwadoro",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) bụ onye mmekọ mmalite OmniRoute a kwadoro",
-    "cheaperInferenceSupporterBadge": "Enyi Koodu Mepere Eme",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference na-akwado OmniRoute dịka Enyi Koodu Mepere Eme",
     "kimiPartnerLinkNote": "Njikọ onye mmekọ — na-akwado OmniRoute n’etinyeghị gị ụgwọ ọzọ",
     "codexQuotaPools": "Nchịkọta oke ojiji Codex",
     "codexPoolAvailable": "Dị",
@@ -14177,13 +14173,6 @@
     "running": "Na-arụ ọrụ...",
     "testFailed": "Nnwale ahụ dara"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) bụ Enyi Open Source mbụ nke OmniRoute",
-    "description": "Ndị ọrụ ọhụrụ na-enweta kredit API mgbakwunye 15% na ntinye ego mbụ ha. Jiri Kimi K3 na OmniRoute site na Kimi API nke Kimi kwadoro.",
-    "cta": "Nweta Kimi API Key",
-    "partnerLinkNote": "Njikọ onye mmekọ",
-    "dismissAriaLabel": "Mechie"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute na-arụ ọrụ ugbu a n'ime VS Code Copilot Chat",
     "description": "Wụnye ndọtị OmniCopilot efu, ụdị OmniRoute niile ga-apụta ozugbo na onye nhọpụta ụdị nke Copilot Chat ị na-eji ugbu a.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Provider anaghị akwado ịkpọ ngwa ọrụ",
     "structuredOutputMismatch": "Provider anaghị akwado mmepụta ahaziri ahazi",
     "contextWindowMismatch": "Arịrịọ gafere oke windo ọnọdụ nke provider"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference bụ Enyi Open Source nke OmniRoute",
-    "description": "Gateway a haziri dịka ọnụ ahịa si dị nke na-eresịgharị ọtụtụ iri ụdị kachasị ọhụrụ site n'otu endpoint dakọtara na OpenAI — na-eziga arịrịọ ọ bụla na provider tozuru oke kacha ọnụ ala, na-agaghị agafe ọnụ ahịa edepụtara.",
-    "cta": "Nweta API Key",
-    "partnerLinkNote": "Njikọ onye mmekọ",
-    "dismissAriaLabel": "Mechie"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Gbanyụọ imepụta ụdị ọkwa echiche dị iche iche (dịka -low, -medium, -high) na katalọgụ /v1/models.",
   "connectionTest": {

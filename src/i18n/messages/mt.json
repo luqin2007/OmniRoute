@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Xi fornituri jippubblikaw l-istess mudelli permezz ta' aktar minn protokoll wieħed. Ħalli l-għażla predefinita sakemm ma jkollokx bżonn l-alternattiva.",
     "bulkAddFormatHintCloudflare": "Ċavetta waħda għal kull linja. Format: name|accountId|apiKey (ID tal-kont ta' Cloudflare + token tal-API).",
     "lmarenaWebCookieHint": "Iftaħ arena.ai, idħol, imbagħad ikkopja l-header sħiħ tal-Cookie minn talba tan-netwerk. Inkludi arena-auth-prod-v1.0 u arena-auth-prod-v1.1 (u aktar biċċiet jekk ikunu preżenti), preferibbilment b'cf_clearance. Twaħħalx biss arena-auth-prod-v1 meta jkun vojt. Mhux obbligatorju: providerSpecificData.recaptchaV3Token jekk create-evaluation xorta jirritorna 403.",
-    "kimiOfficialSupporterBadge": "Sostenitur Uffiċjali",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) huwa sieħeb uffiċjali tat-tnedija ta' OmniRoute",
-    "cheaperInferenceSupporterBadge": "Ħabib tas-Sors Miftuħ",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference tappoġġa lil OmniRoute bħala Ħabib tas-Sors Miftuħ",
     "kimiPartnerLinkNote": "Link tas-sieħeb — jappoġġa lil OmniRoute mingħajr ebda spiża addizzjonali għalik",
     "codexQuotaPools": "Ġabriet tal-kwota ta' Codex",
     "codexPoolAvailable": "Disponibbli",
@@ -14177,13 +14173,6 @@
     "running": "Qed jitħaddem...",
     "testFailed": "It-test falla"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) huwa l-Ħabib Fundatur tas-Sors Miftuħ ta' OmniRoute",
-    "description": "Utenti ġodda jirċievu 15% aktar fi krediti tal-API mal-ewwel żieda ta' fondi tagħhom. Uża Kimi K3 f'OmniRoute permezz tal-API uffiċjali ta' Kimi.",
-    "cta": "Ikseb Ċavetta API ta' Kimi",
-    "partnerLinkNote": "Link tas-sieħeb",
-    "dismissAriaLabel": "Agħlaq"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute issa jaħdem ġewwa VS Code Copilot Chat",
     "description": "Installa l-estensjoni OmniCopilot b'xejn u kull mudell ta' OmniRoute jidher direttament fis-selettur tal-mudelli ta' Copilot Chat li diġà tuża.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Il-fornitur ma jappoġġjax is-sejħiet ta’ għodod",
     "structuredOutputMismatch": "Il-fornitur ma jappoġġjax output strutturat",
     "contextWindowMismatch": "It-talba taqbeż it-tieqa tal-kuntest tal-fornitur"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference huwa Ħabib tas-Sors Miftuħ ta’ OmniRoute",
-    "description": "Gateway ikklassifikat skont l-ispiża li jerġa’ jbigħ għexieren ta’ mudelli avvanzati permezz ta’ endpoint wieħed kompatibbli ma’ OpenAI — u jidderieġi kull talba lejn l-orħos fornitur eliġibbli, bi prezz li qatt ma jaqbeż il-prezz tal-lista.",
-    "cta": "Ikseb API Key",
-    "partnerLinkNote": "Link tas-sieħeb",
-    "dismissAriaLabel": "Agħlaq"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Itfi l-ġenerazzjoni ta’ varjanti tal-livell ta’ ħsieb (eż. -low, -medium, -high) fil-katalgu /v1/models.",
   "connectionTest": {

@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Alguns provedores publicam os mesmos modelos em mais de um protocolo. Mantenha o padrão a menos que precise da alternativa.",
     "bulkAddFormatHintCloudflare": "Uma chave por linha. Formato: nome|accountId|apiKey (ID de conta Cloudflare + token de API).",
     "lmarenaWebCookieHint": "Abra arena.ai, faça login e depois copie o cabeçalho Cookie completo de uma requisição de rede. Inclua arena-auth-prod-v1.0 e arena-auth-prod-v1.1 (e outros fragmentos, se houver), preferencialmente com cf_clearance. Não cole apenas o cookie vazio arena-auth-prod-v1. Opcional: providerSpecificData.recaptchaV3Token se create-evaluation ainda retornar 403.",
-    "kimiOfficialSupporterBadge": "Apoiador Oficial",
-    "kimiOfficialSupporterTooltip": "A Kimi (Moonshot AI) é parceira oficial de lançamento do OmniRoute",
-    "cheaperInferenceSupporterBadge": "Amigo do Código Aberto",
-    "cheaperInferenceSupporterTooltip": "A Cheaper Inference apoia o OmniRoute como amiga do código aberto",
     "kimiPartnerLinkNote": "Link de parceria — apoia o OmniRoute sem custo extra para você",
     "codexQuotaPools": "Pools de cotas do Codex",
     "codexPoolAvailable": "Disponível",
@@ -14177,13 +14173,6 @@
     "running": "Executando...",
     "testFailed": "Teste falhou"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "A Kimi (Moonshot AI) é a Amiga do Código Aberto fundadora do OmniRoute",
-    "description": "Usuários novos ganham 15% de créditos de API extras na primeira recarga. Use o Kimi K3 no OmniRoute pela API oficial da Kimi.",
-    "cta": "Obter uma chave de API da Kimi",
-    "partnerLinkNote": "Link de parceria",
-    "dismissAriaLabel": "Dispensar"
-  },
   "vscodeCopilotBanner": {
     "title": "O OmniRoute agora funciona dentro do VS Code Copilot Chat",
     "description": "Instale a extensão gratuita OmniCopilot e cada modelo do OmniRoute aparece direto no seletor de modelos do Copilot Chat que você já usa.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "O provedor nao suporta chamada de ferramentas",
     "structuredOutputMismatch": "O provedor nao suporta saida estruturada",
     "contextWindowMismatch": "A requisicao excede a janela de contexto do provedor"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference é um Amigo Open Source do OmniRoute",
-    "description": "Um gateway ordenado por custo que revende dezenas de modelos de fronteira atrás de um único endpoint compatível com OpenAI, roteando cada requisição para o provedor elegível mais barato, nunca acima do preço de tabela.",
-    "cta": "Obter uma chave de API",
-    "partnerLinkNote": "Link de parceiro",
-    "dismissAriaLabel": "Dispensar"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Desative a geração de variantes de nível de pensamento (por exemplo, -low, -medium, -high) no catálogo /v1/models.",
   "connectionTest": {

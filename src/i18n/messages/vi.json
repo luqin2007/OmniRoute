@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Một số nhà cung cấp phát hành cùng các mô hình qua nhiều giao thức khác nhau. Hãy giữ giá trị mặc định trừ khi bạn cần dùng giao thức thay thế.",
     "bulkAddFormatHintCloudflare": "Mỗi dòng một khóa. Định dạng: name|accountId|apiKey (Cloudflare account ID + API token).",
     "lmarenaWebCookieHint": "Mở arena.ai, đăng nhập, sau đó sao chép toàn bộ header Cookie từ một yêu cầu mạng. Bao gồm arena-auth-prod-v1.0 và arena-auth-prod-v1.1 (và các phần tiếp theo nếu có), ưu tiên kèm theo cf_clearance. Không chỉ dán cookie arena-auth-prod-v1 trống. Tùy chọn: providerSpecificData.recaptchaV3Token nếu create-evaluation vẫn trả về 403.",
-    "kimiOfficialSupporterBadge": "Người Bạn Sáng Lập",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) là người bạn mã nguồn mở sáng lập của OmniRoute",
-    "cheaperInferenceSupporterBadge": "Người bạn mã nguồn mở",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference hỗ trợ OmniRoute với tư cách là người bạn mã nguồn mở",
     "kimiPartnerLinkNote": "Liên kết đối tác — hỗ trợ OmniRoute mà bạn không phải trả thêm chi phí",
     "codexQuotaPools": "Nhóm hạn mức Codex",
     "codexPoolAvailable": "Khả dụng",
@@ -14177,13 +14173,6 @@
     "running": "Đang chạy…",
     "testFailed": "Kiểm thử thất bại"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) là người bạn mã nguồn mở sáng lập của OmniRoute",
-    "description": "Người dùng mới nhận thêm 15% tín dụng API cho lần nạp đầu tiên. Dùng Kimi K3 trong OmniRoute qua Kimi API chính thức.",
-    "cta": "Nhận khóa Kimi API",
-    "partnerLinkNote": "Liên kết đối tác",
-    "dismissAriaLabel": "Đóng"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute giờ đây chạy ngay trong VS Code Copilot Chat",
     "description": "Cài đặt tiện ích mở rộng OmniCopilot miễn phí và mọi mô hình OmniRoute sẽ xuất hiện ngay trong bộ chọn mô hình Copilot Chat mà bạn đang dùng.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Nhà cung cấp không hỗ trợ gọi công cụ",
     "structuredOutputMismatch": "Nhà cung cấp không hỗ trợ đầu ra có cấu trúc",
     "contextWindowMismatch": "Yêu cầu vượt quá cửa sổ ngữ cảnh của nhà cung cấp"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference là Đối tác Mã nguồn Mở của OmniRoute",
-    "description": "Một cổng xếp hạng theo chi phí, bán lại hàng chục mô hình tiên phong sau một endpoint tương thích OpenAI — định tuyến mỗi yêu cầu đến nhà cung cấp đủ điều kiện rẻ nhất, không bao giờ vượt giá niêm yết.",
-    "cta": "Lấy khóa API",
-    "partnerLinkNote": "Liên kết đối tác",
-    "dismissAriaLabel": "Đóng"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Tắt tính năng tạo biến thể cấp độ suy nghĩ (ví dụ: -low, -medium, -high) trong danh mục /v1/models.",
   "connectionTest": {

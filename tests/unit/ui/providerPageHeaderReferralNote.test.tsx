@@ -1,10 +1,10 @@
 // @vitest-environment jsdom
 /**
- * ProviderPageHeader — discreet "Partner link" indicator on the top-of-page
- * website link for the 3 visible Kimi (Moonshot AI) provider cards
- * (kimi-coding, kimi-web, moonshot). Presentation only — see
- * featuredProviders.ts (isKimiPartnerProviderId) and the aff-link URLs
- * asserted in tests/unit/kimi-partner-aff-links.test.ts.
+ * ProviderPageHeader — the discreet "Partner link" disclosure is driven ONLY by
+ * the Radar referral path (`isReferralLink`), i.e. when `providerInfo.website`
+ * was overridden with a monetized default link. Catalog provider websites are
+ * plain navigation links in this fork: no affiliate/tracking tags (see
+ * tests/unit/no-affiliate-tracking-tags.test.ts) and therefore no note.
  */
 import React from "react";
 import { act } from "react";
@@ -12,11 +12,12 @@ import { createRoot, type Root } from "react-dom/client";
 import { afterEach, describe, expect, it } from "vitest";
 import ProviderPageHeader from "@/app/(dashboard)/dashboard/providers/[id]/components/ProviderPageHeader";
 
-// No `.has` method — providerText() falls back to the hardcoded English
-// default, matching the pattern used in providerCardKimiPartnerAccent.test.tsx.
+// No `.has` method — providerText() falls back to the hardcoded English default.
 const t = (key: string) => key;
 
-describe("ProviderPageHeader — Kimi partner-link note", () => {
+const PARTNER_NOTE = "Partner link — supports OmniRoute at no extra cost to you";
+
+describe("ProviderPageHeader — partner-link disclosure", () => {
   let container: HTMLDivElement | null = null;
   const mounted: { root: Root; container: HTMLDivElement }[] = [];
 
@@ -30,7 +31,12 @@ describe("ProviderPageHeader — Kimi partner-link note", () => {
     }
   });
 
-  function renderHeader(id: string, name: string, website: string) {
+  function renderHeader(
+    id: string,
+    name: string,
+    website: string,
+    isReferralLink: boolean = false
+  ) {
     container = document.createElement("div");
     document.body.appendChild(container);
     const root = createRoot(container);
@@ -43,6 +49,7 @@ describe("ProviderPageHeader — Kimi partner-link note", () => {
           connectionsCount={0}
           isOpenAICompatible={false}
           isAnthropicProtocolCompatible={false}
+          isReferralLink={isReferralLink}
           onOpenTutorial={() => {}}
           t={t}
         />
@@ -52,31 +59,30 @@ describe("ProviderPageHeader — Kimi partner-link note", () => {
   }
 
   it.each([
-    ["moonshot", "Kimi", "https://platform.kimi.ai?aff=omniroute"],
-    ["kimi-coding", "Kimi Code CLI", "https://www.kimi.ai/code?aff=omniroute"],
+    ["moonshot", "Kimi", "https://platform.kimi.ai"],
+    ["kimi-coding", "Kimi Code CLI", "https://www.kimi.ai/code"],
     ["kimi-web", "Kimi Web", "https://www.kimi.ai"],
-  ])("flags the %s header link as a partner link", (id, name, website) => {
+    ["cheaperinference", "Cheaper Inference", "https://cheaperinference.com/"],
+    ["openai", "OpenAI", "https://openai.com"],
+  ])("does NOT flag the %s catalog website link as a partner link", (id, name, website) => {
     const el = renderHeader(id, name, website);
     // The component also renders a "Back to Providers" <Link> above the
     // website title link — target the website anchor specifically, not the
     // first <a> in the tree.
     const link = el.querySelector(`a[href="${website}"]`);
     expect(link).not.toBeNull();
-    expect(link?.getAttribute("title")).toBe(
-      "Partner link — supports OmniRoute at no extra cost to you"
-    );
-    expect(link?.getAttribute("aria-label")).toBe(
-      `${name} — Partner link — supports OmniRoute at no extra cost to you`
-    );
-    expect(el.textContent).toContain("Partner link — supports OmniRoute at no extra cost to you");
-  });
-
-  it("does NOT flag an unrelated provider's website link as a partner link", () => {
-    const el = renderHeader("openai", "OpenAI", "https://openai.com");
-    const link = el.querySelector(`a[href="https://openai.com"]`);
-    expect(link).not.toBeNull();
     expect(link?.getAttribute("title")).toBeNull();
     expect(link?.getAttribute("aria-label")).toBeNull();
     expect(el.textContent).not.toContain("Partner link");
+  });
+
+  it("flags a Radar referral link as a partner link", () => {
+    const website = "https://example-provider.test/?ref=radar";
+    const el = renderHeader("example", "Example", website, true);
+    const link = el.querySelector(`a[href="${website}"]`);
+    expect(link).not.toBeNull();
+    expect(link?.getAttribute("title")).toBe(PARTNER_NOTE);
+    expect(link?.getAttribute("aria-label")).toBe(`Example — ${PARTNER_NOTE}`);
+    expect(el.textContent).toContain(PARTNER_NOTE);
   });
 });

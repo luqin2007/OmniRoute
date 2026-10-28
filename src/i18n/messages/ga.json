@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Foilsíonn roinnt soláthraithe na samhlacha céanna thar níos mó ná prótacal amháin. Fág an réamhshocrú mura bhfuil an rogha eile uait.",
     "bulkAddFormatHintCloudflare": "Eochair amháin in aghaidh an líne. Formáid: name|accountId|apiKey (aitheantas cuntais Cloudflare + comhartha API).",
     "lmarenaWebCookieHint": "Oscail arena.ai, sínigh isteach, ansin cóipeáil ceanntásc iomlán Cookie ó iarratas Network. Cuir arena-auth-prod-v1.0 agus arena-auth-prod-v1.1 san áireamh (agus codanna eile má tá siad ann), agus cf_clearance más féidir. Ná greamaigh an fianán folamh arena-auth-prod-v1 amháin. Roghnach: providerSpecificData.recaptchaV3Token má thugann create-evaluation 403 fós.",
-    "kimiOfficialSupporterBadge": "Tacadóir Oifigiúil",
-    "kimiOfficialSupporterTooltip": "Is comhpháirtí seolta oifigiúil OmniRoute é Kimi (Moonshot AI)",
-    "cheaperInferenceSupporterBadge": "Cara le Foinse Oscailte",
-    "cheaperInferenceSupporterTooltip": "Tacaíonn Cheaper Inference le OmniRoute mar Chara le Foinse Oscailte",
     "kimiPartnerLinkNote": "Nasc comhpháirtí — tacaíonn sé le OmniRoute gan aon chostas breise duit",
     "codexQuotaPools": "Linnte cuóta Codex",
     "codexPoolAvailable": "Ar fáil",
@@ -14177,13 +14173,6 @@
     "running": "Ag rith...",
     "testFailed": "Theip ar an tástáil"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Is é Kimi (Moonshot AI) cara bunaidh Foinse Oscailte OmniRoute",
-    "description": "Faigheann úsáideoirí nua 15% de chreidmheasanna API breise ar a gcéad bhreisiú. Úsáid Kimi K3 in OmniRoute trí API oifigiúil Kimi.",
-    "cta": "Faigh Eochair API Kimi",
-    "partnerLinkNote": "Nasc comhpháirtíochta",
-    "dismissAriaLabel": "Dún"
-  },
   "vscodeCopilotBanner": {
     "title": "Ritheann OmniRoute anois laistigh de VS Code Copilot Chat",
     "description": "Suiteáil an síneadh OmniCopilot saor in aisce agus beidh gach samhail OmniRoute le feiceáil díreach sa roghnóir samhlacha Copilot Chat atá in úsáid agat cheana féin.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Ní thacaíonn an soláthraí le glaonna ar uirlisí",
     "structuredOutputMismatch": "Ní thacaíonn an soláthraí le haschur struchtúrtha",
     "contextWindowMismatch": "Sáraíonn an t-iarratas fuinneog chomhthéacs an tsoláthraí"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Is Cara Foinse Oscailte OmniRoute é Cheaper Inference",
-    "description": "Geata atá rangaithe de réir costais a athdhíolann mórán samhlacha ceannródaíocha trí chríochphointe amháin atá comhoiriúnach le OpenAI — agus a ródaíonn gach iarratas chuig an soláthraí incháilithe is saoire, gan dul os cionn an phraghais liosta riamh.",
-    "cta": "Faigh Eochair API",
-    "partnerLinkNote": "Nasc comhpháirtíochta",
-    "dismissAriaLabel": "Dún"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Díchumasaigh giniúint leaganacha leibhéil smaointeoireachta (m.sh. -low, -medium, -high) i gcatalóg /v1/models.",
   "connectionTest": {

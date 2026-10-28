@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "某些提供者在多個協議上發布相同的模型。除非您需要替代方案，否則請保留預設設置。",
     "bulkAddFormatHintCloudflare": "每行一個金鑰。格式：name|accountId|apiKey（Cloudflare 帳戶 ID + API 令牌）。",
     "lmarenaWebCookieHint": "開啟 arena.ai，登入後從網路請求中複製完整的 Cookie 標頭。請包含 arena-auth-prod-v1.0 和 arena-auth-prod-v1.1（以及後續區塊，如有），最好附帶 cf_clearance。請勿僅貼上空白的 arena-auth-prod-v1 cookie。可選：若 create-evaluation 仍然回傳 403，可提供 providerSpecificData.recaptchaV3Token。",
-    "kimiOfficialSupporterBadge": "創始好友",
-    "kimiOfficialSupporterTooltip": "Kimi（Moonshot AI）是 OmniRoute 的創始開源好友",
-    "cheaperInferenceSupporterBadge": "開源好友",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference 作為開源好友支持 OmniRoute",
     "kimiPartnerLinkNote": "合作夥伴連結 — 支援 OmniRoute，您無需額外付費",
     "codexQuotaPools": "Codex 配額集區",
     "codexPoolAvailable": "可用",
@@ -14177,13 +14173,6 @@
     "running": "運行中...",
     "testFailed": "測試失敗"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) 是 OmniRoute 的創始開源好友",
-    "description": "新用戶首次儲值可獲得 15% 額外 API 額度。透過官方 Kimi API 在 OmniRoute 中使用 Kimi K3。",
-    "cta": "取得 Kimi API 金鑰",
-    "partnerLinkNote": "合作夥伴連結",
-    "dismissAriaLabel": "關閉"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute 現已可在 VS Code Copilot Chat 中運作",
     "description": "安裝免費的 OmniCopilot 擴充功能，每個 OmniRoute 模型都會直接出現在你已經在用的 Copilot Chat 模型選擇器中。",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "提供者不支援工具呼叫",
     "structuredOutputMismatch": "提供者不支援結構化輸出",
     "contextWindowMismatch": "請求超出提供者上下文窗口"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference 是 OmniRoute 的開源之友",
-    "description": "一個依成本排序的閘道，透過單一 OpenAI 相容端點轉售數十種前沿模型——將每個請求路由至符合資格且價格最低的提供者，價格絕不高於牌價。",
-    "cta": "取得 API 金鑰",
-    "partnerLinkNote": "合作夥伴連結",
-    "dismissAriaLabel": "關閉"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "停用在 /v1/models 目錄中產生思考層級變體（例如 -low、-medium、-high）。",
   "connectionTest": {

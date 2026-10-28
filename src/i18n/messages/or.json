@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "କେତେକ ପ୍ରଦାନକାରୀ ଏକାଧିକ ପ୍ରୋଟୋକଲ୍ରେ ସମାନ ମଡେଲ୍ ପ୍ରକାଶ କରନ୍ତି। ବିକଳ୍ପଟି ଆବଶ୍ୟକ ନହେଲେ ଡିଫଲ୍ଟକୁ ଅପରିବର୍ତ୍ତିତ ରଖନ୍ତୁ।",
     "bulkAddFormatHintCloudflare": "ପ୍ରତ୍ୟେକ ଲାଇନ୍ରେ ଗୋଟିଏ କୀ। ଫର୍ମାଟ୍: name|accountId|apiKey (Cloudflare ଆକାଉଣ୍ଟ ID + API ଟୋକେନ୍)।",
     "lmarenaWebCookieHint": "arena.ai ଖୋଲନ୍ତୁ, ସାଇନ୍ ଇନ୍ କରନ୍ତୁ, ତା’ପରେ ଏକ Network ଅନୁରୋଧରୁ ସମ୍ପୂର୍ଣ୍ଣ Cookie ହେଡର୍ କପି କରନ୍ତୁ। arena-auth-prod-v1.0 ଏବଂ arena-auth-prod-v1.1 (ଏବଂ ଥିଲେ ପରବର୍ତ୍ତୀ ଖଣ୍ଡଗୁଡ଼ିକ) ସାମିଲ କରନ୍ତୁ, ସମ୍ଭବ ହେଲେ cf_clearance ସହିତ। କେବଳ ଖାଲି arena-auth-prod-v1 କୁକି ପେଷ୍ଟ କରନ୍ତୁ ନାହିଁ। ବୈକଳ୍ପିକ: create-evaluation ଏବେ ମଧ୍ୟ 403 ଫେରାଉଥିଲେ providerSpecificData.recaptchaV3Token।",
-    "kimiOfficialSupporterBadge": "ଆଧିକାରିକ ସମର୍ଥକ",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) ହେଉଛି OmniRouteର ଏକ ଆଧିକାରିକ ଲଞ୍ଚ ସହଭାଗୀ",
-    "cheaperInferenceSupporterBadge": "ଓପନ୍ ସୋର୍ସ ବନ୍ଧୁ",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference ଏକ ଓପନ୍ ସୋର୍ସ ବନ୍ଧୁ ଭାବେ OmniRouteକୁ ସମର୍ଥନ କରେ",
     "kimiPartnerLinkNote": "ସହଭାଗୀ ଲିଙ୍କ — ଆପଣଙ୍କ ପାଇଁ କୌଣସି ଅତିରିକ୍ତ ଖର୍ଚ୍ଚ ବିନା OmniRouteକୁ ସମର୍ଥନ କରେ",
     "codexQuotaPools": "Codex କୋଟା ପୁଲ୍ଗୁଡ଼ିକ",
     "codexPoolAvailable": "ଉପଲବ୍ଧ",
@@ -14177,13 +14173,6 @@
     "running": "ଚାଲୁଛି...",
     "testFailed": "ପରୀକ୍ଷା ବିଫଳ ହୋଇଛି"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) ହେଉଛି OmniRouteର ପ୍ରତିଷ୍ଠାତା Open Source Friend",
-    "description": "ନୂଆ ବ୍ୟବହାରକାରୀମାନେ ସେମାନଙ୍କ ପ୍ରଥମ ଟପ୍-ଅପ୍ରେ 15% ଅତିରିକ୍ତ API କ୍ରେଡିଟ୍ ପାଆନ୍ତି। ଆଧିକାରିକ Kimi API ମାଧ୍ୟମରେ OmniRouteରେ Kimi K3 ବ୍ୟବହାର କରନ୍ତୁ।",
-    "cta": "ଏକ Kimi API Key ପାଆନ୍ତୁ",
-    "partnerLinkNote": "ପାର୍ଟନର୍ ଲିଙ୍କ୍",
-    "dismissAriaLabel": "ବନ୍ଦ କରନ୍ତୁ"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute ଏବେ VS Code Copilot Chat ଭିତରେ ଚାଲେ",
     "description": "ମାଗଣା OmniCopilot ଏକ୍ସଟେନ୍ସନ୍ ଇନ୍ଷ୍ଟଲ୍ କରନ୍ତୁ, ଏବଂ ପ୍ରତ୍ୟେକ OmniRoute ମଡେଲ୍ ଆପଣ ପୂର୍ବରୁ ବ୍ୟବହାର କରୁଥିବା Copilot Chat ମଡେଲ୍ ପିକର୍ରେ ସିଧାସଳଖ ଦେଖାଯିବ।",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "ପ୍ରଦାତା ଟୁଲ୍ କଲିଂ ସମର୍ଥନ କରେ ନାହିଁ",
     "structuredOutputMismatch": "ପ୍ରଦାତା ସଂରଚିତ ଆଉଟ୍ପୁଟ୍ ସମର୍ଥନ କରେ ନାହିଁ",
     "contextWindowMismatch": "ଅନୁରୋଧଟି ପ୍ରଦାନକାରୀଙ୍କ କଣ୍ଟେକ୍ସ୍ଟ ୱିଣ୍ଡୋ ସୀମା ଅତିକ୍ରମ କରିଛି"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference ହେଉଛି OmniRoute-ର ଏକ ଓପନ୍ ସୋର୍ସ ବନ୍ଧୁ",
-    "description": "ଗୋଟିଏ OpenAI-ସୁସଙ୍ଗତ ଏଣ୍ଡପଏଣ୍ଟ ମାଧ୍ୟମରେ ଅନେକ ଡଜନ୍ ଅତ୍ୟାଧୁନିକ ମଡେଲ୍ ପୁନଃବିକ୍ରୟ କରୁଥିବା, ଖର୍ଚ୍ଚ ଅନୁଯାୟୀ କ୍ରମାଙ୍କିତ ଏକ ଗେଟୱେ—ଯାହା ପ୍ରତ୍ୟେକ ଅନୁରୋଧକୁ ସବୁଠାରୁ ଶସ୍ତା ଯୋଗ୍ୟ ପ୍ରଦାନକାରୀଙ୍କ ନିକଟକୁ ରୁଟ୍ କରେ ଏବଂ କେବେ ମଧ୍ୟ ତାଲିକାଭୁକ୍ତ ମୂଲ୍ୟଠାରୁ ଅଧିକ ନିଏ ନାହିଁ।",
-    "cta": "ଏକ API କୀ ପାଆନ୍ତୁ",
-    "partnerLinkNote": "ସହଭାଗୀ ଲିଙ୍କ୍",
-    "dismissAriaLabel": "ବନ୍ଦ କରନ୍ତୁ"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models କ୍ୟାଟାଲଗ୍ରେ ଚିନ୍ତନ ସ୍ତର ଭାରିଆଣ୍ଟଗୁଡ଼ିକର (ଯଥା -low, -medium, -high) ସୃଷ୍ଟିକୁ ଅକ୍ଷମ କରନ୍ତୁ।",
   "connectionTest": {

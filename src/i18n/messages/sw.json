@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Watoa wengine wanaweka mifano ile ile kupitia protokali zaidi ya moja. Acha chaguo la kawaida isipokuwa unahitaji mbadala.",
     "bulkAddFormatHintCloudflare": "Ufunguo mmoja kwa kila mstari. Umbizo: name|accountId|apiKey (Kitambulisho cha akaunti ya Cloudflare + tokeni ya API).",
     "lmarenaWebCookieHint": "Fungua arena.ai, ingia, kisha nakili kichwa kizima cha Cookie kutoka kwa ombi la Network. Jumuisha arena-auth-prod-v1.0 na arena-auth-prod-v1.1 (na vipande zaidi vikiwepo), ikiwezekana pamoja na cf_clearance. Usibandike tu kuki tupu ya arena-auth-prod-v1. Ya hiari: providerSpecificData.recaptchaV3Token ikiwa create-evaluation bado inarudisha 403.",
-    "kimiOfficialSupporterBadge": "Rafiki Mwanzilishi",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) ni rafiki mwanzilishi wa chanzo huria wa OmniRoute",
-    "cheaperInferenceSupporterBadge": "Rafiki wa Chanzo Huria",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference inaunga mkono OmniRoute kama Rafiki wa Chanzo Huria",
     "kimiPartnerLinkNote": "Kiungo cha mshirika — kinaunga mkono OmniRoute bila gharama ya ziada kwako",
     "codexQuotaPools": "Makundi ya mgao wa Codex",
     "codexPoolAvailable": "Inapatikana",
@@ -14177,13 +14173,6 @@
     "running": "Inakimbia...",
     "testFailed": "Jaribio limefeli"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) ni Rafiki Mwanzilishi wa Open Source wa OmniRoute",
-    "description": "Watumiaji wapya wanapata 15% ya salio la ziada la API kwenye malipo yao ya kwanza. Tumia Kimi K3 kwenye OmniRoute kupitia Kimi API rasmi.",
-    "cta": "Pata Ufunguo wa Kimi API",
-    "partnerLinkNote": "Kiungo cha mshirika",
-    "dismissAriaLabel": "Ondoa"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute sasa inafanya kazi ndani ya VS Code Copilot Chat",
     "description": "Sakinisha kiendelezi cha bure cha OmniCopilot na kila mfano wa OmniRoute utaonekana moja kwa moja kwenye kichagua-mfano cha Copilot Chat unachotumia tayari.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Mtoa huduma haitoi msaada wa kuita zana",
     "structuredOutputMismatch": "Mtoa huduma haitoi matokeo yaliyoandikwa kwa muundo",
     "contextWindowMismatch": "Omba inazidi dirisha la muktadha wa mtoa huduma"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference ni Rafiki wa Chanzo Huria wa OmniRoute",
-    "description": "Lango lenye upangaji kulingana na gharama, linalouza tena makumi ya modeli za kisasa kupitia endpoint moja inayooana na OpenAI — likielekeza kila ombi kwa mtoa huduma anayestahiki mwenye bei nafuu zaidi, bila kuzidi bei iliyoorodheshwa.",
-    "cta": "Pata Ufunguo wa API",
-    "partnerLinkNote": "Kiungo cha mshirika",
-    "dismissAriaLabel": "Funga"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zima uundaji wa vibadala vya kiwango cha kufikiri (k.m. -low, -medium, -high) katika katalogi ya /v1/models.",
   "connectionTest": {

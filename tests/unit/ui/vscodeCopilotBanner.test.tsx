@@ -1,9 +1,9 @@
 // @vitest-environment jsdom
 /**
  * VscodeCopilotBanner — dismissible home-page banner announcing the OmniCopilot
- * VS Code extension. No version gate (durable feature announcement), mirrors
- * KimiSponsorBanner's render/dismiss/persistence contract (see
- * tests/unit/ui/kimiSponsorBanner.test.tsx).
+ * VS Code extension. No version gate (durable feature announcement) — mirrors
+ * the shared render/dismiss/persistence contract of the dashboard's other
+ * dismissible banners (see CursorAgentNudge.test.tsx).
  */
 import React from "react";
 import { act } from "react";

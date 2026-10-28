@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Beberapa penyedia menerbitkan model yang sama melalui lebih dari satu protokol. Biarkan default kecuali Anda memerlukan alternatif.",
     "bulkAddFormatHintCloudflare": "Satu kunci per baris. Format: name|accountId|apiKey (ID akun Cloudflare + token API).",
     "lmarenaWebCookieHint": "Buka arena.ai, masuk, lalu salin header Cookie lengkap dari permintaan Network. Sertakan arena-auth-prod-v1.0 dan arena-auth-prod-v1.1 (dan chunk selanjutnya jika ada), sebaiknya dengan cf_clearance. Jangan hanya menempelkan cookie arena-auth-prod-v1 yang kosong. Opsional: providerSpecificData.recaptchaV3Token jika create-evaluation masih mengembalikan 403.",
-    "kimiOfficialSupporterBadge": "Sahabat Pendiri",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) adalah sahabat open source pendiri OmniRoute",
-    "cheaperInferenceSupporterBadge": "Teman Open Source",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference mendukung OmniRoute sebagai Teman Open Source",
     "kimiPartnerLinkNote": "Tautan mitra — mendukung OmniRoute tanpa biaya tambahan bagi Anda",
     "codexQuotaPools": "Kumpulan kuota Codex",
     "codexPoolAvailable": "Tersedia",
@@ -14177,13 +14173,6 @@
     "running": "Sedang berjalan...",
     "testFailed": "Uji coba gagal"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) adalah Sahabat Open Source pendiri OmniRoute",
-    "description": "Pengguna baru mendapat 15% kredit API ekstra pada isi ulang pertama. Gunakan Kimi K3 di OmniRoute melalui Kimi API resmi.",
-    "cta": "Dapatkan Kunci API Kimi",
-    "partnerLinkNote": "Tautan mitra",
-    "dismissAriaLabel": "Tutup"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute kini berjalan di dalam VS Code Copilot Chat",
     "description": "Instal ekstensi OmniCopilot gratis dan setiap model OmniRoute akan muncul langsung di pemilih model Copilot Chat yang sudah kamu gunakan.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Penyedia tidak mendukung pemanggilan alat",
     "structuredOutputMismatch": "Penyedia tidak mendukung keluaran terstruktur",
     "contextWindowMismatch": "Permintaan melebihi jendela konteks penyedia"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference adalah Sahabat Open Source OmniRoute",
-    "description": "Gateway berperingkat berdasarkan biaya yang menjual kembali puluhan model terdepan melalui satu endpoint yang kompatibel dengan OpenAI — merutekan setiap permintaan ke penyedia termurah yang memenuhi syarat, tanpa pernah melebihi harga resmi.",
-    "cta": "Dapatkan Kunci API",
-    "partnerLinkNote": "Tautan mitra",
-    "dismissAriaLabel": "Tutup"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Nonaktifkan pembuatan varian tingkat pemikiran (misalnya -low, -medium, -high) dalam katalog /v1/models.",
   "connectionTest": {

@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Daži pakalpojumu sniedzēji publicē tos pašus modeļus vairāk nekā vienā protokolā. Atstājiet noklusējuma vērtību, ja vien nav nepieciešama alternatīva.",
     "bulkAddFormatHintCloudflare": "Viena atslēga katrā rindā. Formāts: name|accountId|apiKey (Cloudflare konta ID + API pilnvara).",
     "lmarenaWebCookieHint": "Atveriet arena.ai, piesakieties un pēc tam nokopējiet pilnu Cookie galveni no tīkla pieprasījuma. Iekļaujiet arena-auth-prod-v1.0 un arena-auth-prod-v1.1 (kā arī turpmākos fragmentus, ja tādi ir), vēlams kopā ar cf_clearance. Neielīmējiet tikai tukšo arena-auth-prod-v1 sīkdatni. Pēc izvēles: providerSpecificData.recaptchaV3Token, ja create-evaluation joprojām atgriež 403.",
-    "kimiOfficialSupporterBadge": "Oficiāls atbalstītājs",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) ir oficiāls OmniRoute darbības uzsākšanas partneris",
-    "cheaperInferenceSupporterBadge": "Atvērtā koda draugs",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference atbalsta OmniRoute kā atvērtā koda draugs",
     "kimiPartnerLinkNote": "Partnera saite — atbalsta OmniRoute bez papildu izmaksām",
     "codexQuotaPools": "Codex kvotu kopas",
     "codexPoolAvailable": "Pieejams",
@@ -14177,13 +14173,6 @@
     "running": "Notiek...",
     "testFailed": "Tests neizdevās"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) ir OmniRoute atvērtā pirmkoda draugs kopš dibināšanas",
-    "description": "Jaunie lietotāji saņem par 15% vairāk API kredītu pirmajā papildināšanas reizē. Izmantojiet Kimi K3 pakalpojumā OmniRoute, izmantojot oficiālo Kimi API.",
-    "cta": "Iegūt Kimi API atslēgu",
-    "partnerLinkNote": "Partnera saite",
-    "dismissAriaLabel": "Aizvērt"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute tagad darbojas VS Code Copilot Chat vidē",
     "description": "Instalējiet bezmaksas OmniCopilot paplašinājumu, un visi OmniRoute modeļi tiks parādīti tieši jums jau pazīstamajā Copilot Chat modeļu atlasītājā.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Pakalpojumu sniedzējs neatbalsta rīku izsaukšanu",
     "structuredOutputMismatch": "Pakalpojumu sniedzējs neatbalsta strukturētu izvadi",
     "contextWindowMismatch": "Pieprasījums pārsniedz pakalpojumu sniedzēja konteksta logu"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference ir OmniRoute atvērtā pirmkoda draugs",
-    "description": "Pēc izmaksām ranžēta vārteja, kas aiz viena ar OpenAI saderīga galapunkta tālākpārdod piekļuvi desmitiem vadošo modeļu — katru pieprasījumu novirzot lētākajam piemērotajam pakalpojumu sniedzējam un nekad nepārsniedzot cenrāža cenu.",
-    "cta": "Iegūt API atslēgu",
-    "partnerLinkNote": "Partnera saite",
-    "dismissAriaLabel": "Aizvērt"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Atspējot domāšanas līmeņu variantu (piem., -low, -medium, -high) ģenerēšanu /v1/models katalogā.",
   "connectionTest": {

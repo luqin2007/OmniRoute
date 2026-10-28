@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Někteří poskytovatelé publikují stejné modely přes více než jeden protokol. Nechte výchozí nastavení, pokud nepotřebujete alternativu.",
     "bulkAddFormatHintCloudflare": "Jeden klíč na řádek. Formát: name|accountId|apiKey (Cloudflare account ID + API token).",
     "lmarenaWebCookieHint": "Otevřete arena.ai, přihlaste se a poté zkopírujte celou hlavičku Cookie ze síťového požadavku (Network request). Zahrňte arena-auth-prod-v1.0 a arena-auth-prod-v1.1 (a další části, pokud jsou přítomny), nejlépe s cf_clearance. Nevkládejte pouze prázdný cookie arena-auth-prod-v1. Volitelně: providerSpecificData.recaptchaV3Token, pokud create-evaluation stále vrací 403.",
-    "kimiOfficialSupporterBadge": "Zakládající přítel",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) je zakládající open source přítel OmniRoute",
-    "cheaperInferenceSupporterBadge": "Přítel open source",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference podporuje OmniRoute jako přítel open source",
     "kimiPartnerLinkNote": "Partnerský odkaz — podporuje OmniRoute bez jakýchkoli dalších nákladů pro vás",
     "codexQuotaPools": "Fondy kvót Codex",
     "codexPoolAvailable": "Dostupný",
@@ -14177,13 +14173,6 @@
     "running": "Probíhá...",
     "testFailed": "Test selhal"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) je zakládající open source přítel OmniRoute",
-    "description": "Noví uživatelé získají 15% API kreditu navíc při prvním dobití. Používejte Kimi K3 v OmniRoute přes oficiální Kimi API.",
-    "cta": "Získat Kimi API klíč",
-    "partnerLinkNote": "Partnerský odkaz",
-    "dismissAriaLabel": "Zavřít"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute nyní běží přímo ve VS Code Copilot Chat",
     "description": "Nainstalujte si bezplatné rozšíření OmniCopilot a všechny modely OmniRoute se objeví přímo ve výběru modelů Copilot Chat, který už používáte.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Poskytovatel nepodporuje volání nástroje",
     "structuredOutputMismatch": "Poskytovatel nepodporuje strukturovaný výstup",
     "contextWindowMismatch": "Žádost překračuje kontextové okno poskytovatele"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference je přítelem open source projektu OmniRoute",
-    "description": "Brána s řazením podle nákladů, která přeprodává desítky špičkových modelů prostřednictvím jednoho koncového bodu kompatibilního s OpenAI — každý požadavek směruje k nejlevnějšímu vhodnému poskytovateli, nikdy za cenu vyšší než ceníkovou.",
-    "cta": "Získat klíč API",
-    "partnerLinkNote": "Partnerský odkaz",
-    "dismissAriaLabel": "Zavřít"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zakázat generování variant úrovně uvažování (např. -low, -medium, -high) v katalogu /v1/models.",
   "connectionTest": {

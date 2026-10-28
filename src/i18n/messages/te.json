@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "కొన్ని ప్రొవైడర్లు ఒకటి కంటే ఎక్కువ ప్రోటోకాల్‌లపై ఒకే మోడళ్లను ప్రచురిస్తారు. ప్రత్యామ్నాయం అవసరం లేకపోతే డిఫాల్ట్‌ను వదిలేయండి.",
     "bulkAddFormatHintCloudflare": "లైన్‌కు ఒక కీ. ఫార్మాట్: name|accountId|apiKey (Cloudflare ఖాతా ID + API టోకెన్).",
     "lmarenaWebCookieHint": "arena.aiని తెరవండి, సైన్ ఇన్ చేయండి, ఆపై నెట్‌వర్క్ అభ్యర్థన నుండి పూర్తి Cookie హెడర్‌ను కాపీ చేయండి. arena-auth-prod-v1.0 మరియు arena-auth-prod-v1.1 (మరియు మరిన్ని భాగాలు ఉంటే వాటిని) చేర్చండి, ప్రాధాన్యంగా cf_clearanceతో. కేవలం ఖాళీ arena-auth-prod-v1 కుకీని మాత్రమే పేస్ట్ చేయవద్దు. ఐచ్ఛికం: create-evaluation ఇప్పటికీ 403ని అందిస్తే providerSpecificData.recaptchaV3Token.",
-    "kimiOfficialSupporterBadge": "వ్యవస్థాపక మిత్రుడు",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) అనేది OmniRoute యొక్క వ్యవస్థాపక ఓపెన్ సోర్స్ మిత్రుడు",
-    "cheaperInferenceSupporterBadge": "ఓపెన్ సోర్స్ స్నేహితుడు",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference ఓపెన్ సోర్స్ స్నేహితురాలిగా OmniRoute కు మద్దతు ఇస్తోంది",
     "kimiPartnerLinkNote": "భాగస్వామి లింక్ — మీకు ఎటువంటి అదనపు ఖర్చు లేకుండా OmniRouteకు మద్దతు ఇస్తుంది",
     "codexQuotaPools": "Codex కోటా పూల్‌లు",
     "codexPoolAvailable": "అందుబాటులో ఉంది",
@@ -14177,13 +14173,6 @@
     "running": "నడుస్తోంది...",
     "testFailed": "పరీక్ష విఫలమైంది"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) అనేది OmniRoute యొక్క వ్యవస్థాపక ఓపెన్ సోర్స్ మిత్రుడు",
-    "description": "కొత్త వినియోగదారులు మొదటి టాప్-అప్‌లో 15% అదనపు API క్రెడిట్ పొందుతారు. అధికారిక Kimi API ద్వారా OmniRouteలో Kimi K3ని ఉపయోగించండి.",
-    "cta": "Kimi API కీ పొందండి",
-    "partnerLinkNote": "భాగస్వామి లింక్",
-    "dismissAriaLabel": "తీసివేయి"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute ఇప్పుడు VS Code Copilot Chatలో నడుస్తుంది",
     "description": "ఉచిత OmniCopilot పొడిగింపును ఇన్‌స్టాల్ చేయండి, మీరు ఇప్పటికే ఉపయోగిస్తున్న Copilot Chat మోడల్ పికర్‌లో ప్రతి OmniRoute మోడల్ నేరుగా కనిపిస్తుంది.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "ప్రొవైడర్ టూల్ కాలింగ్‌ను మద్దతు ఇవ్వదు",
     "structuredOutputMismatch": "ప్రొవైడర్ నిర్మిత అవుట్‌పుట్‌ను మద్దతు ఇవ్వదు",
     "contextWindowMismatch": "అనువర్తన ప్రదాత యొక్క సందర్భం కిటికీని మించు కోరింపు"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference ఒక OmniRoute ఓపెన్ సోర్స్ మిత్రుడు",
-    "description": "ఒకే OpenAI-అనుకూల ఎండ్పాయింట్ వెనుక డజన్ల కొద్దీ అత్యాధునిక మోడళ్లను తిరిగి విక్రయించే, ఖర్చు ఆధారంగా ర్యాంక్ చేసిన గేట్వే — ప్రతి అభ్యర్థనను అర్హత కలిగిన అత్యంత చౌక ప్రొవైడర్కు రూట్ చేస్తుంది, జాబితా ధరను ఎప్పుడూ మించదు.",
-    "cta": "API కీని పొందండి",
-    "partnerLinkNote": "భాగస్వామి లింక్",
-    "dismissAriaLabel": "మూసివేయి"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models కేటలాగ్లో ఆలోచనా స్థాయి వేరియంట్ల (ఉదా. -low, -medium, -high) సృష్టిని నిలిపివేయండి.",
   "connectionTest": {

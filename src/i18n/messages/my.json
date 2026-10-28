@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "အချို့ပံ့ပိုးသူများသည် တူညီသော မော်ဒယ်များကို ပရိုတိုကောတစ်မျိုးထက်ပို၍ ထုတ်ဝေထားသည်။ အခြားရွေးချယ်စရာကို မလိုအပ်ပါက မူလသတ်မှတ်ချက်အတိုင်း ထားပါ။",
     "bulkAddFormatHintCloudflare": "တစ်ကြောင်းလျှင် key တစ်ခု။ ပုံစံ- name|accountId|apiKey (Cloudflare အကောင့် ID + API တိုကင်)။",
     "lmarenaWebCookieHint": "arena.ai ကိုဖွင့်၍ အကောင့်ဝင်ပြီး Network request တစ်ခုမှ Cookie header အပြည့်အစုံကို ကူးယူပါ။ arena-auth-prod-v1.0 နှင့် arena-auth-prod-v1.1 (ထို့အပြင် နောက်ထပ်အပိုင်းများရှိပါက ၎င်းတို့ကိုပါ) ထည့်သွင်းပြီး ဖြစ်နိုင်ပါက cf_clearance ကိုပါ ထည့်ပါ။ ဗလာဖြစ်နေသော arena-auth-prod-v1 cookie တစ်ခုတည်းကို မထည့်ပါနှင့်။ ရွေးချယ်နိုင်သည်- create-evaluation က 403 ကို ဆက်လက်ပြန်ပေးနေပါက providerSpecificData.recaptchaV3Token။",
-    "kimiOfficialSupporterBadge": "တရားဝင် အားပေးကူညီသူ",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) သည် OmniRoute ကို စတင်မိတ်ဆက်ရာတွင် တရားဝင် မိတ်ဖက်ဖြစ်သည်",
-    "cheaperInferenceSupporterBadge": "Open Source မိတ်ဆွေ",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference သည် OmniRoute ကို Open Source Friend အဖြစ် ပံ့ပိုးထားသည်",
     "kimiPartnerLinkNote": "ပါတနာလင့်ခ် — သင့်အတွက် အပိုကုန်ကျစရိတ်မရှိဘဲ OmniRoute ကို ပံ့ပိုးပေးသည်",
     "codexQuotaPools": "Codex ခွဲတမ်းအစုများ",
     "codexPoolAvailable": "ရရှိနိုင်သည်",
@@ -14177,13 +14173,6 @@
     "running": "လုပ်ဆောင်နေသည်...",
     "testFailed": "စမ်းသပ်မှု မအောင်မြင်ပါ"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) သည် OmniRoute ၏ တည်ထောင်စဉ်ကတည်းက Open Source မိတ်ဆွေဖြစ်သည်",
-    "description": "အသုံးပြုသူအသစ်များသည် ပထမဆုံး ငွေဖြည့်မှုတွင် API ခရက်ဒစ် 15% အပိုရရှိမည်။ တရားဝင် Kimi API မှတစ်ဆင့် OmniRoute တွင် Kimi K3 ကို အသုံးပြုပါ။",
-    "cta": "Kimi API Key ရယူရန်",
-    "partnerLinkNote": "မိတ်ဖက်လင့်ခ်",
-    "dismissAriaLabel": "ပိတ်ရန်"
-  },
   "vscodeCopilotBanner": {
     "title": "ယခု OmniRoute ကို VS Code Copilot Chat အတွင်းတွင် အသုံးပြုနိုင်ပါပြီ",
     "description": "အခမဲ့ OmniCopilot extension ကို ထည့်သွင်းလိုက်ပါ၊ ထို့နောက် OmniRoute မော်ဒယ်တိုင်းသည် သင်အသုံးပြုနေကျ Copilot Chat မော်ဒယ်ရွေးချယ်မှုတွင် တိုက်ရိုက်ပေါ်လာပါမည်။",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "ဝန်ဆောင်မှုပေးသူသည် ကိရိယာခေါ်ယူအသုံးပြုမှုကို မပံ့ပိုးပါ",
     "structuredOutputMismatch": "ဝန်ဆောင်မှုပေးသူသည် ဖွဲ့စည်းပုံသတ်မှတ်ထားသော အထွက်ကို မပံ့ပိုးပါ",
     "contextWindowMismatch": "တောင်းဆိုချက်သည် ဝန်ဆောင်မှုပေးသူ၏ context window ကို ကျော်လွန်နေသည်"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference သည် OmniRoute Open Source မိတ်ဆွေဖြစ်သည်",
-    "description": "OpenAI နှင့် ကိုက်ညီသော endpoint တစ်ခုတည်းမှတစ်ဆင့် ရှေ့တန်းမော်ဒယ် ဒါဇင်များစွာကို ပြန်လည်ရောင်းချပေးသည့် ကုန်ကျစရိတ်အလိုက် အဆင့်သတ်မှတ်ထားသော gateway ဖြစ်ပြီး တောင်းဆိုချက်တစ်ခုစီကို သတ်မှတ်ချက်ပြည့်မီသည့် ဈေးအနည်းဆုံးဝန်ဆောင်မှုပေးသူထံ လမ်းကြောင်းပေးကာ စာရင်းဈေးထက် မည်သည့်အခါမျှ မကျော်လွန်ပါ။",
-    "cta": "API Key ရယူရန်",
-    "partnerLinkNote": "မိတ်ဖက်လင့်ခ်",
-    "dismissAriaLabel": "ပိတ်ရန်"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models catalog တွင် thinking level မူကွဲများ (ဥပမာ -low, -medium, -high) ဖန်တီးခြင်းကို ပိတ်ပါ။",
   "connectionTest": {

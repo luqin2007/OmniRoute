@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Bəzi təminatçılar eyni modelləri bir neçə protokol üzrə yayımlayır. Alternativə ehtiyacınız olmadıqca, standartı saxlayın.",
     "bulkAddFormatHintCloudflare": "Hər sətirdə bir açar. Format: name|accountId|apiKey (Cloudflare hesab ID-si + API tokeni).",
     "lmarenaWebCookieHint": "arena.ai saytını açın, daxil olun, sonra Network sorğusundan tam Cookie başlığını kopyalayın. arena-auth-prod-v1.0 və arena-auth-prod-v1.1 dəyərlərini (mövcuddursa, sonrakı hissələri də), mümkünsə cf_clearance ilə birlikdə daxil edin. Yalnız boş arena-auth-prod-v1 kukisini yerləşdirməyin. İstəyə bağlı: create-evaluation hələ də 403 qaytarırsa, providerSpecificData.recaptchaV3Token.",
-    "kimiOfficialSupporterBadge": "Təsisçi Dost",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) OmniRoute-un təsisçi Açıq Mənbə Dostudur",
-    "cheaperInferenceSupporterBadge": "Açıq Mənbə Dostu",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference OmniRoute-u Açıq Mənbə Dostu kimi dəstəkləyir",
     "kimiPartnerLinkNote": "Tərəfdaş linki — sizə heç bir əlavə xərc olmadan OmniRoute-u dəstəkləyir",
     "codexQuotaPools": "Codex kvota hovuzları",
     "codexPoolAvailable": "Əlçatandır",
@@ -14177,13 +14173,6 @@
     "running": "İcra edilir...",
     "testFailed": "Test uğursuz oldu"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) OmniRoute-un təsisçi Açıq Mənbə Dostudur",
-    "description": "Yeni istifadəçilər ilk balans artırmada 15% əlavə API krediti qazanır. Kimi K3-ü OmniRoute-da rəsmi Kimi API vasitəsilə istifadə edin.",
-    "cta": "Kimi API açarı əldə edin",
-    "partnerLinkNote": "Tərəfdaş linki",
-    "dismissAriaLabel": "Bağla"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute artıq VS Code Copilot Chat daxilində işləyir",
     "description": "Pulsuz OmniCopilot əlavəsini quraşdırın və bütün OmniRoute modelləri artıq istifadə etdiyiniz Copilot Chat model seçicisində görünsün.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Təchizatçı alət çağırışını dəstəkləmir",
     "structuredOutputMismatch": "Təchizatçı strukturlaşdırılmış çıxışı dəstəkləmir",
     "contextWindowMismatch": "Sorğu təminatçının kontekst pəncərəsini aşır"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference OmniRoute-un Açıq Mənbə Dostudur",
-    "description": "Onlarla qabaqcıl modeli OpenAI ilə uyğun vahid endpoint vasitəsilə yenidən satan, qiymətə görə sıralanmış şlüz — hər sorğunu siyahı qiymətini heç vaxt aşmadan uyğun provayderlər arasında ən ucuzuna yönləndirir.",
-    "cta": "API açarı əldə edin",
-    "partnerLinkNote": "Tərəfdaş keçidi",
-    "dismissAriaLabel": "Bağla"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models kataloqunda düşünmə səviyyəsi variantlarının (məsələn, -low, -medium, -high) yaradılmasını deaktiv edin.",
   "connectionTest": {

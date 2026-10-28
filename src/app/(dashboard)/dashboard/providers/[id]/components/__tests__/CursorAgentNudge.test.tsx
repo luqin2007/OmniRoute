@@ -2,8 +2,8 @@
 /**
  * CursorAgentNudge (Cursor renewal plan, Task 5) — dismissible dashboard
  * banner suggesting `cursor-agent` installation when it's unavailable.
- * Mirrors tests/unit/ui/kimiSponsorBanner.test.tsx's technique for the same
- * useSyncExternalStore + localStorage dismissal pattern (KimiSponsorBanner.tsx
+ * Mirrors tests/unit/ui/vscodeCopilotBanner.test.tsx's technique for the same
+ * useSyncExternalStore + localStorage dismissal pattern (VscodeCopilotBanner.tsx
  * is the precedent this component follows), and this directory's own
  * __tests__/phase1d.test.tsx for the createRoot/act mounting convention.
  */

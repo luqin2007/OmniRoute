@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "કેટલાક પ્રદાતાઓ એકથી વધુ પ્રોટોકોલ પર સમાન મોડલ પ્રકાશિત કરે છે. વિકલ્પની જરૂર ન હોય ત્યાં સુધી ડિફોલ્ટ જ રાખો.",
     "bulkAddFormatHintCloudflare": "લાઇન દીઠ એક કી. ફોર્મેટ: name|accountId|apiKey (Cloudflare એકાઉન્ટ ID + API ટોકન).",
     "lmarenaWebCookieHint": "arena.ai ખોલો, સાઇન ઇન કરો, પછી Network વિનંતીમાંથી સંપૂર્ણ Cookie હેડર કૉપિ કરો. arena-auth-prod-v1.0 અને arena-auth-prod-v1.1 (અને જો હાજર હોય તો આગળના ભાગો) શામેલ કરો, પ્રાધાન્યમાં cf_clearance સાથે. ફક્ત ખાલી arena-auth-prod-v1 કૂકી પેસ્ટ કરશો નહીં. વૈકલ્પિક: providerSpecificData.recaptchaV3Token જો create-evaluation હજી પણ 403 પરત કરે છે.",
-    "kimiOfficialSupporterBadge": "સ્થાપક મિત્ર",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) એ OmniRoute નો સ્થાપક ઓપન સોર્સ મિત્ર છે",
-    "cheaperInferenceSupporterBadge": "ઓપન સોર્સ મિત્ર",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference ઓપન સોર્સ મિત્ર તરીકે OmniRoute ને સમર્થન આપે છે",
     "kimiPartnerLinkNote": "પાર્ટનર લિંક — તમારા માટે કોઈ વધારાના ખર્ચ વિના OmniRoute ને સપોર્ટ કરે છે",
     "codexQuotaPools": "Codex ક્વોટા પૂલ",
     "codexPoolAvailable": "ઉપલબ્ધ",
@@ -14177,13 +14173,6 @@
     "running": "ચાલુ છે...",
     "testFailed": "ટેસ્ટ નિષ્ફળ થયું"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) એ OmniRoute નો સ્થાપક ઓપન સોર્સ મિત્ર છે",
-    "description": "નવા વપરાશકર્તાઓને પ્રથમ ટોપ-અપ પર 15% વધારાની API ક્રેડિટ મળે છે. સત્તાવાર Kimi API દ્વારા OmniRoute માં Kimi K3 વાપરો.",
-    "cta": "Kimi API કી મેળવો",
-    "partnerLinkNote": "પાર્ટનર લિંક",
-    "dismissAriaLabel": "બંધ કરો"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute હવે VS Code Copilot Chat અંદર ચાલે છે",
     "description": "મફત OmniCopilot એક્સટેન્શન ઇન્સ્ટોલ કરો અને તમે પહેલેથી ઉપયોગ કરો છો તે Copilot Chat મોડલ પિકરમાં જ બધા OmniRoute મોડલ દેખાશે.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "પ્રદાતા ટૂલ કોલિંગને સપોર્ટ કરતો નથી",
     "structuredOutputMismatch": "પ્રદાતા સંરચિત આઉટપુટને સમર્થન આપતો નથી",
     "contextWindowMismatch": "વિનંતી પ્રદાતા સંદર્ભ વિન્ડોને પાર કરે છે"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference એ OmniRouteનો ઓપન સોર્સ મિત્ર છે",
-    "description": "એક ખર્ચ-ક્રમબદ્ધ ગેટવે, જે એક OpenAI-સુસંગત એન્ડપોઇન્ટ પાછળ ડઝનબંધ અગ્રણી મૉડલ્સનું પુનર્વેચાણ કરે છે — દરેક વિનંતીને સૌથી સસ્તા પાત્ર પ્રદાતા તરફ રૂટ કરે છે અને ક્યારેય સૂચિ કિંમતથી વધુ વસૂલતું નથી.",
-    "cta": "API Key મેળવો",
-    "partnerLinkNote": "ભાગીદાર લિંક",
-    "dismissAriaLabel": "બંધ કરો"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models કેટલોગમાં વિચાર-સ્તરના વેરિઅન્ટ્સ (દા.ત. -low, -medium, -high) બનાવવાનું નિષ્ક્રિય કરો.",
   "connectionTest": {

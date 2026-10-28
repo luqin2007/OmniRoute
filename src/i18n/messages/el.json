@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Ορισμένοι πάροχοι διαθέτουν τα ίδια μοντέλα μέσω περισσότερων του ενός πρωτοκόλλων. Διατηρήστε την προεπιλογή, εκτός αν χρειάζεστε το εναλλακτικό πρωτόκολλο.",
     "bulkAddFormatHintCloudflare": "Ένα κλειδί ανά γραμμή. Μορφή: name|accountId|apiKey (Cloudflare account ID + API token).",
     "lmarenaWebCookieHint": "Ανοίξτε το arena.ai, συνδεθείτε και στη συνέχεια αντιγράψτε την πλήρη κεφαλίδα Cookie από ένα αίτημα Network. Συμπεριλάβετε τα arena-auth-prod-v1.0 και arena-auth-prod-v1.1 (και επιπλέον τμήματα εάν υπάρχουν), κατά προτίμηση με cf_clearance. Μην επικολλάτε μόνο το κενό cookie arena-auth-prod-v1. Προαιρετικό: providerSpecificData.recaptchaV3Token εάν το create-evaluation εξακολουθεί να επιστρέφει 403.",
-    "kimiOfficialSupporterBadge": "Επίσημος Υποστηρικτής",
-    "kimiOfficialSupporterTooltip": "Το Kimi (Moonshot AI) είναι επίσημος συνεργάτης λανσαρίσματος του OmniRoute",
-    "cheaperInferenceSupporterBadge": "Φίλος Ανοιχτού Κώδικα",
-    "cheaperInferenceSupporterTooltip": "Η Cheaper Inference υποστηρίζει το OmniRoute ως Φίλος Ανοιχτού Κώδικα",
     "kimiPartnerLinkNote": "Σύνδεσμος συνεργάτη — υποστηρίζει το OmniRoute χωρίς επιπλέον κόστος για εσάς",
     "codexQuotaPools": "Ομάδες ποσοστώσεων Codex",
     "codexPoolAvailable": "Διαθέσιμο",
@@ -14177,13 +14173,6 @@
     "running": "Εκτέλεση...",
     "testFailed": "Η δοκιμή απέτυχε"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Το Kimi (Moonshot AI) είναι ο ιδρυτικός Φίλος Ανοικτού Κώδικα του OmniRoute",
-    "description": "Οι νέοι χρήστες λαμβάνουν 15% επιπλέον πιστώσεις API κατά την πρώτη φόρτιση του υπολοίπου τους. Χρησιμοποιήστε το Kimi K3 στο OmniRoute μέσω του επίσημου Kimi API.",
-    "cta": "Αποκτήστε ένα κλειδί Kimi API",
-    "partnerLinkNote": "Σύνδεσμος συνεργάτη",
-    "dismissAriaLabel": "Κλείσιμο"
-  },
   "vscodeCopilotBanner": {
     "title": "Το OmniRoute τώρα λειτουργεί μέσα στο VS Code Copilot Chat",
     "description": "Εγκαταστήστε τη δωρεάν επέκταση OmniCopilot και κάθε μοντέλο του OmniRoute εμφανίζεται απευθείας στον επιλογέα μοντέλων του Copilot Chat που ήδη χρησιμοποιείτε.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Ο πάροχος δεν υποστηρίζει κλήση εργαλείων",
     "structuredOutputMismatch": "Ο πάροχος δεν υποστηρίζει δομημένη έξοδο",
     "contextWindowMismatch": "Το αίτημα υπερβαίνει το παράθυρο συμφραζομένων του παρόχου"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Το Cheaper Inference είναι φίλος του ανοιχτού κώδικα του OmniRoute",
-    "description": "Μια πύλη με κατάταξη βάσει κόστους που μεταπωλεί δεκάδες μοντέλα αιχμής μέσω ενός τελικού σημείου συμβατού με OpenAI — δρομολογώντας κάθε αίτημα στον φθηνότερο κατάλληλο πάροχο, χωρίς ποτέ να υπερβαίνει την τιμή καταλόγου.",
-    "cta": "Αποκτήστε κλειδί API",
-    "partnerLinkNote": "Σύνδεσμος συνεργάτη",
-    "dismissAriaLabel": "Κλείσιμο"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Απενεργοποίηση της δημιουργίας παραλλαγών επιπέδου σκέψης (π.χ. -low, -medium, -high) στον κατάλογο /v1/models.",
   "connectionTest": {

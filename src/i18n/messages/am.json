@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "አንዳንድ አቅራቢዎች ተመሳሳይ ሞዴሎችን ከአንድ በላይ ፕሮቶኮል ያቀርባሉ። አማራጩን ካላስፈለገዎት በስተቀር ነባሪውን ይተዉት።",
     "bulkAddFormatHintCloudflare": "በእያንዳንዱ መስመር አንድ ቁልፍ። ቅርጸት፦ name|accountId|apiKey (የCloudflare መለያ መታወቂያ + API ቶከን)።",
     "lmarenaWebCookieHint": "arena.ai ይክፈቱ፣ ይግቡ፣ ከዚያ ከNetwork ጥያቄ ሙሉውን የCookie ራስጌ ይቅዱ። arena-auth-prod-v1.0 እና arena-auth-prod-v1.1ን (ካሉ ተጨማሪ ክፍሎችንም) ያካትቱ፣ ቢቻል cf_clearanceንም ይጨምሩ። ባዶውን arena-auth-prod-v1 ኩኪ ብቻ አይለጥፉ። አማራጭ፦ create-evaluation አሁንም 403 የሚመልስ ከሆነ providerSpecificData.recaptchaV3Token።",
-    "kimiOfficialSupporterBadge": "ይፋዊ ደጋፊ",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) የOmniRoute ይፋዊ የማስጀመሪያ አጋር ነው",
-    "cheaperInferenceSupporterBadge": "የክፍት ምንጭ ወዳጅ",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference OmniRouteን እንደ የክፍት ምንጭ ወዳጅ ይደግፋል",
     "kimiPartnerLinkNote": "የአጋር አገናኝ — ለእርስዎ ምንም ተጨማሪ ወጪ ሳያስከትል OmniRouteን ይደግፋል",
     "codexQuotaPools": "የCodex ኮታ ገንዳዎች",
     "codexPoolAvailable": "ይገኛል",
@@ -14177,13 +14173,6 @@
     "running": "በሂደት ላይ...",
     "testFailed": "ሙከራው አልተሳካም"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) የOmniRoute መስራች የክፍት ምንጭ ወዳጅ ነው",
-    "description": "አዲስ ተጠቃሚዎች ለመጀመሪያ ጊዜ ቀሪ ሂሳባቸውን ሲሞሉ 15% ተጨማሪ API ክሬዲት ያገኛሉ። Kimi K3ን በይፋዊው Kimi API በኩል በOmniRoute ውስጥ ይጠቀሙ።",
-    "cta": "የKimi API ቁልፍ ያግኙ",
-    "partnerLinkNote": "የአጋር አገናኝ",
-    "dismissAriaLabel": "ዝጋ"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute አሁን በVS Code Copilot Chat ውስጥ ይሰራል",
     "description": "ነፃውን OmniCopilot ቅጥያ ይጫኑ፤ እያንዳንዱ የOmniRoute ሞዴል ቀድሞውኑ በሚጠቀሙበት የCopilot Chat ሞዴል መምረጫ ውስጥ በቀጥታ ይታያል።",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "አቅራቢው የመሣሪያ ጥሪን አይደግፍም",
     "structuredOutputMismatch": "አቅራቢው የተዋቀረ ውፅዓትን አይደግፍም",
     "contextWindowMismatch": "ጥያቄው ከአቅራቢው የአውድ መስኮት ይበልጣል"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference የOmniRoute ክፍት ምንጭ ወዳጅ ነው",
-    "description": "በወጪ የተደረደረ፣ በአንድ OpenAI-ተኳሃኝ የመዳረሻ ነጥብ በደርዘን የሚቆጠሩ እጅግ የላቁ ሞዴሎችን እንደገና የሚሸጥ ጌትዌይ — እያንዳንዱን ጥያቄ ወደ በጣም ርካሹ ብቁ አቅራቢ ይመራል፣ ከተዘረዘረው ዋጋም ፈጽሞ አይበልጥም።",
-    "cta": "የAPI ቁልፍ ያግኙ",
-    "partnerLinkNote": "የአጋር አገናኝ",
-    "dismissAriaLabel": "ዝጋ"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "በ/v1/models ካታሎግ ውስጥ የአስተሳሰብ ደረጃ ተለዋጮችን (ለምሳሌ -low, -medium, -high) ማመንጨትን አሰናክል።",
   "connectionTest": {

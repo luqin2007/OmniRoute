@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Kai kurie teikėjai tuos pačius modelius siūlo naudodami daugiau nei vieną protokolą. Palikite numatytąjį, nebent reikia alternatyvaus protokolo.",
     "bulkAddFormatHintCloudflare": "Po vieną raktą kiekvienoje eilutėje. Formatas: name|accountId|apiKey (Cloudflare paskyros ID + API prieigos raktas).",
     "lmarenaWebCookieHint": "Atidarykite arena.ai, prisijunkite, tada iš tinklo užklausos nukopijuokite visą Cookie antraštę. Įtraukite arena-auth-prod-v1.0 ir arena-auth-prod-v1.1 (taip pat kitus fragmentus, jei jų yra), pageidautina su cf_clearance. Neįklijuokite vien tik tuščio arena-auth-prod-v1 slapuko. Pasirinktinai: providerSpecificData.recaptchaV3Token, jei create-evaluation vis dar grąžina 403.",
-    "kimiOfficialSupporterBadge": "Oficialus rėmėjas",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) yra oficialus OmniRoute pristatymo partneris",
-    "cheaperInferenceSupporterBadge": "Atvirojo kodo draugas",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference remia OmniRoute kaip atvirojo kodo draugas",
     "kimiPartnerLinkNote": "Partnerio nuoroda — padeda remti OmniRoute be jokių papildomų išlaidų jums",
     "codexQuotaPools": "Codex kvotų telkiniai",
     "codexPoolAvailable": "Prieinama",
@@ -14177,13 +14173,6 @@
     "running": "Vykdoma...",
     "testFailed": "Bandymas nepavyko"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) yra OmniRoute atvirojo kodo draugas steigėjas",
-    "description": "Nauji naudotojai, pirmą kartą papildę balansą, gauna 15 % papildomų API kreditų. Naudokite Kimi K3 platformoje OmniRoute per oficialią Kimi API.",
-    "cta": "Gauti Kimi API raktą",
-    "partnerLinkNote": "Partnerio nuoroda",
-    "dismissAriaLabel": "Uždaryti"
-  },
   "vscodeCopilotBanner": {
     "title": "Dabar „OmniRoute“ veikia „VS Code Copilot Chat“ aplinkoje",
     "description": "Įdiekite nemokamą „OmniCopilot“ plėtinį ir visi „OmniRoute“ modeliai bus rodomi jūsų jau naudojamame „Copilot Chat“ modelių parinkiklyje.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Teikėjas nepalaiko įrankių iškvietimo",
     "structuredOutputMismatch": "Teikėjas nepalaiko struktūrizuotos išvesties",
     "contextWindowMismatch": "Užklausa viršija teikėjo konteksto langą"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference yra OmniRoute atvirojo kodo draugas",
-    "description": "Pagal kainą reitinguojama sąsaja, per vieną su OpenAI suderinamą galinį tašką perparduodanti dešimtis pažangiausių modelių ir nukreipianti kiekvieną užklausą pigiausiam tinkamam teikėjui, niekada neviršydama skelbiamos kainos.",
-    "cta": "Gauti API raktą",
-    "partnerLinkNote": "Partnerio nuoroda",
-    "dismissAriaLabel": "Uždaryti"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Išjungti mąstymo lygio variantų (pvz., -low, -medium, -high) generavimą /v1/models kataloge.",
   "connectionTest": {

@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Mõned teenusepakkujad avaldavad samu mudeleid rohkem kui ühe protokolli kaudu. Jäta vaikeväärtus alles, kui sa ei vaja alternatiivi.",
     "bulkAddFormatHintCloudflare": "Üks võti rea kohta. Vorming: name|accountId|apiKey (Cloudflare konto ID + API-token).",
     "lmarenaWebCookieHint": "Ava arena.ai, logi sisse ja kopeeri seejärel Network-päringust kogu Cookie-päis. Lisa arena-auth-prod-v1.0 ja arena-auth-prod-v1.1 (ning olemasolu korral ka järgmised osad), eelistatavalt koos küpsisega cf_clearance. Ära kleebi ainult tühja küpsist arena-auth-prod-v1. Valikuline: providerSpecificData.recaptchaV3Token, kui create-evaluation tagastab endiselt 403.",
-    "kimiOfficialSupporterBadge": "Ametlik toetaja",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) on OmniRoute'i ametlik turuletoomispartner",
-    "cheaperInferenceSupporterBadge": "Avatud lähtekoodi sõber",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference toetab OmniRoute'i avatud lähtekoodi sõbrana",
     "kimiPartnerLinkNote": "Partnerilink — toetab OmniRoute'i ilma sulle lisakulu tekitamata",
     "codexQuotaPools": "Codexi kvoodikogumid",
     "codexPoolAvailable": "Saadaval",
@@ -14177,13 +14173,6 @@
     "running": "Töötlemine...",
     "testFailed": "Test nurjus"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) on OmniRoute'i avatud lähtekoodi asutajasõber",
-    "description": "Uued kasutajad saavad esimese saldo täiendamise korral 15% täiendavaid API-krediite. Kasutage Kimi K3 mudelit OmniRoute'is ametliku Kimi API kaudu.",
-    "cta": "Hankige Kimi API-võti",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Sulge"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute töötab nüüd VS Code Copilot Chatis",
     "description": "Installige tasuta OmniCopilot laiendus ja kõik OmniRoute'i mudelid kuvatakse otse teie juba kasutatavas Copilot Chati mudelivalikus.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Teenusepakkuja ei toeta tööriistade väljakutsumist",
     "structuredOutputMismatch": "Teenusepakkuja ei toeta struktureeritud väljundit",
     "contextWindowMismatch": "Päring ületab teenusepakkuja kontekstiakna"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference on OmniRoute'i avatud lähtekoodiga projekti sõber",
-    "description": "Hinna järgi järjestav lüüs, mis vahendab ühe OpenAI-ga ühilduva lõpp-punkti kaudu kümneid tipptasemel mudeleid — suunates iga päringu odavaimale sobivale teenusepakkujale, kuid mitte kunagi hinnakirjahinnast kallimalt.",
-    "cta": "Hangi API-võti",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Sulge"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Keela mõtlemistaseme variantide (nt -low, -medium, -high) loomine /v1/models kataloogis.",
   "connectionTest": {

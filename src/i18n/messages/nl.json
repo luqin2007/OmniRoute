@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Sommige providers publiceren dezelfde modellen over meer dan één protocol. Laat de standaardinstelling staan, tenzij je de alternatieve nodig hebt.",
     "bulkAddFormatHintCloudflare": "Eén sleutel per regel. Indeling: name|accountId|apiKey (Cloudflare-account-ID + API-token).",
     "lmarenaWebCookieHint": "Open arena.ai, meld u aan en kopieer vervolgens de volledige Cookie-header van een netwerkverzoek. Voeg arena-auth-prod-v1.0 en arena-auth-prod-v1.1 toe (en verdere chunks indien aanwezig), bij voorkeur met cf_clearance. Plak niet alleen de lege arena-auth-prod-v1-cookie. Optioneel: providerSpecificData.recaptchaV3Token als create-evaluation nog steeds 403 retourneert.",
-    "kimiOfficialSupporterBadge": "Oprichtende Vriend",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) is OmniRoute's oprichtende open source-vriend",
-    "cheaperInferenceSupporterBadge": "Opensourcevriend",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference steunt OmniRoute als opensourcevriend",
     "kimiPartnerLinkNote": "Partnerlink — ondersteunt OmniRoute zonder extra kosten voor u",
     "codexQuotaPools": "Codex-quotapools",
     "codexPoolAvailable": "Beschikbaar",
@@ -14177,13 +14173,6 @@
     "running": "Bezig met uitvoeren...",
     "testFailed": "Test mislukt"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) is OmniRoutes oprichtende open source-vriend",
-    "description": "Nieuwe gebruikers krijgen 15% extra API-tegoed bij hun eerste storting. Gebruik Kimi K3 in OmniRoute via de officiële Kimi API.",
-    "cta": "Kimi API-sleutel ophalen",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Sluiten"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute draait nu binnen VS Code Copilot Chat",
     "description": "Installeer de gratis OmniCopilot-extensie en elk OmniRoute-model verschijnt direct in de Copilot Chat-modelkiezer die je al gebruikt.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Provider ondersteunt het aanroepen van tools niet",
     "structuredOutputMismatch": "Provider ondersteunt geen gestructureerde uitvoer",
     "contextWindowMismatch": "Verzoek overschrijdt de contextvenster van de provider"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference is een opensourcevriend van OmniRoute",
-    "description": "Een op kosten gerangschikte gateway die tientallen geavanceerde modellen via één OpenAI-compatibel endpoint doorverkoopt — waarbij elk verzoek naar de goedkoopste geschikte provider wordt gerouteerd, nooit boven de catalogusprijs.",
-    "cta": "Een API-sleutel verkrijgen",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Sluiten"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Schakel het genereren van varianten op denkniveau (bijv. -low, -medium, -high) in de catalogus /v1/models uit.",
   "connectionTest": {

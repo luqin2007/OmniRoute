@@ -6700,10 +6700,6 @@
     "apiProtocolHint": "Որոշ մատակարարներ նույն մոդելները տրամադրում են մեկից ավելի արձանագրություններով։ Պահպանեք լռելյայնը, եթե այլընտրանքայինը ձեզ անհրաժեշտ չէ։",
     "bulkAddFormatHintCloudflare": "Յուրաքանչյուր տողում՝ մեկ բանալի։ Ձևաչափ՝ name|accountId|apiKey (Cloudflare հաշվի ID + API թոքեն)։",
     "lmarenaWebCookieHint": "Բացեք arena.ai-ը, մուտք գործեք, ապա Network հարցումից պատճենեք ամբողջ Cookie վերնագիրը։ Ներառեք arena-auth-prod-v1.0-ը և arena-auth-prod-v1.1-ը (ինչպես նաև հետագա մասերը, եթե առկա են), ցանկալի է՝ cf_clearance-ի հետ։ Մի տեղադրեք միայն դատարկ arena-auth-prod-v1 cookie-ն։ Ընտրովի՝ providerSpecificData.recaptchaV3Token, եթե create-evaluation-ը դեռ վերադարձնում է 403։",
-    "kimiOfficialSupporterBadge": "Պաշտոնական աջակից",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI)-ն OmniRoute-ի գործարկման պաշտոնական գործընկերն է",
-    "cheaperInferenceSupporterBadge": "Բաց կոդի բարեկամ",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference-ն աջակցում է OmniRoute-ին՝ որպես բաց կոդի բարեկամ",
     "kimiPartnerLinkNote": "Գործընկերային հղում — աջակցում է OmniRoute-ին՝ առանց ձեզ համար լրացուցիչ ծախսի",
     "codexQuotaPools": "Codex-ի քվոտաների խմբեր",
     "codexPoolAvailable": "Հասանելի է",
@@ -14177,13 +14173,6 @@
     "running": "Գործարկվում է...",
     "testFailed": "Թեստը ձախողվեց"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI)-ն OmniRoute-ի առաջին բաց կոդի բարեկամն է",
-    "description": "Նոր օգտատերերն իրենց առաջին հաշվալիցքավորման ժամանակ ստանում են 15% հավելյալ API կրեդիտներ։ Օգտագործեք Kimi K3-ը OmniRoute-ում՝ պաշտոնական Kimi API-ի միջոցով։",
-    "cta": "Ստանալ Kimi API բանալի",
-    "partnerLinkNote": "Գործընկերային հղում",
-    "dismissAriaLabel": "Փակել"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute-ն այժմ աշխատում է VS Code Copilot Chat-ի ներսում",
     "description": "Տեղադրեք անվճար OmniCopilot ընդլայնումը, և OmniRoute-ի բոլոր մոդելները կհայտնվեն անմիջապես Copilot Chat-ի՝ արդեն իսկ ձեր օգտագործած մոդելների ընտրացանկում։",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Մատակարարը չի աջակցում գործիքների կանչմանը",
     "structuredOutputMismatch": "Մատակարարը չի աջակցում կառուցվածքային ելքին",
     "contextWindowMismatch": "Հարցումը գերազանցում է մատակարարի համատեքստի պատուհանը"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference-ը OmniRoute-ի բաց կոդի բարեկամն է",
-    "description": "Ըստ արժեքի դասակարգված դարպաս, որը մեկ OpenAI-ի հետ համատեղելի վերջնակետի միջոցով վերավաճառում է տասնյակ առաջատար մոդելներ՝ յուրաքանչյուր հարցում ուղղորդելով պահանջներին համապատասխանող ամենաէժան մատակարարին՝ երբեք չգերազանցելով ցուցակային գինը։",
-    "cta": "Ստանալ API բանալի",
-    "partnerLinkNote": "Գործընկերային հղում",
-    "dismissAriaLabel": "Փակել"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Անջատել մտածողության մակարդակի տարբերակների (օր.՝ -low, -medium, -high) ստեղծումը /v1/models կատալոգում։",
   "connectionTest": {

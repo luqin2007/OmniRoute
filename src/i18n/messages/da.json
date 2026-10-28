@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Nogle udbydere offentliggør de samme modeller over mere end én protokol. Lad standardindstillingen være, medmindre du har brug for alternativet.",
     "bulkAddFormatHintCloudflare": "Én nøgle pr. linje. Format: name|accountId|apiKey (Cloudflare-konto-id + API-token).",
     "lmarenaWebCookieHint": "Åbn arena.ai, log ind, og kopiér derefter den fulde Cookie-header fra en netværksanmodning. Inkluder arena-auth-prod-v1.0 og arena-auth-prod-v1.1 (og yderligere bidder, hvis de findes), helst med cf_clearance. Indsæt ikke kun den tomme arena-auth-prod-v1-cookie. Valgfrit: providerSpecificData.recaptchaV3Token hvis create-evaluation stadig returnerer 403.",
-    "kimiOfficialSupporterBadge": "Grundlæggende ven",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) er OmniRoutes grundlæggende open source-ven",
-    "cheaperInferenceSupporterBadge": "Open source-ven",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference støtter OmniRoute som open source-ven",
     "kimiPartnerLinkNote": "Partnerlink — understøtter OmniRoute uden ekstra omkostninger for dig",
     "codexQuotaPools": "Codex-kvotepuljer",
     "codexPoolAvailable": "Tilgængelig",
@@ -14177,13 +14173,6 @@
     "running": "Kører...",
     "testFailed": "Testet mislykkedes"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) er OmniRoutes stiftende open source-ven",
-    "description": "Nye brugere får 15% ekstra API-kredit ved første optankning. Brug Kimi K3 i OmniRoute via det officielle Kimi API.",
-    "cta": "Få en Kimi API-nøgle",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Afvis"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute kører nu inde i VS Code Copilot Chat",
     "description": "Installer den gratis OmniCopilot-udvidelse, og alle OmniRoute-modeller vises direkte i den Copilot Chat-modelvælger, du allerede bruger.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Udbyderen understøtter ikke værktøjsopkald.",
     "structuredOutputMismatch": "Udbyderen understøtter ikke struktureret output",
     "contextWindowMismatch": "Anmodningen overskrider udbyderens kontekstvindue"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference er en af open source-vennerne hos OmniRoute",
-    "description": "En prisrangeret gateway, der videresælger snesevis af førende modeller via ét OpenAI-kompatibelt endpoint — og dirigerer hver anmodning til den billigste kvalificerede udbyder, aldrig over listeprisen.",
-    "cta": "Få en API-nøgle",
-    "partnerLinkNote": "Partnerlink",
-    "dismissAriaLabel": "Luk"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Deaktivér genereringen af varianter af tænkeniveau (f.eks. -low, -medium, -high) i /v1/models-kataloget.",
   "connectionTest": {

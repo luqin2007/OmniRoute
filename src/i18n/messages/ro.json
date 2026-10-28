@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Unii furnizori publică aceleași modele pe mai mult de un protocol. Lăsați setarea implicită, cu excepția cazului în care aveți nevoie de alternativă.",
     "bulkAddFormatHintCloudflare": "O cheie pe linie. Format: name|accountId|apiKey (ID cont Cloudflare + token API).",
     "lmarenaWebCookieHint": "Deschide arena.ai, conectează-te, apoi copiază antetul Cookie complet dintr-o cerere Network. Include arena-auth-prod-v1.0 și arena-auth-prod-v1.1 (și fragmentele ulterioare dacă sunt prezente), de preferință cu cf_clearance. Nu lipi doar cookie-ul gol arena-auth-prod-v1. Opțional: providerSpecificData.recaptchaV3Token dacă create-evaluation returnează în continuare 403.",
-    "kimiOfficialSupporterBadge": "Prieten Fondator",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) este prietenul fondator open source al OmniRoute",
-    "cheaperInferenceSupporterBadge": "Prieten open source",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference susține OmniRoute ca prieten open source",
     "kimiPartnerLinkNote": "Link de partener — susține OmniRoute fără costuri suplimentare pentru dvs.",
     "codexQuotaPools": "Grupuri de cote Codex",
     "codexPoolAvailable": "Disponibil",
@@ -14177,13 +14173,6 @@
     "running": "Se rulează...",
     "testFailed": "Testul a eșuat"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) este prietenul open source fondator al OmniRoute",
-    "description": "Utilizatorii noi primesc 15% credite API în plus la prima alimentare. Folosește Kimi K3 în OmniRoute prin API-ul oficial Kimi.",
-    "cta": "Obține o cheie API Kimi",
-    "partnerLinkNote": "Link de partener",
-    "dismissAriaLabel": "Închide"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute rulează acum în VS Code Copilot Chat",
     "description": "Instalează extensia gratuită OmniCopilot și fiecare model OmniRoute apare direct în selectorul de modele din Copilot Chat pe care îl folosești deja.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Furnizorul nu suportă apelarea instrumentului",
     "structuredOutputMismatch": "Furnizorul nu suportă ieșirea structurată",
     "contextWindowMismatch": "Cererea depășește fereastra de context a furnizorului"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference este un proiect open-source prieten al OmniRoute",
-    "description": "Un gateway ordonat după cost, care revinde zeci de modele de frontieră printr-un singur endpoint compatibil cu OpenAI — direcționând fiecare solicitare către cel mai ieftin furnizor eligibil, fără a depăși vreodată prețul de listă.",
-    "cta": "Obțineți o cheie API",
-    "partnerLinkNote": "Link de partener",
-    "dismissAriaLabel": "Închideți"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Dezactivați generarea variantelor de nivel de gândire (de ex. -low, -medium, -high) în catalogul /v1/models.",
   "connectionTest": {

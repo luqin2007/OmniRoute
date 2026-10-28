@@ -6693,10 +6693,6 @@
     "apiProtocolHint": "Деякі постачальники публікують однакові моделі через більше ніж один протокол. Залиште за замовчуванням, якщо вам не потрібен альтернативний.",
     "bulkAddFormatHintCloudflare": "Один ключ на рядок. Формат: name|accountId|apiKey (Cloudflare account ID + API token).",
     "lmarenaWebCookieHint": "Відкрийте arena.ai, увійдіть, а потім скопіюйте повний заголовок Cookie з мережевого запиту. Включіть arena-auth-prod-v1.0 та arena-auth-prod-v1.1 (та наступні частини, якщо вони є), бажано з cf_clearance. Не вставляйте лише порожній cookie arena-auth-prod-v1. Необов'язково: providerSpecificData.recaptchaV3Token, якщо create-evaluation все ще повертає 403.",
-    "kimiOfficialSupporterBadge": "Друг-засновник",
-    "kimiOfficialSupporterTooltip": "Kimi (Moonshot AI) — друг-засновник відкритого коду OmniRoute",
-    "cheaperInferenceSupporterBadge": "Друг відкритого коду",
-    "cheaperInferenceSupporterTooltip": "Cheaper Inference підтримує OmniRoute як друг відкритого коду",
     "kimiPartnerLinkNote": "Партнерське посилання — підтримує OmniRoute без додаткових витрат для вас",
     "codexQuotaPools": "Пули квот Codex",
     "codexPoolAvailable": "Доступний",
@@ -14177,13 +14173,6 @@
     "running": "Виконання...",
     "testFailed": "Тест не пройдено"
   },
-  "kimiSponsorBanner": {
-    "foundingFriendTitle": "Kimi (Moonshot AI) — друг-засновник відкритого коду OmniRoute",
-    "description": "Нові користувачі отримують 15% додаткових API-кредитів при першому поповненні. Використовуйте Kimi K3 в OmniRoute через офіційний Kimi API.",
-    "cta": "Отримати ключ Kimi API",
-    "partnerLinkNote": "Партнерське посилання",
-    "dismissAriaLabel": "Закрити"
-  },
   "vscodeCopilotBanner": {
     "title": "OmniRoute тепер працює всередині VS Code Copilot Chat",
     "description": "Встановіть безкоштовне розширення OmniCopilot, і кожна модель OmniRoute з'явиться прямо в переліку моделей Copilot Chat, яким ви вже користуєтесь.",
@@ -15005,13 +14994,6 @@
     "toolsMismatch": "Постачальник не підтримує виклик інструментів",
     "structuredOutputMismatch": "Постачальник не підтримує структурований вивід",
     "contextWindowMismatch": "Запит перевищує контекстне вікно постачальника"
-  },
-  "cheaperInferenceSponsorBanner": {
-    "title": "Cheaper Inference — друг проєкту OmniRoute з відкритим кодом",
-    "description": "Шлюз із ранжуванням за вартістю, який перепродає доступ до десятків передових моделей через єдину кінцеву точку, сумісну з OpenAI, — кожен запит спрямовується до найдешевшого відповідного провайдера за ціною, що ніколи не перевищує каталожну.",
-    "cta": "Отримати ключ API",
-    "partnerLinkNote": "Партнерське посилання",
-    "dismissAriaLabel": "Закрити"
   },
   "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Вимкнути створення варіантів рівня міркування (наприклад, -low, -medium, -high) у каталозі /v1/models.",
   "connectionTest": {
