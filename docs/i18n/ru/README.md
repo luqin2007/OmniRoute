@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Благодарим <b>Cheaper Inference</b>, друга Open Source OmniRoute, за поддержку этого проекта! Cheaper Inference — это шлюз с ранжированием по стоимости, который перепродает 42 передовые модели — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok и MiniMax — через единую OpenAI-совместимую конечную точку, маршрутизируя каждый запрос к самому дешевому подходящему провайдеру, никогда не взимая плату выше прейскурантной цены производителя модели.
       <br/><br/>
-      <b>Первоклассная поддержка в OmniRoute:</b> Chat Completions, нативная конечная точка <code>/v1/responses</code>, зрение, вызов инструментов и 3 модели изображений (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, доступные как <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Получить API key →</b></a>
+      <b>Первоклассная поддержка в OmniRoute:</b> Chat Completions, нативная конечная точка <code>/v1/responses</code>, зрение, вызов инструментов и 3 модели изображений (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, доступные как <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Получить API key →</b></a>
     </td>
   </tr>
 </table>

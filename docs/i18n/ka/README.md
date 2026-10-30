@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       მადლობა <b>Cheaper Inference</b>-ს, OmniRoute-ის ღია კოდის მეგობარს, ამ პროექტის მხარდაჭერისთვის! Cheaper Inference არის ხარჯების მიხედვით რანჟირებული კარიბჭე, რომელიც ყიდის 42 სასაზღვრო მოდელს — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok და MiniMax — ერთი OpenAI-თან თავსებადი ბოლო წერტილის უკან, თითოეული მოთხოვნის გადამისამართებით ყველაზე იაფ შესაბამის პროვაიდერთან, მოდელის შემქმნელის ჩამონათვალის ფასზე მაღლა დატენვის გარეშე.
       <br/><br/>
-      <b>პირველი კლასის მხარდაჭერა OmniRoute-ში:</b> Chat Completions, მშობლიური <code>/v1/responses</code> ბოლო წერტილი, ხედვა, ხელსაწყოების გამოძახება და 3 გამოსახულების მოდელი (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ხელმისაწვდომია როგორც <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>მიიღეთ API გასაღები →</b></a>
+      <b>პირველი კლასის მხარდაჭერა OmniRoute-ში:</b> Chat Completions, მშობლიური <code>/v1/responses</code> ბოლო წერტილი, ხედვა, ხელსაწყოების გამოძახება და 3 გამოსახულების მოდელი (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ხელმისაწვდომია როგორც <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>მიიღეთ API გასაღები →</b></a>
     </td>
   </tr>
 </table>

@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Täname <b>Cheaper Inference'it</b>, OmniRoute'i avatud lähtekoodiga sõpra, selle projekti toetamise eest! Cheaper Inference on hinna järgi optimeeritud lüüs, mis pakub ühe OpenAI-ga ühilduva lõpp-punkti kaudu edasi 42 tipptasemel mudelit — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok ja MiniMax — suunates iga päringu odavaima sobiva teenusepakkuja juurde, küsimata kunagi mudeli looja hinnakirjahinnast rohkem.
       <br/><br/>
-      <b>Esmaklassiline tugi OmniRoute'is:</b> vestluse lõpuleviimised, loomulik <code>/v1/responses</code> lõpp-punkt, pilditöötlus, tööriistakutsed ja 3 pildimudelit (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, millele pääseb juurde kujul <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Hankige API-võti →</b></a>
+      <b>Esmaklassiline tugi OmniRoute'is:</b> vestluse lõpuleviimised, loomulik <code>/v1/responses</code> lõpp-punkt, pilditöötlus, tööriistakutsed ja 3 pildimudelit (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, millele pääseb juurde kujul <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Hankige API-võti →</b></a>
     </td>
   </tr>
 </table>

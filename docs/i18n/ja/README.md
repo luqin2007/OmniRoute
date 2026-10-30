@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       このプロジェクトを支援してくださる、OmniRouteのオープンソースフレンドである<b>Cheaper Inference</b>に感謝いたします！Cheaper Inferenceは、42のフロンティアモデル（Claude、GPT-5.x、Gemini、Kimi K3、GLM、DeepSeek、Grok、MiniMax）を1つのOpenAI互換エンドポイントの背後で再販する、コストランク付けされたゲートウェイです。各リクエストを最も安価な適格プロバイダーにルーティングし、モデルメーカーの定価を超える料金を請求することはありません。
       <br/><br/>
-      <b>OmniRouteでのファーストクラスサポート:</b> チャット補完、ネイティブの<code>/v1/responses</code>エンドポイント、ビジョン、ツール呼び出し、および3つの画像モデル（<code>grok-imagine</code>、<code>nano-banana-pro</code>、<code>nano-banana-2</code>、<code>cheaperinference/&lt;model&gt;</code>としてアクセス可能）。<a href="https://cheaperinference.com/?utm_source=omniroute"><b>APIキーを入手 →</b></a>
+      <b>OmniRouteでのファーストクラスサポート:</b> チャット補完、ネイティブの<code>/v1/responses</code>エンドポイント、ビジョン、ツール呼び出し、および3つの画像モデル（<code>grok-imagine</code>、<code>nano-banana-pro</code>、<code>nano-banana-2</code>、<code>cheaperinference/&lt;model&gt;</code>としてアクセス可能）。<a href="https://cheaperinference.com/"><b>APIキーを入手 →</b></a>
     </td>
   </tr>
 </table>

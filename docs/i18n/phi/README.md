@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Salamat sa <b>Cheaper Inference</b>, isang OmniRoute Open Source Friend, sa pagsuporta sa proyektong ito! Ang Cheaper Inference ay isang cost-ranked gateway na nagbebenta muli ng 42 frontier models — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok at MiniMax — sa likod ng isang OpenAI-compatible endpoint, na nagruruta ng bawat kahilingan sa pinakamurang karapat-dapat na provider nang hindi kailanman naniningil ng mas mataas sa list price ng gumawa ng modelo.
       <br/><br/>
-      <b>First-class na suporta sa OmniRoute:</b> Chat Completions, ang native na <code>/v1/responses</code> endpoint, vision, tool calling at 3 image models (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, na naaabot bilang <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Kumuha ng API key →</b></a>
+      <b>First-class na suporta sa OmniRoute:</b> Chat Completions, ang native na <code>/v1/responses</code> endpoint, vision, tool calling at 3 image models (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, na naaabot bilang <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Kumuha ng API key →</b></a>
     </td>
   </tr>
 </table>

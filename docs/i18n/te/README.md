@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="చీపర్ ఇన్ఫరెన్స్"/>
       </a>
       <br/><b>చీపర్ ఇన్ఫరెన్స్</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ఈ ప్రాజెక్ట్కు మద్దతు ఇచ్చిన ఓమ్నిరూట్ ఓపెన్ సోర్స్ స్నేహితుడు <b>చీపర్ ఇన్ఫరెన్స్</b>కి ధన్యవాదాలు! చీపర్ ఇన్ఫరెన్స్ అనేది ఒక ఖర్చు-ర్యాంక్డ్ గేట్వే, ఇది 42 ఫ్రాంటియర్ మోడళ్లను తిరిగి విక్రయిస్తుంది — క్లాడ్, GPT-5.x, జెమిని, కిమి K3, GLM, డీప్సీక్, గ్రోక్ మరియు మినీమాక్స్ — ఒక OpenAI-అనుకూల ఎండ్పాయింట్ వెనుక, ప్రతి అభ్యర్థనను మోడల్ మేకర్ యొక్క జాబితా ధర కంటే ఎక్కువ వసూలు చేయకుండా చౌకైన అర్హత కలిగిన ప్రొవైడర్కు రూట్ చేస్తుంది.
       <br/><br/>
-      <b>ఓమ్నిరూట్లో ఫస్ట్-క్లాస్ మద్దతు:</b> చాట్ కంప్లీషన్స్, స్థానిక <code>/v1/responses</code> ఎండ్పాయింట్, విజన్, టూల్ కాలింగ్ మరియు 3 ఇమేజ్ మోడల్స్ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code>గా అందుబాటులో ఉన్నాయి). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API కీని పొందండి →</b></a>
+      <b>ఓమ్నిరూట్లో ఫస్ట్-క్లాస్ మద్దతు:</b> చాట్ కంప్లీషన్స్, స్థానిక <code>/v1/responses</code> ఎండ్పాయింట్, విజన్, టూల్ కాలింగ్ మరియు 3 ఇమేజ్ మోడల్స్ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code>గా అందుబాటులో ఉన్నాయి). <a href="https://cheaperinference.com/"><b>API కీని పొందండి →</b></a>
     </td>
   </tr>
 </table>

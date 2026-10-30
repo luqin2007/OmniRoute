@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       شكرًا لـ <b>Cheaper Inference</b>، أحد أصدقاء OmniRoute في المصادر المفتوحة، على دعم هذا المشروع! Cheaper Inference هي بوابة مرتبة حسب التكلفة تعيد بيع 42 نموذجًا رياديًا — Claude وGPT-5.x وGemini وKimi K3 وGLM وDeepSeek وGrok وMiniMax — من خلال نقطة نهاية واحدة متوافقة مع OpenAI، وتوجّه كل طلب إلى أرخص مزود مؤهل من دون فرض تكلفة تتجاوز السعر المعلن من مطور النموذج.
       <br/><br/>
-      <b>دعم من الدرجة الأولى في OmniRoute:</b> إكمالات المحادثة، ونقطة النهاية الأصلية <code>/v1/responses</code>، والرؤية، واستدعاء الأدوات، و3 نماذج للصور (<code>grok-imagine</code> و<code>nano-banana-pro</code> و<code>nano-banana-2</code>، ويمكن الوصول إليها بصيغة <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>احصل على مفتاح API ←</b></a>
+      <b>دعم من الدرجة الأولى في OmniRoute:</b> إكمالات المحادثة، ونقطة النهاية الأصلية <code>/v1/responses</code>، والرؤية، واستدعاء الأدوات، و3 نماذج للصور (<code>grok-imagine</code> و<code>nano-banana-pro</code> و<code>nano-banana-2</code>، ويمكن الوصول إليها بصيغة <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>احصل على مفتاح API ←</b></a>
     </td>
   </tr>
 </table>

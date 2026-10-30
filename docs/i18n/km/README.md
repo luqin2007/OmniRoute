@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       សូមអរគុណដល់ <b>Cheaper Inference</b> ដែលជាមិត្តភក្តិប្រភពបើកចំហរបស់ OmniRoute សម្រាប់ការគាំទ្រគម្រោងនេះ! Cheaper Inference គឺជាច្រកទ្វារដែលត្រូវបានចាត់ថ្នាក់តាមតម្លៃដែលលក់បន្តម៉ូដែលព្រំដែនចំនួន 42 — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok និង MiniMax — នៅពីក្រោយចុងចំណុចដែលត្រូវគ្នាជាមួយ OpenAI មួយ ដោយបញ្ជូនសំណើនិមួយៗទៅកាន់អ្នកផ្តល់សេវាដែលមានសិទ្ធិថោកបំផុតដោយមិនគិតថ្លៃលើសពីតម្លៃបញ្ជីរបស់អ្នកបង្កើតម៉ូដែលឡើយ។
       <br/><br/>
-      <b>ការគាំទ្រលំដាប់ទីមួយនៅក្នុង OmniRoute៖</b> Chat Completions, ចុងចំណុច <code>/v1/responses</code> ដើម, ចក្ខុវិស័យ, ការហៅឧបករណ៍ និងម៉ូដែលរូបភាព 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, អាចទៅដល់បានជា <code>cheaperinference/&lt;model&gt;</code>)។ <a href="https://cheaperinference.com/?utm_source=omniroute"><b>ទទួលបាន API key →</b></a>
+      <b>ការគាំទ្រលំដាប់ទីមួយនៅក្នុង OmniRoute៖</b> Chat Completions, ចុងចំណុច <code>/v1/responses</code> ដើម, ចក្ខុវិស័យ, ការហៅឧបករណ៍ និងម៉ូដែលរូបភាព 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, អាចទៅដល់បានជា <code>cheaperinference/&lt;model&gt;</code>)។ <a href="https://cheaperinference.com/"><b>ទទួលបាន API key →</b></a>
     </td>
   </tr>
 </table>

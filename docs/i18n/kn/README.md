@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="ಅಗ್ಗದ ಇನ್ಫರೆನ್ಸ್"/>
       </a>
       <br/><b>ಅಗ್ಗದ ಇನ್ಫರೆನ್ಸ್</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ಈ ಯೋಜನೆಯನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಓಮ್ನಿರೂಟ್ ಮುಕ್ತ ಮೂಲ ಸ್ನೇಹಿತರಾದ <b>ಅಗ್ಗದ ಇನ್ಫರೆನ್ಸ್</b> ಅವರಿಗೆ ಧನ್ಯವಾದಗಳು! ಅಗ್ಗದ ಇನ್ಫರೆನ್ಸ್ ಒಂದು ವೆಚ್ಚ-ಶ್ರೇಣೀಕೃತ ಗೇಟ್ವೇ ಆಗಿದ್ದು, ಇದು 42 ಮುಂಚೂಣಿ ಮಾದರಿಗಳನ್ನು ಮರುಮಾರಾಟ ಮಾಡುತ್ತದೆ — ಕ್ಲೌಡ್, GPT-5.x, ಜೆಮಿನಿ, ಕಿಮಿ K3, GLM, ಡೀಪ್ಸೀಕ್, ಗ್ರೋಕ್ ಮತ್ತು ಮಿನಿಮ್ಯಾಕ್ಸ್ — ಒಂದು OpenAI-ಹೊಂದಾಣಿಕೆಯ ಎಂಡ್ಪಾಯಿಂಟ್ನ ಹಿಂದೆ, ಪ್ರತಿ ವಿನಂತಿಯನ್ನು ಅಗ್ಗದ ಅರ್ಹ ಪೂರೈಕೆದಾರರಿಗೆ ರೂಟ್ ಮಾಡುತ್ತದೆ, ಮಾದರಿ ತಯಾರಕರ ಪಟ್ಟಿ ಬೆಲೆಗಿಂತ ಎಂದಿಗೂ ಹೆಚ್ಚು ಶುಲ್ಕ ವಿಧಿಸುವುದಿಲ್ಲ.
       <br/><br/>
-      <b>ಓಮ್ನಿರೂಟ್ನಲ್ಲಿ ಪ್ರಥಮ ದರ್ಜೆ ಬೆಂಬಲ:</b> ಚಾಟ್ ಕಂಪ್ಲೀಷನ್ಸ್, ಸ್ಥಳೀಯ <code>/v1/responses</code> ಎಂಡ್ಪಾಯಿಂಟ್, ದೃಷ್ಟಿ, ಟೂಲ್ ಕಾಲಿಂಗ್ ಮತ್ತು 3 ಇಮೇಜ್ ಮಾದರಿಗಳು (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ಎಂದು ತಲುಪಬಹುದು). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API ಕೀಯನ್ನು ಪಡೆಯಿರಿ →</b></a>
+      <b>ಓಮ್ನಿರೂಟ್ನಲ್ಲಿ ಪ್ರಥಮ ದರ್ಜೆ ಬೆಂಬಲ:</b> ಚಾಟ್ ಕಂಪ್ಲೀಷನ್ಸ್, ಸ್ಥಳೀಯ <code>/v1/responses</code> ಎಂಡ್ಪಾಯಿಂಟ್, ದೃಷ್ಟಿ, ಟೂಲ್ ಕಾಲಿಂಗ್ ಮತ್ತು 3 ಇಮೇಜ್ ಮಾದರಿಗಳು (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ಎಂದು ತಲುಪಬಹುದು). <a href="https://cheaperinference.com/"><b>API ಕೀಯನ್ನು ಪಡೆಯಿರಿ →</b></a>
     </td>
   </tr>
 </table>

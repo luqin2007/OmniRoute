@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Dank aan <b>Cheaper Inference</b>, een OmniRoute Open Source Vriend, voor het ondersteunen van dit project! Cheaper Inference is een op kosten gerangschikte gateway die 42 grensverleggende modellen — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok en MiniMax — doorverkoopt via één OpenAI-compatibel eindpunt, waarbij elke aanvraag naar de goedkoopste in aanmerking komende provider wordt gerouteerd zonder ooit meer te rekenen dan de catalogusprijs van de modelmaker.
       <br/><br/>
-      <b>Eersteklas ondersteuning in OmniRoute:</b> Chat Completions, het native <code>/v1/responses</code> eindpunt, visie, tool calling en 3 afbeeldingsmodellen (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, bereikbaar als <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Ontvang een API-sleutel →</b></a>
+      <b>Eersteklas ondersteuning in OmniRoute:</b> Chat Completions, het native <code>/v1/responses</code> eindpunt, visie, tool calling en 3 afbeeldingsmodellen (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, bereikbaar als <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Ontvang een API-sleutel →</b></a>
     </td>
   </tr>
 </table>

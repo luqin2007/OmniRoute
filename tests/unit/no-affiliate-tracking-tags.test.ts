@@ -125,12 +125,17 @@ test("no shipped documentation link carries an affiliate/referral tracking tag",
     const body = readFileSync(file, "utf8");
     // `ref` alone is deliberately NOT a forbidden parameter: it is overloaded
     // across the codebase (git refs, Shields badge params, upstream API flags).
-    // Only the project-attributing form counts here.
+    // Only the project-attributing form counts here. `utm_*` follows the same
+    // rule — third-party READMEs legitimately carry their own `utm_source`
+    // values, so only `=omniroute` (this project) is an offender.
     const parts = [
       ...[
         ...body.matchAll(/[?&](aff|affiliate|aff_id|track_id|invite|invite_code)=[^"')\s]*/gi),
       ].map((match) => match[0]),
       ...[...body.matchAll(/[?&]ref=omniroute\b[^"')\s]*/gi)].map((match) => match[0]),
+      ...[
+        ...body.matchAll(/[?&]utm_(source|medium|campaign|content|term)=omniroute\b[^"')\s]*/gi),
+      ].map((match) => match[0]),
     ];
     for (const match of parts) {
       offenders.push(`${path.relative(REPO_ROOT, file)}: ${match}`);

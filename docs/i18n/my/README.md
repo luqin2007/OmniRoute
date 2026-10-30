@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ဤပရောဂျက်ကို ပံ့ပိုးပေးသည့် OmniRoute Open Source သူငယ်ချင်း <b>Cheaper Inference</b> အား ကျေးဇူးတင်ပါသည်။ Cheaper Inference သည် Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok နှင့် MiniMax အပါအဝင် frontier မော်ဒယ် ၄၂ ခုကို OpenAI-compatible endpoint တစ်ခုနောက်ကွယ်မှ ပြန်လည်ရောင်းချသည့် ကုန်ကျစရိတ်အလိုက် အဆင့်သတ်မှတ်ထားသော gateway တစ်ခုဖြစ်ပြီး မော်ဒယ်ထုတ်လုပ်သူ၏ စာရင်းဈေးနှုန်းထက် ပိုမိုမကောက်ခံဘဲ တောင်းဆိုမှုတိုင်းကို ဈေးအသက်သာဆုံး အရည်အချင်းပြည့်မီသော ပံ့ပိုးသူထံသို့ လမ်းကြောင်းပြောင်းပေးပါသည်။
       <br/><br/>
-      <b>OmniRoute တွင် First-class support-</b> Chat Completions၊ native <code>/v1/responses</code> endpoint၊ vision၊ tool calling နှင့် image မော်ဒယ် ၃ ခု (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> အဖြစ် ရရှိနိုင်သည်)။ <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API key ရယူပါ →</b></a>
+      <b>OmniRoute တွင် First-class support-</b> Chat Completions၊ native <code>/v1/responses</code> endpoint၊ vision၊ tool calling နှင့် image မော်ဒယ် ၃ ခု (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> အဖြစ် ရရှိနိုင်သည်)။ <a href="https://cheaperinference.com/"><b>API key ရယူပါ →</b></a>
     </td>
   </tr>
 </table>

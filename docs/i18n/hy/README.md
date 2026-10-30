@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Ավելի էժան ինֆերենցիա"/>
       </a>
       <br/><b>Ավելի էժան ինֆերենցիա</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Շնորհակալություն <b>Cheaper Inference</b>-ին՝ OmniRoute-ի բաց կոդով ընկերոջը, այս նախագծին աջակցելու համար: Cheaper Inference-ը ծախսերով դասակարգված դարպաս է, որը վերավաճառում է 42 առաջնակարգ մոդելներ՝ Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok և MiniMax՝ մեկ OpenAI-ի հետ համատեղելի վերջնակետի հետևում, յուրաքանչյուր հարցում ուղղելով ամենաէժան համապատասխան մատակարարին՝ երբեք չգանձելով մոդել ստեղծողի ցուցակային գնից բարձր:
       <br/><br/>
-      <b>Առաջին կարգի աջակցություն OmniRoute-ում.</b> Զրույցի ավարտներ, բնիկ <code>/v1/responses</code> վերջնակետ, տեսողություն, գործիքների կանչում և 3 պատկերային մոդել (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, հասանելի որպես <code>cheaperinference/&lt;model&gt;</code>): <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Ստացեք API բանալի →</b></a>
+      <b>Առաջին կարգի աջակցություն OmniRoute-ում.</b> Զրույցի ավարտներ, բնիկ <code>/v1/responses</code> վերջնակետ, տեսողություն, գործիքների կանչում և 3 պատկերային մոդել (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, հասանելի որպես <code>cheaperinference/&lt;model&gt;</code>): <a href="https://cheaperinference.com/"><b>Ստացեք API բանալի →</b></a>
     </td>
   </tr>
 </table>

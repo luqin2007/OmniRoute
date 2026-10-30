@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       මෙම ව්යාපෘතියට පිටුබලය දීම සඳහා OmniRoute විවෘත මූලාශ්ර මිතුරෙකු වන <b>Cheaper Inference</b> වෙත ස්තූතියි! Cheaper Inference යනු Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok සහ MiniMax වැනි දේශසීමා මාදිලි 42ක් නැවත විකුණන පිරිවැය-ශ්රේණිගත ද්වාරයකි — එක් OpenAI-අනුකූල අවසාන ලක්ෂ්යයක් පිටුපස, එක් එක් ඉල්ලීම ලාභම සුදුසු සැපයුම්කරු වෙත යොමු කරමින් මාදිලි නිෂ්පාදකයාගේ ලැයිස්තු මිලට වඩා කිසි විටෙකත් අය නොකරයි.
       <br/><br/>
-      <b>OmniRoute හි පළමු පන්තියේ සහයෝගය:</b> Chat Completions, ස්වදේශීය <code>/v1/responses</code> අවසාන ලක්ෂ්යය, දර්ශනය, මෙවලම් ඇමතීම සහ රූප මාදිලි 3ක් (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ලෙස ළඟා විය හැක). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API යතුරක් ලබා ගන්න →</b></a>
+      <b>OmniRoute හි පළමු පන්තියේ සහයෝගය:</b> Chat Completions, ස්වදේශීය <code>/v1/responses</code> අවසාන ලක්ෂ්යය, දර්ශනය, මෙවලම් ඇමතීම සහ රූප මාදිලි 3ක් (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ලෙස ළඟා විය හැක). <a href="https://cheaperinference.com/"><b>API යතුරක් ලබා ගන්න →</b></a>
     </td>
   </tr>
 </table>

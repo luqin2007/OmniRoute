@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Pateicoties <b>Cheaper Inference</b>, OmniRoute atvērtā koda draugam, par šī projekta atbalstu! Cheaper Inference ir izmaksu ziņā rangēts vārteja, kas pārdod 42 robežmodeļus — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok un MiniMax — aiz viena OpenAI-saderīga galapunkta, novirzot katru pieprasījumu uz lētāko piemēroto pakalpojumu sniedzēju, nekad neiekasējot vairāk par modeļa ražotāja saraksta cenu.
       <br/><br/>
-      <b>Pirmklasīgs atbalsts OmniRoute:</b> Tērzēšanas pabeigšana (Chat Completions), vietējais <code>/v1/responses</code> galapunkts, redze, rīku izsaukšana un 3 attēlu modeļi (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, sasniedzami kā <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Iegūstiet API atslēgu →</b></a>
+      <b>Pirmklasīgs atbalsts OmniRoute:</b> Tērzēšanas pabeigšana (Chat Completions), vietējais <code>/v1/responses</code> galapunkts, redze, rīku izsaukšana un 3 attēlu modeļi (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, sasniedzami kā <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Iegūstiet API atslēgu →</b></a>
     </td>
   </tr>
 </table>

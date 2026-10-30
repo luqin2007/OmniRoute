@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Inferenzja Orħos"/>
       </a>
       <br/><b>Inferenzja Orħos</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Grazzi lil <b>Cheaper Inference</b>, Ħabib tal-Open Source ta' OmniRoute, talli appoġġja dan il-proġett! Cheaper Inference huwa gateway ikklassifikat skont l-ispiża li jbiegħ mill-ġdid 42 mudell avvanzat — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok u MiniMax — wara endpoint wieħed kompatibbli ma' OpenAI, li jidderieġi kull talba lill-fornitur l-irħas eliġibbli mingħajr qatt ma jitlob aktar mill-prezz tal-lista tal-manifattur tal-mudell.
       <br/><br/>
-      <b>Appoġġ ta' l-ewwel klassi f'OmniRoute:</b> Chat Completions, l-endpoint nattiv <code>/v1/responses</code>, viżjoni, sejħa ta' għodda u 3 mudelli ta' immaġni (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, li jistgħu jintlaħqu bħala <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Ikseb ċavetta API →</b></a>
+      <b>Appoġġ ta' l-ewwel klassi f'OmniRoute:</b> Chat Completions, l-endpoint nattiv <code>/v1/responses</code>, viżjoni, sejħa ta' għodda u 3 mudelli ta' immaġni (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, li jistgħu jintlaħqu bħala <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Ikseb ċavetta API →</b></a>
     </td>
   </tr>
 </table>

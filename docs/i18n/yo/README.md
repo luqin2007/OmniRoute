@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Inference ti o din owo"/>
       </a>
       <br/><b>Inference ti o din owo</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       O ṣeun si <b>Inference ti o din owo</b>, Ọrẹ Orisun Ṣiṣi OmniRoute, fun atilẹyin iṣẹ akanṣe yii! Inference ti o din owo jẹ ẹnu-ọna ti o ni idiyele idiyele ti o tun ta awọn awoṣe aala 42 — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok ati MiniMax — lẹhin ipari-ojuami kan ti o ni ibamu pẹlu OpenAI, ti n ṣe ipa-ọna gbogbo ibeere si olupese ti o yẹ ti o din owo julọ laisi gbigba agbara ju idiyele atokọ ti olupilẹṣẹ awoṣe lọ.
       <br/><br/>
-      <b>Atilẹyin kilasi akọkọ ni OmniRoute:</b> Awọn ipari iwiregbe, ipari-ojuami abinibi <code>/v1/responses</code>, iran, ipe ohun elo ati awọn awoṣe aworan 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ti o le de ọdọ bi <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Gba bọtini API →</b></a>
+      <b>Atilẹyin kilasi akọkọ ni OmniRoute:</b> Awọn ipari iwiregbe, ipari-ojuami abinibi <code>/v1/responses</code>, iran, ipe ohun elo ati awọn awoṣe aworan 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ti o le de ọdọ bi <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Gba bọtini API →</b></a>
     </td>
   </tr>
 </table>

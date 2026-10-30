@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       या प्रकल्पाला पाठिंबा दिल्याबद्दल OmniRoute मुक्त स्रोत मित्र, <b>Cheaper Inference</b> चे आभार! Cheaper Inference हे एक खर्च-रँक केलेले गेटवे आहे जे 42 सीमा मॉडेल पुन्हा विकते — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok आणि MiniMax — एका OpenAI-सुसंगत एंडपॉइंटच्या मागे, प्रत्येक विनंतीला सर्वात स्वस्त पात्र प्रदात्याकडे पाठवते आणि मॉडेल निर्मात्याच्या सूची किमतीपेक्षा जास्त शुल्क आकारत नाही.
       <br/><br/>
-      <b>OmniRoute मध्ये प्रथम-श्रेणी समर्थन:</b> चॅट पूर्णता, मूळ <code>/v1/responses</code> एंडपॉइंट, दृष्टी, टूल कॉलिंग आणि 3 प्रतिमा मॉडेल (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> म्हणून पोहोचण्यायोग्य). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API की मिळवा →</b></a>
+      <b>OmniRoute मध्ये प्रथम-श्रेणी समर्थन:</b> चॅट पूर्णता, मूळ <code>/v1/responses</code> एंडपॉइंट, दृष्टी, टूल कॉलिंग आणि 3 प्रतिमा मॉडेल (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> म्हणून पोहोचण्यायोग्य). <a href="https://cheaperinference.com/"><b>API की मिळवा →</b></a>
     </td>
   </tr>
 </table>

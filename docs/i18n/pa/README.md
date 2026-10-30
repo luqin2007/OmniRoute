@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="ਸਸਤਾ ਅਨੁਮਾਨ"/>
       </a>
       <br/><b>ਸਸਤਾ ਅਨੁਮਾਨ</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ਇਸ ਪ੍ਰੋਜੈਕਟ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ ਓਮਨੀਰੂਟ ਓਪਨ ਸੋਰਸ ਦੋਸਤ, <b>ਸਸਤਾ ਅਨੁਮਾਨ</b> ਦਾ ਧੰਨਵਾਦ! ਸਸਤਾ ਅਨੁਮਾਨ ਇੱਕ ਲਾਗਤ-ਦਰਜਾਬੰਦੀ ਵਾਲਾ ਗੇਟਵੇ ਹੈ ਜੋ ਇੱਕ OpenAI-ਅਨੁਕੂਲ ਐਂਡਪੁਆਇੰਟ ਦੇ ਪਿੱਛੇ 42 ਫਰੰਟੀਅਰ ਮਾਡਲਾਂ — ਕਲਾਉਡ, GPT-5.x, ਜੇਮਿਨੀ, ਕਿਮੀ K3, GLM, ਡੀਪਸੀਕ, ਗ੍ਰੋਕ ਅਤੇ ਮਿਨੀਮੈਕਸ — ਨੂੰ ਦੁਬਾਰਾ ਵੇਚਦਾ ਹੈ, ਹਰ ਬੇਨਤੀ ਨੂੰ ਸਭ ਤੋਂ ਸਸਤੇ ਯੋਗ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜਦਾ ਹੈ ਬਿਨਾਂ ਕਦੇ ਮਾਡਲ ਨਿਰਮਾਤਾ ਦੀ ਸੂਚੀ ਕੀਮਤ ਤੋਂ ਵੱਧ ਚਾਰਜ ਕੀਤੇ।
       <br/><br/>
-      <b>ਓਮਨੀਰੂਟ ਵਿੱਚ ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਸਹਾਇਤਾ:</b> ਚੈਟ ਸੰਪੂਰਨਤਾਵਾਂ, ਨੇਟਿਵ <code>/v1/responses</code> ਐਂਡਪੁਆਇੰਟ, ਵਿਜ਼ਨ, ਟੂਲ ਕਾਲਿੰਗ ਅਤੇ 3 ਚਿੱਤਰ ਮਾਡਲ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ਵਜੋਂ ਪਹੁੰਚਯੋਗ)। <a href="https://cheaperinference.com/?utm_source=omniroute"><b>ਇੱਕ API ਕੁੰਜੀ ਪ੍ਰਾਪਤ ਕਰੋ →</b></a>
+      <b>ਓਮਨੀਰੂਟ ਵਿੱਚ ਪਹਿਲੀ-ਸ਼੍ਰੇਣੀ ਸਹਾਇਤਾ:</b> ਚੈਟ ਸੰਪੂਰਨਤਾਵਾਂ, ਨੇਟਿਵ <code>/v1/responses</code> ਐਂਡਪੁਆਇੰਟ, ਵਿਜ਼ਨ, ਟੂਲ ਕਾਲਿੰਗ ਅਤੇ 3 ਚਿੱਤਰ ਮਾਡਲ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ਵਜੋਂ ਪਹੁੰਚਯੋਗ)। <a href="https://cheaperinference.com/"><b>ਇੱਕ API ਕੁੰਜੀ ਪ੍ਰਾਪਤ ਕਰੋ →</b></a>
     </td>
   </tr>
 </table>

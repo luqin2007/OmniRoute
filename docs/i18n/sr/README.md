@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Хвала компанији <b>Cheaper Inference</b>, OmniRoute-овом пријатељу отвореног кода, што подржава овај пројекат! Cheaper Inference је мрежни пролаз рангиран према трошковима који препродаје 42 водећа модела — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok и MiniMax — преко једне крајње тачке компатибилне са OpenAI-јем, усмеравајући сваки захтев најјефтинијем одговарајућем добављачу, а да никада не наплаћује више од каталошке цене произвођача модела.
       <br/><br/>
-      <b>Првокласна подршка у OmniRoute-у:</b> довршавање ћаскања, изворна крајња тачка <code>/v1/responses</code>, визуелни садржај, позивање алата и 3 модела за слике (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, доступни као <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Набавите API кључ →</b></a>
+      <b>Првокласна подршка у OmniRoute-у:</b> довршавање ћаскања, изворна крајња тачка <code>/v1/responses</code>, визуелни садржај, позивање алата и 3 модела за слике (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, доступни као <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Набавите API кључ →</b></a>
     </td>
   </tr>
 </table>

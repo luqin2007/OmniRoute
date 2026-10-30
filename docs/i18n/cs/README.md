@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Děkujeme společnosti <b>Cheaper Inference</b>, příteli open source projektu OmniRoute, za podporu tohoto projektu! Cheaper Inference je brána řazená podle nákladů, která prostřednictvím jediného koncového bodu kompatibilního s OpenAI přeprodává 42 špičkových modelů — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok a MiniMax — a každý požadavek směruje k nejlevnějšímu vyhovujícímu poskytovateli, aniž by kdy účtovala více než katalogovou cenu tvůrce modelu.
       <br/><br/>
-      <b>Plnohodnotná podpora v OmniRoute:</b> Chat Completions, nativní koncový bod <code>/v1/responses</code>, zpracování obrazu, volání nástrojů a 3 obrazové modely (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, dostupné jako <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Získejte klíč API →</b></a>
+      <b>Plnohodnotná podpora v OmniRoute:</b> Chat Completions, nativní koncový bod <code>/v1/responses</code>, zpracování obrazu, volání nástrojů a 3 obrazové modely (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, dostupné jako <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Získejte klíč API →</b></a>
     </td>
   </tr>
 </table>

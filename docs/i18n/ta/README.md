@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       இந்த திட்டத்தை ஆதரித்த OmniRoute திறந்த மூல நண்பரான <b>Cheaper Inference</b> க்கு நன்றி! Cheaper Inference என்பது ஒரு செலவு-தரவரிசைப்படுத்தப்பட்ட நுழைவாயில் ஆகும், இது 42 முன்னணி மாடல்களை மறுவிற்பனை செய்கிறது — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok மற்றும் MiniMax — ஒரு OpenAI-இணக்கமான இறுதிப்புள்ளிக்கு பின்னால், ஒவ்வொரு கோரிக்கையையும் மலிவான தகுதியான வழங்குநருக்கு மாடலின் பட்டியல் விலைக்கு மேல் கட்டணம் வசூலிக்காமல் அனுப்புகிறது.
       <br/><br/>
-      <b>OmniRoute இல் முதல்-வகுப்பு ஆதரவு:</b> Chat Completions, சொந்த <code>/v1/responses</code> இறுதிப்புள்ளி, பார்வை, கருவி அழைப்பு மற்றும் 3 பட மாடல்கள் (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> என அடையலாம்). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API விசையைப் பெறுங்கள் →</b></a>
+      <b>OmniRoute இல் முதல்-வகுப்பு ஆதரவு:</b> Chat Completions, சொந்த <code>/v1/responses</code> இறுதிப்புள்ளி, பார்வை, கருவி அழைப்பு மற்றும் 3 பட மாடல்கள் (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> என அடையலாம்). <a href="https://cheaperinference.com/"><b>API விசையைப் பெறுங்கள் →</b></a>
     </td>
   </tr>
 </table>

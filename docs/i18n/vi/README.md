@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Cảm ơn <b>Cheaper Inference</b>, một Người bạn mã nguồn mở của OmniRoute, đã ủng hộ dự án này! Cheaper Inference là một cổng xếp hạng chi phí bán lại 42 mô hình tiên tiến — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok và MiniMax — đằng sau một điểm cuối tương thích với OpenAI, định tuyến mỗi yêu cầu đến nhà cung cấp đủ điều kiện rẻ nhất mà không bao giờ tính phí cao hơn giá niêm yết của nhà sản xuất mô hình.
       <br/><br/>
-      <b>Hỗ trợ hạng nhất trong OmniRoute:</b> Chat Completions, điểm cuối <code>/v1/responses</code> gốc, tầm nhìn, gọi công cụ và 3 mô hình hình ảnh (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, có thể truy cập dưới dạng <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Nhận khóa API →</b></a>
+      <b>Hỗ trợ hạng nhất trong OmniRoute:</b> Chat Completions, điểm cuối <code>/v1/responses</code> gốc, tầm nhìn, gọi công cụ và 3 mô hình hình ảnh (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, có thể truy cập dưới dạng <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Nhận khóa API →</b></a>
     </td>
   </tr>
 </table>

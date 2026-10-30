@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ይህን ፕሮጀክት ስለደገፈ <b>Cheaper Inference</b>፣ የOmniRoute ክፍት ምንጭ ወዳጅን እናመሰግናለን! Cheaper Inference 42 የድንበር ሞዴሎችን — Claude፣ GPT-5.x፣ Gemini፣ Kimi K3፣ GLM፣ DeepSeek፣ Grok እና MiniMax — በአንድ ከOpenAI ጋር ተኳሃኝ የሆነ endpoint በኩል እንደገና የሚሸጥ በወጪ የተደረደረ gateway ነው፤ እያንዳንዱን ጥያቄ ከሞዴሉ አምራች የዝርዝር ዋጋ በላይ ሳያስከፍል ወደ በጣም ርካሹ ብቁ አቅራቢ ያዞራል።
       <br/><br/>
-      <b>በOmniRoute ውስጥ የከፍተኛ ደረጃ ድጋፍ፦</b> Chat Completions፣ ቤተኛው <code>/v1/responses</code> endpoint፣ ምስል፣ የመሳሪያ ጥሪ እና 3 የምስል ሞዴሎች (<code>grok-imagine</code>፣ <code>nano-banana-pro</code>፣ <code>nano-banana-2</code>፣ እንደ <code>cheaperinference/&lt;model&gt;</code> ሊደረስባቸው የሚችል)። <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API key ያግኙ →</b></a>
+      <b>በOmniRoute ውስጥ የከፍተኛ ደረጃ ድጋፍ፦</b> Chat Completions፣ ቤተኛው <code>/v1/responses</code> endpoint፣ ምስል፣ የመሳሪያ ጥሪ እና 3 የምስል ሞዴሎች (<code>grok-imagine</code>፣ <code>nano-banana-pro</code>፣ <code>nano-banana-2</code>፣ እንደ <code>cheaperinference/&lt;model&gt;</code> ሊደረስባቸው የሚችል)። <a href="https://cheaperinference.com/"><b>API key ያግኙ →</b></a>
     </td>
   </tr>
 </table>

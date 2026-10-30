@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Köszönjük a <b>Cheaper Inference</b>-nek, az OmniRoute nyílt forráskódú barátjának, hogy támogatja ezt a projektet! A Cheaper Inference egy költség-rangsorolt átjáró, amely 42 határmodellt – Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok és MiniMax – értékesít egy OpenAI-kompatibilis végpont mögött, minden kérést a legolcsóbb jogosult szolgáltatóhoz irányítva anélkül, hogy valaha is többet számolna fel, mint a modellgyártó listaára.
       <br/><br/>
-      <b>Első osztályú támogatás az OmniRoute-ban:</b> Chat Completions, a natív <code>/v1/responses</code> végpont, látás, eszközhívás és 3 képmodell (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, elérhető mint <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Szerezzen API kulcsot →</b></a>
+      <b>Első osztályú támogatás az OmniRoute-ban:</b> Chat Completions, a natív <code>/v1/responses</code> végpont, látás, eszközhívás és 3 képmodell (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, elérhető mint <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Szerezzen API kulcsot →</b></a>
     </td>
   </tr>
 </table>

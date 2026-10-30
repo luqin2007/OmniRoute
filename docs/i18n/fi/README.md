@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Kiitos <b>Cheaper Inferencelle</b>, OmniRouten avoimen lähdekoodin ystävälle, tämän projektin tukemisesta! Cheaper Inference on kustannusten mukaan järjestetty yhdyskäytävä, joka jälleenmyy 42 huippumallia – Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok ja MiniMax – yhden OpenAI-yhteensopivan päätepisteen takana, reitittäen jokaisen pyynnön edullisimmalle kelvolliselle palveluntarjoajalle veloittamatta koskaan yli mallinvalmistajan listahinnan.
       <br/><br/>
-      <b>Ensiluokkainen tuki OmniRoutessa:</b> Chat Completions, natiivi <code>/v1/responses</code>-päätepiste, näkö, työkalukutsut ja 3 kuvamallia (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, saatavilla nimellä <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Hanki API-avain →</b></a>
+      <b>Ensiluokkainen tuki OmniRoutessa:</b> Chat Completions, natiivi <code>/v1/responses</code>-päätepiste, näkö, työkalukutsut ja 3 kuvamallia (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, saatavilla nimellä <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Hanki API-avain →</b></a>
     </td>
   </tr>
 </table>

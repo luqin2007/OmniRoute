@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Hvala podjetju <b>Cheaper Inference</b>, odprtokodnemu prijatelju projekta OmniRoute, za podporo temu projektu! Cheaper Inference je prehod, razvrščen po stroških, ki preprodaja 42 pionirskih modelov — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok in MiniMax — prek ene končne točke, združljive z OpenAI, pri čemer vsako zahtevo usmeri k najcenejšemu ustreznemu ponudniku in nikoli ne zaračuna več od prodajne cene izdelovalca modela.
       <br/><br/>
-      <b>Prvorazredna podpora v projektu OmniRoute:</b> Chat Completions, izvorna končna točka <code>/v1/responses</code>, vid, klicanje orodij in 3 slikovni modeli (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, dostopni kot <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Pridobite ključ API →</b></a>
+      <b>Prvorazredna podpora v projektu OmniRoute:</b> Chat Completions, izvorna končna točka <code>/v1/responses</code>, vid, klicanje orodij in 3 slikovni modeli (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, dostopni kot <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Pridobite ključ API →</b></a>
     </td>
   </tr>
 </table>

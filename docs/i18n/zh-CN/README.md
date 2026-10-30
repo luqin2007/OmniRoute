@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       感谢 OmniRoute 的开源朋友 <b>Cheaper Inference</b> 对本项目的支持！Cheaper Inference 是一个按成本排名的网关，通过一个与 OpenAI 兼容的端点转售 42 个前沿模型 — Claude、GPT-5.x、Gemini、Kimi K3、GLM、DeepSeek、Grok 和 MiniMax — 将每个请求路由到最便宜的合格提供者，且绝不收取高于模型制造商标价的费用。
       <br/><br/>
-      <b>OmniRoute 中的一流支持：</b> 聊天补全、原生 <code>/v1/responses</code> 端点、视觉、工具调用和 3 个图像模型 (<code>grok-imagine</code>、<code>nano-banana-pro</code>、<code>nano-banana-2</code>，可作为 <code>cheaperinference/&lt;model&gt;</code> 访问)。<a href="https://cheaperinference.com/?utm_source=omniroute"><b>获取 API 密钥 →</b></a>
+      <b>OmniRoute 中的一流支持：</b> 聊天补全、原生 <code>/v1/responses</code> 端点、视觉、工具调用和 3 个图像模型 (<code>grok-imagine</code>、<code>nano-banana-pro</code>、<code>nano-banana-2</code>，可作为 <code>cheaperinference/&lt;model&gt;</code> 访问)。<a href="https://cheaperinference.com/"><b>获取 API 密钥 →</b></a>
     </td>
   </tr>
 </table>

@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Godiya ga <b>Cheaper Inference</b>, Abokin Buɗaɗɗen Tushe na OmniRoute, don tallafawa wannan aikin! Cheaper Inference wata hanyar shiga ce mai tsada wacce ke sake siyar da samfuran gaba 42 — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok da MiniMax — a bayan wani wuri mai dacewa da OpenAI, yana tura kowane buƙata zuwa mai bayarwa mafi arha ba tare da cajin sama da farashin jerin mai yin samfurin ba.
       <br/><br/>
-      <b>Tallafi na farko a OmniRoute:</b> Cikakkun Taɗi, asalin <code>/v1/responses</code> endpoint, hangen nesa, kiran kayan aiki da samfuran hoto 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ana iya isa gare su kamar <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Samu maɓallin API →</b></a>
+      <b>Tallafi na farko a OmniRoute:</b> Cikakkun Taɗi, asalin <code>/v1/responses</code> endpoint, hangen nesa, kiran kayan aiki da samfuran hoto 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ana iya isa gare su kamar <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Samu maɓallin API →</b></a>
     </td>
   </tr>
 </table>

@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Ekele dịrị <b>Cheaper Inference</b>, Enyi OmniRoute Na-emeghe Isi Iyi, maka ịkwado ọrụ a! Cheaper Inference bụ ọnụ ụzọ ámá nwere ọnụ ahịa dị ọnụ ala nke na-ere ihe nlereanya ókèala 42 — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok na MiniMax — n'azụ otu njedebe dakọtara na OpenAI, na-ebugharị arịrịọ ọ bụla gaa na onye na-enye ọrụ kacha ọnụ ala na-akwụghị ụgwọ karịa ọnụ ahịa ndepụta onye na-emepụta ihe nlereanya.
       <br/><br/>
-      <b>Nkwado nke mbụ na OmniRoute:</b> Nkwụsị Nkata, njedebe <code>/v1/responses</code> ala, ọhụụ, oku ngwaọrụ na ihe nlereanya onyonyo 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, enwere ike iru dị ka <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Nweta igodo API →</b></a>
+      <b>Nkwado nke mbụ na OmniRoute:</b> Nkwụsị Nkata, njedebe <code>/v1/responses</code> ala, ọhụụ, oku ngwaọrụ na ihe nlereanya onyonyo 3 (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, enwere ike iru dị ka <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Nweta igodo API →</b></a>
     </td>
   </tr>
 </table>

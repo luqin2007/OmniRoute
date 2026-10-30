@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Dėkojame <b>Cheaper Inference</b>, „OmniRoute“ atvirojo kodo draugui, už šio projekto rėmimą! „Cheaper Inference“ yra pagal kainą parenkantis šliuzas, perparduodantis 42 pažangiausius modelius — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok ir MiniMax — per vieną su OpenAI suderinamą galinį tašką. Kiekviena užklausa nukreipiama pigiausiam tinkamam teikėjui, o mokestis niekada neviršija modelio kūrėjo nustatytos kainos.
       <br/><br/>
-      <b>Visavertis palaikymas „OmniRoute“:</b> Chat Completions, savasis <code>/v1/responses</code> galinis taškas, vaizdų apdorojimas, įrankių iškvietimas ir 3 vaizdų modeliai (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, pasiekiami kaip <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Gaukite API raktą →</b></a>
+      <b>Visavertis palaikymas „OmniRoute“:</b> Chat Completions, savasis <code>/v1/responses</code> galinis taškas, vaizdų apdorojimas, įrankių iškvietimas ir 3 vaizdų modeliai (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, pasiekiami kaip <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Gaukite API raktą →</b></a>
     </td>
   </tr>
 </table>

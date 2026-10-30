@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Terima kasih kepada <b>Cheaper Inference</b>, Rakan Sumber Terbuka OmniRoute, kerana menyokong projek ini! Cheaper Inference adalah gerbang yang dinilai kos yang menjual semula 42 model sempadan — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok dan MiniMax — di sebalik satu titik akhir yang serasi dengan OpenAI, menghantar setiap permintaan kepada penyedia yang paling murah tanpa pernah mengenakan bayaran melebihi harga senarai pembuat model.
       <br/><br/>
-      <b>Sokongan kelas pertama dalam OmniRoute:</b> Chat Completions, titik akhir <code>/v1/responses</code> asli, penglihatan, panggilan alat dan 3 model imej (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, boleh dicapai sebagai <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Dapatkan kunci API →</b></a>
+      <b>Sokongan kelas pertama dalam OmniRoute:</b> Chat Completions, titik akhir <code>/v1/responses</code> asli, penglihatan, panggilan alat dan 3 model imej (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, boleh dicapai sebagai <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Dapatkan kunci API →</b></a>
     </td>
   </tr>
 </table>

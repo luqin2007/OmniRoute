@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Bu layihəni dəstəklədiyinə görə OmniRoute-un Açıq Mənbə Dostu <b>Cheaper Inference</b>-ə təşəkkür edirik! Cheaper Inference, 42 qabaqcıl modeli — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok və MiniMax — vahid OpenAI-uyğun son nöqtə vasitəsilə yenidən satan və hər bir sorğunu model istehsalçısının siyahı qiymətindən artıq ödəniş tələb etmədən ən ucuz uyğun provayderə yönləndirən, qiymətə görə sıralanmış şlüzdür.
       <br/><br/>
-      <b>OmniRoute-da birinci dərəcəli dəstək:</b> Chat Completions, yerli <code>/v1/responses</code> son nöqtəsi, görüntü, alət çağırışı və 3 görüntü modeli (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> kimi əlçatandır). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>API açarı əldə edin →</b></a>
+      <b>OmniRoute-da birinci dərəcəli dəstək:</b> Chat Completions, yerli <code>/v1/responses</code> son nöqtəsi, görüntü, alət çağırışı və 3 görüntü modeli (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> kimi əlçatandır). <a href="https://cheaperinference.com/"><b>API açarı əldə edin →</b></a>
     </td>
   </tr>
 </table>

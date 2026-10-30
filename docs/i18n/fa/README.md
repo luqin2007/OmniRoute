@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="استنتاج ارزانتر"/>
       </a>
       <br/><b>استنتاج ارزانتر</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       با تشکر از <b>استنتاج ارزانتر</b>، یک دوست متنباز OmniRoute، برای حمایت از این پروژه! استنتاج ارزانتر یک دروازه با رتبهبندی هزینه است که 42 مدل مرزی — Claude، GPT-5.x، Gemini، Kimi K3، GLM، DeepSeek، Grok و MiniMax — را پشت یک نقطه پایانی سازگار با OpenAI به فروش میرساند و هر درخواست را به ارزانترین ارائهدهنده واجد شرایط هدایت میکند بدون اینکه هرگز بالاتر از قیمت لیست سازنده مدل شارژ کند.
       <br/><br/>
-      <b>پشتیبانی درجه یک در OmniRoute:</b> تکمیل چت، نقطه پایانی بومی <code>/v1/responses</code>، دید، فراخوانی ابزار و 3 مدل تصویر (<code>grok-imagine</code>، <code>nano-banana-pro</code>، <code>nano-banana-2</code>، قابل دسترسی به عنوان <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>یک کلید API دریافت کنید ←</b></a>
+      <b>پشتیبانی درجه یک در OmniRoute:</b> تکمیل چت، نقطه پایانی بومی <code>/v1/responses</code>، دید، فراخوانی ابزار و 3 مدل تصویر (<code>grok-imagine</code>، <code>nano-banana-pro</code>، <code>nano-banana-2</code>، قابل دسترسی به عنوان <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>یک کلید API دریافت کنید ←</b></a>
     </td>
   </tr>
 </table>

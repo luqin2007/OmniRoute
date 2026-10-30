@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       Gabhaimid buíochas le <b>Cheaper Inference</b>, Cara Foinse Oscailte OmniRoute, as tacú leis an tionscadal seo! Is geata rangaithe de réir costais é Cheaper Inference a athdhíolann 42 samhail ar thús cadhnaíochta — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok agus MiniMax — taobh thiar d'aon chríochphointe amháin atá comhoiriúnach le OpenAI, agus a sheolann gach iarratas chuig an soláthraí incháilithe is saoire gan táille níos airde ná praghas liosta chruthaitheoir na samhla a ghearradh riamh.
       <br/><br/>
-      <b>Tacaíocht den chéad scoth in OmniRoute:</b> Comhlánuithe Comhrá, an críochphointe dúchasach <code>/v1/responses</code>, fís, glaoch uirlisí agus 3 shamhail íomhá (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ar fáil mar <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/?utm_source=omniroute"><b>Faigh eochair API →</b></a>
+      <b>Tacaíocht den chéad scoth in OmniRoute:</b> Comhlánuithe Comhrá, an críochphointe dúchasach <code>/v1/responses</code>, fís, glaoch uirlisí agus 3 shamhail íomhá (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, ar fáil mar <code>cheaperinference/&lt;model&gt;</code>). <a href="https://cheaperinference.com/"><b>Faigh eochair API →</b></a>
     </td>
   </tr>
 </table>

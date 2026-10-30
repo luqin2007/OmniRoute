@@ -303,7 +303,7 @@ curl http://localhost:20128/v1/chat/completions \
   </tr>
   <tr>
     <td align="center" width="150">
-      <a href="https://cheaperinference.com/?utm_source=omniroute">
+      <a href="https://cheaperinference.com/">
         <img src="./public/providers/cli-generic.svg" width="64" alt="Cheaper Inference"/>
       </a>
       <br/><b>Cheaper Inference</b><br/><sub>cheaperinference.com</sub><br/><br/>
@@ -312,7 +312,7 @@ curl http://localhost:20128/v1/chat/completions \
     <td>
       ଏହି ପ୍ରୋଜେକ୍ଟକୁ ସମର୍ଥନ କରିଥିବାରୁ OmniRoute ଓପନ୍ ସୋର୍ସ ବନ୍ଧୁ <b>Cheaper Inference</b> କୁ ଧନ୍ୟବାଦ! Cheaper Inference ହେଉଛି ଏକ ମୂଲ୍ୟ-ଶ୍ରେଣୀଭୁକ୍ତ ଗେଟୱେ ଯାହା 42 ଫ୍ରଣ୍ଟିୟର୍ ମଡେଲ୍ — Claude, GPT-5.x, Gemini, Kimi K3, GLM, DeepSeek, Grok ଏବଂ MiniMax — କୁ ଗୋଟିଏ OpenAI-ସୁସଙ୍ଗତ ଏଣ୍ଡପଏଣ୍ଟ ପଛରେ ପୁନଃ ବିକ୍ରୟ କରେ, ପ୍ରତ୍ୟେକ ଅନୁରୋଧକୁ ସବୁଠାରୁ ଶସ୍ତା ଯୋଗ୍ୟ ପ୍ରଦାନକାରୀଙ୍କୁ ରାଉଟ୍ କରେ ବିନା ମଡେଲ୍ ନିର୍ମାତାଙ୍କ ତାଲିକା ମୂଲ୍ୟରୁ ଅଧିକ ଚାର୍ଜ କରି।
       <br/><br/>
-      <b>OmniRoute ରେ ପ୍ରଥମ ଶ୍ରେଣୀ ସମର୍ଥନ:</b> ଚାଟ୍ କମ୍ପ୍ଲିସନ୍, ନେଟିଭ୍ <code>/v1/responses</code> ଏଣ୍ଡପଏଣ୍ଟ, ଭିଜନ୍, ଟୁଲ୍ କଲିଂ ଏବଂ 3 ଇମେଜ୍ ମଡେଲ୍ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ଭାବରେ ପହଞ୍ଚିପାରିବ)। <a href="https://cheaperinference.com/?utm_source=omniroute"><b>ଏକ API କି ପାଆନ୍ତୁ →</b></a>
+      <b>OmniRoute ରେ ପ୍ରଥମ ଶ୍ରେଣୀ ସମର୍ଥନ:</b> ଚାଟ୍ କମ୍ପ୍ଲିସନ୍, ନେଟିଭ୍ <code>/v1/responses</code> ଏଣ୍ଡପଏଣ୍ଟ, ଭିଜନ୍, ଟୁଲ୍ କଲିଂ ଏବଂ 3 ଇମେଜ୍ ମଡେଲ୍ (<code>grok-imagine</code>, <code>nano-banana-pro</code>, <code>nano-banana-2</code>, <code>cheaperinference/&lt;model&gt;</code> ଭାବରେ ପହଞ୍ଚିପାରିବ)। <a href="https://cheaperinference.com/"><b>ଏକ API କି ପାଆନ୍ତୁ →</b></a>
     </td>
   </tr>
 </table>
