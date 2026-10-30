@@ -4328,7 +4328,7 @@
     "catalogLoadFailedGeneric": "加载 API 目录失败",
     "apiKeysLoadFailed": "加载 API 密钥失败 ({status})",
     "apiKeysLoadFailedGeneric": "加载 API 密钥失败",
-    "apiKeyRevealDisabled": "API 密钥显示已禁用 (ALLOW_API_KEY_REVEAL)。请在功能标志页面上进行更改，或手动粘贴 API 密钥。",
+    "apiKeyRevealDisabled": "完整 API 密钥显示已关闭，请联系管理员启用。",
     "apiKeyRevealFailed": "显示 API 密钥失败 ({status})",
     "apiKeyRevealInvalid": "显示 API 密钥返回了无效响应",
     "apiKeyRequired": "此端点需要 API 密钥。",

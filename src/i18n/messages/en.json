@@ -4328,7 +4328,7 @@
     "catalogLoadFailedGeneric": "Failed to load API catalog",
     "apiKeysLoadFailed": "Failed to load API keys ({status})",
     "apiKeysLoadFailedGeneric": "Failed to load API keys",
-    "apiKeyRevealDisabled": "API key reveal is disabled (ALLOW_API_KEY_REVEAL). Change it on the Feature Flags page or paste an API key manually.",
+    "apiKeyRevealDisabled": "Full API key reveal is disabled. Ask an administrator to enable it.",
     "apiKeyRevealFailed": "Failed to reveal API key ({status})",
     "apiKeyRevealInvalid": "API key reveal returned an invalid response",
     "apiKeyRequired": "An API key is required for this endpoint.",

@@ -783,38 +783,43 @@ export default function ApiManagerPageClient() {
                     <code className="text-sm text-text-muted font-mono truncate">
                       {visibleKeys.has(key.id) ? (revealedKeys.get(key.id) ?? key.key) : key.key}
                     </code>
-                    {allowKeyReveal ? (
-                      <>
-                        <button
-                          onClick={() => handleToggleKeyVisibility(key.id)}
-                          className="p-1 text-text-muted/60 hover:text-primary transition-colors shrink-0"
-                          title={visibleKeys.has(key.id) ? t("hideKey") : t("showKey")}
-                          aria-label={visibleKeys.has(key.id) ? t("hideKey") : t("showKey")}
-                          aria-pressed={visibleKeys.has(key.id)}
-                        >
-                          <span className="material-symbols-outlined text-[14px]">
-                            {visibleKeys.has(key.id) ? "visibility_off" : "visibility"}
-                          </span>
-                        </button>
-                        <button
-                          onClick={() => handleCopyExistingKey(key.id)}
-                          className="p-1 text-text-muted/60 hover:text-primary transition-colors shrink-0"
-                          title={tc("copy")}
-                          aria-label={tc("copy")}
-                        >
-                          <span className="material-symbols-outlined text-[14px]">
-                            {copied === `existing_key_${key.id}` ? "check" : "content_copy"}
-                          </span>
-                        </button>
-                      </>
-                    ) : (
-                      <span
-                        className="p-1 text-text-muted/40 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all shrink-0 cursor-help"
-                        title={t("keyOnlyAvailableAtCreation")}
+                    <>
+                      <button
+                        onClick={() => handleToggleKeyVisibility(key.id)}
+                        disabled={!allowKeyReveal}
+                        className="p-1 text-text-muted/60 hover:text-primary transition-colors shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
+                        title={
+                          allowKeyReveal
+                            ? visibleKeys.has(key.id)
+                              ? t("hideKey")
+                              : t("showKey")
+                            : t("apiKeyRevealDisabled")
+                        }
+                        aria-label={
+                          allowKeyReveal
+                            ? visibleKeys.has(key.id)
+                              ? t("hideKey")
+                              : t("showKey")
+                            : t("apiKeyRevealDisabled")
+                        }
+                        aria-pressed={visibleKeys.has(key.id)}
                       >
-                        <span className="material-symbols-outlined text-[14px]">lock</span>
-                      </span>
-                    )}
+                        <span className="material-symbols-outlined text-[14px]">
+                          {visibleKeys.has(key.id) ? "visibility_off" : "visibility"}
+                        </span>
+                      </button>
+                      <button
+                        onClick={() => handleCopyExistingKey(key.id)}
+                        disabled={!allowKeyReveal}
+                        className="p-1 text-text-muted/60 hover:text-primary transition-colors shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
+                        title={allowKeyReveal ? tc("copy") : t("apiKeyRevealDisabled")}
+                        aria-label={allowKeyReveal ? tc("copy") : t("apiKeyRevealDisabled")}
+                      >
+                        <span className="material-symbols-outlined text-[14px]">
+                          {copied === `existing_key_${key.id}` ? "check" : "content_copy"}
+                        </span>
+                      </button>
+                    </>
                   </div>
                   <div className="col-span-2 flex items-center">
                     <div className="flex flex-col items-start gap-1">
@@ -1005,8 +1010,8 @@ export default function ApiManagerPageClient() {
                     <a
                       href={`/dashboard/costs?range=all&apiKeyIds=${encodeURIComponent(key.id)}&groupBy=model`}
                       className="p-2 hover:bg-emerald-500/10 rounded text-text-muted hover:text-emerald-500 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all"
-                      title={`View costs for ${key.name}`}
-                      aria-label={`View costs for ${key.name}`}
+                      title={t("viewCostsFor", { name: key.name })}
+                      aria-label={t("viewCostsFor", { name: key.name })}
                     >
                       <span className="material-symbols-outlined text-[18px]">payments</span>
                     </a>
