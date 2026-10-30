@@ -61,7 +61,10 @@ function setFieldValue(field: HTMLInputElement | HTMLTextAreaElement, value: str
 }
 
 function apiKeyInput(container: HTMLElement): HTMLInputElement | null {
-  return container.querySelector('input[type="password"]');
+  const label = Array.from(container.querySelectorAll("label")).find((item) =>
+    item.textContent?.includes("providers.apiKeyLabel")
+  );
+  return label?.htmlFor ? container.querySelector(`#${label.htmlFor}`) : null;
 }
 
 function nameInput(container: HTMLElement): HTMLInputElement | null {
@@ -118,6 +121,27 @@ describe("AddApiKeyModal resets its form between opens", () => {
     closeAndReopen(render);
 
     expect(apiKeyInput(container)?.value).toBe("");
+  });
+
+  it("reveals and hides the provider API key input", () => {
+    const { container } = mountModal({});
+    const input = apiKeyInput(container);
+    expect(input).not.toBeNull();
+    expect(input?.type).toBe("password");
+
+    const revealButton = container.querySelector<HTMLButtonElement>(
+      'button[aria-label="common.showKey"]'
+    );
+    expect(revealButton).not.toBeNull();
+    act(() => revealButton?.click());
+    expect(apiKeyInput(container)?.type).toBe("text");
+
+    const hideButton = container.querySelector<HTMLButtonElement>(
+      'button[aria-label="common.hideKey"]'
+    );
+    expect(hideButton).not.toBeNull();
+    act(() => hideButton?.click());
+    expect(apiKeyInput(container)?.type).toBe("password");
   });
 
   it("returns to single mode with an empty bulk textarea after close and reopen", () => {

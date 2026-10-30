@@ -717,6 +717,7 @@ export default function ProviderOnboardingWizard() {
                     : text("apiKeyLabel", "API key")
                 }
                 type="password"
+                reveal
                 value={apiKeyForm.apiKey}
                 onChange={(event) => setApiKeyForm({ ...apiKeyForm, apiKey: event.target.value })}
                 placeholder="sk-…"
@@ -849,6 +850,7 @@ export default function ProviderOnboardingWizard() {
               <Input
                 label={text("apiKeyLabel", "API key")}
                 type="password"
+                reveal
                 value={customForm.apiKey}
                 onChange={(event) => setCustomForm({ ...customForm, apiKey: event.target.value })}
                 placeholder="sk-…"

@@ -808,6 +808,7 @@ export default function AddApiKeyModal({
                     <Input
                       label={apiCredentialLabel}
                       type="password"
+                      reveal
                       value={formData.apiKey}
                       onChange={(e) => setFormData({ ...formData, apiKey: e.target.value })}
                       onKeyDown={(e) => {
@@ -859,6 +860,7 @@ export default function AddApiKeyModal({
                 <Input
                   label="Tunnel Runtime-Key"
                   type="password"
+                  reveal
                   value={formData.runtimeKey}
                   onChange={(e) => setFormData({ ...formData, runtimeKey: e.target.value })}
                   placeholder="Runtime-Key"

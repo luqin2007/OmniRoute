@@ -10,6 +10,7 @@ interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "
   hint?: React.ReactNode;
   icon?: string;
   inputClassName?: string;
+  reveal?: boolean;
 }
 
 export default function Input({
@@ -25,6 +26,7 @@ export default function Input({
   required = false,
   className,
   inputClassName,
+  reveal = false,
   id: externalId,
   onKeyDown: externalOnKeyDown,
   onKeyUp: externalOnKeyUp,
@@ -37,6 +39,7 @@ export default function Input({
   const hintId = hint && !error ? `${inputId}-hint` : undefined;
   const capsLockId = `${inputId}-capslock`;
   const isPassword = type === "password";
+  const [revealed, setRevealed] = useState(false);
   const [capsLockOn, setCapsLockOn] = useState(false);
   const [inputFocused, setInputFocused] = useState(false);
 
@@ -66,6 +69,7 @@ export default function Input({
   );
 
   const showCapsLock = isPassword && capsLockOn && inputFocused;
+  const inputType = isPassword && reveal && revealed ? "text" : type;
   const describedBy =
     [errorId, showCapsLock ? capsLockId : undefined, hintId].filter(Boolean).join(" ") || undefined;
 
@@ -91,7 +95,7 @@ export default function Input({
         )}
         <input
           id={inputId}
-          type={type}
+          type={inputType}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
@@ -120,11 +124,26 @@ export default function Input({
             // iOS zoom fix
             "text-[16px] sm:text-sm",
             icon && "pl-10",
+            reveal && "pr-10",
             error ? "border-red-500 focus:border-red-500 focus:ring-red-500/20" : "",
             inputClassName
           )}
           {...props}
         />
+        {reveal && isPassword && (
+          <button
+            type="button"
+            className="absolute inset-y-0 right-0 flex items-center px-3 text-text-muted hover:text-text-main transition-colors"
+            onClick={() => setRevealed((value) => !value)}
+            title={revealed ? t("hideKey") : t("showKey")}
+            aria-label={revealed ? t("hideKey") : t("showKey")}
+            aria-pressed={revealed}
+          >
+            <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+              {revealed ? "visibility_off" : "visibility"}
+            </span>
+          </button>
+        )}
       </div>
       {showCapsLock && (
         <p

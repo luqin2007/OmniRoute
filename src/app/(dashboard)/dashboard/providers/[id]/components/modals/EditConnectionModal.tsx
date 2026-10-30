@@ -198,6 +198,7 @@ export default function EditConnectionModal({
   const [saveError, setSaveError] = useState<string | null>(null);
   const [extraApiKeys, setExtraApiKeys] = useState<string[]>([]);
   const [newExtraKey, setNewExtraKey] = useState("");
+  const [showNewExtraKey, setShowNewExtraKey] = useState(false);
   const [apiKeyHealth, setApiKeyHealth] = useState<ApiKeyHealthMap>({});
   const [showAdvanced, setShowAdvanced] = useState(false);
   const showEmail = useEmailPrivacyStore((state) => state.emailsVisible);
@@ -999,6 +1000,7 @@ export default function EditConnectionModal({
                 <Input
                   label={apiCredentialLabel}
                   type="password"
+                  reveal
                   value={formData.apiKey}
                   onChange={(e) => setFormData({ ...formData, apiKey: e.target.value })}
                   placeholder={apiCredentialPlaceholder}
@@ -1041,6 +1043,7 @@ export default function EditConnectionModal({
                 <Input
                   label="Neuer Tunnel Runtime-Key"
                   type="password"
+                  reveal
                   value={formData.runtimeKey}
                   onChange={(event) => setFormData({ ...formData, runtimeKey: event.target.value })}
                   hint="Nur zusammen mit einem frischen Cookie eingeben. Der Wert wird verschlüsselt gespeichert."
@@ -1565,25 +1568,39 @@ export default function EditConnectionModal({
               </div>
             )}
             <div className="flex gap-2">
-              <input
-                type="password"
-                value={newExtraKey}
-                onChange={(e) => setNewExtraKey(e.target.value)}
-                placeholder={t("addAnotherApiKey")}
-                className="flex-1 text-sm bg-sidebar/50 border border-border rounded px-3 py-2 text-text-main placeholder:text-text-muted focus:ring-1 focus:ring-primary outline-none"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && newExtraKey.trim()) {
-                    setExtraApiKeys([...extraApiKeys, newExtraKey.trim()]);
-                    setNewExtraKey("");
-                  }
-                }}
-                onPaste={(e) => {
-                  const text = e.clipboardData.getData("text");
-                  if (!/\r?\n/.test(text)) return;
-                  e.preventDefault();
-                  handleAddParsedExtraKeys(text);
-                }}
-              />
+              <div className="relative flex-1">
+                <input
+                  type={showNewExtraKey ? "text" : "password"}
+                  value={newExtraKey}
+                  onChange={(e) => setNewExtraKey(e.target.value)}
+                  placeholder={t("addAnotherApiKey")}
+                  className="w-full text-sm bg-sidebar/50 border border-border rounded px-3 py-2 pr-10 text-text-main placeholder:text-text-muted focus:ring-1 focus:ring-primary outline-none"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && newExtraKey.trim()) {
+                      setExtraApiKeys([...extraApiKeys, newExtraKey.trim()]);
+                      setNewExtraKey("");
+                    }
+                  }}
+                  onPaste={(e) => {
+                    const text = e.clipboardData.getData("text");
+                    if (!/\r?\n/.test(text)) return;
+                    e.preventDefault();
+                    handleAddParsedExtraKeys(text);
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowNewExtraKey((value) => !value)}
+                  className="absolute inset-y-0 right-0 flex items-center px-3 text-text-muted hover:text-text-main transition-colors"
+                  title={showNewExtraKey ? t("hideKey") : t("showKey")}
+                  aria-label={showNewExtraKey ? t("hideKey") : t("showKey")}
+                  aria-pressed={showNewExtraKey}
+                >
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+                    {showNewExtraKey ? "visibility_off" : "visibility"}
+                  </span>
+                </button>
+              </div>
               <button
                 onClick={() => {
                   if (newExtraKey.trim()) {
