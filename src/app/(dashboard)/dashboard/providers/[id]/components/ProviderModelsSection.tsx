@@ -335,6 +335,7 @@ export default function ProviderModelsSection({
           {modelDiscoveryControls}
           {clearAllButton}
         </ActionBar>
+        {healthToolbar}
         <CompatibleModelsSection
           providerStorageAlias={providerStorageAlias}
           providerDisplayAlias={providerDisplayAlias}
@@ -418,6 +419,7 @@ export default function ProviderModelsSection({
             <span className="text-xs text-text-muted">{t("addConnectionToImport")}</span>
           )}
         </ActionBar>
+        {healthToolbar}
         <PassthroughModelsSection
           providerAlias={providerAlias}
           modelAliases={modelAliases}
@@ -482,6 +484,7 @@ export default function ProviderModelsSection({
     return (
       <div>
         {importButton}
+        {healthToolbar}
         <p className="text-sm text-text-muted">{t("noModelsConfigured")}</p>
       </div>
     );
