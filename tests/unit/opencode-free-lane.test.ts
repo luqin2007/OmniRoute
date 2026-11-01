@@ -15,8 +15,11 @@ import {
   applyFingerprint,
   canonicalizeSession,
   isCanonicalSession,
+  isFreshSession,
   loadProfile,
   matchesLane,
+  mintSessionId,
+  sessionTimestampMs,
 } from "../../examples/plugins/opencode-free-lane/fingerprint.mjs";
 
 type AnyTool = Record<string, unknown>;
@@ -158,8 +161,48 @@ test("session ids are minted, deterministic per signal and shape-valid", () => {
   assert.equal(isCanonicalSession(a), true);
   assert.equal(isCanonicalSession(c), true);
 
+  // Shape-only: the hex part is a digest, so it does not decode to a real creation time.
+  assert.equal(isFreshSession(a, { nowMs: Date.now() }), false);
+
   // A hash-shaped (non-minted) id is exactly what the gate rejects.
   assert.equal(isCanonicalSession("ses_0123456789abAAAAAAAAAAAAAA"), false);
   assert.equal(isCanonicalSession("not-a-session"), false);
   assert.equal(isCanonicalSession(""), false);
+});
+
+test("minted ids encode the real clock, which is what the gate checks", () => {
+  const now = Date.now();
+  const id = mintSessionId(now);
+
+  assert.match(id, /^ses_[0-9a-f]{12}[0-9A-Za-z]{14}$/);
+  assert.equal(isCanonicalSession(id), true);
+  assert.equal(isFreshSession(id, { nowMs: now }), true);
+
+  const decoded = sessionTimestampMs(id);
+  assert.ok(decoded !== null);
+  // The upstream keeps only the low 48 bits of ~(ts<<12|seq), so the timestamp wraps modulo
+  // 2^36 ms. Compare inside that window.
+  const wrap = 2 ** 36;
+  const delta = (((now % wrap) - (decoded as number)) % wrap + wrap) % wrap;
+  assert.ok(delta <= 2000, `decoded timestamp is ${delta}ms off`);
+
+  // Two mints at the same instant differ (random tail) but agree on the timestamp.
+  const twin = mintSessionId(now, 1);
+  assert.notEqual(twin, id);
+  assert.equal(isFreshSession(twin, { nowMs: now }), true);
+});
+
+test("a stale or foreign id is not reused", () => {
+  const now = Date.now();
+  const old = mintSessionId(now - 400 * 86400000);
+  assert.equal(isFreshSession(old, { nowMs: now }), false);
+  assert.equal(isFreshSession(old, { nowMs: now, toleranceMs: 500 * 86400000 }), true);
+  assert.equal(isFreshSession(null, { nowMs: now }), false);
+  assert.equal(isFreshSession("ses_zzzzzzzzzzzzAAAAAAAAAAAAAA", { nowMs: now }), false);
+});
+
+test("the shipped profile carries a minted session, not a legacy hash", () => {
+  const { session } = loadProfile().upstream;
+  assert.equal(isCanonicalSession(session), true);
+  assert.equal(isFreshSession(session), true);
 });

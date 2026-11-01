@@ -176,7 +176,7 @@ const step = (message) => process.stdout.write(`  ${message}\n`);
 
 /** The session-id construction lives with the rest of the fingerprint, in the plugin module —
  *  one implementation, so the script can never drift from what the plugin ships. */
-const { canonicalizeSession, isCanonicalSession } = await import(
+const { isCanonicalSession, isFreshSession, mintSessionId, sessionTimestampMs } = await import(
   pathToFileURL(join(TEMPLATE_DIR, "fingerprint.mjs")).href
 );
 
@@ -332,9 +332,15 @@ function buildHeaders(profile) {
   };
 }
 
-function buildProfile({ upstream, previous, config, ref, publishedAt }) {
-  const session = canonicalizeSession(config.sessionSignal);
+function buildProfile({ upstream, previous, config, ref, publishedAt, newSession = false }) {
+  // Mint ONCE and keep it. The upstream rejects hash-derived ids (their hex does not decode to a
+  // real creation time) and it rejects a brand-new id on every request just as hard, so a stored
+  // fresh id is reused and only replaced when it is missing, legacy-shaped, or expired.
+  const previousSession = previous?.upstream?.session;
+  const session =
+    !newSession && isFreshSession(previousSession) ? previousSession : mintSessionId();
   if (!isCanonicalSession(session)) fail(`generated session id is malformed: ${session}`);
+  if (!isFreshSession(session)) fail(`minted session id does not encode a real timestamp: ${session}`);
 
   const version = /(\d+\.\d+\.\d+)/.exec(upstream.userAgent ?? "")?.[1] ?? previous?.version ?? "0.0.0";
 
@@ -588,6 +594,7 @@ async function cmdSync(config, flags) {
       config,
       ref: parsedTools ? release.tag : null,
       publishedAt: parsedTools ? release.publishedAt : null,
+      newSession: Boolean(flags.newSession),
     })
   );
   if (!parsedTools) next.upstream.pendingRef = release.tag;
@@ -632,6 +639,65 @@ async function cmdSync(config, flags) {
 
   if (dbPath) {
     const db = await openDb(dbPath);
+    try {
+      step(`node headers ${JSON.stringify(upsertNode(db, config, next.upstream.headers))}`);
+    } finally {
+      db.close();
+    }
+  }
+
+  say("done — the plugin re-reads lane-profile.json on change; no restart needed.");
+  return 0;
+}
+
+/**
+ * Rotate the session id without touching GitHub.
+ *
+ * The upstream wants an id minted from a real clock and then KEPT; a hash-derived one (what this
+ * plugin used to write) is the documented failure mode. `sync` used to be the only path that
+ * rebuilt the header, so a rate-limited GitHub API meant no way to fix an installed lane — this
+ * command only touches the profile and the node row.
+ */
+async function cmdSession(config, flags) {
+  const pluginDir = config.pluginDir ? resolve(config.pluginDir) : null;
+  if (!pluginDir || !existsSync(pluginDir)) fail("plugin dir not found — run `install` first");
+
+  const current = readProfile(pluginDir);
+  if (!current) fail(`no lane-profile.json in ${pluginDir}`);
+
+  const stored = current.upstream?.session ?? null;
+  if (!flags.force && isFreshSession(stored)) {
+    say(`session already minted and fresh (${stored}) — pass --force to rotate anyway`);
+    return 0;
+  }
+
+  current.upstream.session = mintSessionId();
+  current.upstream.sessionMintedAt = new Date().toISOString();
+  const next = withHeaders(current);
+
+  say(`session ${stored ?? "(none)"} -> ${next.upstream.session}`);
+  // The id encodes only the low 36 bits of the timestamp, so the raw decode wraps (~794 days).
+  const wrapMs = 2 ** 36;
+  const nowMs = Date.now();
+  const decoded = sessionTimestampMs(next.upstream.session);
+  const ageMs = (((nowMs % wrapMs) - decoded) % wrapMs + wrapMs) % wrapMs;
+  step(`decoded creation time ${new Date(nowMs - ageMs).toISOString()} (${Math.round(ageMs / 1000)}s ago)`);
+
+  if (flags.dryRun) {
+    say("--dry-run: not writing");
+    return 0;
+  }
+
+  writeFileSync(profilePath(pluginDir), `${JSON.stringify(next, null, 2)}\n`);
+  step(`wrote ${profilePath(pluginDir)}`);
+
+  if (flags.updateTemplate && resolve(pluginDir) !== resolve(TEMPLATE_DIR)) {
+    writeFileSync(profilePath(TEMPLATE_DIR), `${JSON.stringify(next, null, 2)}\n`);
+    step(`wrote ${profilePath(TEMPLATE_DIR)} (repo template)`);
+  }
+
+  if (flags.dbOnly !== true && config.dbPath && existsSync(resolve(config.dbPath))) {
+    const db = await openDb(resolve(config.dbPath));
     try {
       step(`node headers ${JSON.stringify(upsertNode(db, config, next.upstream.headers))}`);
     } finally {
@@ -724,13 +790,15 @@ async function cmdStatus(config, flags) {
 }
 
 function printUsage() {
-  say("usage: opencode-free-lane.mjs <install|sync|status> [options]");
+  say("usage: opencode-free-lane.mjs <install|sync|session|status> [options]");
   say("");
   say("  install              copy the plugin into the volume, upsert node/connection/plugin rows");
   say("  sync [--check]       pull the latest upstream source, rebuild lane-profile.json + node headers");
+  say("  session [--force]    rotate the session id (real-timestamp mint, no GitHub call)");
   say("  status [--json]      report local vs upstream state");
   say("");
-  say("options: --config --plugin-dir --db --container-plugins-dir --repo --node-id --ref --force --dry-run --check --json");
+  say("options: --config --plugin-dir --db --container-plugins-dir --repo --node-id --ref --force");
+  say("         --new-session --update-template --db-only --dry-run --check --json");
 }
 
 async function main() {
@@ -742,7 +810,7 @@ async function main() {
   }
 
   const config = loadConfig(flags);
-  const handlers = { install: cmdInstall, sync: cmdSync, status: cmdStatus };
+  const handlers = { install: cmdInstall, sync: cmdSync, session: cmdSession, status: cmdStatus };
   const handler = handlers[command];
   if (!handler) fail(`unknown command: ${command}`);
 

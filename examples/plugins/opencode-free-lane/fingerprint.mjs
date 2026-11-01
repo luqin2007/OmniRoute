@@ -12,7 +12,7 @@
  * exposes the INBOUND client headers, not the upstream request. Those headers are therefore
  * configured on the provider node itself (`custom_headers_json`), see README.md.
  */
-import { createHash } from "node:crypto";
+import { createHash, randomBytes } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -128,10 +128,63 @@ function base62Fixed(bytes, width) {
 }
 
 /**
- * Deterministic `ses_` id from an arbitrary signal: same signal -> same id, forever.
+ * Mint a `ses_` id the way the upstream's own client does: the 12 hex characters are the
+ * inverted big-endian low 48 bits of `timestamp * 0x1000 + seq`, the tail is 14 random base62
+ * bytes.
  *
- * Stability is required, not cosmetic: the upstream's 429 FreeUsageLimitError stays bad if you
- * come back with a fresh session, so the reference implementation deliberately reuses one id.
+ * A hash-shaped id (see `canonicalizeSession` below) has the right *shape* but decodes to a
+ * nonsense creation time, and the upstream refuses those: the reference implementation
+ * (dsh-our-free-model, `mintSessionId`) reports "an identical gateway request failed with both
+ * its old hash id and a fresh hash-derived id, then succeeded twice using the same
+ * real-timestamp id". So ids must be minted from a real clock and then **kept** — minting a new
+ * one on every request is just as bad as hashing.
+ */
+export function mintSessionId(nowMs = Date.now(), seq = 0) {
+  const stamp = BigInt(Math.trunc(nowMs));
+  const value = ~((stamp << 12n) + BigInt(seq >>> 0)) & 0xffffffffffffn;
+  const hex = value.toString(16).padStart(12, "0");
+  return `ses_${hex}${base62Fixed(randomBytes(14), 14)}`;
+}
+
+/**
+ * Decode the creation time a `ses_` id claims, in ms — or null when it is not a minted id.
+ *
+ * The upstream keeps only the low 48 bits of `~(timestamp<<12|seq)`, i.e. the timestamp wraps
+ * modulo 2^36 ms (~2.2 years), so this returns that wrap window rather than an absolute date.
+ */
+export function sessionTimestampMs(id) {
+  if (typeof id !== "string" || !SESSION_RE.test(id)) return null;
+  const value = BigInt(`0x${id.slice(4, 16)}`);
+  // Bitwise-not inside the 48-bit field, then shift: doing the mask after `Number()` would drop
+  // to 32-bit semantics and produce a nonsense timestamp.
+  const inverted = ~value & 0xffffffffffffn;
+  return Number(inverted >> 12n);
+}
+
+/**
+ * True when the id is minted from a clock recent enough to be credible right now.
+ *
+ * `wrapMs` is the 2^36 ms window the id can express; `toleranceMs` allows clock skew and lets an
+ * id minted a few weeks ago keep being reused (that reuse is required behaviour, not a bug).
+ */
+export function isFreshSession(id, options = {}) {
+  if (!isCanonicalSession(id)) return false;
+  const decoded = sessionTimestampMs(id);
+  if (decoded === null) return false;
+  const wrapMs = 2 ** 36;
+  const nowMs =
+    typeof options.nowMs === "number" ? options.nowMs : Date.now();
+  const toleranceMs = typeof options.toleranceMs === "number" ? options.toleranceMs : 30 * 86400000;
+  const ageMs = (((nowMs % wrapMs) - decoded) % wrapMs + wrapMs) % wrapMs;
+  return ageMs <= toleranceMs;
+}
+
+/**
+ * Deterministic `ses_` id from an arbitrary signal — the LEGACY shape, kept only so a stored
+ * profile with one of these can be recognised and replaced with a minted id.
+ *
+ * Do not use it for new profiles: the hex part does not encode a real creation time, which is
+ * the one thing the upstream checks. Use `mintSessionId` and persist the result.
  */
 export function canonicalizeSession(signal) {
   const digest = createHash("sha256").update(`ses\0${signal}`).digest();
