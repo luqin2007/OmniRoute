@@ -3400,13 +3400,13 @@
     "comboRefMember": "ጥምረት → {name}"
   },
   "combos": {
+    "title": "ጥምረቶች",
+    "description": "ክብደት ያለው ማስተላለፊያ እና የመጠባበቂያ ድጋፍ ያላቸው የሞዴል ጥምረቶችን ይፍጠሩ",
+    "autoCatalogTitle": "የራስ-ሰር ማስተላለፊያ ካታሎግ",
     "autoTosLoadError": "የአገልግሎት ውሎች ፖሊሲ መጫን አልተቻለም። ከመቀየርዎ በፊት እንደገና ይሞክሩ።",
     "autoTosSaveError": "የአገልግሎት ውሎች ፖሊሲ ማስቀመጥ አልተቻለም። ያለፈው ቅንብር አሁንም ይታያል። እንደገና ይሞክሩ።",
     "autoTosIncludeLabel": "ToS: avoid ተብለው የተሰየሙ አቅራቢዎችን በauto ውስጥ ያካትቱ",
     "autoTosDescription": "በነባሪ ጠፍቷል። ለሁሉም የauto ጥምረቶች ይሠራል፣ ለአንድ መለያ ብቻ አይደለም። አቅራቢን ማገናኘት ይህን አማራጭ አያበራም።",
-    "title": "ጥምረቶች",
-    "description": "ክብደት ያለው ማስተላለፊያ እና የመጠባበቂያ ድጋፍ ያላቸው የሞዴል ጥምረቶችን ይፍጠሩ",
-    "autoCatalogTitle": "የራስ-ሰር ማስተላለፊያ ካታሎግ",
     "autoCatalogTemplateCount": "{count} አብነቶች",
     "autoCatalogDescription": "አብረው የተካተቱ auto/* ጥምረቶች ከተገናኙ አቅራቢዎች በተለዋዋጭ ሁኔታ ይወሰናሉ። ከእነዚህ መታወቂያዎች ማንኛውንም እንደ ሞዴል መስክ ይጠቀሙ — ምንም ማዋቀር አያስፈልግም።",
     "autoCatalogExpand": "የራስ-ሰር ማስተላለፊያ ካታሎጉን ዘርጋ",
@@ -6539,6 +6539,7 @@
       "monsterapi": "የAPI ቁልፍን ከmonsterapi.ai ያግኙ",
       "moonshot": "Kimiን በAPI ቁልፍ ያገናኙ።",
       "morph": "ነፃ ደረጃ፦ በወር 250K ክሬዲቶች፣ $0",
+      "apmix": "Apmixን በapmix.ai/dashboard የሚገኝ የAPI ቁልፍ ያገናኙ — አንድ ደረሳ ብዙ ሞዴሎች።",
       "nanogpt": "NanoGPTን በAPI ቁልፍ ያገናኙ።",
       "nebius": "ለAPI ሙከራ ሲመዘገቡ ~$1 የሙከራ ክሬዲት",
       "nlpcloud": "NLP Cloud ከOpenAI chat/completions ይልቅ የራሱን የቻትቦት API ይጠቀማል። OmniRoute የOpenAI መልዕክቶችን ወደ input/context/history ያስማማል፣ እንዲሁም የሚደገፉ የቻትቦት ሞዴሎችን አካባቢያዊ ካታሎግ ያቀርባል።",
@@ -6635,8 +6636,7 @@
       "kiro": "ነፃ ደረጃ፦ በወር 50 ክሬዲቶች (~25K–100K ቶከኖች)። ⚠️ የKiro ToS በሦስተኛ ወገን ፕሮክሲ/ሃርነስ መጠቀምን ይከለክላል።",
       "codex": "OpenAI Codexን በነባሩ OAuth ፍሰት ያገናኙ።",
       "qwen": "Qwen Codeን በነባሩ OAuth ፍሰት ያገናኙ።",
-      "github-models": "በgithub.com/settings/tokens ላይ 'models: read' ወሰን ያለው GitHub PAT ይፍጠሩ",
-      "apmix": "Apmixን በapmix.ai/dashboard የሚገኝ የAPI ቁልፍ ያገናኙ — አንድ ደረሳ ብዙ ሞዴሎች።"
+      "github-models": "በgithub.com/settings/tokens ላይ 'models: read' ወሰን ያለው GitHub PAT ይፍጠሩ"
     },
     "passthroughModelsDescription": "{provider} የአቅራቢውን ቤተኛ የሞዴል መለያዎች ይቀበላል። ከ/models ያስመጡ ወይም ለማስተላለፍ ብጁ መለያዎችን ያክሉ።",
     "bedrockModelsDescription": "የAmazon Bedrock ሞዴሎች በAWS ክልል የተገደቡ ናቸው። ከ/models ያስመጡ ወይም በተመረጠው ክልል የነቁ የBedrock ሞዴል መለያዎችን ያክሉ።",
@@ -6804,7 +6804,22 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "perfMetricsTitle": "__MISSING__:Gateway-reported model health",
+    "perfMetricsRefresh": "__MISSING__:Refresh health",
+    "perfMetricsLoading": "__MISSING__:Reading model health from the gateway…",
+    "perfMetricsEmpty": "__MISSING__:The gateway did not report any model health for this window.",
+    "perfMetricsUnavailable": "__MISSING__:Could not read model health: {error}",
+    "perfMetricsFailed": "__MISSING__:Request failed",
+    "perfMetricsAuthRequired": "__MISSING__:Session expired — sign in again",
+    "perfMetricsFetchedAt": "__MISSING__:as of {time}",
+    "perfMetricsAggregate": "__MISSING__:{latency} · {rate} success · {tps}",
+    "perfMetricsColModel": "__MISSING__:Model",
+    "perfMetricsColLatency": "__MISSING__:Latency",
+    "perfMetricsColTps": "__MISSING__:Throughput",
+    "perfMetricsColSuccess": "__MISSING__:Success",
+    "perfMetricsColTrend": "__MISSING__:Last 8h",
+    "perfMetricsHint": "__MISSING__:Self-reported by the provider's own gateway, not measured by OmniRoute. Each bar is one success-rate bucket, oldest on the left."
   },
   "settings": {
     "title": "ቅንብሮች",

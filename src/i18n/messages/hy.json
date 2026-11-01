@@ -3400,13 +3400,13 @@
     "comboRefMember": "Համակցություն → {name}"
   },
   "combos": {
+    "title": "Կոմբինացիաներ",
+    "description": "Ստեղծեք մոդելների կոմբինացիաներ՝ կշռված երթուղավորմամբ և պահուստային անցման աջակցությամբ",
+    "autoCatalogTitle": "Ավտոմատ երթուղավորման կատալոգ",
     "autoTosLoadError": "Չհաջողվեց բեռնել ծառայության պայմանների քաղաքականությունը։ Փոխելուց առաջ կրկին փորձեք։",
     "autoTosSaveError": "Չհաջողվեց պահպանել ծառայության պայմանների քաղաքականությունը։ Դեռ ցուցադրվում է նախորդ կարգավորումը։ Կրկին փորձեք։",
     "autoTosIncludeLabel": "auto-ում ներառել ToS: avoid նշումով մատակարարներին",
     "autoTosDescription": "Լռելյայն անջատված է։ Կիրառվում է բոլոր auto համակցությունների, ոչ միայն մեկ հաշվի համար։ Մատակարարին միացնելը չի միացնում այս ընտրանքը։",
-    "title": "Կոմբինացիաներ",
-    "description": "Ստեղծեք մոդելների կոմբինացիաներ՝ կշռված երթուղավորմամբ և պահուստային անցման աջակցությամբ",
-    "autoCatalogTitle": "Ավտոմատ երթուղավորման կատալոգ",
     "autoCatalogTemplateCount": "{count} ձևանմուշ",
     "autoCatalogDescription": "Ներկառուցված auto/* կոմբինացիաները դինամիկորեն որոշվում են միացված պրովայդերների հիման վրա։ Այս նույնացուցիչներից ցանկացածն օգտագործեք որպես model դաշտի արժեք․ կարգավորում չի պահանջվում։",
     "autoCatalogExpand": "Ընդարձակել ավտոմատ երթուղավորման կատալոգը",
@@ -6539,6 +6539,7 @@
       "monsterapi": "Ստացեք API բանալի monsterapi.ai հասցեում",
       "moonshot": "Միացրեք Kimi-ն API բանալիով։",
       "morph": "Անվճար մակարդակ՝ ամսական 250K կրեդիտ, $0",
+      "apmix": "Միացրեք Apmix-ը apmix.ai/dashboard-ից API բանալիով — մեկ բաժանորդագրություն, շատ մոդելներ:",
       "nanogpt": "Միացրեք NanoGPT-ն API բանալիով։",
       "nebius": "Գրանցվելիս՝ մոտ $1-ի փորձնական կրեդիտներ API-ի փորձարկման համար",
       "nlpcloud": "NLP Cloud-ն OpenAI-ի chat/completions-ի փոխարեն օգտագործում է սեփական չաթբոտի API։ OmniRoute-ը OpenAI-ի հաղորդագրությունները հարմարեցնում է input/context/history ձևաչափին և տրամադրում է աջակցվող չաթբոտի մոդելների տեղային կատալոգ։",
@@ -6635,8 +6636,7 @@
       "kiro": "Անվճար մակարդակ՝ ամսական 50 կրեդիտ (~25K–100K թոքեն)։ ⚠️ Kiro-ի ToS-ն արգելում է երրորդ կողմի պրոքսիի/գործիքակազմի օգտագործումը։",
       "codex": "Միացրեք OpenAI Codex-ը առկա OAuth հոսքով։",
       "qwen": "Միացրեք Qwen Code-ը առկա OAuth հոսքով։",
-      "github-models": "Ստեղծեք GitHub PAT՝ 'models: read' տիրույթով, github.com/settings/tokens հասցեում",
-      "apmix": "Միացրեք Apmix-ը apmix.ai/dashboard-ից API բանալիով — մեկ բաժանորդագրություն, շատ մոդելներ:"
+      "github-models": "Ստեղծեք GitHub PAT՝ 'models: read' տիրույթով, github.com/settings/tokens հասցեում"
     },
     "passthroughModelsDescription": "{provider}-ն ընդունում է մատակարարին բնորոշ մոդելների ID-ներ։ Ներմուծեք /models-ից կամ երթուղավորման համար ավելացրեք հատուկ ID-ներ։",
     "bedrockModelsDescription": "Amazon Bedrock մոդելները սահմանափակված են ըստ AWS տարածաշրջանի։ Ներմուծեք /models-ից կամ ավելացրեք ընտրված տարածաշրջանում միացված Bedrock մոդելների ID-ները։",
@@ -6804,7 +6804,22 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "perfMetricsTitle": "__MISSING__:Gateway-reported model health",
+    "perfMetricsRefresh": "__MISSING__:Refresh health",
+    "perfMetricsLoading": "__MISSING__:Reading model health from the gateway…",
+    "perfMetricsEmpty": "__MISSING__:The gateway did not report any model health for this window.",
+    "perfMetricsUnavailable": "__MISSING__:Could not read model health: {error}",
+    "perfMetricsFailed": "__MISSING__:Request failed",
+    "perfMetricsAuthRequired": "__MISSING__:Session expired — sign in again",
+    "perfMetricsFetchedAt": "__MISSING__:as of {time}",
+    "perfMetricsAggregate": "__MISSING__:{latency} · {rate} success · {tps}",
+    "perfMetricsColModel": "__MISSING__:Model",
+    "perfMetricsColLatency": "__MISSING__:Latency",
+    "perfMetricsColTps": "__MISSING__:Throughput",
+    "perfMetricsColSuccess": "__MISSING__:Success",
+    "perfMetricsColTrend": "__MISSING__:Last 8h",
+    "perfMetricsHint": "__MISSING__:Self-reported by the provider's own gateway, not measured by OmniRoute. Each bar is one success-rate bucket, oldest on the left."
   },
   "settings": {
     "title": "Կարգավորումներ",

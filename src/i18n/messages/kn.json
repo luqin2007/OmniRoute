@@ -3400,13 +3400,13 @@
     "comboRefMember": "ಕಾಂಬೊ → {name}"
   },
   "combos": {
+    "title": "ಸಂಯೋಜನೆಗಳು",
+    "description": "ತೂಕಾಧಾರಿತ ರೌಟಿಂಗ್ ಮತ್ತು ಫಾಲ್ಬ್ಯಾಕ್ ಬೆಂಬಲದೊಂದಿಗೆ ಮಾದರಿ ಸಂಯೋಜನೆಗಳನ್ನು ರಚಿಸಿ",
+    "autoCatalogTitle": "ಸ್ವಯಂಚಾಲಿತ ರೌಟಿಂಗ್ ಕ್ಯಾಟಲಾಗ್",
     "autoTosLoadError": "ಸೇವಾ ನಿಯಮಗಳ ನೀತಿಯನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಬದಲಾಯಿಸುವ ಮೊದಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
     "autoTosSaveError": "ಸೇವಾ ನಿಯಮಗಳ ನೀತಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಹಿಂದಿನ ಸೆಟ್ಟಿಂಗ್ ಇನ್ನೂ ತೋರಿಸಲಾಗುತ್ತಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
     "autoTosIncludeLabel": "ToS: avoid ಎಂದು ಗುರುತಿಸಲಾದ ಪೂರೈಕೆದಾರರನ್ನು auto ದಲ್ಲಿ ಸೇರಿಸಿ",
     "autoTosDescription": "ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಆಫ್ ಆಗಿದೆ. ಇದು ಒಂದು ಖಾತೆಗೆ ಮಾತ್ರವಲ್ಲ, ಎಲ್ಲಾ auto ಸಂಯೋಜನೆಗಳಿಗೂ ಅನ್ವಯಿಸುತ್ತದೆ. ಪೂರೈಕೆದಾರರನ್ನು ಸಂಪರ್ಕಿಸುವುದರಿಂದ ಈ ಆಯ್ಕೆ ಆನ್ ಆಗುವುದಿಲ್ಲ.",
-    "title": "ಸಂಯೋಜನೆಗಳು",
-    "description": "ತೂಕಾಧಾರಿತ ರೌಟಿಂಗ್ ಮತ್ತು ಫಾಲ್ಬ್ಯಾಕ್ ಬೆಂಬಲದೊಂದಿಗೆ ಮಾದರಿ ಸಂಯೋಜನೆಗಳನ್ನು ರಚಿಸಿ",
-    "autoCatalogTitle": "ಸ್ವಯಂಚಾಲಿತ ರೌಟಿಂಗ್ ಕ್ಯಾಟಲಾಗ್",
     "autoCatalogTemplateCount": "{count} ಟೆಂಪ್ಲೇಟ್ಗಳು",
     "autoCatalogDescription": "ಸಂಪರ್ಕಿತ ಪ್ರೊವೈಡರ್ಗಳಿಂದ ಡೈನಾಮಿಕ್ ಆಗಿ ನಿರ್ಧರಿಸಲಾಗುವ ಬಿಲ್ಟ್-ಇನ್ auto/* ಸಂಯೋಜನೆಗಳು. ಈ IDs ಗಳಲ್ಲಿ ಯಾವುದನ್ನಾದರೂ ಮಾದರಿ ಕ್ಷೇತ್ರವಾಗಿ ಬಳಸಿ — ಸೆಟಪ್ ಅಗತ್ಯವಿಲ್ಲ.",
     "autoCatalogExpand": "ಸ್ವಯಂಚಾಲಿತ ರೌಟಿಂಗ್ ಕ್ಯಾಟಲಾಗ್ ಅನ್ನು ವಿಸ್ತರಿಸಿ",
@@ -6539,6 +6539,7 @@
       "monsterapi": "monsterapi.ai ನಲ್ಲಿ API ಕೀ ಪಡೆಯಿರಿ.",
       "moonshot": "API ಕೀ ಬಳಸಿ Kimi ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.",
       "morph": "ಉಚಿತ ಹಂತ: ತಿಂಗಳಿಗೆ 250K ಕ್ರೆಡಿಟ್ಗಳು, $0",
+      "apmix": "apmix.ai/dashboard ನಿಂದ API ಕೀ ಮೂಲಕ Apmix ಅನ್ನು ಸಂಪರ್ಕಿಸಿ — ಒಂದು ಚಂದಾದಾರಿಕೆ, ಹಲವು ಮಾದರಿಗಳು.",
       "nanogpt": "API ಕೀ ಬಳಸಿ NanoGPT ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.",
       "nebius": "API ಪರೀಕ್ಷೆಗಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿದಾಗ ಸುಮಾರು $1 ಮೌಲ್ಯದ ಪ್ರಾಯೋಗಿಕ ಕ್ರೆಡಿಟ್ಗಳು",
       "nlpcloud": "NLP Cloud, OpenAI chat/completions ಬದಲಿಗೆ ಸ್ವಾಮ್ಯದ ಚಾಟ್ಬಾಟ್ API ಅನ್ನು ಬಳಸುತ್ತದೆ. OmniRoute, OpenAI ಸಂದೇಶಗಳನ್ನು ಇನ್ಪುಟ್/ಸಂದರ್ಭ/ಇತಿಹಾಸಕ್ಕೆ ಹೊಂದಿಸುತ್ತದೆ ಮತ್ತು ಬೆಂಬಲಿತ ಚಾಟ್ಬಾಟ್ ಮಾದರಿಗಳ ಸ್ಥಳೀಯ ಕ್ಯಾಟಲಾಗ್ ಅನ್ನು ಒದಗಿಸುತ್ತದೆ.",
@@ -6635,8 +6636,7 @@
       "kiro": "ಉಚಿತ ಹಂತ: ತಿಂಗಳಿಗೆ 50 ಕ್ರೆಡಿಟ್ಗಳು (~25K–100K ಟೋಕನ್ಗಳು). ⚠️ Kiro ToS ಮೂರನೇ-ಪಕ್ಷದ proxy/harness ಬಳಕೆಯನ್ನು ನಿಷೇಧಿಸುತ್ತದೆ.",
       "codex": "ಈಗಿರುವ OAuth ಹರಿವಿನ ಮೂಲಕ OpenAI Codex ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.",
       "qwen": "ಈಗಿರುವ OAuth ಹರಿವಿನ ಮೂಲಕ Qwen Code ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.",
-      "github-models": "github.com/settings/tokens ನಲ್ಲಿ 'models: read' ಸ್ಕೋಪ್ನೊಂದಿಗೆ GitHub PAT ರಚಿಸಿ",
-      "apmix": "apmix.ai/dashboard ನಿಂದ API ಕೀ ಮೂಲಕ Apmix ಅನ್ನು ಸಂಪರ್ಕಿಸಿ — ಒಂದು ಚಂದಾದಾರಿಕೆ, ಹಲವು ಮಾದರಿಗಳು."
+      "github-models": "github.com/settings/tokens ನಲ್ಲಿ 'models: read' ಸ್ಕೋಪ್ನೊಂದಿಗೆ GitHub PAT ರಚಿಸಿ"
     },
     "passthroughModelsDescription": "{provider} ಪೂರೈಕೆದಾರ-ಸ್ಥಳೀಯ ಮಾಡೆಲ್ IDಗಳನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ. /models ನಿಂದ ಆಮದು ಮಾಡಿ ಅಥವಾ ರೂಟಿಂಗ್ಗಾಗಿ ಕಸ್ಟಮ್ IDಗಳನ್ನು ಸೇರಿಸಿ.",
     "bedrockModelsDescription": "Amazon Bedrock ಮಾಡೆಲ್ಗಳು AWS ಪ್ರದೇಶದ ವ್ಯಾಪ್ತಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತವೆ. /models ನಿಂದ ಆಮದು ಮಾಡಿ ಅಥವಾ ಆಯ್ಕೆಮಾಡಿದ ಪ್ರದೇಶದಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಲಾದ Bedrock ಮಾಡೆಲ್ IDಗಳನ್ನು ಸೇರಿಸಿ.",
@@ -6804,7 +6804,22 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "perfMetricsTitle": "__MISSING__:Gateway-reported model health",
+    "perfMetricsRefresh": "__MISSING__:Refresh health",
+    "perfMetricsLoading": "__MISSING__:Reading model health from the gateway…",
+    "perfMetricsEmpty": "__MISSING__:The gateway did not report any model health for this window.",
+    "perfMetricsUnavailable": "__MISSING__:Could not read model health: {error}",
+    "perfMetricsFailed": "__MISSING__:Request failed",
+    "perfMetricsAuthRequired": "__MISSING__:Session expired — sign in again",
+    "perfMetricsFetchedAt": "__MISSING__:as of {time}",
+    "perfMetricsAggregate": "__MISSING__:{latency} · {rate} success · {tps}",
+    "perfMetricsColModel": "__MISSING__:Model",
+    "perfMetricsColLatency": "__MISSING__:Latency",
+    "perfMetricsColTps": "__MISSING__:Throughput",
+    "perfMetricsColSuccess": "__MISSING__:Success",
+    "perfMetricsColTrend": "__MISSING__:Last 8h",
+    "perfMetricsHint": "__MISSING__:Self-reported by the provider's own gateway, not measured by OmniRoute. Each bar is one success-rate bucket, oldest on the left."
   },
   "settings": {
     "title": "ಸೆಟ್ಟಿಂಗ್ಗಳು",

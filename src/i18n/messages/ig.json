@@ -3400,13 +3400,13 @@
     "comboRefMember": "Ngwakọta → {name}"
   },
   "combos": {
+    "title": "Ngwakọta",
+    "description": "Mepụta ngwakọta model nwere ntụgharị ụzọ dabere n'ịdị arọ na nkwado fallback",
+    "autoCatalogTitle": "Katalọgụ ntụgharị ụzọ akpaaka",
     "autoTosLoadError": "Enweghị ike ibunye iwu usoro ọrụ. Nwaa ọzọ tupu ị gbanwee ya.",
     "autoTosSaveError": "Enweghị ike ichekwa iwu usoro ọrụ. A ka na-egosi ntọala gara aga. Nwaa ọzọ.",
     "autoTosIncludeLabel": "Tinye ndị na-enye ọrụ nwere akara ToS: avoid na auto",
     "autoTosDescription": "A gbanyụrụ ya na ndabara. Ọ na-emetụta ngwakọta auto niile, ọ bụghị naanị otu akaụntụ. Ijikọta onye na-enye ọrụ anaghị agbanwu nhọrọ a.",
-    "title": "Ngwakọta",
-    "description": "Mepụta ngwakọta model nwere ntụgharị ụzọ dabere n'ịdị arọ na nkwado fallback",
-    "autoCatalogTitle": "Katalọgụ ntụgharị ụzọ akpaaka",
     "autoCatalogTemplateCount": "Template {count}",
     "autoCatalogDescription": "Ngwakọta auto/* arụnyere n'ime sistemụ, nke a na-ekpebi n'ụzọ na-agbanwe agbanwe site na provider ejikọrọ. Jiri ID ọ bụla n'ime ndị a dị ka mpaghara model — nhazi adịghị mkpa.",
     "autoCatalogExpand": "Gbasaa katalọgụ ntụgharị ụzọ akpaaka",
@@ -6539,6 +6539,7 @@
       "monsterapi": "Nweta igodo API na monsterapi.ai",
       "moonshot": "Jikọọ Kimi site na igodo API.",
       "morph": "Ọkwa efu: kredit 250K kwa ọnwa, $0",
+      "apmix": "Jikọọ Apmix na site na akara API si apmix.ai/dashboard — otu ndenye aha, ọtụtụ ụdị.",
       "nanogpt": "Jiri igodo API jikọọ NanoGPT.",
       "nebius": "Kredit nnwale ruru ~$1 mgbe ị debanyere aha maka nnwale API",
       "nlpcloud": "NLP Cloud na-eji API chatbot nke ya kama OpenAI chat/completions. OmniRoute na-eme ka ozi OpenAI kwekọọ na input/context/history ma na-enye katalọgụ mpaghara nke ụdị chatbot a na-akwado.",
@@ -6635,8 +6636,7 @@
       "kiro": "Ọkwa efu: kredit 50 kwa ọnwa (~token 25K–100K). ⚠️ ToS Kiro machibidoro ojiji proxy/harness nke ndị ọzọ.",
       "codex": "Jikọọ OpenAI Codex site na usoro OAuth dị ugbu a.",
       "qwen": "Jikọọ Qwen Code site na usoro OAuth dị ugbu a.",
-      "github-models": "Mepụta GitHub PAT nwere scope 'models: read' na github.com/settings/tokens",
-      "apmix": "Jikọọ Apmix na site na akara API si apmix.ai/dashboard — otu ndenye aha, ọtụtụ ụdị."
+      "github-models": "Mepụta GitHub PAT nwere scope 'models: read' na github.com/settings/tokens"
     },
     "passthroughModelsDescription": "{provider} na-anabata ID ụdị nke provider n’onwe ya. Bubata ha site na /models ma ọ bụ tinye ID ahaziri iche maka routing.",
     "bedrockModelsDescription": "A na-ekewa ụdị Amazon Bedrock dịka mpaghara AWS si dị. Bubata ha site na /models ma ọ bụ tinye ID ụdị Bedrock enyere ikike na mpaghara ahọpụtara.",
@@ -6804,7 +6804,22 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "perfMetricsTitle": "__MISSING__:Gateway-reported model health",
+    "perfMetricsRefresh": "__MISSING__:Refresh health",
+    "perfMetricsLoading": "__MISSING__:Reading model health from the gateway…",
+    "perfMetricsEmpty": "__MISSING__:The gateway did not report any model health for this window.",
+    "perfMetricsUnavailable": "__MISSING__:Could not read model health: {error}",
+    "perfMetricsFailed": "__MISSING__:Request failed",
+    "perfMetricsAuthRequired": "__MISSING__:Session expired — sign in again",
+    "perfMetricsFetchedAt": "__MISSING__:as of {time}",
+    "perfMetricsAggregate": "__MISSING__:{latency} · {rate} success · {tps}",
+    "perfMetricsColModel": "__MISSING__:Model",
+    "perfMetricsColLatency": "__MISSING__:Latency",
+    "perfMetricsColTps": "__MISSING__:Throughput",
+    "perfMetricsColSuccess": "__MISSING__:Success",
+    "perfMetricsColTrend": "__MISSING__:Last 8h",
+    "perfMetricsHint": "__MISSING__:Self-reported by the provider's own gateway, not measured by OmniRoute. Each bar is one success-rate bucket, oldest on the left."
   },
   "settings": {
     "title": "Ntọala",
