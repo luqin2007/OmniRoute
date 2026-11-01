@@ -1,0 +1,20 @@
+{
+  "name": "opencode-free-lane",
+  "version": "1.0.0",
+  "description": "opencode.ai /inference/v1 免密车道的请求体指纹（逐字注入 read/shell 官方工具定义、规范化 tool_choice）",
+  "author": "luqin2007",
+  "license": "MIT",
+  "main": "index.mjs",
+  "source": "local",
+  "tags": ["fingerprint", "opencode", "free-lane"],
+  "hooks": {
+    "onRequest": true,
+    "onResponse": false,
+    "onError": false
+  },
+  "requires": {
+    "permissions": []
+  },
+  "enabledByDefault": false,
+  "configSchema": {}
+}
