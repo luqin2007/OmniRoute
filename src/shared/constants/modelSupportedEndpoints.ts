@@ -1,6 +1,10 @@
 export const MODEL_SUPPORTED_ENDPOINT_VALUES = [
   "chat",
   "responses",
+  // Decision-model surfaces (TypeSafe): `/v1/systemone` and `/v1/decisions`. They are text
+  // endpoints like chat/responses -- not media modalities -- so they classify as text below.
+  "systemone",
+  "decisions",
   "embeddings",
   "rerank",
   "images",
@@ -39,10 +43,17 @@ export function classifyModelSupportedEndpoints(endpoints: readonly string[]): {
   type?: "embedding" | "rerank" | "image" | "video" | "audio" | "music";
   subtype?: "speech" | "transcription";
 } {
-  // "chat" and "responses" are text-conversation endpoints; they carry no
-  // modality type. Return before the media checks so a multimodal chat model
-  // is not classified as image, audio, embedding, or rerank.
-  if (endpoints.includes("chat") || endpoints.includes("responses")) return {};
+  // "chat", "responses" and the decision surfaces (`systemone`/`decisions`) are text endpoints;
+  // they carry no modality type. Return before the media checks so a multimodal text model is
+  // not classified as image, audio, embedding, or rerank.
+  if (
+    endpoints.includes("chat") ||
+    endpoints.includes("responses") ||
+    endpoints.includes("systemone") ||
+    endpoints.includes("decisions")
+  ) {
+    return {};
+  }
   const primary = (
     [
       ["embeddings", "embedding"],

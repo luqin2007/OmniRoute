@@ -15,6 +15,7 @@ import {
   getSpeechProvider,
   getTranscriptionProvider,
 } from "@omniroute/open-sse/config/audioRegistry";
+import { TYPESAFE_PROVIDER_ID } from "@omniroute/open-sse/services/typesafe/systemOne";
 import {
   isTrustedEndpointCapabilitySource,
   normalizeModelSupportedEndpoints,
@@ -28,9 +29,15 @@ export function getRegisteredEndpointAdapterStatuses(provider: string): Endpoint
   const status = (present: boolean, knownAbsent = false): EndpointAdapterStatus =>
     present ? "available" : knownAbsent ? "unavailable" : "unknown";
   const audioMissing = hasChatRegistry;
+  // The decision endpoints (`/v1/systemone`, `/v1/decisions`) are served by the TypeSafe
+  // proxy regardless of the node the model hangs off. Other providers stay "unknown" so a
+  // decision tag never renders as a false negative.
+  const hasDecisionAdapter = provider === TYPESAFE_PROVIDER_ID;
   return {
     chat: status(hasChatRegistry),
     responses: status(hasChatRegistry),
+    systemone: status(hasDecisionAdapter),
+    decisions: status(hasDecisionAdapter),
     embeddings: status(Boolean(getEmbeddingProvider(provider))),
     rerank: status(Boolean(getRerankProvider(provider))),
     images: status(Boolean(getImageProvider(provider))),

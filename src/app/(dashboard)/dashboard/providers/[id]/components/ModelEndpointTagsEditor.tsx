@@ -9,6 +9,9 @@ import {
 const OPTIONS: ModelSupportedEndpoint[] = [
   "chat",
   "responses",
+  // Decision surfaces served by `/v1/systemone` and `/v1/decisions`.
+  "systemone",
+  "decisions",
   "embeddings",
   "rerank",
   "images",

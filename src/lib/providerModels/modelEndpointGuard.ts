@@ -20,6 +20,8 @@ import { isModelEndpointCapabilityGateEnabled } from "./endpointCapabilityGateFl
 
 export type RequestedEndpoint =
   | "chat"
+  | "systemone"
+  | "decisions"
   | "embeddings"
   | "rerank"
   | "images"
@@ -35,6 +37,8 @@ type TaggedModel = {
 const ENDPOINT_ROUTE: Record<string, string> = {
   chat: "/v1/chat/completions",
   responses: "/v1/responses",
+  systemone: "/v1/systemone",
+  decisions: "/v1/decisions",
   embeddings: "/v1/embeddings",
   rerank: "/v1/rerank",
   images: "/v1/images/generations",
