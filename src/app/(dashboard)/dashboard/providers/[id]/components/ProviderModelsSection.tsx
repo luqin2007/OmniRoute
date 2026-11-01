@@ -23,6 +23,7 @@ import {
 import ModelRow, { ModelVisibilityToolbar } from "./ModelRow";
 import PassthroughModelsSection from "./PassthroughModelsSection";
 import CompatibleModelsSection from "./CompatibleModelsSection";
+import ProviderModelHealthPanel from "./ProviderModelHealthPanel";
 import type { ModelCompatSavePatch } from "../hooks/useModelVisibilityHandlers";
 
 export interface ProviderModelsSectionProps {
@@ -250,6 +251,14 @@ export default function ProviderModelsSection({
     </button>
   );
 
+  // Provider-self-reported model health (NewAPI-style `/api/perf-metrics/summary`).
+  // Rendered below the model list in every branch: idle until the operator asks for it.
+  const healthPanel = (
+    <div className="mt-6 pt-4 border-t border-border">
+      <ProviderModelHealthPanel providerId={providerId} t={t} />
+    </div>
+  );
+
   if (isManagedAvailableModelsProvider) {
     const description =
       providerId === "openrouter"
@@ -318,6 +327,7 @@ export default function ProviderModelsSection({
           autoHideFailed={autoHideFailed}
           onAutoHideFailedChange={setAutoHideFailed}
         />
+        {healthPanel}
       </div>
     );
   }
@@ -396,6 +406,7 @@ export default function ProviderModelsSection({
           autoHideFailed={autoHideFailed}
           onAutoHideFailedChange={setAutoHideFailed}
         />
+        {healthPanel}
       </div>
     );
   }
@@ -423,6 +434,7 @@ export default function ProviderModelsSection({
       <div>
         {importButton}
         <p className="text-sm text-text-muted">{t("noModelsConfigured")}</p>
+        {healthPanel}
       </div>
     );
   }
@@ -570,6 +582,7 @@ export default function ProviderModelsSection({
           </p>
         )}
       </AutoGrid>
+      {healthPanel}
     </div>
   );
 }
