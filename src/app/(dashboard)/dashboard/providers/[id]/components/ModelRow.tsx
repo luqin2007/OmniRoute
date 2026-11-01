@@ -18,6 +18,8 @@ import {
 import { providerText } from "../providerPageHelpers";
 import ModelCompatPopover from "./ModelCompatPopover";
 import ModelEndpointTagsEditor, { type ModelEndpointEditorInfo } from "./ModelEndpointTagsEditor";
+import ModelHealthStrip from "./ModelHealthStrip";
+import type { ModelHealthMetric } from "@/lib/providers/modelHealthIndex";
 
 // ---------------------------------------------------------------------------
 // Shared prop types
@@ -282,6 +284,8 @@ export interface ModelRowProps {
   testStatus?: "ok" | "error" | "quota" | null;
   testingModel?: boolean;
   endpointInfo?: ModelEndpointEditorInfo;
+  /** Gateway-reported health for this model, when the operator asked for it. */
+  health?: ModelHealthMetric | null;
 }
 
 export default function ModelRow({
@@ -306,6 +310,7 @@ export default function ModelRow({
   testStatus,
   testingModel,
   endpointInfo,
+  health,
 }: ModelRowProps) {
   const isHidden = Boolean(model.isHidden);
   const [editing, setEditing] = useState(false);
@@ -486,7 +491,9 @@ export default function ModelRow({
           />
         </div>
       </div>
-      {/* Line 3: endpoint capability tags (#16929) wrap freely, so line 2 stays one row. */}
+      {/* Line 3: gateway-reported health — only after the operator refreshed it. */}
+      {health && <ModelHealthStrip metric={health} t={t} />}
+      {/* Line 4: endpoint capability tags (#16929) wrap freely, so line 2 stays one row. */}
       {endpointInfo && (
         <div className="min-w-0 pl-6">
           <ModelEndpointTagsEditor provider={provider} modelId={model.id} t={t} {...endpointInfo} />

@@ -23,7 +23,7 @@ import {
 import ModelRow, { ModelVisibilityToolbar } from "./ModelRow";
 import PassthroughModelsSection from "./PassthroughModelsSection";
 import CompatibleModelsSection from "./CompatibleModelsSection";
-import ProviderModelHealthPanel from "./ProviderModelHealthPanel";
+import { useProviderModelHealth } from "./useProviderModelHealth";
 import type { ModelCompatSavePatch } from "../hooks/useModelVisibilityHandlers";
 
 export interface ProviderModelsSectionProps {
@@ -251,11 +251,62 @@ export default function ProviderModelsSection({
     </button>
   );
 
-  // Provider-self-reported model health (NewAPI-style `/api/perf-metrics/summary`).
-  // Rendered below the model list in every branch: idle until the operator asks for it.
-  const healthPanel = (
-    <div className="mt-6 pt-4 border-t border-border">
-      <ProviderModelHealthPanel providerId={providerId} t={t} />
+  // Provider-self-reported model health (NewAPI-style `/api/perf-metrics/summary`): fetched on
+  // demand and rendered ON each model row, so the health sits next to the model it describes
+  // instead of in a second table the operator has to cross-reference.
+  const {
+    state: healthState,
+    refresh: refreshHealth,
+    metricFor: healthForModel,
+  } = useProviderModelHealth(providerId);
+
+  const healthNotice = (() => {
+    if (healthState.status === "idle") return null;
+    if (healthState.status === "loading") {
+      return providerText(t, "perfMetricsLoading", "Reading model health from the gateway…");
+    }
+    if (healthState.status === "error") {
+      return healthState.kind === "auth"
+        ? providerText(t, "perfMetricsAuthRequired", "Session expired — sign in again")
+        : providerText(t, "perfMetricsFailed", "Request failed");
+    }
+    const okSources = healthState.data.sources.filter((source) => source.ok && source.report);
+    if (okSources.length === 0) {
+      const failure = healthState.data.sources.find((source) => !source.ok);
+      return failure
+        ? providerText(t, "perfMetricsUnavailable", "Could not read model health: {error}", {
+            error: `${failure.origin} — ${failure.error ?? ""}`.trim(),
+          })
+        : providerText(
+            t,
+            "perfMetricsEmpty",
+            "The gateway did not report any model health for this window."
+          );
+    }
+    const windowEnd = okSources[0].report?.windowEnd ?? null;
+    return windowEnd
+      ? providerText(t, "perfMetricsFetchedAt", "as of {time}", {
+          time: new Date(windowEnd * 1000).toLocaleString(),
+        })
+      : null;
+  })();
+
+  const healthToolbar = (
+    <div className="mb-2 flex min-w-0 flex-wrap items-center gap-2">
+      <Button
+        size="sm"
+        variant="secondary"
+        icon="monitor_heart"
+        onClick={refreshHealth}
+        disabled={healthState.status === "loading"}
+      >
+        {providerText(t, "perfMetricsRefresh", "Refresh health")}
+      </Button>
+      {healthNotice && (
+        <span className="min-w-0 flex-1 truncate text-[11px] text-text-muted" title={healthNotice}>
+          {healthNotice}
+        </span>
+      )}
     </div>
   );
 
@@ -327,7 +378,6 @@ export default function ProviderModelsSection({
           autoHideFailed={autoHideFailed}
           onAutoHideFailedChange={setAutoHideFailed}
         />
-        {healthPanel}
       </div>
     );
   }
@@ -406,7 +456,6 @@ export default function ProviderModelsSection({
           autoHideFailed={autoHideFailed}
           onAutoHideFailedChange={setAutoHideFailed}
         />
-        {healthPanel}
       </div>
     );
   }
@@ -434,7 +483,6 @@ export default function ProviderModelsSection({
       <div>
         {importButton}
         <p className="text-sm text-text-muted">{t("noModelsConfigured")}</p>
-        {healthPanel}
       </div>
     );
   }
@@ -522,6 +570,7 @@ export default function ProviderModelsSection({
           onSortFreeFirstChange={setSortFreeFirst}
         />
       )}
+      {healthToolbar}
       <AutoGrid>
         {displayModels.map((model) => {
           return (
@@ -571,6 +620,7 @@ export default function ProviderModelsSection({
               onTestModel={onTestModel}
               testStatus={modelTestStatus[model.id] || null}
               testingModel={testingModelId === model.id}
+              health={healthForModel(model.id)}
             />
           );
         })}
@@ -582,7 +632,6 @@ export default function ProviderModelsSection({
           </p>
         )}
       </AutoGrid>
-      {healthPanel}
     </div>
   );
 }
