@@ -105,6 +105,55 @@ Setting one does not affect the other.
 
 Loading errors are caught and printed as warnings — a broken plugin never crashes the CLI.
 
+## Server-side plugins (declarative contributions)
+
+The `omniroute-cmd-*` plugins above extend the CLI only. Plugins that run inside
+the proxy instead live in `OMNIROUTE_PLUGINS_DIR` and are described by a
+`plugin.json` manifest. Such a plugin can extend the dashboard without shipping
+any UI code by declaring a `contributes` block: provider nodes, an extra
+providers-page section, a sidebar entry, a dashboard page, slot widgets, `/v1`
+API routes, CSS-hidden host chrome, an i18n overlay, or the password-reveal
+affordance.
+
+```json
+{
+  "name": "my-plugin",
+  "version": "1.0.0",
+  "contributes": {
+    "nav": [
+      {
+        "id": "plugin-my-plugin",
+        "href": "/dashboard/plugin/my-plugin/overview",
+        "labelFallback": "My Plugin",
+        "sectionId": "other-features"
+      }
+    ],
+    "pages": [
+      {
+        "id": "overview",
+        "titleFallback": "My Plugin",
+        "widgets": [{ "type": "keyValue", "items": [{ "label": "Status", "value": "Ready" }] }]
+      }
+    ]
+  }
+}
+```
+
+Widgets are a closed union rendered by host-owned components (`keyValue`,
+`markdown`, `callout`, `statusBadge`, `actionButton`, `providerNodeTable`), so a
+manifest can never inject React, HTML or scripts into the dashboard.
+
+If a plugin shells out to a host program, declare it — the host checks `PATH` on
+activation and shows a dismissible banner when it is missing (it never hides by
+itself, and it never fails the activation):
+
+```json
+{ "requires": { "binaries": ["dsh"] } }
+```
+
+Full contract, lifecycle materialisation and inspection endpoints:
+[PLUGIN_MARKETPLACE.md → Declarative contributions](./PLUGIN_MARKETPLACE.md#declarative-contributions).
+
 ## Security
 
 Plugins run with the same Node.js process privileges as `omniroute`. Only install plugins from sources you trust. `omniroute plugin install` shows an explicit warning and requires `--yes` or interactive confirmation.

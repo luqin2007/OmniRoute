@@ -11,11 +11,13 @@
 import { spawn } from "child_process";
 import type { ChildProcess } from "child_process";
 import { writeFile, readFile } from "fs/promises";
-import { rmSync } from "fs";
+import { mkdirSync, rmSync } from "fs";
 import { join } from "path";
 import { tmpdir } from "os";
 import { randomUUID, createHash } from "crypto";
 import { logger } from "../../../open-sse/utils/logger.ts";
+import { resolveSelfLoopBearer } from "../../shared/middleware/chatAdmissionIdentity";
+import { DATA_DIR } from "../db/core";
 import type { PluginManifestWithDefaults, Permission } from "./manifest";
 import type { Plugin, PluginContext, PluginResult } from "./index";
 
@@ -54,6 +56,12 @@ export interface LoadedPlugin {
   name: string;
   manifest: PluginManifestWithDefaults;
   plugin: Plugin;
+  /**
+   * Call any exported function in the plugin module (not just the 8 manifest hooks).
+   * Used by the endpoint dispatcher: `contributes.endpoints[].handler` names an
+   * exported function that the host invokes with a request payload.
+   */
+  invoke: (handler: string, payload: unknown, timeoutMs?: number) => Promise<unknown>;
   cleanup: () => void;
 }
 
@@ -61,6 +69,13 @@ export interface LoadPluginOptions {
   /** Per-call IPC hook timeout in ms. Defaults to DEFAULT_HOOK_TIMEOUT (10s); injectable
    *  so tests can exercise the timeout paths without waiting out the production value. */
   hookTimeoutMs?: number;
+  /**
+   * Operator-saved plugin config (the `config` column the config page writes).
+   * Serialised into OMNIROUTE_PLUGIN_CONFIG for the child process: plugins are
+   * spawned, never imported in-process, so this is the only channel that reaches
+   * them without widening the IPC protocol.
+   */
+  config?: Record<string, unknown>;
 }
 
 /**
@@ -244,6 +259,48 @@ export async function loadPlugin(
     PLUGIN_ENTRY: entryPoint,
     PLUGIN_NAME: manifest.name,
   };
+
+  // Gateway self-access — the only way a plugin can reach an upstream model
+  // without ever seeing the operator's provider keys: it calls the host's own
+  // /v1 surface, which resolves credentials server-side (same path the built-in
+  // model tester uses). Opt-in via the `network` permission; the bearer is the
+  // process-local self-loop secret and is never persisted.
+  if (permissions.includes("network")) {
+    const port = process.env.PORT?.trim() || "20128";
+    env.OMNIROUTE_PLUGIN_GATEWAY_ORIGIN = `http://127.0.0.1:${port}`;
+    env.OMNIROUTE_PLUGIN_GATEWAY_KEY = resolveSelfLoopBearer();
+  }
+
+  // Host-provided modules: a plugin directory shipped without `node_modules`
+  // (Docker images, mounted volumes) can still resolve runtime dependencies the
+  // host already installs, e.g. `createRequire(<host>/node_modules/x).resolve()`.
+  env.OMNIROUTE_PLUGIN_HOST_MODULES = join(process.cwd(), "node_modules");
+
+  // Per-plugin writable directory under the data volume, so caches (reference
+  // banks, downloaded assets) survive container restarts instead of living in a
+  // throwaway temp dir.
+  const pluginDataDir = join(DATA_DIR, "plugin-data", manifest.name);
+  try {
+    mkdirSync(pluginDataDir, { recursive: true });
+  } catch (err) {
+    log.warn(`Could not create data dir for plugin '${manifest.name}': ${String(err)}`);
+  }
+  env.OMNIROUTE_PLUGIN_DATA_DIR = pluginDataDir;
+
+  // Config reaches the child as an env var rather than an IPC message: the plugin
+  // module reads it once at import time, and no message round-trip is needed
+  // before its first hook call. Absent config keeps the variable unset so a
+  // manifest-only plugin behaves exactly as before.
+  if (options.config && Object.keys(options.config).length > 0) {
+    try {
+      env.OMNIROUTE_PLUGIN_CONFIG = JSON.stringify(options.config);
+    } catch (err: unknown) {
+      log.warn("loader.config_unserializable", {
+        name: manifest.name,
+        error: err instanceof Error ? err.message : String(err),
+      });
+    }
+  }
 
   const child = spawn(process.execPath, ["--no-warnings", hostScriptPath, entryPoint], {
     windowsHide: true,
@@ -431,7 +488,16 @@ export async function loadPlugin(
     log.info("loader.cleanup", { name: manifest.name });
   };
 
-  return { name: manifest.name, manifest, plugin, cleanup };
+  return {
+    name: manifest.name,
+    manifest,
+    plugin,
+    // Endpoint handlers go through the same IPC + timeout machinery as hooks:
+    // a hanging handler must die by the same SIGTERM→SIGKILL escalation, not leak.
+    invoke: (handler: string, payload: unknown, timeoutMs?: number) =>
+      callHook(handler, payload, timeoutMs ?? hookTimeoutMs),
+    cleanup,
+  };
 }
 
 /**

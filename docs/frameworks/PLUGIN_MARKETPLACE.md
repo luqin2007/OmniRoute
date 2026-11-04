@@ -274,15 +274,296 @@ Validated by `PluginManifestSchema` (`src/lib/plugins/manifest.ts`):
 | `main`             | string?   | Entry file; defaults to `index.js`                          |
 | `source`           | enum?     | `local` \| `marketplace` (defaults to `local`)              |
 | `tags`             | string[]? | Search tags                                                 |
-| `requires`         | object?   | `{ omniroute?, permissions[] }`                             |
+| `requires`         | object?   | `{ omniroute?, permissions[], binaries[] }`                 |
 | `hooks`            | object?   | Booleans declaring which hooks the plugin implements        |
 | `skills`           | object[]? | Optional skill definitions                                  |
 | `enabledByDefault` | boolean?  | Auto-activate on install                                    |
 | `configSchema`     | object?   | Map of config fields (`string`/`number`/`boolean`/`select`) |
 | `integrity`        | string?   | Optional `sha256-<base64>` entry-file pin                   |
+| `contributes`      | object?   | Declarative host extensions (see below); fully optional     |
 
 Permissions are drawn from the enum
 `network` / `file-read` / `file-write` / `env` / `exec`.
+
+### Operator config injection
+
+`activate` reads the plugin's stored `config` column (written by
+`/dashboard/plugins/[name]/config`) and passes it to `loadPlugin({ config })`.
+The child process receives it as a JSON string in `OMNIROUTE_PLUGIN_CONFIG`;
+plugin code reads it through the SDK:
+
+```js
+import { getPluginConfig } from "omniroute/plugin-sdk";
+
+const { origin = "http://127.0.0.1:20128" } = getPluginConfig();
+```
+
+No config means the variable is never set, so `getPluginConfig()` returns `{}`.
+
+### Host binaries and the notice board
+
+A plugin that shells out to a host executable (`dsh`, `bun`, `uv`, …) declares it:
+
+```json
+{ "requires": { "binaries": ["dsh"] } }
+```
+
+`activate` resolves each name on `PATH` once. Names are plain commands, never
+paths — a manifest cannot turn this into a filesystem probe. Two rules keep the
+result predictable:
+
+- **Fail-open.** A missing binary never fails the activation. The plugin's
+  declarative half (nodes, pages, CSS, i18n) keeps working; the feature that
+  spawns the binary simply cannot be used yet.
+- **Notices do not expire.** Each missing binary raises one row in
+  `plugin_notices`, surfaced as a dismissible banner on every dashboard page.
+  Closing it (`DELETE /api/plugins/notices/<id>`) is permanent: reactivating the
+  plugin or restarting the container does not bring it back. The row is only
+  dropped when its cause is gone — the binary appears, or the plugin is
+  deactivated/uninstalled — so a later removal warns again.
+
+Inside a container, "the host" means the container image: `docker exec <c> which
+dsh` decides the answer, not the machine running Docker.
+
+## Declarative contributions
+
+Plugins that only need to _extend_ the host — add a dashboard page, a sidebar
+entry, a providers-page section, a hidden banner, a translation overlay or an
+API route — should declare it in `contributes` instead of shipping UI code.
+
+Two properties make this safe:
+
+- **The host reads declarations from disk**, never from the plugin child
+  process. A crashed or slow plugin cannot take the dashboard down, and the
+  manifest is the same fact the installer validated.
+- **Widgets are a closed union rendered by host-owned components.** A plugin
+  supplies JSON, never React, HTML or `<script>`. Unknown widget types fail
+  validation at install time and are ignored at render time.
+
+Every field is optional, so manifests written before this contract existed keep
+validating unchanged, and a deployment with no active plugin renders exactly
+what it rendered before: no injected `<style>`, no extra sidebar entry, no extra
+providers section, and the `/v1/*` catch-all still returns its original 404 body.
+
+### The extension points
+
+| Field                                 | What the host does on activate                                                          | Where it lands                 |
+| ------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------ |
+| `providerNodes` / `providerNodesFile` | Creates `provider_nodes` rows in one transaction, records each in `plugin_resources`    | Providers page                 |
+| `providerGroups`                      | Appends a section to the providers page, keyed off a node prefix                        | `/dashboard/providers`         |
+| `nav`                                 | Appends a sidebar entry under `sectionId` (default: `other-features`)                   | `Sidebar`                      |
+| `pages`                               | Serves `/dashboard/plugin/<plugin>/<pageId>` and renders its widgets                    | Dashboard                      |
+| `slots`                               | Renders widgets at a reserved slot name inside an existing screen                       | see slot names below           |
+| `tabs`                                | Appends a tab to a host screen that already has a tab strip                             | `screen: "playground"`         |
+| `endpoints`                           | Dispatches the declared method+path through the `/api/v1` catch-all to the plugin child | `/v1/*`, `/api/v1/*`           |
+| `css.hiddenSelectors`                 | Server-renders `<style id="omni-plugin-css">` in the dashboard layout                   | Chromium-level hiding, no FOUC |
+| `i18n`                                | Deep-merges the plugin's `i18n/<locale>.json` over the host catalogue (plugin wins)     | `src/i18n/request.ts`          |
+| `ui.passwordReveal`                   | Enables the reveal toggle the host already implements on password inputs                | `Input`                        |
+
+Reserved slot names today:
+
+| Slot                            | Location                                           | Context handed to widgets            |
+| ------------------------------- | -------------------------------------------------- | ------------------------------------ |
+| `provider.modelRow.testActions` | Immediately right of the per-model **test** button | `providerId`, `modelId`, `fullModel` |
+| `provider.modelRow.trailing`    | End of the model row's action strip                | `providerId`, `modelId`, `fullModel` |
+| `provider.models.header`        | Models-section header                              | —                                    |
+| `providers.section.header`      | Plugin-contributed providers section header        | —                                    |
+| `apikey.row.actions`            | API-key row actions                                | —                                    |
+
+Slot names are dotted segments and may be camelCase (the host's own names predate
+this contract). A manifest may declare any name; an undeclared host slot simply
+never renders.
+
+### Manifest contract
+
+```json
+{
+  "contributes": {
+    "providerNodesFile": "catalog/providers.json",
+    "providerGroups": [
+      { "id": "our-free-model", "prefixRoot": "ofm-", "labelFallback": "Our Free Model" }
+    ],
+    "nav": [
+      {
+        "id": "plugin-our-free-model",
+        "href": "/dashboard/plugin/our-free-model/overview",
+        "icon": "cloud_download",
+        "labelFallback": "Our Free Model",
+        "sectionId": "other-features"
+      }
+    ],
+    "pages": [
+      {
+        "id": "overview",
+        "titleFallback": "Our Free Model",
+        "widgets": [
+          { "type": "providerNodeTable", "prefixRoot": "ofm-" },
+          { "type": "actionButton", "label": "Sync nodes", "action": "syncProviderNodes" }
+        ]
+      }
+    ],
+    "slots": [
+      {
+        "name": "provider.models.header",
+        "widgets": [{ "type": "statusBadge", "label": "Healthy", "tone": "success" }]
+      }
+    ],
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/v1/model-health",
+        "handler": "getModelHealth",
+        "auth": "management"
+      }
+    ],
+    "css": { "hiddenSelectors": ["[data-omni-hide=\"sponsor\"]"] },
+    "i18n": { "locales": ["zh-CN"], "allowNamespaces": ["sidebar", "providers"] },
+    "ui": { "passwordReveal": true }
+  }
+}
+```
+
+Constraints enforced by `ContributesSchema` (`src/lib/plugins/manifest.ts`):
+
+- `endpoints[].path` must start with `/v1/` or `/api/v1/`; the dispatcher
+  re-checks the allowlist per request, so a tampered DB snapshot still cannot
+  answer `/dashboard/*` or `/api/settings/*`.
+- `endpoints[].handler` must be a valid identifier exported by the plugin entry.
+  `auth: "management"` runs `requireManagementAuth` before the child process is
+  consulted.
+- `slots[].name` must be dotted kebab (`segment.segment...`).
+- `providerNodes` is capped at 500 entries; catalogue files are read only from
+  inside the plugin directory (`../` escapes are refused).
+- `css.hiddenSelectors` only ever emits `display:none!important` rules — it
+  cannot inject arbitrary CSS.
+
+### Host-rendered widgets
+
+| `type`              | Renders                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------- |
+| `providerNodeTable` | Compact table of `provider_nodes` matching `prefixRoot`, with connection-state dots      |
+| `keyValue`          | Two-column definition list                                                               |
+| `markdown`          | Sanitised text paragraphs (no raw HTML)                                                  |
+| `callout`           | Tinted notice box (`info`/`success`/`warn`/`error`)                                      |
+| `actionButton`      | `refresh`, `navigate` (`href`) or `syncProviderNodes`                                    |
+| `statusBadge`       | Small state pill (`neutral`/`success`/`warn`/`error`)                                    |
+| `probeAction`       | Row/panel button that opens a host dialog, calls a plugin endpoint and renders the reply |
+
+`actionButton` with `action: "syncProviderNodes"` calls
+`POST /api/plugins/<name>/providers/sync`, which re-reads the catalogue and
+re-claims nodes idempotently — useful after an operator edits the JSON file
+while the plugin is already active.
+
+### Probe actions
+
+`probeAction` is how a plugin adds a per-row action ("measure this model")
+without any browser code:
+
+```json
+{
+  "type": "probeAction",
+  "label": "指纹识别",
+  "title": "模型指纹识别",
+  "icon": "fingerprint",
+  "endpoint": "/api/v1/fingerprint",
+  "method": "POST",
+  "payload": { "rounds": 1 },
+  "iconOnly": true,
+  "tone": "primary"
+}
+```
+
+- The host renders the button (icon-only inside a row action strip) and owns the
+  dialog, the request and the rendering.
+- The request body is the slot's context merged with `payload`, so a row action
+  receives `{ providerId, modelId, fullModel }` without the plugin reading the DOM.
+- The reply is narrowed to a whitelisted shape before rendering:
+  `{ title, tone, summary[{label,value}], table{columns,rows}, notes[], error }`.
+  Unknown fields are dropped, every string is length-capped, and nothing is
+  rendered as HTML.
+- `method: "GET"` sends the same values as query parameters instead of a body.
+- The host surfaces non-2xx replies by message; a handler should answer `200`
+  with `{ tone: "warn", … }` for business states (e.g. "no model selected") so
+  the browser console and the dev overlay stay clean.
+
+### Reaching upstream models from a plugin
+
+A plugin never receives the operator's provider keys. When its manifest declares
+the `network` permission, the loader additionally injects:
+
+| Variable                          | Value                                           |
+| --------------------------------- | ----------------------------------------------- |
+| `OMNIROUTE_PLUGIN_GATEWAY_ORIGIN` | `http://127.0.0.1:<PORT>`                       |
+| `OMNIROUTE_PLUGIN_GATEWAY_KEY`    | Process-local self-loop bearer, never persisted |
+
+The plugin then calls `${origin}/v1/chat/completions` with
+`model: "<provider>/<model>"`, and the host resolves credentials, protocol and
+rate limits exactly as it does for the built-in model tester. `getPluginGateway()`
+in the SDK returns `{ origin, apiKey }`, or `null` when the permission was not
+granted. Long-running handlers should declare `endpoints[].timeoutMs`
+(≤ 300 000) because the IPC default is 10 s.
+
+### Runtime paths injected into every plugin
+
+| Variable                        | Value                           | Why                                                                                                                                          |
+| ------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `OMNIROUTE_PLUGIN_HOST_MODULES` | `<cwd>/node_modules`            | Lets a plugin resolve a package the host already installs, so the plugin directory needs no `node_modules` (Docker images, read-only mounts) |
+| `OMNIROUTE_PLUGIN_DATA_DIR`     | `<DATA_DIR>/plugin-data/<name>` | Per-plugin writable directory on the data volume; create-on-activate, survives container restarts                                            |
+
+A plugin that imports a package at runtime must resolve it robustly, because the
+module is invisible to Next's tracer:
+
+```js
+async function importSdk() {
+  try {
+    return await import("some-sdk"); // plugin-local install wins
+  } catch (localError) {
+    const hostModules = process.env.OMNIROUTE_PLUGIN_HOST_MODULES;
+    if (!hostModules) throw localError;
+    const entry = resolveHostPackageEntry(join(hostModules, "some-sdk")); // read exports/.import
+    if (!entry) throw localError;
+    return import(pathToFileURL(entry).href);
+  }
+}
+```
+
+`createRequire().resolve()` does not work for ESM-only packages (no `require`
+condition in `exports`), which is why the entry is read from the manifest.
+Hosting the dependency in the host's `optionalDependencies` and adding it to
+`EXTRA_MODULE_ENTRIES` in `scripts/build/assembleStandalone.mjs` is what makes
+the Docker image ship it without a plugin-side install step.
+
+### New inspection endpoints (additive)
+
+| Method + path                             | Purpose                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `GET /api/plugins/contributions`          | Aggregate of every active plugin's `nav` / `providerGroups` / `pages` / `slots` / `tabs` / `css` / `ui` |
+| `GET /api/plugins/<name>/i18n/<locale>`   | One plugin's overlay for one locale; 404 when it publishes none                                         |
+| `POST /api/plugins/<name>/providers/sync` | Re-apply declared provider nodes; returns `{ created, total }`                                          |
+| `GET /api/plugins/notices`                | Open operator notices (`?includeDismissed=1` for diagnostics)                                           |
+| `DELETE /api/plugins/notices/<id>`        | Dismiss one notice for good; 404 when it is already gone                                                |
+
+All of them sit behind `requireManagementAuth` (loopback-only, like the rest of
+`/api/plugins`) and reuse `CORS_HEADERS`. The existing `/api/plugins` and
+`/api/plugins/<name>` responses are unchanged — new information is only ever
+served by the routes above.
+
+### Ownership ledger
+
+Materialised resources are recorded in `plugin_resources`
+(migration `214_plugin_resources.sql`):
+
+| Column         | Type | Notes                                                      |
+| -------------- | ---- | ---------------------------------------------------------- |
+| `plugin_name`  | TEXT | Owning plugin                                              |
+| `kind`         | TEXT | e.g. `provider-node` (deliberately not a CHECK constraint) |
+| `resource_key` | TEXT | e.g. `plug-our-free-model-ofm-agnes`                       |
+| `created_at`   | TEXT | ISO timestamp                                              |
+
+`PRIMARY KEY (plugin_name, kind, resource_key)` makes re-materialisation
+idempotent. Deactivation deletes exactly the rows recorded for that plugin and
+then drops the ledger entries, so a disabled plugin leaves no provider nodes
+behind.
 
 ## Lifecycle Flow
 
@@ -293,12 +574,17 @@ install (POST /api/plugins, path)
   → fire onInstall → if enabledByDefault: activate
 
 activate (POST /api/plugins/{name}/activate)
-  → realpath containment check → loadPlugin() (spawn child process)
+  → realpath containment check → loadPlugin({ config }) (spawn child process)
+  → materialise contributes.providerNodes into provider_nodes (single transaction)
+  → record each resource in plugin_resources
   → register declared hooks → status = "active" → fire onActivate
+  → invalidate the contributions cache
 
 deactivate (POST /api/plugins/{name}/deactivate)
   → fire onDeactivate (BEFORE unregister) → unregister hooks
   → kill child process → status = "inactive"
+  → delete provider_nodes recorded in plugin_resources, then the ledger rows
+  → invalidate the contributions cache
 
 uninstall (DELETE /api/plugins/{name})
   → deactivate if active → fire onUninstall
@@ -338,7 +624,24 @@ Table `plugins` (migration `076_create_plugins.sql`):
 | `activated_at`  | TEXT    | Set on activation                                |
 
 Plugin metrics/analytics are tracked in additional tables
-(`090_plugin_metrics.sql`, `091_plugin_analytics.sql`).
+(`090_plugin_metrics.sql`, `091_plugin_analytics.sql`). Declarative
+contributions add `plugin_resources` (`214_plugin_resources.sql`) — see
+[Ownership ledger](#ownership-ledger). Operator notices live in `plugin_notices`
+(`215_plugin_notices.sql`):
+
+| Column         | Type    | Notes                                                              |
+| -------------- | ------- | ------------------------------------------------------------------ |
+| `id`           | TEXT PK | UUID                                                               |
+| `plugin_name`  | TEXT    | Owning plugin                                                      |
+| `code`         | TEXT    | `missing_binary` (open union; not a CHECK)                         |
+| `subject`      | TEXT    | The binary name                                                    |
+| `message`      | TEXT    | Operator-facing sentence, rendered verbatim                        |
+| `created_at`   | TEXT    | ISO timestamp of the first occurrence                              |
+| `dismissed_at` | TEXT    | Set when the operator closes the notice; never reset by a re-probe |
+
+`UNIQUE (plugin_name, code, subject)` is what makes re-probing idempotent: the
+upsert only refreshes `message`, so a dismissed row stays dismissed even though
+every restart re-runs the same failing probe.
 
 ## Dashboard
 
@@ -353,6 +656,13 @@ The dashboard page at `/dashboard/plugins`
 
 A per-plugin config page lives at `/dashboard/plugins/[name]/config`
 (`src/app/(dashboard)/dashboard/plugins/[name]/config/page.tsx`).
+
+Plugins that declare `contributes.pages` are additionally served at
+`/dashboard/plugin/<plugin>/<pageId>` by the generic host renderer
+(`src/app/(dashboard)/dashboard/plugin/[plugin]/[page]/page.tsx`). The page
+title, description and widgets all come from the manifest; the renderer only
+knows the closed widget union, and a deactivated plugin's page returns 404 on
+the next request.
 
 ## See Also
 

@@ -78,6 +78,7 @@ export default function KimiSponsorBanner() {
     <div
       role="complementary"
       aria-label={t("foundingFriendTitle")}
+      data-omni-hide="sponsor"
       className="mb-4 flex flex-col gap-3 rounded-lg border border-[#1783FF]/30 bg-[#1783FF]/5 px-4 py-3 dark:bg-[#1783FF]/10 sm:flex-row sm:items-center sm:justify-between"
     >
       <div className="flex min-w-0 items-start gap-3">

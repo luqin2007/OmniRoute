@@ -10,6 +10,14 @@ interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "
   hint?: React.ReactNode;
   icon?: string;
   inputClassName?: string;
+  /**
+   * Show a reveal toggle on password fields.
+   *
+   * Opt-in per field on purpose: revealing is a capability the host offers, and a
+   * plugin (via `contributes.ui.passwordReveal`) decides whether operators get it
+   * on secret-entry forms.
+   */
+  revealable?: boolean;
 }
 
 export default function Input({
@@ -25,6 +33,7 @@ export default function Input({
   required = false,
   className,
   inputClassName,
+  revealable = false,
   id: externalId,
   onKeyDown: externalOnKeyDown,
   onKeyUp: externalOnKeyUp,
@@ -37,8 +46,10 @@ export default function Input({
   const hintId = hint && !error ? `${inputId}-hint` : undefined;
   const capsLockId = `${inputId}-capslock`;
   const isPassword = type === "password";
+  const canReveal = isPassword && revealable;
   const [capsLockOn, setCapsLockOn] = useState(false);
   const [inputFocused, setInputFocused] = useState(false);
+  const [revealed, setRevealed] = useState(false);
 
   const detectCapsLock = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -91,7 +102,7 @@ export default function Input({
         )}
         <input
           id={inputId}
-          type={type}
+          type={canReveal && revealed ? "text" : type}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
@@ -120,11 +131,25 @@ export default function Input({
             // iOS zoom fix
             "text-[16px] sm:text-sm",
             icon && "pl-10",
+            canReveal && "pr-10",
             error ? "border-red-500 focus:border-red-500 focus:ring-red-500/20" : "",
             inputClassName
           )}
           {...props}
         />
+        {canReveal && (
+          <button
+            type="button"
+            onClick={() => setRevealed((current) => !current)}
+            aria-label={revealed ? "Hide password" : "Show password"}
+            aria-pressed={revealed}
+            className="absolute inset-y-0 right-0 flex items-center px-3 text-text-muted transition-colors hover:text-text-main"
+          >
+            <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+              {revealed ? "visibility_off" : "visibility"}
+            </span>
+          </button>
+        )}
       </div>
       {showCapsLock && (
         <p

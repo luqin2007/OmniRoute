@@ -7,7 +7,7 @@
  * @module plugins/manager
  */
 
-import { mkdir, cp, rm, rename, realpath, readFile } from "fs/promises";
+import { mkdir, cp, rm, rename, realpath, readFile, stat } from "fs/promises";
 import { join, dirname, resolve, sep } from "path";
 import { randomUUID } from "crypto";
 import { logger } from "../../../open-sse/utils/logger.ts";
@@ -19,13 +19,23 @@ import {
   getPluginByName,
   listPlugins as dbListPlugins,
   updatePluginStatus,
-  updatePluginConfig,
   updatePluginManifest,
   deletePlugin as dbDeletePlugin,
   pluginExists,
+  recordPluginResource,
+  listPluginResources,
+  deletePluginResource,
+  getPluginResourceOwner,
   type PluginRow,
 } from "../db/plugins";
-import type { PluginManifestWithDefaults } from "./manifest";
+import { getProviderNodeById, createProviderNode, deleteProviderNode } from "../db/providers";
+import { invalidatePluginContributions, resolveProviderNodes } from "./contributions";
+import { clearRequirementNotices, syncRequirementNotices } from "./requirements";
+import type {
+  PluginContributions,
+  PluginManifestWithDefaults,
+  ProviderNodeContribution,
+} from "./manifest";
 
 const log = logger("PLUGIN_MANAGER");
 
@@ -66,6 +76,59 @@ export function compareSemver(a: string, b: string): number {
   if (aMaj !== bMaj) return aMaj - bMaj;
   if (aMin !== bMin) return aMin - bMin;
   return aPat - bPat;
+}
+
+/** True when a manifest actually declares host extensions. */
+function hasContributions(contributes: PluginContributions | undefined): boolean {
+  return !!contributes && Object.keys(contributes).length > 0;
+}
+
+/** Tolerant read of the `config` column (it is operator-editable JSON). */
+function parseStoredConfig(raw: string | null | undefined): Record<string, unknown> {
+  if (!raw) return {};
+  try {
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Deterministic provider-node id for a contributed node.
+ *
+ * Deterministic on purpose: re-activating or syncing re-uses the same row instead
+ * of minting duplicates, and the id doubles as the ownership key in
+ * plugin_resources. Slugified because provider ids are user-visible.
+ */
+function providerNodeId(pluginName: string, prefix: string): string {
+  const slug = `${pluginName}-${prefix}`
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `plug-${slug}`.slice(0, 96);
+}
+
+/**
+ * Stand-in LoadedPlugin for declarative (manifest-only) plugins.
+ *
+ * No child process is spawned — such a plugin has nothing to run per request.
+ * The stub keeps `loadedPlugins` bookkeeping intact (the re-activation guard and
+ * deactivate cleanup both key off that map).
+ */
+function createDeclarativeStub(manifest: PluginManifestWithDefaults): LoadedPlugin {
+  return {
+    name: manifest.name,
+    manifest,
+    plugin: { name: manifest.name, priority: 100, enabled: true },
+    invoke: async (handler: string) => {
+      throw new Error(
+        `Plugin '${manifest.name}' is declarative-only and exports no '${handler}' handler`
+      );
+    },
+    cleanup: () => {},
+  };
 }
 
 // ── SECURITY: CRITICAL-2 ────────────────────────────────────────────────────
@@ -450,16 +513,31 @@ class PluginManager {
     } catch {
       throw new Error(`Plugin directory '${row.pluginDir}' does not exist`);
     }
-    const resolvedEntry = await realpath(entryPoint).catch(() => null);
-    if (
-      !resolvedEntry ||
-      (!resolvedEntry.startsWith(resolvedPluginDir + sep) && resolvedEntry !== resolvedPluginDir)
-    ) {
-      throw new Error(`Plugin '${name}' entry point escapes plugin directory`);
+
+    // Manifest-only plugins declare contributions and nothing else: there is no
+    // code to run per request, so spawning a child process would just burn memory.
+    // They are still fully functional — the host materialises their declarations.
+    const hasEntryFile = await stat(entryPoint)
+      .then((s) => s.isFile())
+      .catch(() => false);
+    const declarativeOnly = !hasEntryFile && hasContributions(manifest.contributes);
+
+    if (hasEntryFile) {
+      const resolvedEntry = await realpath(entryPoint).catch(() => null);
+      if (
+        !resolvedEntry ||
+        (!resolvedEntry.startsWith(resolvedPluginDir + sep) && resolvedEntry !== resolvedPluginDir)
+      ) {
+        throw new Error(`Plugin '${name}' entry point escapes plugin directory`);
+      }
+    } else if (!declarativeOnly) {
+      throw new Error(`Plugin '${name}' entry point '${manifest.main}' not found`);
     }
 
     try {
-      const loaded = await loadPlugin(entryPoint, manifest);
+      const loaded = hasEntryFile
+        ? await loadPlugin(entryPoint, manifest, { config: parseStoredConfig(row.config) })
+        : createDeclarativeStub(manifest);
 
       const hookNames: LifecycleHookName[] = [
         "onRequest",
@@ -481,12 +559,26 @@ class PluginManager {
       this.loadedPlugins.set(name, loaded);
       updatePluginStatus(name, "active");
 
+      // Materialise declared host resources BEFORE onActivate so a plugin that
+      // inspects its own nodes during activation already sees them.
+      await this.materializeContributions(name, row.pluginDir, manifest.contributes);
+      invalidatePluginContributions();
+
+      // Probe the host executables the plugin shells out to. Fail-open by design:
+      // a missing binary leaves a dismissible dashboard notice and the activation
+      // succeeds, because the declarative half of the plugin still works.
+      try {
+        syncRequirementNotices(name, manifest.requires?.binaries ?? []);
+      } catch (err: any) {
+        log.warn("manager.requirement_probe_failed", { name, error: err?.message });
+      }
+
       // Fire onActivate lifecycle hook
       if (manifest.hooks.onActivate) {
         await emitHook("onActivate", { name, version: manifest.version, manifest });
       }
 
-      log.info("manager.activated", { name });
+      log.info("manager.activated", { name, declarativeOnly });
     } catch (err: any) {
       updatePluginStatus(name, "error", err.message);
       log.error("manager.activate_failed", { name, error: err.message });
@@ -520,7 +612,150 @@ class PluginManager {
 
     updatePluginStatus(name, "inactive");
 
+    // Reclaim host resources this plugin materialised. Done AFTER the child is
+    // gone so a plugin cannot re-create a node mid-reclaim.
+    await this.reclaimContributions(name);
+    invalidatePluginContributions();
+
+    // The feature that needed the host binary is no longer loaded, so its notice
+    // would just be noise from here on. (Dismissal is still the only thing that
+    // hides a notice while the plugin IS active.)
+    clearRequirementNotices(name);
+
     log.info("manager.deactivated", { name });
+  }
+
+  /**
+   * Materialise the host resources a plugin declares in `contributes`.
+   *
+   * Fail-open per resource: one bad node must not roll back an otherwise valid
+   * activation (the plugin's pages/nav/i18n still work), and the failure is
+   * visible in the log. Ownership is recorded per resource so deactivation can
+   * reclaim exactly what this plugin created.
+   */
+  private async materializeContributions(
+    name: string,
+    pluginDir: string,
+    contributes: PluginContributions | undefined
+  ): Promise<void> {
+    if (!contributes) return;
+
+    if (!contributes.providerNodes?.length && !contributes.providerNodesFile) return;
+
+    let specs: ProviderNodeContribution[] = [];
+    try {
+      specs = await resolveProviderNodes({ plugin: name, pluginDir, contributes });
+    } catch (err: any) {
+      log.warn("manager.provider_nodes_resolve_failed", { name, error: err?.message });
+      return;
+    }
+    if (specs.length === 0) return;
+
+    let created = 0;
+    for (const spec of specs) {
+      const id = providerNodeId(name, spec.prefix);
+      try {
+        const owner = getPluginResourceOwner("provider-node", id);
+        // Another plugin already owns this node id — never steal it.
+        if (owner && owner !== name) {
+          log.warn("manager.provider_node_owned_elsewhere", { name, owner, id });
+          continue;
+        }
+
+        const existing = await getProviderNodeById(id);
+        if (existing) {
+          // Idempotent re-activation: keep the operator's edits, just re-claim.
+          recordPluginResource(name, "provider-node", id);
+          continue;
+        }
+
+        await createProviderNode({
+          id,
+          type: spec.type ?? "openai-compatible",
+          name: spec.name,
+          prefix: spec.prefix,
+          apiType: spec.apiType,
+          baseUrl: spec.baseUrl ?? "",
+        });
+        recordPluginResource(name, "provider-node", id);
+        created += 1;
+      } catch (err: any) {
+        log.warn("manager.provider_node_materialize_failed", {
+          name,
+          id,
+          error: err?.message,
+        });
+      }
+    }
+
+    log.info("manager.provider_nodes_materialized", { name, total: specs.length, created });
+  }
+
+  /** Delete every host resource recorded as owned by this plugin. */
+  private async reclaimContributions(name: string): Promise<void> {
+    let rows;
+    try {
+      rows = listPluginResources(name, "provider-node");
+    } catch (err: any) {
+      log.warn("manager.resource_list_failed", { name, error: err?.message });
+      return;
+    }
+    if (rows.length === 0) return;
+
+    let removed = 0;
+    for (const row of rows) {
+      try {
+        await deleteProviderNode(row.resourceKey);
+      } catch (err: any) {
+        // A node already deleted by hand is not an error — still drop the claim.
+        log.debug("manager.provider_node_delete_failed", {
+          name,
+          id: row.resourceKey,
+          error: err?.message,
+        });
+      }
+      deletePluginResource(name, "provider-node", row.resourceKey);
+      removed += 1;
+    }
+
+    log.info("manager.resources_reclaimed", { name, removed });
+  }
+
+  /**
+   * Re-apply a plugin's provider-node declarations without a full deactivate.
+   * Used by POST /api/plugins/[name]/providers/sync after the operator edits a
+   * catalogue file, and after an upgrade that changed the declared node list.
+   */
+  async syncProviderNodes(name: string): Promise<{ created: number; total: number }> {
+    const row = getPluginByName(name);
+    if (!row) throw new Error(`Plugin '${name}' not found`);
+    if (row.status !== "active") throw new Error(`Plugin '${name}' is not active`);
+
+    const manifest = await this.refreshManifestFromDisk(row);
+    const before = listPluginResources(name, "provider-node").length;
+    await this.materializeContributions(name, row.pluginDir, manifest.contributes);
+    const after = listPluginResources(name, "provider-node").length;
+    invalidatePluginContributions();
+
+    return { created: Math.max(0, after - before), total: after };
+  }
+
+  /**
+   * Invoke an exported handler inside a loaded plugin process.
+   *
+   * Used by the /v1 catch-all dispatcher for `contributes.endpoints`. Throws when
+   * the plugin is not loaded (inactive/crashed) so the caller can fall through to
+   * the regular 404 instead of hanging on a dead child.
+   */
+  async invokeEndpoint(
+    name: string,
+    handler: string,
+    payload: unknown,
+    timeoutMs?: number
+  ): Promise<unknown> {
+    const loaded = this.loadedPlugins.get(name);
+    if (!loaded) throw new Error(`Plugin '${name}' is not loaded`);
+    return loaded.invoke(handler, payload, timeoutMs);
   }
 
   /**
@@ -556,6 +791,7 @@ class PluginManager {
 
     // Remove from DB
     dbDeletePlugin(name);
+    clearRequirementNotices(name);
     log.info("manager.uninstalled", { name });
   }
 
@@ -609,6 +845,17 @@ class PluginManager {
    * Load all active plugins on startup.
    */
   async loadAll(): Promise<void> {
+    // Register anything newly mounted into the plugin directory BEFORE looking at
+    // the active rows: a container that comes up with a fresh database and a
+    // pre-mounted /plugins volume must not require a manual "scan" click to see
+    // its plugins. Registration is passive (status 'installed'); activation stays
+    // an explicit operator action, so this can never switch code on by itself.
+    try {
+      await this.scan();
+    } catch (err: any) {
+      log.warn("manager.loadAll_scan_failed", { error: err?.message });
+    }
+
     const rows = dbListPlugins("active");
     log.info("manager.loadAll", { count: rows.length });
 

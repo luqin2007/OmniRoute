@@ -57,9 +57,7 @@ import { getActiveEvents, getHooks, unregisterHooks } from "./hooks.ts";
  */
 export function setPluginEnabled(name: string, enabled: boolean): boolean {
   const hasHooks = (): boolean =>
-    getActiveEvents().some((event) =>
-      getHooks(event).some((h) => h.pluginName === name)
-    );
+    getActiveEvents().some((event) => getHooks(event).some((h) => h.pluginName === name));
   if (!enabled) {
     const existed = hasHooks();
     unregisterHooks(name);
@@ -69,4 +67,36 @@ export function setPluginEnabled(name: string, enabled: boolean): boolean {
 }
 
 // Re-export SDK utilities
-export { definePlugin, blockRequest, modifyBody, addMetadata } from "./sdk.ts";
+export {
+  definePlugin,
+  blockRequest,
+  modifyBody,
+  addMetadata,
+  getPluginConfig,
+  getPluginGateway,
+} from "./sdk.ts";
+
+// Declarative host extensions (contributes) — types for plugin authors and the
+// host-side readers used by the dashboard, the /v1 dispatcher and i18n.
+export type {
+  PluginContributions,
+  PluginWidget,
+  ProviderNodeContribution,
+  ProviderGroupContribution,
+  NavContribution,
+  PageContribution,
+  SlotContribution,
+  EndpointContribution,
+  I18nContribution,
+  CssContribution,
+  UiContribution,
+} from "./manifest.ts";
+export {
+  getPluginContributions,
+  invalidatePluginContributions,
+  findContributedEndpoint,
+  listNavContributions,
+  getPluginCss,
+  isPasswordRevealEnabled,
+} from "./contributions.ts";
+export { dispatchPluginEndpoint } from "./endpoints.ts";

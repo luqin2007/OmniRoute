@@ -18,19 +18,27 @@ interface PluginInfo {
 export default function PluginsPage() {
   const { addNotification } = useNotificationStore();
   const t = useTranslations("plugins");
+  const common = useTranslations("common");
   const [plugins, setPlugins] = useState<PluginInfo[]>([]);
   const [loading, setLoading] = useState(true);
   const [scanning, setScanning] = useState(false);
+  // Distinguish "no plugins installed" from "the list could not be loaded". Both used
+  // to render the same empty state, so an expired session (401) looked like an empty
+  // plugin directory — the one message that must never be ambiguous.
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const fetchPlugins = useCallback(async () => {
     try {
-      const res = await fetch("/api/plugins");
-      if (res.ok) {
-        const data = await res.json();
-        setPlugins(data.plugins || []);
+      const res = await fetch("/api/plugins", { cache: "no-store" });
+      if (!res.ok) {
+        setLoadError(`HTTP ${res.status}`);
+        return;
       }
-    } catch {
-      // ignore
+      const data = await res.json();
+      setPlugins(data.plugins || []);
+      setLoadError(null);
+    } catch (err) {
+      setLoadError(err instanceof Error ? err.message : "network error");
     } finally {
       setLoading(false);
     }
@@ -104,7 +112,24 @@ export default function PluginsPage() {
           {scanning ? t("scanning") : t("scanForPlugins")}
         </Button>
       </div>
-      {plugins.length === 0 ? (
+      {loadError ? (
+        <Card className="p-4">
+          <p className="text-sm font-semibold text-red-600 dark:text-red-400">
+            {common("error")} — {loadError}
+          </p>
+          <p className="mt-1 text-xs text-gray-500">/api/plugins · {t("noPluginsDescription")}</p>
+          <div className="mt-3">
+            <Button
+              onClick={() => {
+                setLoading(true);
+                void fetchPlugins();
+              }}
+            >
+              {common("refresh")}
+            </Button>
+          </div>
+        </Card>
+      ) : plugins.length === 0 ? (
         <EmptyState title={t("noPlugins")} description={t("noPluginsDescription")} />
       ) : (
         <div className="grid gap-4">

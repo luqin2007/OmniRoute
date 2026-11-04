@@ -128,13 +128,19 @@ RUN test -f package-lock.json \
 # instead of `npx --yes`, which would install an arbitrary registry version
 # on-demand and run its lifecycle scripts (Sonar docker:S6505).
 RUN --mount=type=cache,id=s/92ca8a61-c1ba-421f-a389-d48ac7258c2d-npm-cache,target=/root/.npm \
-  npm ci --include=optional --no-audit --no-fund --legacy-peer-deps --ignore-scripts \
+  npm ci --include=optional --prefer-online --no-audit --no-fund --legacy-peer-deps --ignore-scripts \
   && (cd node_modules/better-sqlite3 \
       && if [ -n "${NODE_DIST_URL}" ]; then export NODEJS_ORG_MIRROR="${NODE_DIST_URL}"; fi \
       && node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js rebuild --force_build=1) \
   && test -f node_modules/better-sqlite3/build/Release/better_sqlite3.node \
   && node -e "require('better-sqlite3')(':memory:').close()" \
   && node -e "const wreq=require('wreq-js'); if(typeof wreq.createTransport!=='function') process.exit(1)"
+
+# Plugin runtime dependency, imported dynamically by plugin child processes.
+# Optional deps can be skipped silently (platform/engine gates, registry hiccups),
+# and a missing copy only surfaces as a plugin error at runtime, so fail here.
+RUN test -d node_modules/lmfpd-sdk \
+  || (echo "lmfpd-sdk missing after npm ci — plugin fingerprint cannot start" >&2 && exit 1)
 
 # Bundler for the image build. The DOCKERFILE default is webpack
 # (OMNIROUTE_USE_TURBOPACK=0), deliberately different from the repo's code
@@ -288,6 +294,11 @@ COPY --chown=node:node --from=builder /app/.build/next/standalone ./
 # starts, so guarantee the complete package independent of trace behaviour.
 COPY --chown=node:node --from=builder /app/node_modules/better-sqlite3 ./node_modules/better-sqlite3
 RUN test -f /app/node_modules/better-sqlite3/build/Release/better_sqlite3.node
+# Plugin runtime deps that no server chunk imports statically: plugin child
+# processes load them by name at runtime, so Next never traces them into the
+# standalone bundle. Copy explicitly (same rationale as better-sqlite3 above).
+COPY --chown=node:node --from=builder /app/node_modules/lmfpd-sdk ./node_modules/lmfpd-sdk
+RUN test -f /app/node_modules/lmfpd-sdk/index.js
 # migrations land at <standalone>/migrations via assembleStandalone; point the runtime at them.
 ENV OMNIROUTE_MIGRATIONS_DIR=/app/migrations
 

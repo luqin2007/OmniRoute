@@ -109,10 +109,25 @@ export async function scanPluginDir(
       const manifest = result.data;
       const entryPoint = join(pluginDir, manifest.main);
 
-      // Verify entry point exists
+      // Verify entry point exists.
+      //
+      // Declarative plugins are exempt: when a manifest only declares
+      // `contributes` (provider nodes, pages, nav, slots, endpoints, css,
+      // i18n), there is no code to run and the host materialises everything
+      // itself — requiring a stub .mjs would spawn an idle Node process per
+      // plugin for nothing. A manifest with neither code nor contributions is
+      // still rejected, so a half-copied plugin never silently activates.
+      const declarativeOnly =
+        !!manifest.contributes && Object.keys(manifest.contributes).length > 0;
+      let hasEntryFile = false;
       try {
-        await stat(entryPoint);
+        const entryStat = await stat(entryPoint);
+        hasEntryFile = entryStat.isFile();
       } catch {
+        hasEntryFile = false;
+      }
+
+      if (!hasEntryFile && !declarativeOnly) {
         errors.push({
           name: entry,
           error: `entry point not found: ${manifest.main}`,

@@ -62,6 +62,7 @@ export default function VscodeCopilotBanner() {
     <div
       role="complementary"
       aria-label={t("title")}
+      data-omni-hide="sponsor"
       className="mb-4 flex flex-col gap-3 rounded-lg border border-[#007ACC]/30 bg-[#007ACC]/5 px-4 py-3 dark:bg-[#007ACC]/10 sm:flex-row sm:items-center sm:justify-between"
     >
       <div className="flex min-w-0 items-start gap-3">

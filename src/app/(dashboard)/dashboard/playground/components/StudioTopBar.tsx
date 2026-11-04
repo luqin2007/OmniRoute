@@ -11,12 +11,21 @@ import type { PlaygroundState } from "@/lib/playground/codeExport";
 
 export type StudioTab = "chat" | "compare" | "api" | "build";
 
+/** Tab contributed by a plugin — the host owns the strip, the plugin owns the label. */
+export interface StudioPluginTab {
+  id: string;
+  label: string;
+  icon?: string;
+}
+
 interface StudioTopBarProps {
-  activeTab: StudioTab;
-  onTabChange: (tab: StudioTab) => void;
+  activeTab: string;
+  onTabChange: (tab: string) => void;
   metrics: StreamMetrics;
   /** Optional playground state for the Export code modal. If omitted, a minimal state is used. */
   exportState?: PlaygroundState;
+  /** Extra tabs declared by active plugins via `contributes.tabs`. */
+  pluginTabs?: StudioPluginTab[];
 }
 
 interface TabConfig {
@@ -36,7 +45,13 @@ const TABS: TabConfig[] = [
  * Top bar with tab switcher, token/cost counter, and export code button.
  * Export code modal uses ExportCodeModal (F7) when exportState is provided.
  */
-export default function StudioTopBar({ activeTab, onTabChange, metrics, exportState }: StudioTopBarProps) {
+export default function StudioTopBar({
+  activeTab,
+  onTabChange,
+  metrics,
+  exportState,
+  pluginTabs = [],
+}: StudioTopBarProps) {
   const t = useTranslations("playground");
   const [exportOpen, setExportOpen] = useState(false);
 
@@ -59,6 +74,24 @@ export default function StudioTopBar({ activeTab, onTabChange, metrics, exportSt
             >
               <span className="material-symbols-outlined text-[16px]">{tab.icon}</span>
               <span>{t(tab.labelKey)}</span>
+            </button>
+          ))}
+          {pluginTabs.map((tab) => (
+            <button
+              key={tab.id}
+              role="tab"
+              aria-selected={activeTab === tab.id}
+              onClick={() => onTabChange(tab.id)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                activeTab === tab.id
+                  ? "bg-primary/10 text-primary"
+                  : "text-text-muted hover:text-text-main hover:bg-black/5 dark:hover:bg-white/5"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[16px]">
+                {tab.icon ?? "extension"}
+              </span>
+              <span>{tab.label}</span>
             </button>
           ))}
         </div>
@@ -106,9 +139,7 @@ export default function StudioTopBar({ activeTab, onTabChange, metrics, exportSt
                 <span className="material-symbols-outlined text-[18px]">close</span>
               </button>
             </div>
-            <p className="text-sm text-text-muted">
-              {t("noStateToExport")}
-            </p>
+            <p className="text-sm text-text-muted">{t("noStateToExport")}</p>
           </div>
         </div>
       )}

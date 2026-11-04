@@ -10,6 +10,7 @@ import {
 } from "@/shared/constants/providers";
 import { parseBulkApiKeys } from "@/shared/utils/bulkApiKeyParser";
 import { providerHasFreeModels } from "@/shared/utils/freeModels";
+import { usePluginContributions } from "@/shared/components/plugins/PluginContributionsProvider";
 import {
   isBaseUrlConfigurableProvider,
   getProviderBaseUrlDefault,
@@ -85,6 +86,8 @@ export default function AddApiKeyModal({
   onClose,
 }: AddApiKeyModalProps) {
   const t = useTranslations("providers");
+  // Host-owned reveal affordance; the api-key-tools plugin only flips the flag.
+  const revealSecrets = usePluginContributions().ui.passwordReveal;
   const showFreeModelsToggle = providerHasFreeModels(provider);
   const usesBaseUrl = isBaseUrlConfigurableProvider(provider);
   const defaultBaseUrl = getProviderBaseUrlDefault(provider);
@@ -808,6 +811,7 @@ export default function AddApiKeyModal({
                     <Input
                       label={apiCredentialLabel}
                       type="password"
+                      revealable={revealSecrets}
                       value={formData.apiKey}
                       onChange={(e) => setFormData({ ...formData, apiKey: e.target.value })}
                       onKeyDown={(e) => {
@@ -859,6 +863,7 @@ export default function AddApiKeyModal({
                 <Input
                   label="Tunnel Runtime-Key"
                   type="password"
+                  revealable={revealSecrets}
                   value={formData.runtimeKey}
                   onChange={(e) => setFormData({ ...formData, runtimeKey: e.target.value })}
                   placeholder="Runtime-Key"
@@ -915,6 +920,7 @@ export default function AddApiKeyModal({
               <Input
                 label={providerText(t, "modalTokenSecretLabel", "Token Secret")}
                 type="password"
+                revealable={revealSecrets}
                 value={formData.tokenSecret}
                 onChange={(e) => setFormData({ ...formData, tokenSecret: e.target.value })}
                 placeholder="as-xxxxxxxxxxxxxxxx"
@@ -965,6 +971,7 @@ export default function AddApiKeyModal({
                     "AWS Session Token (optional)"
                   )}
                   type="password"
+                  revealable={revealSecrets}
                   value={formData.awsSessionToken}
                   onChange={(e) => setFormData({ ...formData, awsSessionToken: e.target.value })}
                   hint={providerText(
@@ -1103,6 +1110,7 @@ export default function AddApiKeyModal({
                     placeholder={t("consoleApiKeyOraclePlaceholder")}
                     hint={t("consoleApiKeyOracleHint")}
                     type="password"
+                    revealable={revealSecrets}
                   />
                 )}
                 <AgentrouterConsoleFields

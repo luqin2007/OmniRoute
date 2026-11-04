@@ -223,6 +223,96 @@ export function pluginExists(name: string): boolean {
   return !!row;
 }
 
+// ── Resource ownership ──
+//
+// A plugin may ask the host to materialise resources (today: provider nodes).
+// Every materialised row is recorded here so deactivation reclaims exactly what
+// the plugin created, and two plugins cannot fight over the same key.
+
+export type PluginResourceKind = "provider-node";
+
+export interface PluginResourceRow {
+  pluginName: string;
+  kind: PluginResourceKind;
+  resourceKey: string;
+  createdAt: string;
+}
+
+function rowToResource(row: any): PluginResourceRow {
+  return {
+    pluginName: row.plugin_name,
+    kind: row.kind,
+    resourceKey: row.resource_key,
+    createdAt: row.created_at,
+  };
+}
+
+/** Record (or refresh) ownership of one host resource. Idempotent. */
+export function recordPluginResource(
+  pluginName: string,
+  kind: PluginResourceKind,
+  resourceKey: string
+): void {
+  const db = getDbInstance();
+  db.prepare(
+    `INSERT INTO plugin_resources (plugin_name, kind, resource_key, created_at)
+     VALUES (?, ?, ?, ?)
+     ON CONFLICT(plugin_name, kind, resource_key) DO NOTHING`
+  ).run(pluginName, kind, resourceKey, new Date().toISOString());
+}
+
+export function listPluginResources(
+  pluginName: string,
+  kind?: PluginResourceKind
+): PluginResourceRow[] {
+  const db = getDbInstance();
+  const rows = kind
+    ? db
+        .prepare(
+          "SELECT * FROM plugin_resources WHERE plugin_name = ? AND kind = ? ORDER BY resource_key"
+        )
+        .all(pluginName, kind)
+    : db
+        .prepare("SELECT * FROM plugin_resources WHERE plugin_name = ? ORDER BY kind, resource_key")
+        .all(pluginName);
+  return rows.map(rowToResource);
+}
+
+/** Which plugin owns a given resource, or null when the host owns it. */
+export function getPluginResourceOwner(
+  kind: PluginResourceKind,
+  resourceKey: string
+): string | null {
+  const db = getDbInstance();
+  const row = db
+    .prepare("SELECT plugin_name FROM plugin_resources WHERE kind = ? AND resource_key = ?")
+    .get(kind, resourceKey) as { plugin_name?: string } | undefined;
+  return row?.plugin_name ?? null;
+}
+
+export function deletePluginResource(
+  pluginName: string,
+  kind: PluginResourceKind,
+  resourceKey: string
+): boolean {
+  const db = getDbInstance();
+  const result = db
+    .prepare("DELETE FROM plugin_resources WHERE plugin_name = ? AND kind = ? AND resource_key = ?")
+    .run(pluginName, kind, resourceKey);
+  return result.changes > 0;
+}
+
+/** Drop every ownership row for a plugin (optionally scoped to one kind). */
+export function deletePluginResources(pluginName: string, kind?: PluginResourceKind): number {
+  const db = getDbInstance();
+  const result = kind
+    ? db
+        .prepare("DELETE FROM plugin_resources WHERE plugin_name = ? AND kind = ?")
+        .run(pluginName, kind)
+    : db.prepare("DELETE FROM plugin_resources WHERE plugin_name = ?").run(pluginName);
+  return result.changes;
+}
+
 // ── Analytics ──
 
 export interface PluginExecutionRow {

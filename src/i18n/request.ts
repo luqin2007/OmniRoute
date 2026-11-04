@@ -2,6 +2,7 @@ import { getRequestConfig } from "next-intl/server";
 import { cookies, headers } from "next/headers";
 import { LOCALES, DEFAULT_LOCALE, LOCALE_COOKIE, LOCALE_ALIASES } from "./config";
 import { resolveRequestedLocale } from "./resolveRequestedLocale";
+import { applyMessageOverlay, loadPluginMessages } from "@/lib/plugins/i18n";
 
 const FALLBACK_LOCALE = "en";
 
@@ -160,8 +161,21 @@ export default getRequestConfig(async () => {
     mergedMessages = { ...enMessages, ...mergedMessages };
   }
 
+  // 5. Plugin overlays (plugin wins). Plugin text is merged last so a plugin can
+  //    both add keys and CORRECT existing ones — the whole point of making
+  //    translation a plugin concern. Any failure degrades to the host catalogue.
+  let finalMessages: Record<string, unknown> = mergedMessages;
+  try {
+    const overlay = await loadPluginMessages(locale);
+    if (Object.keys(overlay).length > 0) {
+      finalMessages = applyMessageOverlay(mergedMessages, overlay);
+    }
+  } catch {
+    finalMessages = mergedMessages;
+  }
+
   return {
     locale,
-    messages: mergedMessages,
+    messages: finalMessages,
   };
 });

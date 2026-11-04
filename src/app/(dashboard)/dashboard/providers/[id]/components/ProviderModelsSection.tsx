@@ -14,6 +14,7 @@
 import { useState } from "react";
 import { ActionBar, AutoGrid, Button } from "@/shared/components";
 import { matchesModelCatalogQuery } from "@/shared/utils/modelCatalogSearch";
+import { PluginSlot } from "@/shared/components/plugins/PluginSlot";
 import { isFreeModel, sortModelsFreeFirst } from "@/shared/utils/freeModels";
 import {
   getDisplayModelAlias,
@@ -510,6 +511,7 @@ export default function ProviderModelsSection({
           onSortFreeFirstChange={setSortFreeFirst}
         />
       )}
+      <PluginSlot name="provider.models.header" variant="inline" />
       <AutoGrid>
         {displayModels.map((model) => {
           return (

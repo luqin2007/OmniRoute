@@ -12,6 +12,8 @@ import {
   toggleExpandedSection,
 } from "@/shared/utils/sidebarExpansionState";
 import { APP_CONFIG } from "@/shared/constants/appConfig";
+import { usePluginContributions } from "@/shared/components/plugins/PluginContributionsProvider";
+import { withPluginNav } from "@/shared/components/plugins/pluginNav";
 import OmniRouteLogo from "./OmniRouteLogo";
 import Button from "./Button";
 import Input from "./Input";
@@ -287,7 +289,11 @@ export default function Sidebar({
   const hiddenSidebarSet = new Set(hiddenSidebarItems);
   const hiddenSidebarGroupLabelsSet = new Set(hiddenSidebarGroupLabels);
 
-  const runtimeSections = resolveRuntimeSidebarSections(SIDEBAR_SECTIONS, { radarAdminUrl });
+  const pluginContributions = usePluginContributions();
+  const runtimeSections = withPluginNav(
+    resolveRuntimeSidebarSections(SIDEBAR_SECTIONS, { radarAdminUrl }),
+    pluginContributions.nav
+  );
   const orderedSections = applySectionOrder(
     runtimeSections.filter((section) => section.visibility !== "debug" || showDebug),
     sidebarSectionOrder

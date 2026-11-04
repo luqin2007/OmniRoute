@@ -16,6 +16,7 @@ import {
   normalizeModelCatalogSource,
 } from "@/shared/utils/modelCatalogSearch";
 import { providerText } from "../providerPageHelpers";
+import { PluginSlot } from "@/shared/components/plugins/PluginSlot";
 import ModelCompatPopover from "./ModelCompatPopover";
 import ModelEndpointTagsEditor, { type ModelEndpointEditorInfo } from "./ModelEndpointTagsEditor";
 
@@ -455,6 +456,12 @@ export default function ModelRow({
               )}
             </button>
           )}
+          {/* Right of the test button: per-model actions contributed by plugins. */}
+          <PluginSlot
+            name="provider.modelRow.testActions"
+            variant="inline"
+            context={{ providerId: provider, modelId: model.id, fullModel }}
+          />
           {onToggleHidden && (
             <button
               onClick={() => onToggleHidden(model.id, !isHidden)}
@@ -483,6 +490,11 @@ export default function ModelRow({
             }
             showDeveloperToggle={showDeveloperToggle}
             disabled={compatDisabled}
+          />
+          <PluginSlot
+            name="provider.modelRow.trailing"
+            variant="inline"
+            context={{ providerId: provider, modelId: model.id, fullModel }}
           />
         </div>
       </div>

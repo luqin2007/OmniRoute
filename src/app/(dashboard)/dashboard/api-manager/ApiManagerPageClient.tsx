@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Card, Button, Input, Modal, CardSkeleton } from "@/shared/components";
 import { useCopyToClipboard } from "@/shared/hooks/useCopyToClipboard";
 import { useLocale, useTranslations } from "next-intl";
+import { PluginSlot } from "@/shared/components/plugins/PluginSlot";
 import { matchesSearch } from "@/shared/utils/turkishText";
 import ApiKeyFilterBar from "./components/ApiKeyFilterBar";
 import {
@@ -1031,6 +1032,7 @@ export default function ApiManagerPageClient() {
                     >
                       <span className="material-symbols-outlined text-[18px]">delete</span>
                     </button>
+                    <PluginSlot name="apikey.row.actions" variant="inline" />
                   </div>
                 </div>
               );

@@ -21,6 +21,8 @@ import { pickDisplayValue } from "@/shared/utils/maskEmail";
 import useEmailPrivacyStore from "@/store/emailPrivacyStore";
 import { useNotificationStore } from "@/store/notificationStore";
 import { useTranslations } from "next-intl";
+import { usePluginContributions } from "@/shared/components/plugins/PluginContributionsProvider";
+import { PluginSlot } from "@/shared/components/plugins/PluginSlot";
 import { useSyncedModelsByProvider } from "./hooks/useSyncedModelsByProvider";
 import { useProviderUrlFilters } from "./hooks/useProviderUrlFilters";
 import {
@@ -528,14 +530,37 @@ function ProvidersPageContent() {
     }
   };
 
+  // Plugins may claim a node prefix range (e.g. a provisioned free-model
+  // catalogue). Those nodes get their own section and are hidden from the
+  // built-in "compatible" bucket, so nothing is listed twice. With no such
+  // plugin the filter is a no-op and the built-in sections are unchanged.
+  const pluginContributions = usePluginContributions();
+  const pluginProviderGroups = pluginContributions.providerGroups;
+
+  const nodePrefixMatches = useCallback(
+    (prefix: string | null | undefined, root: string) =>
+      String(prefix ?? "")
+        .toLowerCase()
+        .startsWith(root.toLowerCase()),
+    []
+  );
+
+  const builtInProviderNodes = useMemo(() => {
+    if (pluginProviderGroups.length === 0) return providerNodes;
+    return providerNodes.filter(
+      (node: { prefix?: string | null }) =>
+        !pluginProviderGroups.some((group) => nodePrefixMatches(node.prefix, group.prefixRoot))
+    );
+  }, [nodePrefixMatches, pluginProviderGroups, providerNodes]);
+
   const compatibleProviderGroups = useMemo(
     () =>
-      buildCompatibleProviderGroups(providerNodes, {
+      buildCompatibleProviderGroups(builtInProviderNodes, {
         openaiCompatibleName: t("openaiCompatibleName"),
         anthropicCompatibleName: t("anthropicCompatibleName"),
         claudeCodeCompatibleName: ccCompatibleLabel,
       }),
-    [ccCompatibleLabel, providerNodes, t]
+    [builtInProviderNodes, ccCompatibleLabel, t]
   );
   const compatibleProviders = compatibleProviderGroups.openai;
   const anthropicCompatibleProviders = compatibleProviderGroups.anthropic;
@@ -763,6 +788,41 @@ function ProvidersPageContent() {
     liveModelsByProviderId,
     connections
   );
+
+  // One section per plugin-declared group, built from the same primitives as the
+  // built-in compatible section so it cannot drift visually.
+  const pluginProviderEntries = pluginProviderGroups
+    .map((group) => {
+      const groupNodes = providerNodes.filter((node) =>
+        nodePrefixMatches((node as { prefix?: string | null }).prefix, group.prefixRoot)
+      );
+      const groups = buildCompatibleProviderGroups(groupNodes, {
+        openaiCompatibleName: t("openaiCompatibleName"),
+        anthropicCompatibleName: t("anthropicCompatibleName"),
+        claudeCodeCompatibleName: ccCompatibleLabel,
+      });
+      const entriesAll = [...groups.openai, ...groups.anthropic, ...groups.claudeCode].map(
+        (provider) => ({
+          providerId: provider.id,
+          provider,
+          stats: getProviderStats(provider.id, "apikey"),
+          displayAuthType: "compatible" as const,
+          toggleAuthType: "apikey" as const,
+        })
+      );
+      const entries = filterConfiguredProviderEntries(
+        entriesAll,
+        effectiveShowConfiguredOnly,
+        searchQuery,
+        showFreeOnly,
+        modelSearchQuery,
+        activeServiceKind,
+        liveModelsByProviderId,
+        connections
+      );
+      return { group, entriesAll, entries };
+    })
+    .filter((entry) => entry.entries.length > 0);
 
   const staticProviderEntriesAll = dedupeProviderEntries([
     ...oauthProviderEntriesAll,
@@ -1834,6 +1894,40 @@ function ProvidersPageContent() {
                   )}
                 </ProviderCardGrid>
               </div>
+            )}
+
+            {/* Plugin-contributed sections — rendered only while a plugin declares them */}
+            {pluginProviderEntries.map(({ group, entriesAll, entries }) =>
+              showSection("plugin") ? (
+                <div key={`plugin-${group.plugin}-${group.id}`} className="flex flex-col gap-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h2 className="text-xl font-semibold flex items-center gap-2 flex-1 min-w-0">
+                      {group.labelFallback}
+                      <span className="size-2.5 rounded-full bg-emerald-500" />
+                      <ProviderCountBadge {...countConfigured(entriesAll)} />
+                    </h2>
+                    <div className="flex flex-wrap gap-2">
+                      <PluginSlot name="providers.section.header" variant="inline" />
+                    </div>
+                  </div>
+                  <ProviderCardGrid>
+                    {entries.map(
+                      ({ providerId, provider, stats, displayAuthType, toggleAuthType }) => (
+                        <HighlightableProviderCard
+                          key={providerId}
+                          providerId={providerId}
+                          provider={provider}
+                          stats={stats}
+                          authType={displayAuthType}
+                          onToggle={(active) =>
+                            handleToggleProvider(providerId, toggleAuthType, active)
+                          }
+                        />
+                      )
+                    )}
+                  </ProviderCardGrid>
+                </div>
+              ) : null
             )}
           </>
         )}

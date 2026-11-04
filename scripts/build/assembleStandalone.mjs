@@ -136,6 +136,14 @@ export const EXTRA_MODULE_ENTRIES = [
     src: ["node_modules", "wreq-js"],
     dest: ["node_modules", "wreq-js"],
   },
+  {
+    // Plugin child processes import this at runtime (dynamic specifier), so it
+    // never appears in Next's traced server graph. Copying it here is what lets
+    // a plugin ship without its own node_modules inside the Docker image.
+    label: "lmfpd-sdk plugin runtime",
+    src: ["node_modules", "lmfpd-sdk"],
+    dest: ["node_modules", "lmfpd-sdk"],
+  },
   ...WREQ_JS_NATIVE_BINDINGS.map((binding) => ({
     label: `${binding.packageName} native binding`,
     src: ["node_modules", ...binding.packageName.split("/")],

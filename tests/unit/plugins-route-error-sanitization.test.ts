@@ -25,7 +25,19 @@ function readRoute(rel: string): string {
 const PLUGIN_ROUTES: Array<{ rel: string; label: string }> = [
   { rel: "src/app/api/plugins/route.ts", label: "GET+POST /api/plugins" },
   { rel: "src/app/api/plugins/scan/route.ts", label: "POST /api/plugins/scan" },
+  {
+    rel: "src/app/api/plugins/contributions/route.ts",
+    label: "GET /api/plugins/contributions",
+  },
   { rel: "src/app/api/plugins/[name]/route.ts", label: "GET+DELETE /api/plugins/[name]" },
+  {
+    rel: "src/app/api/plugins/[name]/i18n/[locale]/route.ts",
+    label: "GET /api/plugins/[name]/i18n/[locale]",
+  },
+  {
+    rel: "src/app/api/plugins/[name]/providers/sync/route.ts",
+    label: "POST /api/plugins/[name]/providers/sync",
+  },
   {
     rel: "src/app/api/plugins/[name]/activate/route.ts",
     label: "POST /api/plugins/[name]/activate",
@@ -37,6 +49,14 @@ const PLUGIN_ROUTES: Array<{ rel: string; label: string }> = [
   {
     rel: "src/app/api/plugins/[name]/config/route.ts",
     label: "GET+PUT /api/plugins/[name]/config",
+  },
+  {
+    rel: "src/app/api/plugins/notices/route.ts",
+    label: "GET /api/plugins/notices",
+  },
+  {
+    rel: "src/app/api/plugins/notices/[id]/route.ts",
+    label: "DELETE /api/plugins/notices/[id]",
   },
   {
     rel: "src/app/api/plugins/marketplace/route.ts",
