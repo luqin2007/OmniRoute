@@ -28,6 +28,7 @@ import {
   isLocalOnlyBypassableByManageScope,
   isLocalOnlyPath,
 } from "../routeGuard";
+import { isPluginAdminPath, resolveRemotePluginAdminScope } from "../remotePluginAdmin";
 
 const MODEL_SYNC_MANAGEMENT_PATH = /^\/api\/providers\/[^/]+\/(sync-models|models)$/;
 
@@ -67,6 +68,49 @@ function isValidWsBridgeRequest(ctx: PolicyContext): boolean {
 // dashboard cookie. See the carve-out in evaluate() below.
 const INSPECTOR_INGEST_PATH = "/api/tools/traffic-inspector/internal/ingest";
 
+/**
+ * Opt-in remote plugin-admin carve-out (see `../remotePluginAdmin.ts`).
+ *
+ * Returns the authenticated subject when ALL of these hold:
+ *   1. the request's Host (or trusted client IP) matched
+ *      `OMNIROUTE_REMOTE_PLUGIN_ADMIN_HOSTS` — checked by the caller,
+ *   2. the caller presents an authenticated dashboard session, or an API key
+ *      with the `manage`/`admin` scope.
+ *
+ * Any other outcome (no credential, bad key, non-manage scope, auth backend
+ * failure) returns null so the caller falls through to the same
+ * `403 LOCAL_ONLY` the surface always produced.
+ */
+async function authenticateRemotePluginAdmin(
+  ctx: PolicyContext
+): Promise<{ kind: "dashboard_session" | "management_key"; id: string; label: string } | null> {
+  try {
+    if (await isDashboardSessionAuthenticated(ctx.request)) {
+      return {
+        kind: "dashboard_session",
+        id: "dashboard",
+        label: "remote-plugin-admin-dashboard-session",
+      };
+    }
+
+    // Management auth is header-only — a URL-borne token must never satisfy a
+    // LOCAL_ONLY carve-out (same rule as the /api/mcp/ bypass, see #3300).
+    const apiKey = extractApiKey(ctx.request as unknown as Request, { allowUrl: false });
+    if (!apiKey) return null;
+    if (!(await isValidApiKey(apiKey))) return null;
+    const meta = await getApiKeyMetadata(apiKey);
+    if (!meta || !hasManageScope(meta.scopes)) return null;
+    return {
+      kind: "management_key",
+      id: meta.id,
+      label: "remote-plugin-admin-manage-scope",
+    };
+  } catch (err) {
+    console.error("[managementPolicy] remote plugin admin auth check failed", err);
+    return null;
+  }
+}
+
 export const managementPolicy: RoutePolicy = {
   routeClass: "MANAGEMENT",
   async evaluate(ctx: PolicyContext): Promise<AuthOutcome> {
@@ -101,6 +145,30 @@ export const managementPolicy: RoutePolicy = {
       !isLoopbackRequest(ctx) &&
       !isPrivateLanRequest(ctx)
     ) {
+      // Explicit, configuration-only exception for the plugin-admin surface
+      // (`OMNIROUTE_REMOTE_PLUGIN_ADMIN_HOSTS`). `/api/plugins` is both
+      // LOCAL_ONLY and spawn-capable, so it can never appear in the
+      // manage-scope bypass list; an operator who deliberately runs the
+      // dashboard on their own origin opts in here instead, and still has to
+      // present a real principal. Unset → nothing changes.
+      if (isPluginAdminPath(path)) {
+        const scope = resolveRemotePluginAdminScope(ctx.request);
+        if (scope.matched) {
+          const subject = await authenticateRemotePluginAdmin(ctx);
+          if (subject) return allow(subject);
+        } else if (scope.configured) {
+          // The operator opted in but this request matched neither the host nor
+          // the client-IP entry — almost always a reverse proxy that rewrites the
+          // Host header or drops the forwarding headers. Log the two inputs so
+          // the deployment can be fixed without guessing; both are already
+          // visible to the caller, so nothing is leaked.
+          console.warn(
+            "[managementPolicy] remote plugin admin allow-list miss",
+            JSON.stringify({ host: scope.host, clientIp: scope.clientIp })
+          );
+        }
+      }
+
       if (isLocalOnlyBypassableByManageScope(path)) {
         // Management auth is header-only — a URL-borne token must never satisfy a
         // manage-scope bypass of a LOCAL_ONLY route. See #3300 follow-up.

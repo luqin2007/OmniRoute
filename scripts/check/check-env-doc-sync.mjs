@@ -82,6 +82,16 @@ const IGNORE_FROM_CODE = new Set([
   // POSIX session vars surfaced by cloudflaredTunnel.ts (env passthrough).
   "LOGNAME",
   "XDG_CURRENT_DESKTOP",
+  // Windows cmd.exe lookup path — read so spawned child processes resolve
+  // .cmd/.bat/.exe helpers (src/lib/plugins/requirements.ts). OS-owned, never config.
+  "PATHEXT",
+  // Host -> plugin runtime injection (src/lib/plugins/loader.ts hands these to the
+  // worker child; src/lib/plugins/sdk.ts reads them there). They carry the plugin's
+  // own config snapshot and the process-local self-loop gateway credential, so they
+  // are never set — or documented — as operator configuration.
+  "OMNIROUTE_PLUGIN_CONFIG",
+  "OMNIROUTE_PLUGIN_GATEWAY_KEY",
+  "OMNIROUTE_PLUGIN_GATEWAY_ORIGIN",
   // Next.js / Node test runners — these are framework-managed.
   "NEXT_DIST_DIR",
   "NEXT_PHASE",
@@ -330,6 +340,10 @@ const ENV_ONLY_ALLOWLIST = new Set([
   // #12190: Trae host/Origin override. ENVIRONMENT.md documents no Trae variable at
   // all; this joins its two siblings above under the same .env.example-only tier.
   "TRAE_WEB_ORIGIN",
+  // Opt-in LOCAL_ONLY carve-out for /api/plugins (src/server/authz/remotePluginAdmin.ts).
+  // Documented in .env.example; the ENVIRONMENT.md row is deferred so the security
+  // doc's 66 mirror locales can be regenerated with it rather than left stale.
+  "OMNIROUTE_REMOTE_PLUGIN_ADMIN_HOSTS",
 ]);
 
 // ─── Parsing helpers ───────────────────────────────────────────────────────
