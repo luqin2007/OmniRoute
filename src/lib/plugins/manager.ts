@@ -20,6 +20,7 @@ import {
   listPlugins as dbListPlugins,
   updatePluginStatus,
   updatePluginManifest,
+  updatePluginMetadata,
   deletePlugin as dbDeletePlugin,
   pluginExists,
   recordPluginResource,
@@ -165,6 +166,48 @@ function assertEntryPointWithinDest(destDir: string, entryPoint: string): void {
       `Plugin manifest.main resolves outside plugin directory: "${ep}" escapes "${root}"`
     );
   }
+}
+
+/**
+ * Hook names enabled by a manifest — the `hooks` column's value, derived in one
+ * place so insert and metadata refresh can never disagree.
+ */
+function manifestHookList(manifest: PluginManifestWithDefaults): string[] {
+  return [
+    manifest.hooks.onRequest && "onRequest",
+    manifest.hooks.onResponse && "onResponse",
+    manifest.hooks.onError && "onError",
+    manifest.hooks.onInstall && "onInstall",
+    manifest.hooks.onActivate && "onActivate",
+    manifest.hooks.onDeactivate && "onDeactivate",
+    manifest.hooks.onUninstall && "onUninstall",
+    manifest.hooks.onStreamComplete && "onStreamComplete",
+  ].filter(Boolean) as string[];
+}
+
+/**
+ * True when the stored row already reflects the manifest on disk (all
+ * manifest-derived columns compare equal). Keeps `scan()` from rewriting
+ * `updated_at` — and logging — on every pass over unchanged plugins.
+ */
+function metadataMatchesManifest(
+  row: PluginRow,
+  manifest: PluginManifestWithDefaults,
+  hooks: string[]
+): boolean {
+  return (
+    row.manifest === JSON.stringify(manifest) &&
+    row.version === manifest.version &&
+    (row.description ?? null) === (manifest.description ?? null) &&
+    (row.author ?? null) === (manifest.author ?? null) &&
+    row.license === manifest.license &&
+    row.main === manifest.main &&
+    row.source === manifest.source &&
+    row.tags === JSON.stringify(manifest.tags ?? []) &&
+    row.configSchema === JSON.stringify(manifest.configSchema ?? {}) &&
+    row.hooks === JSON.stringify(hooks) &&
+    row.permissions === JSON.stringify(manifest.requires.permissions)
+  );
 }
 
 class PluginManager {
@@ -802,39 +845,55 @@ class PluginManager {
   async scan(): Promise<{ discovered: number; errors: Array<{ name: string; error: string }> }> {
     const { plugins, errors } = await scanPluginDir(this.pluginDir);
 
-    // Register newly discovered plugins that aren't in DB
     for (const discovered of plugins) {
-      if (!pluginExists(discovered.name)) {
-        try {
+      const manifest = discovered.manifest;
+      const hooks = manifestHookList(manifest);
+      try {
+        const existing = getPluginByName(discovered.name);
+        if (!existing) {
+          // Register newly discovered plugins that aren't in DB
           insertPlugin({
             id: randomUUID(),
             name: discovered.name,
-            version: discovered.manifest.version,
-            description: discovered.manifest.description,
-            author: discovered.manifest.author,
-            license: discovered.manifest.license,
-            main: discovered.manifest.main,
-            source: discovered.manifest.source,
-            tags: discovered.manifest.tags,
-            manifest: discovered.manifest as unknown as Record<string, unknown>,
-            configSchema: discovered.manifest.configSchema as unknown as Record<string, unknown>,
-            hooks: [
-              discovered.manifest.hooks.onRequest && "onRequest",
-              discovered.manifest.hooks.onResponse && "onResponse",
-              discovered.manifest.hooks.onError && "onError",
-              discovered.manifest.hooks.onInstall && "onInstall",
-              discovered.manifest.hooks.onActivate && "onActivate",
-              discovered.manifest.hooks.onDeactivate && "onDeactivate",
-              discovered.manifest.hooks.onUninstall && "onUninstall",
-              discovered.manifest.hooks.onStreamComplete && "onStreamComplete",
-            ].filter(Boolean) as string[],
-            permissions: discovered.manifest.requires.permissions,
+            version: manifest.version,
+            description: manifest.description,
+            author: manifest.author,
+            license: manifest.license,
+            main: manifest.main,
+            source: manifest.source,
+            tags: manifest.tags,
+            manifest: manifest as unknown as Record<string, unknown>,
+            configSchema: manifest.configSchema as unknown as Record<string, unknown>,
+            hooks,
+            permissions: manifest.requires.permissions,
             pluginDir: discovered.pluginDir,
-            enabled: discovered.manifest.enabledByDefault,
+            enabled: manifest.enabledByDefault,
           });
-        } catch (err: any) {
-          errors.push({ name: discovered.name, error: `DB insert failed: ${err.message}` });
+          continue;
         }
+
+        // Already registered: refresh the manifest-derived metadata (description,
+        // version, contributions, tags…) so editing plugin.json and pressing
+        // "scan" is enough — previously only a first-time insert recorded it and
+        // the dashboard kept showing install-time copy. Runtime state (status,
+        // enabled, config) is deliberately left alone.
+        if (!metadataMatchesManifest(existing, manifest, hooks)) {
+          updatePluginMetadata(discovered.name, {
+            version: manifest.version,
+            description: manifest.description ?? null,
+            author: manifest.author ?? null,
+            license: manifest.license,
+            main: manifest.main,
+            source: manifest.source,
+            tags: manifest.tags ?? [],
+            manifest: manifest as unknown as Record<string, unknown>,
+            configSchema: (manifest.configSchema ?? {}) as unknown as Record<string, unknown>,
+            hooks,
+            permissions: manifest.requires.permissions,
+          });
+        }
+      } catch (err: any) {
+        errors.push({ name: discovered.name, error: `DB sync failed: ${err.message}` });
       }
     }
 

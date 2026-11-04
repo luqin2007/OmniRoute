@@ -197,6 +197,63 @@ export function updatePluginManifest(
   return result.changes > 0;
 }
 
+/**
+ * Refresh the manifest-derived metadata of an already-registered plugin.
+ *
+ * `scan()` only ever inserted unknown plugins, so an edited `plugin.json`
+ * (description, version, tag list, contributions) never reached the dashboard:
+ * the row kept whatever it captured at install time and the UI showed stale
+ * copy. This writes exactly the fields that come from the manifest — runtime
+ * state (`status`, `enabled`, `config`, `activated_at`) is never touched here,
+ * so a rescan can never activate, disable or reconfigure a plugin.
+ */
+export interface PluginMetadataInput {
+  version: string;
+  description?: string | null;
+  author?: string | null;
+  license: string;
+  main: string;
+  source: string;
+  tags: string[];
+  manifest: Record<string, unknown>;
+  configSchema: Record<string, unknown>;
+  hooks: string[];
+  permissions: string[];
+}
+
+export function updatePluginMetadata(name: string, input: PluginMetadataInput): boolean {
+  const db = getDbInstance();
+  const now = new Date().toISOString();
+
+  const result = db
+    .prepare(
+      `UPDATE plugins SET version = ?, description = ?, author = ?, license = ?, main = ?,
+       source = ?, tags = ?, manifest = ?, config_schema = ?, hooks = ?, permissions = ?,
+       updated_at = ?
+       WHERE name = ?`
+    )
+    .run(
+      input.version,
+      input.description ?? null,
+      input.author ?? null,
+      input.license,
+      input.main,
+      input.source,
+      JSON.stringify(input.tags),
+      JSON.stringify(input.manifest),
+      JSON.stringify(input.configSchema),
+      JSON.stringify(input.hooks),
+      JSON.stringify(input.permissions),
+      now,
+      name
+    );
+
+  if (result.changes > 0) {
+    log.info("plugin.metadata_updated", { name, version: input.version });
+  }
+  return result.changes > 0;
+}
+
 export function updatePluginConfig(name: string, config: Record<string, unknown>): boolean {
   const db = getDbInstance();
   const now = new Date().toISOString();

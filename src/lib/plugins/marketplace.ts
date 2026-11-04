@@ -89,7 +89,7 @@ const SEED_REGISTRY: MarketplaceEntry[] = [
   {
     name: "request-logger",
     version: "1.0.0",
-    description: "Logs all requests and responses with timing",
+    description: "记录所有请求与响应，并附带耗时统计",
     author: "omniroute",
     license: "MIT",
     downloadUrl: "",
@@ -102,7 +102,7 @@ const SEED_REGISTRY: MarketplaceEntry[] = [
   {
     name: "rate-limiter",
     version: "1.0.0",
-    description: "Per-model rate limiting with sliding window",
+    description: "按模型限流（滑动窗口）",
     author: "omniroute",
     license: "MIT",
     downloadUrl: "",
@@ -115,7 +115,7 @@ const SEED_REGISTRY: MarketplaceEntry[] = [
   {
     name: "cost-tracker",
     version: "1.0.0",
-    description: "Track token costs per request and per model",
+    description: "按请求与模型统计 token 花费",
     author: "omniroute",
     license: "MIT",
     downloadUrl: "",
@@ -128,7 +128,7 @@ const SEED_REGISTRY: MarketplaceEntry[] = [
   {
     name: "theme-manager",
     version: "1.0.0",
-    description: "Dynamic UI theme management via CSS variable injection",
+    description: "通过注入 CSS 变量动态管理界面主题",
     author: "omniroute",
     license: "MIT",
     downloadUrl: "",
@@ -148,7 +148,8 @@ const SEED_REGISTRY: MarketplaceEntry[] = [
 export async function listMarketplacePlugins(): Promise<MarketplaceEntry[]> {
   try {
     const settings = await getSettings();
-    const url = typeof settings.pluginMarketplaceUrl === "string" ? settings.pluginMarketplaceUrl : null;
+    const url =
+      typeof settings.pluginMarketplaceUrl === "string" ? settings.pluginMarketplaceUrl : null;
     if (url) {
       if (!(await isSafeMarketplaceUrl(url))) {
         console.warn("Custom marketplace URL rejected (SSRF guard):", url);
@@ -161,13 +162,23 @@ export async function listMarketplacePlugins(): Promise<MarketplaceEntry[]> {
       }
       const data = await res.json();
       if (Array.isArray(data)) {
-        return data.filter((entry: unknown) =>
-          entry && typeof entry === "object" && typeof (entry as Record<string, unknown>).name === "string"
+        return data.filter(
+          (entry: unknown) =>
+            entry &&
+            typeof entry === "object" &&
+            typeof (entry as Record<string, unknown>).name === "string"
         ) as MarketplaceEntry[];
       }
-      if (data && typeof data === "object" && Array.isArray((data as Record<string, unknown>).plugins)) {
-        return ((data as Record<string, unknown>).plugins as unknown[]).filter((entry: unknown) =>
-          entry && typeof entry === "object" && typeof (entry as Record<string, unknown>).name === "string"
+      if (
+        data &&
+        typeof data === "object" &&
+        Array.isArray((data as Record<string, unknown>).plugins)
+      ) {
+        return ((data as Record<string, unknown>).plugins as unknown[]).filter(
+          (entry: unknown) =>
+            entry &&
+            typeof entry === "object" &&
+            typeof (entry as Record<string, unknown>).name === "string"
         ) as MarketplaceEntry[];
       }
       console.warn("Custom marketplace returned unrecognized format");
@@ -211,7 +222,9 @@ export function isMarketplaceAvailable(): boolean {
  * Install a plugin from the marketplace by name.
  * Downloads the plugin archive, verifies checksum if present, and installs via PluginManager.
  */
-export async function installMarketplacePlugin(name: string): Promise<{ name: string; version: string }> {
+export async function installMarketplacePlugin(
+  name: string
+): Promise<{ name: string; version: string }> {
   const plugins = await listMarketplacePlugins();
   const entry = plugins.find((p) => p.name === name);
   if (!entry) {
